@@ -1,0 +1,764 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ii__all_natural"
+	group: "1909C539EC7E396E"
+	icon: "kubejs:natural_star"
+	id: "1E081181A45A012C"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0C97899C883282D3"]
+			id: "2AA3D0955FB6D9BA"
+			shape: "diamond"
+			tasks: [{
+				id: "15D298C349DCFB02"
+				item: "kubejs:earth_shard"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["682CC3F306100735"]
+			id: "5FBA3FCA1E0D8C61"
+			shape: "diamond"
+			tasks: [{
+				id: "1BEC7A1D0BB10DE5"
+				item: "kubejs:desert_shard"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["356A25C860147670"]
+			id: "17309E9A72D0E7B3"
+			shape: "diamond"
+			tasks: [{
+				id: "226E380C168DC36C"
+				item: "kubejs:jungle_shard"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1029D262A9A888F1"]
+			id: "6A8C0584FEBABFA2"
+			shape: "diamond"
+			tasks: [{
+				id: "47F8C35108563717"
+				item: "kubejs:sky_shard"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["173C54E0EFF637AB"]
+			id: "4F3D7CCBAADE084C"
+			shape: "diamond"
+			tasks: [{
+				id: "5B72EF32D87D8D9A"
+				item: "kubejs:ocean_shard"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["01546FCFAAA6497D"]
+			id: "17EBCC720077E7AB"
+			shape: "diamond"
+			tasks: [{
+				id: "4D18622ADA0797D9"
+				item: "kubejs:ender_shard"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["694B928832BA5D4F"]
+			id: "6F426ECBC3264C97"
+			shape: "diamond"
+			tasks: [{
+				id: "1EBEEA49EF2A18B9"
+				item: "kubejs:taiga_shard"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"6A8C0584FEBABFA2"
+				"7A04468403235DC1"
+				"4F3D7CCBAADE084C"
+				"17EBCC720077E7AB"
+				"6F426ECBC3264C97"
+				"17309E9A72D0E7B3"
+				"2AA3D0955FB6D9BA"
+				"5FBA3FCA1E0D8C61"
+			]
+			id: "29205A2A38E6964F"
+			shape: "diamond"
+			tasks: [{
+				id: "2629B0A1B08ACFFF"
+				item: "gtceu:natures_alloy_dust"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"35D3CEBAC7896043"
+				"32D2E63CCB6DA9F1"
+			]
+			id: "4969229DCDC618C0"
+			shape: "diamond"
+			tasks: [{
+				id: "454C39624F2B937E"
+				item: "kubejs:life_sample_1"
+				type: "item"
+			}]
+			x: 17.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["61FFB322F5712D5B"]
+			id: "49F99471B212281D"
+			shape: "diamond"
+			tasks: [{
+				id: "03F2AC08F9044EB9"
+				item: "gtceu:lv_dna_fabricator"
+				type: "item"
+			}]
+			x: 15.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["49F99471B212281D"]
+			icon: "kubejs:cow_model_1"
+			id: "35D3CEBAC7896043"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "3D5E881706AA772C"
+					item: "kubejs:cow_model_1"
+					type: "item"
+				}
+				{
+					id: "0CEFB211FCBC2208"
+					item: "kubejs:sheep_model_1"
+					type: "item"
+				}
+				{
+					id: "54AD0BCCF0BF640A"
+					item: "kubejs:pig_model_1"
+					type: "item"
+				}
+				{
+					id: "3CD282F62CFBF112"
+					item: "kubejs:chicken_model_1"
+					type: "item"
+				}
+				{
+					id: "4F04B664E222F3EA"
+					item: "kubejs:axolotl_model_1"
+					type: "item"
+				}
+				{
+					id: "2AEBFAE30D15360D"
+					item: "kubejs:squid_model_1"
+					type: "item"
+				}
+				{
+					id: "4DCAAE82C964C393"
+					item: "kubejs:bee_model_1"
+					type: "item"
+				}
+				{
+					id: "49FEC5698896D42A"
+					item: "kubejs:rabbit_model_1"
+					type: "item"
+				}
+				{
+					id: "59B0DEADC5D1E966"
+					item: "kubejs:fish_model_1"
+					type: "item"
+				}
+			]
+			title: "Animal Models MK01"
+			x: 16.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["35D3CEBAC7896043"]
+			id: "30C3D61CC0F20B98"
+			shape: "diamond"
+			tasks: [{
+				id: "38E856296D67BA16"
+				item: "gtceu:lv_animal_pen"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 0.5d
+		}
+		{
+			id: "50B558DC474B447F"
+			shape: "diamond"
+			tasks: [{
+				id: "2AF6DF852025E6D0"
+				item: "gtceu:resource_combinator"
+				type: "item"
+			}]
+			x: 16.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["50B558DC474B447F"]
+			id: "2699782A3CAE8893"
+			shape: "diamond"
+			tasks: [{
+				id: "0098A9C439555227"
+				item: "kubejs:wheat_seeds_mk1"
+				type: "item"
+			}]
+			x: 16.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["256358FD632BE3DE"]
+			id: "3809BDE5709AC22C"
+			shape: "diamond"
+			tasks: [{
+				id: "48CD7A78C2F552CA"
+				item: "kubejs:nether_essence_bucket"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["256358FD632BE3DE"]
+			id: "694B928832BA5D4F"
+			shape: "diamond"
+			tasks: [{
+				id: "2AF7B77FC62EDA87"
+				item: "kubejs:taiga_essence_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["256358FD632BE3DE"]
+			id: "0C97899C883282D3"
+			shape: "diamond"
+			tasks: [{
+				id: "3FA63A8DFF92075D"
+				item: "kubejs:earth_essence_bucket"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["256358FD632BE3DE"]
+			id: "682CC3F306100735"
+			shape: "diamond"
+			tasks: [{
+				id: "656D3B1CC6013159"
+				item: "kubejs:desert_essence_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["256358FD632BE3DE"]
+			id: "356A25C860147670"
+			shape: "diamond"
+			tasks: [{
+				id: "2A3BFFD3F89035BE"
+				item: "kubejs:jungle_essence_bucket"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["256358FD632BE3DE"]
+			id: "1029D262A9A888F1"
+			shape: "diamond"
+			tasks: [{
+				id: "3AF9D2D94CCB8088"
+				item: "kubejs:sky_essence_bucket"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["256358FD632BE3DE"]
+			id: "173C54E0EFF637AB"
+			shape: "diamond"
+			tasks: [{
+				id: "5621639A94341D8F"
+				item: "kubejs:ocean_essence_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["256358FD632BE3DE"]
+			id: "01546FCFAAA6497D"
+			shape: "diamond"
+			tasks: [{
+				id: "21C890B05AE0E317"
+				item: "kubejs:ender_essence_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3809BDE5709AC22C"]
+			id: "7A04468403235DC1"
+			shape: "diamond"
+			tasks: [{
+				id: "12948B0A20E854A7"
+				item: "kubejs:nether_shard"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			id: "1D8E6E4BD42A0755"
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "357BE92BD9DA5CA3"
+				item: "kubejs:natural_star"
+				type: "item"
+			}]
+			x: 20.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2699782A3CAE8893"]
+			id: "0C85063A5BEF9AC0"
+			shape: "diamond"
+			tasks: [{
+				id: "14F9FA96B3F92437"
+				item: "gtceu:lv_crop_simulator"
+				type: "item"
+			}]
+			x: 16.5d
+			y: -3.0d
+		}
+		{
+			id: "38B6117F642F1DC1"
+			shape: "diamond"
+			tasks: [{
+				id: "67069E4FE6E3E451"
+				item: "gtceu:lv_machine_casing"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"38B6117F642F1DC1"
+				"0B3B908D294B6F84"
+			]
+			id: "1AD8A4D87418047C"
+			shape: "diamond"
+			tasks: [{
+				id: "6307FFC4AA992495"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"1AD8A4D87418047C"
+				"6116C62DCE177E8C"
+			]
+			id: "675CA22CDC42414F"
+			shape: "diamond"
+			tasks: [{
+				id: "1DDC455A4353126B"
+				item: "gtceu:lv_bender"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0B3B908D294B6F84"]
+			hide_dependent_lines: true
+			id: "67B0E46D73DC7BCF"
+			shape: "diamond"
+			tasks: [{
+				id: "27CED131B59D642A"
+				item: "gtceu:lv_electric_motor"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["67B0E46D73DC7BCF"]
+			hide_dependent_lines: true
+			id: "31F92641605DB98D"
+			shape: "diamond"
+			tasks: [{
+				id: "20E1EC4A76A8F28C"
+				item: "gtceu:lv_electric_piston"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["301EFA67533B98BD"]
+			id: "0B3B908D294B6F84"
+			shape: "diamond"
+			tasks: [{
+				id: "3DA2E85AED1258D3"
+				item: "gtceu:blazing_single_cable"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["44FA5F068715272C"]
+			id: "301EFA67533B98BD"
+			shape: "diamond"
+			tasks: [{
+				id: "16B2A2142E04A876"
+				item: "gtceu:blazing_ingot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1DA1ACD5D8972CB9"]
+			id: "44FA5F068715272C"
+			shape: "diamond"
+			tasks: [{
+				id: "5A2187F1EE93F24E"
+				item: "gtceu:blazing_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["67B0E46D73DC7BCF"]
+			id: "667BE22C9467B93B"
+			shape: "diamond"
+			tasks: [{
+				id: "6CDFDF62B0C0A52A"
+				item: "gtceu:lv_conveyor_module"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"31F92641605DB98D"
+				"6116C62DCE177E8C"
+			]
+			id: "4B8ED308E0FE7250"
+			shape: "diamond"
+			tasks: [{
+				id: "0BAF904CEA5BD682"
+				item: "gtceu:lv_robot_arm"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["67B0E46D73DC7BCF"]
+			id: "1D0062BB7D6A6B77"
+			shape: "diamond"
+			tasks: [{
+				id: "7705B842C134DBA8"
+				item: "gtceu:lv_electric_pump"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"7B090216B2359C45"
+				"4C2D2F43DE1F02C2"
+				"481FE4ABD35FF0F5"
+				"1E5C94EF27C7091D"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "6116C62DCE177E8C"
+			shape: "diamond"
+			tasks: [{
+				id: "14B0AA27C7D91CCE"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["301EFA67533B98BD"]
+			hide_dependency_lines: true
+			id: "481FE4ABD35FF0F5"
+			shape: "diamond"
+			tasks: [{
+				id: "4BB3892915359572"
+				item: "gtceu:resistor"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2FFAE832EE95157C"]
+			id: "7B090216B2359C45"
+			shape: "diamond"
+			tasks: [{
+				id: "68CC29D268CA3CC8"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["072FA5DBAB44ADFB"]
+			description: [
+				"You should now be able to make "
+				"&bGlowing Ingots &feasier with molten iron!"
+			]
+			id: "2FFAE832EE95157C"
+			shape: "diamond"
+			tasks: [{
+				id: "370F2DD3EC357FA2"
+				item: "gtceu:glowing_single_wire"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2FFAE832EE95157C"]
+			id: "4C2D2F43DE1F02C2"
+			shape: "diamond"
+			tasks: [{
+				id: "70DEF6195ED4E44E"
+				item: "gtceu:glowing_single_cable"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"0539429F3ECF4945"
+				"2FFAE832EE95157C"
+			]
+			id: "1E5C94EF27C7091D"
+			shape: "diamond"
+			tasks: [{
+				id: "36D111147C5B04CE"
+				item: "gtceu:resin_printed_circuit_board"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["22C6A0D434951EA7"]
+			id: "0539429F3ECF4945"
+			shape: "diamond"
+			tasks: [{
+				id: "68E1E67A28777732"
+				item: "gtceu:resin_circuit_board"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4B8ED308E0FE7250"]
+			id: "781291474EE99903"
+			shape: "diamond"
+			tasks: [{
+				id: "1003FD13FDDDE6F5"
+				item: "gtceu:lv_assembler"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1AD8A4D87418047C"
+				"67B0E46D73DC7BCF"
+				"6116C62DCE177E8C"
+			]
+			id: "588B011D340B0700"
+			shape: "diamond"
+			tasks: [{
+				id: "62E1A1390A47691D"
+				item: "gtceu:lv_wiremill"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"1AD8A4D87418047C"
+				"6116C62DCE177E8C"
+				"31F92641605DB98D"
+			]
+			id: "6B14BEDFEAFEE7B3"
+			shape: "diamond"
+			tasks: [{
+				id: "6AA80BFC18C1CD30"
+				item: "gtceu:lv_macerator"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"1AD8A4D87418047C"
+				"1D0062BB7D6A6B77"
+				"31F92641605DB98D"
+				"6116C62DCE177E8C"
+			]
+			id: "756C7FD439121B17"
+			shape: "diamond"
+			tasks: [{
+				id: "5E7C372B24D7C3F6"
+				item: "gtceu:lv_extractor"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"6116C62DCE177E8C"
+				"1AD8A4D87418047C"
+				"67B0E46D73DC7BCF"
+			]
+			id: "76E865F5FBBF8662"
+			shape: "diamond"
+			tasks: [{
+				id: "56CB518046866FF1"
+				item: "gtceu:lv_chemical_reactor"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"1D0062BB7D6A6B77"
+				"6116C62DCE177E8C"
+			]
+			id: "778B231AD068639C"
+			shape: "diamond"
+			tasks: [{
+				id: "1322FBDA8911261A"
+				item: "gtceu:lv_autoclave"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"6116C62DCE177E8C"
+				"1AD8A4D87418047C"
+			]
+			id: "301C122784FE8B59"
+			shape: "diamond"
+			tasks: [{
+				id: "5D63D7B7BEFD483D"
+				item: "gtceu:lv_alloy_smelter"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"1AD8A4D87418047C"
+				"6116C62DCE177E8C"
+				"67B0E46D73DC7BCF"
+				"53FC8D30398DF58E"
+			]
+			id: "5CC317F1B08A0679"
+			shape: "diamond"
+			tasks: [{
+				id: "7AA32E3FBCF4EF41"
+				item: "gtceu:lv_steam_turbine"
+				type: "item"
+			}]
+			title: "Power Gen!"
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["301EFA67533B98BD"]
+			id: "53FC8D30398DF58E"
+			shape: "diamond"
+			tasks: [{
+				id: "3D81A4E7D96C41CD"
+				item: "gtceu:bronze_large_boiler"
+				type: "item"
+			}]
+			title: "Generating Steam"
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"29205A2A38E6964F"
+				"2EC4DCFDCAE8527B"
+				"36E36A264439EE73"
+			]
+			id: "1CEF6A5EEC67CE55"
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "65224266FF24A429"
+				item: "gtceu:natures_alloy_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+	]
+	title: "II - All Natural"
+}

@@ -1,0 +1,272 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "iii__bioengineering"
+	group: "1909C539EC7E396E"
+	icon: "kubejs:bio_star"
+	id: "5A81F3E815C6CDDF"
+	order_index: 3
+	quest_links: [{
+		id: "5CD2E67D69078A9A"
+		linked_quest: "7385341D276EA8EB"
+		shape: "diamond"
+		x: -1.0d
+		y: -1.0d
+	}]
+	quests: [
+		{
+			dependencies: ["7385341D276EA8EB"]
+			hide: false
+			id: "0CCCC556F659BA44"
+			shape: "diamond"
+			tasks: [{
+				id: "39FCDB0A409EFFF9"
+				item: "kubejs:cow_model_2"
+				type: "item"
+			}]
+			title: "Animal Models 2"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			id: "7DAC4F681BDC1715"
+			shape: "diamond"
+			tasks: [{
+				id: "78330EA30A42A2AF"
+				item: "minecraft:echo_shard"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			id: "1997FA09B4AF479C"
+			shape: "diamond"
+			tasks: [{
+				id: "384620083F453204"
+				item: "botania:corporea_spark"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			id: "14B28D8649F0C786"
+			shape: "diamond"
+			tasks: [{
+				id: "50F34064BE58C25B"
+				item: "deeperdarker:echo_soil"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3B7FB9A3A8FE6B8C"]
+			id: "72715145956CDF3F"
+			shape: "diamond"
+			tasks: [{
+				id: "1CE51A75AFBB72EA"
+				item: "gtceu:awakened_echo_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["72715145956CDF3F"]
+			id: "4C1D87D1F496B4E5"
+			shape: "diamond"
+			tasks: [{
+				id: "5D99FF6B776694D4"
+				item: "gtceu:meat_freezer"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"14B28D8649F0C786"
+				"7DAC4F681BDC1715"
+				"1997FA09B4AF479C"
+			]
+			id: "3B7FB9A3A8FE6B8C"
+			shape: "diamond"
+			tasks: [{
+				id: "0F9D9E6D14286B93"
+				item: "gtceu:awakened_echo_dust"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7DAC4F681BDC1715"]
+			id: "6F8D72205E9B95D7"
+			shape: "diamond"
+			tasks: [{
+				id: "32CB6E70F1B0B829"
+				item: "kubejs:warden_model_1"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4C1D87D1F496B4E5"]
+			id: "471E4D5C8574E1AC"
+			shape: "diamond"
+			tasks: [{
+				id: "1447A6AD89920B35"
+				item: "kubejs:clean_growth_medium_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["46E9017F42544DB7"]
+			id: "22904E25A5CC77C5"
+			tasks: [{
+				id: "02E22E2E062AE394"
+				item: "gtceu:sterile_bio_alloy_ingot"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"766CC873B63B8026"
+				"1DD18F15562A11A2"
+				"0669D294D5B1F3C2"
+				"471E4D5C8574E1AC"
+			]
+			id: "5EE288AA83A38FC4"
+			tasks: [{
+				id: "5DC4572266B89051"
+				item: "gtceu:synthetic_neuron_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0CCCC556F659BA44"]
+			id: "5D7807D91601C14D"
+			shape: "diamond"
+			tasks: [{
+				id: "699E35D5F00AA720"
+				item: "kubejs:raw_meat_glob"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["55AC739F3ACE44ED"]
+			id: "46E9017F42544DB7"
+			tasks: [{
+				id: "056469F8D1785A21"
+				item: "gtceu:sterile_bio_alloy_dust"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			id: "766CC873B63B8026"
+			tasks: [{
+				id: "0D4B99193BBE4C1A"
+				item: "kubejs:life_sample_2"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["338E348FB33AB2D6"]
+			id: "0669D294D5B1F3C2"
+			tasks: [{
+				id: "1B8A6603B9C7D0A6"
+				item: "kubejs:plant_sample_1"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["48F6458B79B17276"]
+			id: "1DD18F15562A11A2"
+			tasks: [{
+				id: "4CA5B2C3B501B068"
+				item: "kubejs:hostile_sample_1"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5EE288AA83A38FC4"]
+			id: "611C84E9CA36917A"
+			tasks: [{
+				id: "3043B4DB724C6731"
+				item: "gtceu:synthetic_neuron_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"4C1D87D1F496B4E5"
+				"471E4D5C8574E1AC"
+				"5D7807D91601C14D"
+			]
+			id: "55AC739F3ACE44ED"
+			tasks: [{
+				id: "26204C8C45478C1E"
+				item: "kubejs:sterile_meat"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			id: "48F6458B79B17276"
+			tasks: [{
+				id: "6B56129A4711A08F"
+				item: "kubejs:enderman_model_1"
+				type: "item"
+			}]
+			title: "Hostile Models 1"
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			id: "338E348FB33AB2D6"
+			tasks: [{
+				id: "05FBC6AD3B7D434B"
+				item: "kubejs:glow_berries_mk1"
+				type: "item"
+			}]
+			title: "Plants MK1"
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["48F6458B79B17276"]
+			id: "2D0B34CA79F506A5"
+			tasks: [{
+				id: "48F9CC6D743E8A32"
+				item: "gtceu:hostile_containment_unit"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+	]
+	title: "IV - Bio-Engineering"
+}

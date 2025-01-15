@@ -1,0 +1,49 @@
+{
+   "loader": "fusion:model",
+   "type": "connecting",
+   "connections": [
+      {
+         "type": "is_same_block"
+      },
+      {
+         "type": "match_block",
+         "block": "kubejs:altar_block"
+      },
+                  {
+         "type": "match_block",
+         "block": "kubejs:key_block"
+      },
+            {
+         "type": "match_block",
+         "block": "kubejs:primitive_star_block"
+      },
+            {
+         "type": "match_block",
+         "block": "kubejs:creative_star_block"
+      },
+            {
+         "type": "match_block",
+         "block": "kubejs:natural_star_block"
+      },
+               {
+         "type": "match_block",
+         "block": "kubejs:nano_star_block"
+      },
+               {
+         "type": "match_block",
+         "block": "kubejs:galactic_star_block"
+      },
+               {
+         "type": "match_block",
+         "block": "kubejs:draconic_star_block"
+      },
+               {
+         "type": "match_block",
+         "block": "kubejs:infinity_star_block"
+      }
+   ],
+   "parent": "block/cube_all",
+   "textures": {
+      "all": "kubejs:block/draconic_star_block"
+   }
+}

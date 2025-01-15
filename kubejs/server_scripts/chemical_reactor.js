@@ -1,0 +1,15 @@
+ServerEvents.recipes(event => {
+	event.recipes.gtceu.chemical_reactor('infused_source')
+		.outputFluids(Fluid.of('kubejs:infused_source', 1000))
+		.inputFluids(Fluid.of('kubejs:raw_source', 1000))
+		.inputFluids(Fluid.of('gtceu:natures_alloy', 1000))
+		.duration(100)
+		.EUt(30)
+	
+	event.recipes.gtceu.chemical_reactor('source_planks')
+		.itemInputs(Item.of('8x gtceu:treated_wood_planks'))
+		.inputFluids(Fluid.of('kubejs:infused_source', 1000))
+		.itemOutputs(Item.of('8x kubejs:source_planks'))
+		.duration(60)
+		.EUt(16)
+})

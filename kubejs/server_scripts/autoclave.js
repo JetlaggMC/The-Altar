@@ -1,0 +1,15 @@
+ServerEvents.recipes(event => {
+	event.recipes.gtceu.autoclave('amethyst_source_gem')
+		.itemInputs(Item.of('1x gtceu:amethyst_dust'))
+		.inputFluids(Fluid.of('kubejs:infused_source', 1000))
+		.itemOutputs(Item.of('1x ars_nouveau:source_gem'))
+		.duration(1200)
+		.EUt(24)
+	event.recipes.gtceu.autoclave('lapis_source_gem')
+		.itemInputs(Item.of('1x gtceu:lapis_dust'))
+		.inputFluids(Fluid.of('kubejs:infused_source', 1000))
+		.itemOutputs(Item.of('1x ars_nouveau:source_gem'))
+		.duration(1200)
+		.EUt(24)
+	
+})

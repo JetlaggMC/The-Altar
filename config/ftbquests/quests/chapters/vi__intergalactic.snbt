@@ -1,0 +1,22 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "vi__intergalactic"
+	group: "1909C539EC7E396E"
+	icon: "kubejs:galactic_star"
+	id: "33F9BF983B3DFE5D"
+	order_index: 5
+	quest_links: [ ]
+	quests: [{
+		id: "6EF108B0C8B003E3"
+		tasks: [{
+			id: "27B05CF1C172BE04"
+			item: "gtceu:interstellar_alloy_ingot"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "VI - Intergalactic"
+}

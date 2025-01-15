@@ -1,0 +1,13 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ix__infinity"
+	group: "1909C539EC7E396E"
+	icon: "kubejs:infinity_star"
+	id: "28D5BF212996EF46"
+	order_index: 8
+	quest_links: [ ]
+	quests: [ ]
+	title: "X - Infinity"
+}

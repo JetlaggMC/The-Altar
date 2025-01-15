@@ -1,0 +1,268 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "v__for_glory"
+	group: "1909C539EC7E396E"
+	icon: "kubejs:champion_star"
+	id: "16653CACDBB86592"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4B73067DF4A9CFDB"]
+			id: "14306442D401A9D1"
+			tasks: [{
+				id: "37CDC91A4E44EA80"
+				item: "gtceu:champions_alloy_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			id: "5ED722676CB7769B"
+			tasks: [{
+				dimension: "twilightforest:twilight_forest"
+				id: "358ADD02077FF212"
+				title: "Enter The Twilight Forest"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"7B34479DFA7B2D5C"
+				"05E00CF3EA13C157"
+			]
+			id: "04C2E72281450958"
+			tasks: [{
+				id: "7E6268BC5E300065"
+				item: "twilightforest:naga_trophy"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"2AA31C43983A521F"
+				"7B34479DFA7B2D5C"
+			]
+			id: "500142C808189150"
+			tasks: [{
+				id: "0542CF88EB071102"
+				item: "twilightforest:lich_trophy"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5ED722676CB7769B"]
+			id: "05E00CF3EA13C157"
+			tasks: [{
+				id: "7DCDF4DE7E3D4170"
+				item: "kubejs:unborn_naga_trophy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["05E00CF3EA13C157"]
+			id: "2AA31C43983A521F"
+			tasks: [{
+				id: "55252D4630A53D55"
+				item: "kubejs:unborn_lich_trophy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5ED722676CB7769B"]
+			id: "7B34479DFA7B2D5C"
+			tasks: [{
+				id: "1FBDCAA47D9151B5"
+				item: "gtceu:twilight_awakening_chamber_mk1"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			id: "598D72F91EB9765B"
+			tasks: [{
+				id: "726AF069DAEE48A3"
+				item: "kubejs:hostile_sample_2"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2AA31C43983A521F"]
+			id: "34022F212EDCD232"
+			tasks: [{
+				id: "01E819774B54E869"
+				item: "kubejs:unborn_hydra_trophy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["34022F212EDCD232"]
+			id: "73ADBB0235CC4CCC"
+			tasks: [{
+				id: "5A8A5727BE3CAD99"
+				item: "kubejs:unborn_urghast_trophy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2AD001B2C9049561"
+				"598D72F91EB9765B"
+			]
+			id: "43EF61E691E2E6A6"
+			tasks: [{
+				id: "5CC25D463528D823"
+				item: "twilightforest:hydra_trophy"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"598D72F91EB9765B"
+				"7E298E14CD9A08A3"
+				"2F02A3D73D24796E"
+			]
+			id: "3F364495C175814C"
+			tasks: [{
+				id: "7E80849D36DAEDC7"
+				item: "twilightforest:ur_ghast_trophy"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"3367AB48E575626C"
+				"2F02A3D73D24796E"
+			]
+			id: "59EAA48FF5F312C3"
+			tasks: [{
+				id: "126927BC35D30D71"
+				item: "twilightforest:snow_queen_trophy"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["34022F212EDCD232"]
+			id: "2AD001B2C9049561"
+			tasks: [{
+				id: "42A777D1054DBA34"
+				item: "gtceu:twilight_awakening_chamber_mk2"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["73ADBB0235CC4CCC"]
+			id: "7E298E14CD9A08A3"
+			tasks: [{
+				id: "4E0E35A487BD580A"
+				item: "gtceu:twilight_awakening_chamber_mk3"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["73ADBB0235CC4CCC"]
+			id: "0A509C1DE6550FB6"
+			tasks: [{
+				id: "5C419B5E39D04F37"
+				item: "kubejs:unborn_snow_queen_trophy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0A509C1DE6550FB6"]
+			id: "3367AB48E575626C"
+			tasks: [{
+				id: "3335D9DDBE1DE5D9"
+				item: "gtceu:twilight_awakening_chamber_mk4"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["73ADBB0235CC4CCC"]
+			id: "2F02A3D73D24796E"
+			tasks: [{
+				id: "5E0E37303C6A9DD4"
+				item: "kubejs:twilight_infused_growth_medium_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["59EAA48FF5F312C3"]
+			id: "4B73067DF4A9CFDB"
+			tasks: [{
+				id: "4E96EE64D3536489"
+				item: "twilightforest:twilight_portal_miniature_structure"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			id: "457E5B03E71B1DAF"
+			tasks: [{
+				id: "6B786F5DB1744D2E"
+				title: "withered cable"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			id: "7B72476EAC37CD1F"
+			tasks: [{
+				id: "0A3F562EC952C676"
+				item: "cataclysm:enderite_block"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			id: "630D92AC8420CDC8"
+			tasks: [{
+				id: "6F2DBBFECA8C4A56"
+				item: "cataclysm:ignitium_block"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.5d
+		}
+	]
+	title: "V - For Glory!"
+}

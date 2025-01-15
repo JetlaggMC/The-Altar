@@ -1,0 +1,972 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "i__creatitivity"
+	group: "1909C539EC7E396E"
+	icon: "kubejs:creative_star"
+	id: "3D5F717908F64A39"
+	order_index: 0
+	quest_links: [
+		{
+			id: "15A183C178AC0FE0"
+			linked_quest: "7A04468403235DC1"
+			shape: "diamond"
+			x: -1.0d
+			y: 9.5d
+		}
+		{
+			id: "23BA9DA79249E4A5"
+			linked_quest: "1CEF6A5EEC67CE55"
+			shape: "diamond"
+			x: -1.0d
+			y: 8.5d
+		}
+	]
+	quests: [
+		{
+			id: "198D06EA799DC550"
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "05A1FF025F7700D9"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["198D06EA799DC550"]
+			icon: {
+				Count: 1
+				id: "gtceu:andesite_alloy_hammer"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "275B875F1165AD08"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "156902501A549176"
+					item: {
+						Count: 1
+						id: "gtceu:andesite_alloy_hammer"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7F69540E51E1F963"
+					item: {
+						Count: 1
+						id: "gtceu:andesite_alloy_file"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "64ECC1FB0AD0B2D7"
+					item: {
+						Count: 1
+						id: "gtceu:andesite_alloy_screwdriver"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5D60EC8E24BA1DD5"
+					item: {
+						Count: 1
+						id: "gtceu:andesite_alloy_saw"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								HarvestIce: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1DF53EDFE0543C0E"
+					item: {
+						Count: 1
+						id: "gtceu:andesite_alloy_wire_cutter"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "797B74E22305D104"
+					item: {
+						Count: 1
+						id: "gtceu:andesite_alloy_wrench"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								Mode: 2b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Andesite Alloy Tools"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["275B875F1165AD08"]
+			icon: {
+				Count: 1
+				id: "gtceu:andesite_alloy_mining_hammer"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						AoEColumn: 1
+						AoELayer: 0
+						AoERow: 1
+						MaxAoEColumn: 1
+						MaxAoELayer: 0
+						MaxAoERow: 1
+					}
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 2
+						MaxDamage: 767
+						ToolSpeed: 4.8f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "1D4D4FFD665C42C2"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "7FE277779A172AEE"
+					item: {
+						Count: 1
+						id: "gtceu:andesite_alloy_mining_hammer"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								AoEColumn: 1
+								AoELayer: 0
+								AoERow: 1
+								MaxAoEColumn: 1
+								MaxAoELayer: 0
+								MaxAoERow: 1
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 767
+								ToolSpeed: 4.8f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5914CBE65EA496DE"
+					item: {
+						Count: 1
+						id: "gtceu:andesite_alloy_spade"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								AoEColumn: 1
+								AoELayer: 0
+								AoERow: 1
+								MaxAoEColumn: 1
+								MaxAoELayer: 0
+								MaxAoERow: 1
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 767
+								ToolSpeed: 4.8f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "325BDA9CD0F9458D"
+					item: {
+						Count: 1
+						id: "gtceu:andesite_alloy_axe"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								DisableShields: 1b
+								TreeFelling: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 4.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Gregtech Mining Tools"
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["275B875F1165AD08"]
+			icon: "gtceu:coke_oven"
+			id: "5FD6BEFC70CC297A"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "5F1575BC2D76FFDC"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "7F45142F807DAF90"
+					item: { Count: 25, id: "gtceu:coke_oven_bricks" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5FD6BEFC70CC297A"]
+			id: "4CF57BD5C7E17D6D"
+			shape: "diamond"
+			tasks: [{
+				id: "733829B2565699B0"
+				item: "gtceu:creosote_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4CF57BD5C7E17D6D"]
+			id: "3AD198CE2A2785B9"
+			shape: "diamond"
+			tasks: [{
+				id: "1636582BE3AA3FA9"
+				item: "gtceu:treated_wood_planks"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3AD198CE2A2785B9"]
+			hide: false
+			id: "3D622E7ABF912E2E"
+			shape: "diamond"
+			tasks: [{
+				id: "2F985DC574688FA8"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3D622E7ABF912E2E"]
+			description: ["Allows for 1:1 plate making!"]
+			id: "45587882DD96192C"
+			shape: "diamond"
+			tasks: [{
+				id: "25A1C034C45F41A3"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3D622E7ABF912E2E"]
+			description: ["Automatic rod production!"]
+			id: "7F6D37B66F061CF2"
+			shape: "rsquare"
+			tasks: [{
+				id: "600C7805CE890B95"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["45587882DD96192C"]
+			id: "11EEEC8EC4EFBC99"
+			shape: "diamond"
+			tasks: [{
+				id: "3F41A6233B0AAB34"
+				item: "gtceu:andesite_alloy_ring"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["11EEEC8EC4EFBC99"]
+			id: "477575BE4F0DC583"
+			shape: "diamond"
+			tasks: [{
+				id: "2797877786BBBDBB"
+				item: "gtceu:andesite_alloy_rotor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1931A5627B5D3E6E"]
+			id: "05E6730095A0C5C5"
+			shape: "diamond"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "0E62212221831BE6"
+				type: "dimension"
+			}]
+			x: 1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"05E6730095A0C5C5"
+				"256358FD632BE3DE"
+			]
+			id: "78CE7FD6C48CB18F"
+			shape: "diamond"
+			tasks: [{
+				id: "213C4766242762C8"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["30BB0E5F34F229E1"]
+			id: "1931A5627B5D3E6E"
+			shape: "diamond"
+			tasks: [{
+				id: "5896955487968394"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1D4D4FFD665C42C2"]
+			id: "30BB0E5F34F229E1"
+			shape: "diamond"
+			tasks: [{
+				id: "0ED4229A8B2A5EBC"
+				item: {
+					Count: 1
+					id: "minecraft:diamond_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"7A04468403235DC1"
+				"78CE7FD6C48CB18F"
+				"691E4266326D73D0"
+				"1CEF6A5EEC67CE55"
+			]
+			icon: "gtceu:foundry"
+			id: "632A62D558C6F37E"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "5710D7320108E57F"
+					item: "gtceu:foundry"
+					type: "item"
+				}
+				{
+					id: "6F07D7CEBF7DF77B"
+					item: "gtceu:ulv_input_bus"
+					type: "item"
+				}
+				{
+					id: "0543DB1D4E45C2B2"
+					item: "gtceu:ulv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "2171895E22396D12"
+					item: "gtceu:ulv_output_hatch"
+					type: "item"
+				}
+				{
+					id: "26C7636E719AF455"
+					item: "gtceu:lv_kinetic_input_box"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "2A23244BCA7FCC39"
+					item: "create:andesite_casing"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "391EAF3BDFC05FB2"
+					item: "gtceu:cupronickel_coil_block"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["632A62D558C6F37E"]
+			id: "7468FC23297E765B"
+			shape: "diamond"
+			tasks: [{
+				id: "718F6B3BC53FC1AE"
+				item: "gtceu:lv_caster"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["477575BE4F0DC583"]
+			icon: "create:mechanical_mixer"
+			id: "256358FD632BE3DE"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "3E681815A0EB1622"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "44B2F49868A3A57E"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7468FC23297E765B"]
+			icon: "create:andesite_alloy"
+			id: "10488FB6581A666D"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "487C237138AE4167"
+					item: "kubejs:crushed_andesite"
+					type: "item"
+				}
+				{
+					id: "172DE067E5D4E888"
+					item: "gtceu:iron_bucket"
+					type: "item"
+				}
+				{
+					id: "05726F8B37517D38"
+					item: "gtceu:andesite_alloy_bucket"
+					type: "item"
+				}
+				{
+					id: "0FAFC8088332784C"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+			]
+			title: "Andesite Alloy II"
+			x: -1.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7468FC23297E765B"]
+			id: "04C58079B7470336"
+			shape: "diamond"
+			tasks: [{
+				id: "6447F746A2993211"
+				item: "gtceu:brass_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["04C58079B7470336"]
+			id: "294A034B0F6698FF"
+			shape: "diamond"
+			tasks: [{
+				id: "3AF92FDF7B91D801"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"294A034B0F6698FF"
+				"09E0DB945F8CF866"
+			]
+			id: "0BC2D4ACF6D90A46"
+			shape: "diamond"
+			tasks: [{
+				id: "3D80666CDEEE38C6"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["7468FC23297E765B"]
+			id: "09E0DB945F8CF866"
+			shape: "diamond"
+			tasks: [{
+				id: "4157A7E712D9FED6"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"41FAFDEC686F1D80"
+				"294A034B0F6698FF"
+			]
+			id: "4260CFE179EBE367"
+			shape: "diamond"
+			tasks: [{
+				id: "3BCF55D14892151F"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["04C58079B7470336"]
+			id: "41FAFDEC686F1D80"
+			shape: "diamond"
+			tasks: [{
+				id: "01F225936587E889"
+				item: "create:brass_hand"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"240B4B445DD3C59C"
+				"7BD9852E6EC580DE"
+				"14C692C911E1B2B7"
+			]
+			id: "1C95286A6C6B49AA"
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "0DE257D2EA14D35C"
+				item: "kubejs:creative_star"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"4260CFE179EBE367"
+				"09E0DB945F8CF866"
+				"22C6A0D434951EA7"
+			]
+			id: "2986C18126186298"
+			shape: "diamond"
+			tasks: [{
+				id: "5BA99436C6C19E1C"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["78CE7FD6C48CB18F"]
+			icon: "gtceu:primitive_blast_furnace"
+			id: "2EC4DCFDCAE8527B"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "6D8578089B165F5E"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "53FE516386179B95"
+					item: "gtceu:firebricks"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5FD6BEFC70CC297A"]
+			id: "36E36A264439EE73"
+			shape: "diamond"
+			tasks: [{
+				id: "2C37D0A270967488"
+				item: "gtceu:coke_gem"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0BC2D4ACF6D90A46"]
+			id: "31009874062A2C1D"
+			shape: "diamond"
+			tasks: [{
+				id: "425F9B8F51B7FFB5"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["31009874062A2C1D"]
+			id: "274900C493F5DBC6"
+			shape: "diamond"
+			tasks: [{
+				id: "0A24D1F9A526C621"
+				item: "gtceu:crushed_iron_ore"
+				type: "item"
+			}]
+			title: "Ore Doubling I"
+			x: -2.0d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"0BC2D4ACF6D90A46"
+				"2986C18126186298"
+			]
+			id: "60B83DD731DECF58"
+			shape: "diamond"
+			tasks: [{
+				id: "372C2B7CD4D5E45D"
+				item: "gtceu:large_mechanical_press"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["60B83DD731DECF58"]
+			id: "240B4B445DD3C59C"
+			shape: "diamond"
+			tasks: [{
+				id: "3F136630B5A83483"
+				item: "kubejs:mega_brass_casing"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["60B83DD731DECF58"]
+			id: "7BD9852E6EC580DE"
+			shape: "diamond"
+			tasks: [{
+				id: "524EA4FE38B4E423"
+				item: "kubejs:mega_andesite_casing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["127462DD1590CFAA"]
+			id: "55EBA745787C475C"
+			shape: "diamond"
+			tasks: [{
+				id: "2B8AAE497D8D18E4"
+				item: "gtceu:cupronickel_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["256358FD632BE3DE"]
+			id: "127462DD1590CFAA"
+			shape: "diamond"
+			tasks: [{
+				id: "4DF0A9F5AECDEAAC"
+				item: "gtceu:cupronickel_dust"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["55EBA745787C475C"]
+			id: "06A2805723D9C27F"
+			shape: "diamond"
+			tasks: [{
+				id: "4EDF73DBC1B2CA68"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["06A2805723D9C27F"]
+			id: "58F47BE825CFCCA6"
+			tasks: [{
+				id: "0BC7DEB3DA0A9811"
+				item: "create:mechanical_pump"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["06A2805723D9C27F"]
+			id: "5403B1E29129A8B2"
+			tasks: [{
+				id: "079BB57E6AB1ABDD"
+				item: "create:spout"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["06A2805723D9C27F"]
+			id: "7380F02CC413E392"
+			shape: "diamond"
+			tasks: [{
+				id: "2C16AF7400B6DA6C"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["60B83DD731DECF58"]
+			id: "14C692C911E1B2B7"
+			tasks: [{
+				id: "4F33B33F22A7FC00"
+				item: "kubejs:mega_copper_casing"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 14.5d
+		}
+		{
+			dependencies: [
+				"332845EB43340DF4"
+				"1B3FF6FCAD5398B3"
+				"6EB7ED7883C25877"
+			]
+			id: "22C6A0D434951EA7"
+			shape: "diamond"
+			tasks: [{
+				id: "2F77ACFC588BD0B2"
+				item: "kubejs:crude_insulator_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["78CE7FD6C48CB18F"]
+			hide_dependency_lines: true
+			id: "6EB7ED7883C25877"
+			shape: "diamond"
+			tasks: [{
+				id: "02687ED8A53F9965"
+				item: "create:honey_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["632A62D558C6F37E"]
+			hide_dependency_lines: true
+			id: "332845EB43340DF4"
+			shape: "diamond"
+			tasks: [{
+				id: "447B99EE1BE0D9F6"
+				item: "gtceu:rubber_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["05E6730095A0C5C5"]
+			hide_dependency_lines: true
+			id: "1B3FF6FCAD5398B3"
+			shape: "diamond"
+			tasks: [{
+				id: "3CB4559817A2C9A9"
+				item: "gtceu:sulfur_dust"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["7A04468403235DC1"]
+			hide_dependency_lines: true
+			id: "7B86B6F4DA9EAD0E"
+			shape: "diamond"
+			tasks: [{
+				id: "2B2D11D5C292CC0D"
+				item: "create:cinder_flour"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["7B86B6F4DA9EAD0E"]
+			id: "4F37A58187A4211B"
+			shape: "diamond"
+			tasks: [{
+				id: "3B763E5F91723113"
+				item: "create:blaze_cake_base"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"60B83DD731DECF58"
+				"1B3FF6FCAD5398B3"
+				"4F37A58187A4211B"
+			]
+			id: "1DA1ACD5D8972CB9"
+			shape: "diamond"
+			tasks: [{
+				id: "66F4F49B9257406D"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["072FA5DBAB44ADFB"]
+			id: "691E4266326D73D0"
+			shape: "diamond"
+			tasks: [{
+				id: "75C3600FD3D49926"
+				item: "gtceu:cupronickel_coil_block"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["78CE7FD6C48CB18F"]
+			id: "072FA5DBAB44ADFB"
+			shape: "diamond"
+			tasks: [{
+				id: "4C10C470AE31E4D9"
+				item: "gtceu:glowing_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 8.5d
+		}
+	]
+	title: "I - Getting Creative"
+}

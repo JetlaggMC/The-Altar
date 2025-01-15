@@ -1,0 +1,23 @@
+{
+  "name": "singularity.avaritia.andesite_casing",
+  "colors": [
+    "999089",
+    "ffffff"
+  ],
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/quartz",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "create:andesite_casing"
+  },
+  "count": 256,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": true
+}

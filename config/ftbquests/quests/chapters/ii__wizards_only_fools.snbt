@@ -1,0 +1,705 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ii__wizards_only_fools"
+	group: "1909C539EC7E396E"
+	icon: "kubejs:magical_star"
+	id: "4A4C9EE82113EA5E"
+	order_index: 2
+	quest_links: [
+		{
+			id: "525CB9F8C0D1B868"
+			linked_quest: "4969229DCDC618C0"
+			shape: "diamond"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			id: "424274EA3A493DBE"
+			linked_quest: "49F99471B212281D"
+			shape: "diamond"
+			x: 3.5d
+			y: -6.0d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["269BBAAEC95D6743"]
+			id: "5D45C629F1B25906"
+			shape: "diamond"
+			tasks: [{
+				id: "3B388CC5D741EB05"
+				item: "botania:mana_powder"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["10979873E424D428"]
+			hide_dependency_lines: true
+			id: "0D37AC7A8382B63B"
+			shape: "diamond"
+			tasks: [{
+				id: "1BFEC6067085F831"
+				item: "gtceu:arcane_gold_dust"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5784C4CFD4400A8C"]
+			id: "2098B2407517EE47"
+			shape: "diamond"
+			tasks: [{
+				id: "11A29306313F67A4"
+				item: "kubejs:terrasteel_dust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"5DA7F82F4984E5D8"
+				"76E865F5FBBF8662"
+			]
+			id: "5206A5A9A8179BFF"
+			shape: "diamond"
+			tasks: [{
+				id: "643F5A5D070C3E94"
+				item: "kubejs:infused_source_bucket"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6469CEB22C564A0E"
+				"756C7FD439121B17"
+			]
+			id: "5DA7F82F4984E5D8"
+			shape: "diamond"
+			tasks: [{
+				id: "4DC3EB7518258F61"
+				item: "kubejs:raw_source_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			id: "6469CEB22C564A0E"
+			shape: "diamond"
+			tasks: [{
+				id: "23D5A07BB5528FFD"
+				item: "ars_nouveau:sourceberry_bush"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5206A5A9A8179BFF"
+				"3BECD05D76C341F3"
+				"778B231AD068639C"
+			]
+			id: "10979873E424D428"
+			shape: "diamond"
+			tasks: [{
+				id: "2368C881F5984F53"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6B14BEDFEAFEE7B3"]
+			id: "3BECD05D76C341F3"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "00DDA5B92140B717"
+					item: "gtceu:amethyst_dust"
+					type: "item"
+				}
+				{
+					id: "06ED486BA229D502"
+					item: "gtceu:lapis_dust"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0D37AC7A8382B63B"]
+			hide_dependency_lines: true
+			id: "50D7D53E1EB12C4D"
+			shape: "diamond"
+			tasks: [{
+				id: "7BA78FAF91DBE1D0"
+				item: "gtceu:arcane_gold_ingot"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["50D7D53E1EB12C4D"]
+			id: "15A4D0E1A9D389CE"
+			shape: "diamond"
+			tasks: [{
+				id: "4D6FC18C2E8441B8"
+				item: "ars_nouveau:imbuement_chamber"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"50D7D53E1EB12C4D"
+				"5F895E1D724C887A"
+				"24948C368A115A9F"
+			]
+			id: "32D2E63CCB6DA9F1"
+			shape: "diamond"
+			tasks: [{
+				id: "215C0E415CF561FA"
+				item: "ars_nouveau:enchanting_apparatus"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50D7D53E1EB12C4D"]
+			id: "5F895E1D724C887A"
+			shape: "diamond"
+			tasks: [{
+				id: "599E81290411A62D"
+				item: "ars_nouveau:arcane_core"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"50D7D53E1EB12C4D"
+				"2CA7CEAD813CABDE"
+			]
+			id: "24948C368A115A9F"
+			shape: "diamond"
+			tasks: [{
+				id: "33ECAAC4FD8C8432"
+				item: "ars_nouveau:arcane_pedestal"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["49F99471B212281D"]
+			id: "27ABF847308C8123"
+			rewards: [{
+				id: "1F233A9E8451EB4C"
+				item: {
+					Count: 1
+					id: "botania:lexicon"
+					tag: {
+						"botania:elven_unlock": 1b
+					}
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "5FC7759C10A989DE"
+				type: "checkmark"
+			}]
+			title: "Botania Time!"
+			x: 3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["27ABF847308C8123"]
+			id: "01012ABC1D13515F"
+			shape: "diamond"
+			tasks: [{
+				id: "5530587BA407A0BF"
+				item: "botania:endoflame"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["27ABF847308C8123"]
+			id: "24DAD55C70A58044"
+			shape: "diamond"
+			tasks: [{
+				id: "3DC37820043C4479"
+				item: "botania:hydroangeas"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["41BF7094697E2A42"]
+			id: "269BBAAEC95D6743"
+			shape: "diamond"
+			tasks: [{
+				id: "39C1190692ABC4A3"
+				item: "botania:mana_pool"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["27ABF847308C8123"]
+			id: "67033F16B6A1175B"
+			shape: "diamond"
+			tasks: [{
+				id: "343DAB5DC3402DC6"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["67033F16B6A1175B"]
+			id: "41BF7094697E2A42"
+			shape: "diamond"
+			tasks: [{
+				id: "521D99FECDA5517E"
+				item: "botania:livingrock"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["67033F16B6A1175B"]
+			id: "41BEEAD2BD6507B4"
+			shape: "diamond"
+			tasks: [{
+				id: "6A380560D0929E96"
+				item: "botania:livingwood_log"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"5D45C629F1B25906"
+				"4969229DCDC618C0"
+				"7385341D276EA8EB"
+			]
+			id: "1B5993F4BD99BDD3"
+			shape: "diamond"
+			tasks: [{
+				id: "1BB6E9D49B693A78"
+				item: "gtceu:magical_alloy_dust"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["65F0E03867645647"]
+			id: "306836430D65B1F6"
+			shape: "diamond"
+			tasks: [{
+				id: "63F49941770BDAC1"
+				item: "botania:elementium_ingot"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7D7C4A4AECCC000E"]
+			id: "7B714E4C469C4AB4"
+			shape: "rsquare"
+			tasks: [{
+				id: "2381BAAB7DAC2F54"
+				item: "gtceu:dream_room_amplifier"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5784C4CFD4400A8C"
+				"41BEEAD2BD6507B4"
+			]
+			id: "65F0E03867645647"
+			shape: "diamond"
+			tasks: [{
+				id: "4AA3AF6A5DC4E07E"
+				item: "botania:alfheim_portal"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1A900F43B05A4F7F"]
+			id: "5784C4CFD4400A8C"
+			shape: "diamond"
+			tasks: [{
+				id: "1DE9B94DE1707A6E"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["20D2786094B85C99"]
+			id: "1A900F43B05A4F7F"
+			shape: "diamond"
+			tasks: [{
+				id: "4C3A4875440C3DA0"
+				item: "botania:terra_plate"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["269BBAAEC95D6743"]
+			id: "20D2786094B85C99"
+			shape: "diamond"
+			tasks: [{
+				id: "54C8E8FB16458BAF"
+				item: "botania:runic_altar"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["306836430D65B1F6"]
+			id: "7D7C4A4AECCC000E"
+			shape: "diamond"
+			tasks: [{
+				id: "65521A4BD33CC740"
+				item: "botania:rainbow_rod"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["306836430D65B1F6"]
+			id: "7E773D910BA25CBC"
+			shape: "rsquare"
+			tasks: [{
+				id: "203ACB047A0D55E6"
+				item: "botania:gaia_pylon"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"70A4B58ED0FFA7A0"
+				"7B714E4C469C4AB4"
+			]
+			id: "7385341D276EA8EB"
+			shape: "diamond"
+			tasks: [{
+				id: "7AF142626C36B765"
+				item: "kubejs:arcane_infused_growth_medium_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E773D910BA25CBC"]
+			id: "6D361F5FD4C624BD"
+			shape: "diamond"
+			tasks: [{
+				id: "199A4C0C78B0BDDA"
+				item: "botania:life_essence"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6D361F5FD4C624BD"]
+			id: "70A4B58ED0FFA7A0"
+			shape: "diamond"
+			tasks: [{
+				id: "644F91859D84CA11"
+				item: "kubejs:growth_medium_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1B5993F4BD99BDD3"
+				"18DF975EA8122557"
+			]
+			id: "35956C8118B06DC5"
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "11344234B4A32AC0"
+				item: "gtceu:magical_alloy_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5206A5A9A8179BFF"]
+			id: "2CA7CEAD813CABDE"
+			shape: "diamond"
+			tasks: [{
+				id: "699FAC2CB6A99A15"
+				item: "ars_nouveau:sourcestone"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["50D7D53E1EB12C4D"]
+			icon: "gtceu:electric_blast_furnace"
+			id: "18DF975EA8122557"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "67CA879FCA818E2F"
+					item: "gtceu:electric_blast_furnace"
+					type: "item"
+				}
+				{
+					id: "00D725D4846883EF"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "0F676314A9ADEE46"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "410940805E0693EF"
+					item: "gtceu:cupronickel_coil_block"
+					type: "item"
+				}
+				{
+					id: "077AA1996AC18773"
+					item: "gtceu:lv_energy_input_hatch"
+					type: "item"
+				}
+				{
+					id: "6D0F0BB6D19839A9"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "4A05F542073BF6AE"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+				{
+					id: "5838182B94DBB646"
+					item: "gtceu:lv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "73E83A1A030CDA35"
+					item: "gtceu:lv_output_hatch"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "729D2749A78C57EA"
+					item: { Count: 9, id: "gtceu:heatproof_machine_casing" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["18DF975EA8122557"]
+			id: "1F560E42B77D83A7"
+			shape: "diamond"
+			tasks: [{
+				id: "040B659AD2D1F300"
+				item: "extendedcrafting:black_iron_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7FFC1B38C9D996FF"]
+			id: "61FFB322F5712D5B"
+			shape: "diamond"
+			tasks: [{
+				id: "0D825612D9A61BF1"
+				item: "extendedcrafting:advanced_table"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0A12313E02DA047A"
+				"1F560E42B77D83A7"
+			]
+			id: "7FFC1B38C9D996FF"
+			shape: "diamond"
+			tasks: [{
+				id: "5A1C9AE4F1E3820A"
+				item: "extendedcrafting:basic_table"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["32D2E63CCB6DA9F1"]
+			id: "0A12313E02DA047A"
+			shape: "diamond"
+			tasks: [{
+				id: "7432C60600654CE7"
+				item: "extendedcrafting:luminessence"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			id: "3CD777CF7ED7A1BA"
+			shape: "diamond"
+			tasks: [{
+				id: "6C2E3FB70248415C"
+				item: "gtceu:good_electronic_circuit"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -1.0d
+		}
+		{
+			id: "7E4AC52F60747514"
+			shape: "diamond"
+			tasks: [{
+				id: "08ACC1AAE4E3ADE4"
+				item: "gtceu:phenolic_printed_circuit_board"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"269BBAAEC95D6743"
+				"41BEEAD2BD6507B4"
+			]
+			hide_dependency_lines: true
+			id: "7A59CB342FA97AF3"
+			shape: "diamond"
+			tasks: [{
+				id: "2183F706A13D1BAF"
+				item: "gtceu:phenolic_circuit_board"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35956C8118B06DC5"]
+			id: "467A757AA817DFC8"
+			shape: "diamond"
+			tasks: [{
+				id: "0CED16583CA67167"
+				item: "gtceu:mv_machine_casing"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"16A125700C0321D7"
+				"70A4B58ED0FFA7A0"
+			]
+			id: "5D170102CBE4FC17"
+			tasks: [{
+				id: "06BEACD8FC8A4749"
+				title: "floroethylene"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["27ABF847308C8123"]
+			id: "16A125700C0321D7"
+			shape: "diamond"
+			tasks: [{
+				id: "1D7E5D1E5F9F72A7"
+				item: "botania:white_petal"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -5.0d
+		}
+		{
+			id: "3615B4C43AA07AEE"
+			tasks: [{
+				id: "21E43D38DDFCF7C5"
+				item: "gtceu:diode"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -4.5d
+		}
+		{
+			id: "5676AD40F67A29A6"
+			tasks: [{
+				id: "4F8BF44B78CFF462"
+				item: "gtceu:silicon_boule"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			id: "1CDC90B7190E3194"
+			tasks: [{
+				id: "7BE4024E4B29FC69"
+				item: "gtceu:silicon_wafer"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 0.0d
+		}
+	]
+	title: "III - Wizards Only Fools"
+}

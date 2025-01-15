@@ -1,0 +1,22 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ix__wrath_of_the_dragon"
+	group: "1909C539EC7E396E"
+	icon: "kubejs:draconic_star"
+	id: "0EAF42B10699B85E"
+	order_index: 7
+	quest_links: [ ]
+	quests: [{
+		id: "01F3C8D42D94620E"
+		tasks: [{
+			id: "3D2A00935C3B69DC"
+			item: "draconicevolution:dragon_heart"
+			type: "item"
+		}]
+		x: -0.5d
+		y: 0.0d
+	}]
+	title: "IX - Wrath Of The Dragon"
+}

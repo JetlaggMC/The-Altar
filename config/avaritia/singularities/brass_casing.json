@@ -1,0 +1,23 @@
+{
+  "name": "singularity.avaritia.brass_casing",
+  "colors": [
+    "f1d462",
+    "caccda"
+  ],
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/aluminum",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "create:brass_casing"
+  },
+  "count": 256,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": true
+}

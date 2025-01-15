@@ -1,0 +1,20 @@
+{
+	  "block.gtceu.cupronickel_coil_block": "Glowing Coil Block",
+	  "block.gtceu.kanthal_coil_block": "Elementium Coil Block",
+	  "block.gtceu.nichrome_coil_block": "Synthetic Neuron Coil Block",
+
+  	  "block.gtceu.heatproof_machine_casing": "Heat Proof Arcane Gold Machine Casing",
+  	  "block.gtceu.frostproof_machine_casing": "Frost Proof Awakened Echo Machine Casing",
+  	  "block.gtceu.clean_machine_casing": "Clean Bio Alloy Machine Casing",
+
+  	  "block.gtceu.bronze_firebox_casing": "Blazing Firebox Casing",
+  	  "block.gtceu.bronze_large_boiler": "Large Blazing Boiler",
+  	  "block.gtceu.bronze_pipe_casing": "Blazing Pipe Casing",
+  	  "block.gtceu.steam_machine_casing": "Blazing Machine Casing",
+
+	  "item.gtceu.phenolic_circuit_board": "Magical Circuit Board",
+	  "item.gtceu.phenolic_printed_circuit_board": "Magical Printed Circuit Board",
+	  "item.gtceu.silicon_boule": "Arcane-Silicon Boule",
+	  "item.gtceu.silicon_wafer": "Arcane-Silicon Wafer"
+
+}
