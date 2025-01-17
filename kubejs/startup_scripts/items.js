@@ -32,89 +32,16 @@ StartupEvents.registry('item', e => {
   e.create('taiga_dust')
   e.create('source_gem_dust')
 
-  e.create('cow_model_1')
-  e.create('cow_model_2')
-  e.create('cow_model_3')
-  e.create('cow_model_4')
-  e.create('cow_model_5')
-  e.create('universal_cow_model')
-  e.create('generic_bio_sample')
-  e.create('hostile_bio_sample')
-  e.create('earth_sample')
-  e.create('star_casing_01')
-  e.create('nether_sample')
-  e.create('crushed_andesite')
-  e.create('star_casing_02')
-  e.create('blank_shard')
-  e.create('raw_meat_glob')
-  e.create('sterile_meat')
-	
-  e.create('hostile_sample_1')
-  e.create('hostile_sample_2')
-
+ 
   e.create('plant_sample_1')
 
   e.create('terrasteel_dust')
   e.create('elementium_dust')
 	
-  e.create('shulker_model_1')
-  e.create('enderman_model_1')
-  e.create('blaze_model_1')
-  e.create('phantom_model_1')
-  e.create('slime_model_1')
-  e.create('spider_model_1')
-  e.create('magma_model_1')
-  e.create('skeleton_model_1')
-  e.create('warden_model_1')
-
-  e.create('shulker_model_2')
-  e.create('enderman_model_2')
-  e.create('blaze_model_2')
-  e.create('phantom_model_2')
-  e.create('slime_model_2')
-  e.create('spider_model_2')
-  e.create('magma_model_2')
-  e.create('skeleton_model_2')	
-  e.create('warden_model_2')
-	
-  e.create('sheep_model_1')
-  e.create('chicken_model_1')
-  e.create('pig_model_1')
-  e.create('squid_model_1')
-  e.create('rabbit_model_1')
-  e.create('fish_model_1')
-  e.create('axolotl_model_1')
-  e.create('bee_model_1')
-
-  e.create('sheep_model_2')
-  e.create('chicken_model_2')
-  e.create('pig_model_2')
-  e.create('squid_model_2')
-  e.create('rabbit_model_2')
-  e.create('fish_model_2')
-  e.create('axolotl_model_2')
-  e.create('bee_model_2')
-
-  e.create('life_sample_1')
-  e.create('life_sample_2')
 
 
 	
-  e.create('flowers_mk1')
-  e.create('glow_berries_mk1')
-  e.create('pumpkin_seeds_mk1')
-  e.create('trees_mk1')
-  e.create('source_berries_mk1')
-  e.create('potatoes_mk1')
-  e.create('cactus_mk1')
-  e.create('mushrooms_mk1')
-  e.create('chorus_mk1')
 
-  e.create('wheat_seeds_mk1')
-  e.create('wheat_seeds_mk2')
-  e.create('wheat_seeds_mk3')
-  e.create('wheat_seeds_mk4')
-  e.create('wheat_seeds_mk5')
 
 	
   e.create('unborn_naga_trophy')
@@ -315,6 +242,10 @@ StartupEvents.registry("fluid", (event) => {
     .thinTexture(0x795eb5)
     .bucketColor(0x795eb5)
     .displayName('Twilight Infused Growth Medium')
+  event.create('floroethylene')
+    .thinTexture(0x3F322B)
+    .bucketColor(0x3F322B)
+    .displayName('Floroetyhlene')
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
@@ -345,6 +276,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 		.color(0xec52c8).iconSet(GTMaterialIconSet.METALLIC)
         .cableProperties(GTValues.V[GTValues.MV],16,1)
         .flags(GTMaterialFlags.IS_MAGNETIC,GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING,GTMaterialFlags.GENERATE_FINE_WIRE,GTMaterialFlags.GENERATE_FRAME)
+	event.create('weak_synthetic')
+        .ingot()
+		.liquid()
+		.color(0x3E4839).iconSet(GTMaterialIconSet.METALLIC)
+        .cableProperties(GTValues.V[GTValues.MV],16,1)
+        .flags(GTMaterialFlags.IS_MAGNETIC,GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING,GTMaterialFlags.GENERATE_FINE_WIRE)
+
 	
 	event.create('synthetic_neuron')
         .ingot()
@@ -380,14 +318,16 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 	    .color(0x1bb848).iconSet(GTMaterialIconSet.METALLIC)
         .flags(GTMaterialFlags.IS_MAGNETIC,GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR,GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING)
         .toolStats(new ToolProperty(3.0, 3.0, 512, 3, [GTToolType.SWORD, GTToolType.PICKAXE, GTToolType.SHOVEL, GTToolType.AXE, GTToolType.HOE, GTToolType.MINING_HAMMER, GTToolType.SPADE, GTToolType.SAW, GTToolType.HARD_HAMMER, GTToolType.WRENCH, GTToolType.FILE, GTToolType.CROWBAR, GTToolType.SCREWDRIVER, GTToolType.WIRE_CUTTER, GTToolType.SCYTHE, GTToolType.KNIFE, GTToolType.BUTCHERY_KNIFE, GTToolType.DRILL_LV, GTToolType.DRILL_MV, GTToolType.DRILL_HV, GTToolType.DRILL_EV, GTToolType.DRILL_IV, GTToolType.CHAINSAW_LV, GTToolType.WRENCH_LV, GTToolType.WRENCH_HV, GTToolType.WRENCH_IV, GTToolType.BUZZSAW, GTToolType.SCREWDRIVER_LV, GTToolType.WIRE_CUTTER_LV, GTToolType.WIRE_CUTTER_HV,  GTToolType.WIRE_CUTTER_IV]))
-	
+		.fluidPipeProperties(50, 1855, true,false, false, false)
+
     event.create('magical_alloy')
 		.ingot()
 		.liquid()
         .color(0xcc66ff).iconSet(GTMaterialIconSet.METALLIC)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING)
         .toolStats(new ToolProperty(4.0, 4.0, 768, 4, [GTToolType.SWORD, GTToolType.PICKAXE, GTToolType.SHOVEL, GTToolType.AXE, GTToolType.HOE, GTToolType.MINING_HAMMER, GTToolType.SPADE, GTToolType.SAW, GTToolType.HARD_HAMMER, GTToolType.WRENCH, GTToolType.FILE, GTToolType.CROWBAR, GTToolType.SCREWDRIVER, GTToolType.WIRE_CUTTER, GTToolType.SCYTHE, GTToolType.KNIFE, GTToolType.BUTCHERY_KNIFE, GTToolType.DRILL_LV, GTToolType.DRILL_MV, GTToolType.DRILL_HV, GTToolType.DRILL_EV, GTToolType.DRILL_IV, GTToolType.CHAINSAW_LV, GTToolType.WRENCH_LV, GTToolType.WRENCH_HV, GTToolType.WRENCH_IV, GTToolType.BUZZSAW, GTToolType.SCREWDRIVER_LV, GTToolType.WIRE_CUTTER_LV, GTToolType.WIRE_CUTTER_HV,  GTToolType.WIRE_CUTTER_IV]))
-	
+		.fluidPipeProperties(100, 1166, true,false, false, false)
+
     event.create('awakened_echo')
 		.ingot()
 		.liquid()
@@ -1123,7 +1063,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('animal_pen')
         .category('animal_pen')
         .setEUIO('in')
-        .setMaxIOSize(4, 4, 0, 1) 
+        .setMaxIOSize(4, 4, 0, 2) 
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)

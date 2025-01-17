@@ -88,7 +88,22 @@ event.remove({ output: 'gtceu:bronze_large_boiler'})
 event.remove({ output: 'extendedcrafting:luminessence'})
 event.remove({ output: 'extendedcrafting:black_iron_ingot'})
 event.remove({ output: 'gtceu:phenolic_circuit_board'})
+event.remove({ input: 'gtceu:magical_alloy_dust'})
+event.remove({ input: 'gtceu:weak_synthetic_dust'})
+event.remove({ input: 'gtceu:glowing_dust'})
+event.remove({ input: 'gtceu:blazing_dust'})
+event.remove({ input: 'gtceu:weak_synthetic_dust'})
+event.remove({ input: 'gtceu:elementium_dust'})
+event.remove({ input: 'gtceu:arcane_gold_dust'})
 event.remove({ input: 'gtceu:natures_alloy_dust'})
+event.remove({ input: 'gtceu:awakened_echo_dust'})
+
+event.remove({ output: 'gtceu:diode'})
+
+event.remove({ output: 'gtceu:mv_machine_hull'})
+event.remove({ output: 'gtceu:mv_steam_turbine'})
+
+event.remove({ output: Fluid.of('gtceu:biomass')})
 
 event.remove({ type: 'twilightforest:uncrafting' })
 event.remove({ output: 'gtceu:brass_ingot', type: 'minecraft:smelting' })
@@ -245,18 +260,7 @@ event.recipes.create.pressing('gtceu:copper_plate', 'gtceu:copper_ingot')
 		event.recipes.createFilling('gtceu:treated_wood_planks', ['gtceu:treated_wood_planks', Fluid.of('kubejs:crude_insulator', 144)])
 	]).transitionalItem('gtceu:treated_wood_planks').loops(2)
 	
-   event.recipes.create.sequenced_assembly('gtceu:red_alloy_single_cable','gtceu:red_alloy_single_wire', [
-		event.recipes.createFilling('gtceu:red_alloy_single_wire', ['gtceu:red_alloy_single_wire', Fluid.of('kubejs:crude_insulator', 144)]),
-		event.recipes.createPressing('gtceu:red_alloy_single_wire','gtceu:red_alloy_single_wire')
-	]).transitionalItem('gtceu:red_alloy_single_wire').loops(1)
-   event.recipes.create.sequenced_assembly('gtceu:glowing_single_cable','gtceu:glowing_single_wire', [
-		event.recipes.createFilling('gtceu:glowing_single_wire', ['gtceu:glowing_single_wire', Fluid.of('kubejs:crude_insulator', 144)]),
-		event.recipes.createPressing('gtceu:glowing_single_wire','gtceu:glowing_single_wire')
-	]).transitionalItem('gtceu:glowing_single_wire').loops(1)
-   event.recipes.create.sequenced_assembly('gtceu:blazing_single_cable','gtceu:blazing_single_wire', [
-		event.recipes.createFilling('gtceu:blazing_single_wire', ['gtceu:blazing_single_wire', Fluid.of('kubejs:crude_insulator', 144)]),
-		event.recipes.createPressing('gtceu:blazing_single_wire','gtceu:blazing_single_wire')
-	]).transitionalItem('gtceu:blazing_single_wire').loops(1)
+ 
 	
    event.recipes.create.sequenced_assembly('create:precision_mechanism','gtceu:brass_plate', [
 		event.recipes.createDeploying('gtceu:brass_plate', ['gtceu:brass_plate', 'create:cogwheel']),
@@ -1265,6 +1269,7 @@ event.recipes.create.pressing('gtceu:copper_plate', 'gtceu:copper_ingot')
 	D: '#forge:tools/wrenches'
   }
 ).damageIngredient('#forge:tools/wrenches').damageIngredient('#forge:tools/hammers')
+
 	
 	event.recipes.ars_nouveau.enchanting_apparatus(
         [

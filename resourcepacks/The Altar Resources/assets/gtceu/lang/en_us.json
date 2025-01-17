@@ -15,6 +15,7 @@
 	  "item.gtceu.phenolic_circuit_board": "Magical Circuit Board",
 	  "item.gtceu.phenolic_printed_circuit_board": "Magical Printed Circuit Board",
 	  "item.gtceu.silicon_boule": "Arcane-Silicon Boule",
-	  "item.gtceu.silicon_wafer": "Arcane-Silicon Wafer"
+	  "item.gtceu.silicon_wafer": "Arcane-Silicon Wafer",
+	  "item.gtceu.diode": "Weak Diode"
 
 }

@@ -7,7 +7,9 @@
    "block.gtceu.altar_tier_4": "Altar MK04",
    "block.gtceu.essence_refinery_1": "Essence Refinery MK01",
    "block.gtceu.lv_dna_fabricator": "Basic DNA Fabricator",
-   "block.gtceu.lv_animal_pen": "Basic Animal Pen",
+   "block.gtceu.mv_dna_fabricator": "Advanced DNA Fabricator",
+
+   "block.gtceu.lv_animal_pen": "Animal Pen",
    "block.gtceu.foundry": "Foundry MK01",
    "gtceu.foundry": "Foundry",
    "block.gtceu.lv_caster": "Casting Station",
@@ -20,6 +22,8 @@
    "material.gtceu.blazing": "Blazing",
    "material.gtceu.awakened_echo": "Awakened Echo",
    "material.gtceu.sterile_bio_alloy": "Sterile Bio Alloy",
+   "material.gtceu.weak_synthetic": "Weak Synthetic",
+
    "material.gtceu.synthetic_neuron": "Synthetic Neuron",
    "material.gtceu.elementium": "Elementium",
 
