@@ -8,6 +8,8 @@
    "block.gtceu.essence_refinery_1": "Essence Refinery MK01",
    "block.gtceu.lv_dna_fabricator": "Basic DNA Fabricator",
    "block.gtceu.mv_dna_fabricator": "Advanced DNA Fabricator",
+   "block.gtceu.lv_crop_simulator": "Basic Crop Simulator",
+   "block.gtceu.mv_crop_simulator": "Advanced Crop Simulator",
 
    "block.gtceu.lv_animal_pen": "Animal Pen",
    "block.gtceu.foundry": "Foundry MK01",
@@ -28,9 +30,8 @@
    "material.gtceu.elementium": "Elementium",
 
    "gtceu.essence_refinery": "Essence Refinery",
-   "gtceu.crop_simulator": "Crop Simulator",
    "gtceu.resource_combinator": "Resource Combinator",
-   "gtceu.dna_fabricator": "DNA Fabricator",
+   "block.gtceu.resource_combinator": "Resource Combinator",
    "gtceu.dream_room_amplifier": "Dreamroom Amplifier",
    "block.gtceu.dream_room_amplifier": "Dreamroom Amplifier",
    "block.gtceu.meat_freezer": "Meat Freezer",

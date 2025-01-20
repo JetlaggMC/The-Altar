@@ -15,7 +15,6 @@ event.remove({ output: 'create:mechanical_mixer' })
 event.remove({ output: 'create:millstone' })
 event.remove({ output: 'create:water_wheel' })
 event.remove({ output: 'create:large_water_wheel' })
-event.remove({ output: 'gtceu:long_andesite_alloy_rod' })
 event.remove({ output: 'gtceu:andesite_alloy_ring' })
 event.remove({ input: '#forge:tools/mortars' })
 event.remove({ output: 'gtceu:cupronickel_coil_block' })
@@ -97,12 +96,17 @@ event.remove({ input: 'gtceu:elementium_dust'})
 event.remove({ input: 'gtceu:arcane_gold_dust'})
 event.remove({ input: 'gtceu:natures_alloy_dust'})
 event.remove({ input: 'gtceu:awakened_echo_dust'})
+event.remove({ output: 'gtceu:frostproof_machine_casing'})
+event.remove({ output: 'gtceu:heatproof_machine_casing'})
+
+event.remove({ output: 'gtceu:silicon'})
 
 event.remove({ output: 'gtceu:diode'})
 
 event.remove({ output: 'gtceu:mv_machine_hull'})
 event.remove({ output: 'gtceu:mv_steam_turbine'})
-
+	
+event.remove({ output: Fluid.of('gtceu:rubber')})
 event.remove({ output: Fluid.of('gtceu:biomass')})
 
 event.remove({ type: 'twilightforest:uncrafting' })
@@ -119,6 +123,19 @@ event.replaceOutput(
   { output: 'gtceu:andesite_alloy_ingot' }, // Arg 1: the filter
   'gtceu:andesite_alloy_ingot',            // Arg 2: the item to replace
   'create:andesite_alloy'         // Arg 3: the item to replace it with
+  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
+)
+	
+event.replaceInput(
+  { input: 'gtceu:elementium_ingot' }, // Arg 1: the filter
+  'gtceu:elementium_ingot',            // Arg 2: the item to replace
+  'botania:elementium_ingot'         // Arg 3: the item to replace it with
+  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
+)
+event.replaceOutput(
+  { output: 'gtceu:andesite_alloy_ingot' }, // Arg 1: the filter
+  'gtceu:andesite_alloy_ingot',            // Arg 2: the item to replace
+  'botania:elementium_ingot'         // Arg 3: the item to replace it with
   // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
 )
 event.shapeless('9x minecraft:iron_nugget', [ // arg 1: output
@@ -149,7 +166,6 @@ event.shapeless('1x minecraft:flint_and_steel', [ // arg 1: output
 	event.recipes.create.filling('kubejs:jungle_shard', [Fluid.of('kubejs:jungle_essence',1000), 'kubejs:blank_shard'])
 
 	event.recipes.create.pressing('gtceu:andesite_alloy_plate', 'create:andesite_alloy')
-	event.recipes.create.pressing('gtceu:long_andesite_alloy_rod', 'gtceu:andesite_alloy_rod')
 	event.recipes.create.pressing('gtceu:andesite_alloy_ring', 'gtceu:andesite_alloy_bolt')
 	event.recipes.create.pressing('gtceu:cupronickel_plate', 'gtceu:cupronickel_ingot')
 	event.recipes.create.pressing('gtceu:cupronickel_foil', 'gtceu:cupronickel_plate')
@@ -250,6 +266,7 @@ event.recipes.create.pressing('gtceu:copper_plate', 'gtceu:copper_ingot')
 	event.recipes.create.mixing('2x gtceu:cupronickel_dust',	['1x gtceu:copper_dust', '1x gtceu:nickel_dust'])
  	event.recipes.create.mixing(Fluid.of('kubejs:crude_insulator', 288),[Fluid.of('create:honey',144),Fluid.of('gtceu:rubber',144), '1x gtceu:sulfur_dust']).heated()
 	event.recipes.create.mixing('2x gtceu:fireclay_dust',	['1x gtceu:clay_dust', '1x gtceu:brick_dust']).heated()
+	event.recipes.create.mixing('1x kubjes:blank_shard',	['1x kubejs:andesite_alloy', '1x #forge:glass']).heated()
  	event.recipes.create.mixing(Fluid.of('gtceu:glowing', 288),[Fluid.of('gtceu:iron',144), '1x minecraft:glow_ink_sac']).heated()
  	event.recipes.create.mixing(Fluid.of('gtceu:red_alloy', 288),[Fluid.of('gtceu:iron',144), '1x minecraft:redstone']).heated()
  	event.recipes.create.mixing(Fluid.of('gtceu:blazing', 1296),['8x minecraft:blaze_powder', '1x kubejs:nether_dust']).superheated()
@@ -876,6 +893,17 @@ event.recipes.create.pressing('gtceu:copper_plate', 'gtceu:copper_ingot')
 	H: 'gtceu:blazing_single_cable'
   }
 ).damageIngredient('#forge:tools/wrenches').damageIngredient('#forge:tools/screwdrivers')
+	event.shaped('2x gtceu:frostproof_machine_casing', [
+    'ABA', 
+    'ACA',
+	'ADA'
+  ], {
+    A: 'gtceu:awakened_echo_plate',
+	B: '#forge:tools/hammers',
+	C: 'gtceu:awakened_echo_frame',
+	D: '#forge:tools/screwdrivers'
+  }
+).damageIngredient('#forge:tools/wrenches').damageIngredient('#forge:tools/hammers')
 	event.shaped('1x gtceu:vacuum_tube', [
     'ABA', 
     'CCC'
@@ -1013,7 +1041,7 @@ event.recipes.create.pressing('gtceu:copper_plate', 'gtceu:copper_ingot')
 	B: 'gtceu:natures_alloy_plate',
 	C: 'gtceu:vacuum_tube',
 	D: 'gtceu:resin_printed_circuit_board',
-	E: 'gtceu:glowing_single_cable'
+	E: 'gtceu:blazing_single_cable'
   }
 )
 	event.shaped('1x gtceu:good_electronic_circuit', [
@@ -1256,6 +1284,20 @@ event.recipes.create.pressing('gtceu:copper_plate', 'gtceu:copper_ingot')
     A: 'gtceu:blazing_single_cable',
 	B: '#gtceu:circuits/lv',
 	C: 'gtceu:bronze_firebox_casing'
+  }
+)
+	event.shaped('1x gtceu:meat_freezer', [
+    'ABA', 
+    'CDC',
+	'EFE'
+  ], {
+    A: '#gtceu:circuits/hv',
+	B: 'kubejs:snow_golem_model_1',
+	C: 'gtceu:mv_electric_pump',
+	D: 'gtceu:frostproof_machine_casing',
+	E: 'gtceu:weak_synthetic_single_cable',
+	F: 'kubejs:magma_model_1'
+
   }
 )
 	event.shaped('1x gtceu:steam_machine_casing', [

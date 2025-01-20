@@ -9,6 +9,7 @@ ServerEvents.recipes(event => {
 	event.remove({ output: 'gtceu:mv_assembler' })
 	event.remove({ output: 'gtceu:mv_voltage_coil' })
 	event.remove({ output: 'gtceu:mv_energy_input_hatch' })
+	event.remove({ output: 'gtceu:mv_circuit_assembler' })
 
 	event.recipes.extendedcrafting.shaped_table(
 		"gtceu:mv_dna_fabricator",
@@ -90,6 +91,20 @@ ServerEvents.recipes(event => {
 	C: 'gtceu:mv_conveyor_module',
 	D: 'gtceu:mv_machine_hull',
 	E: 'gtceu:weak_synthetic_single_cable'
+  }
+)
+	//circuit_assembler
+		event.shaped('1x gtceu:mv_circuit_assembler', [
+    'ABC', 
+    'DED',
+	'FBF'
+  ], {
+    A: 'gtceu:mv_robot_arm',
+	B: '#gtceu:circuits/mv',
+	C: 'gtceu:mv_emitter',
+	D: 'gtceu:mv_conveyor_module',
+	E: 'gtceu:mv_machine_hull',
+	F: 'gtceu:weak_synthetic_single_cable'
   }
 )
 	//voltage coil

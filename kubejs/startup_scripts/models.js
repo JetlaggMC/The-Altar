@@ -29,6 +29,7 @@ StartupEvents.registry('item', e => {
   e.create('magma_model_1')
   e.create('skeleton_model_1')
   e.create('warden_model_1')
+  e.create('gaia_model_1')
 
   e.create('shulker_model_2')
   e.create('enderman_model_2')
@@ -39,7 +40,8 @@ StartupEvents.registry('item', e => {
   e.create('magma_model_2')
   e.create('skeleton_model_2')	
   e.create('warden_model_2')
-	
+  e.create('gaia_model_2')
+
   e.create('sheep_model_1')
   e.create('chicken_model_1')
   e.create('pig_model_1')
@@ -48,6 +50,7 @@ StartupEvents.registry('item', e => {
   e.create('fish_model_1')
   e.create('axolotl_model_1')
   e.create('bee_model_1')
+  e.create('snow_golem_model_1')
 
   e.create('sheep_model_2')
   e.create('chicken_model_2')
@@ -57,6 +60,7 @@ StartupEvents.registry('item', e => {
   e.create('fish_model_2')
   e.create('axolotl_model_2')
   e.create('bee_model_2')
+  e.create('snow_golem_model_2')
 
   e.create('life_sample_1')
   e.create('life_sample_2')

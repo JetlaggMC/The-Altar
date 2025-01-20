@@ -22,4 +22,13 @@ ServerEvents.recipes(event => {
 		.chancedOutput('1x minecraft:poppy', 5000, 500)
 		.duration(12000)
 		.EUt(8)	
+
+	event.recipes.gtceu.crop_simulator('mystical_flowers_1')
+		.circuit(1)
+		.notConsumable(Item.of('1x kubejs:mystical_flowers_1'))
+		.inputFluids(Fluid.of('kubejs:manafloraethylene', 100))
+		.itemOutputs(Item.of('1x botania:white_petal'))
+		.chancedOutput('1x botania:white_petal', 5000, 500)
+		.duration(12000)
+		.EUt(8)	
 })

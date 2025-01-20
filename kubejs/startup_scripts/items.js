@@ -38,7 +38,7 @@ StartupEvents.registry('item', e => {
   e.create('terrasteel_dust')
   e.create('elementium_dust')
 	
-
+  e.create('cooked_sterile_meat')
 
 	
 
@@ -242,10 +242,14 @@ StartupEvents.registry("fluid", (event) => {
     .thinTexture(0x795eb5)
     .bucketColor(0x795eb5)
     .displayName('Twilight Infused Growth Medium')
-  event.create('floroethylene')
+  event.create('floraethylene')
     .thinTexture(0x3F322B)
     .bucketColor(0x3F322B)
-    .displayName('Floroetyhlene')
+    .displayName('Flora-Etyhlene')
+  event.create('manafloraethylene')
+    .thinTexture(0x39c1b8)
+    .bucketColor(0x39c1b8)
+    .displayName('Mana-Flora-Etyhlene')
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
@@ -261,7 +265,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
 		.liquid()
 		.color(0x03c5e8).iconSet(GTMaterialIconSet.METALLIC)
-        .cableProperties(GTValues.V[GTValues.LV],16,1)
+        .cableProperties(GTValues.V[GTValues.LV],16,0,true)
         .flags(GTMaterialFlags.IS_MAGNETIC,GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING,GTMaterialFlags.GENERATE_FINE_WIRE)
     event.create('blazing')
         .ingot()
@@ -274,7 +278,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 		.ingot()
 		.liquid()
 		.color(0xec52c8).iconSet(GTMaterialIconSet.METALLIC)
-        .cableProperties(GTValues.V[GTValues.MV],16,1)
+        .cableProperties(GTValues.V[GTValues.MV],16,0,true)
         .flags(GTMaterialFlags.IS_MAGNETIC,GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING,GTMaterialFlags.GENERATE_FINE_WIRE,GTMaterialFlags.GENERATE_FRAME)
 	event.create('weak_synthetic')
         .ingot()
@@ -288,7 +292,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
 		.liquid()
 		.color(0xdaf9b9).iconSet(GTMaterialIconSet.METALLIC)
-        .cableProperties(GTValues.V[GTValues.HV],16,1)
+        .cableProperties(GTValues.V[GTValues.HV],16,0,true)
         .flags(GTMaterialFlags.IS_MAGNETIC,GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING,GTMaterialFlags.GENERATE_FINE_WIRE)
 
 	
@@ -309,7 +313,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
 		.liquid()
 		.color(0xdfb01a).iconSet(GTMaterialIconSet.METALLIC)
-        .flags(GTMaterialFlags.IS_MAGNETIC,GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING)
+        .flags(GTMaterialFlags.IS_MAGNETIC,GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING,GTMaterialFlags.GENERATE_FRAME)
 
 
 	   event.create('natures_alloy')
@@ -332,7 +336,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 		.ingot()
 		.liquid()
         .color(0x0ac184).iconSet(GTMaterialIconSet.METALLIC)
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING)
+        .cableProperties(GTValues.V[GTValues.HV],16,1)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING,GTMaterialFlags.GENERATE_FRAME)
         .toolStats(new ToolProperty(4.0, 4.0, 768, 4, [GTToolType.SWORD, GTToolType.PICKAXE, GTToolType.SHOVEL, GTToolType.AXE, GTToolType.HOE, GTToolType.MINING_HAMMER, GTToolType.SPADE, GTToolType.SAW, GTToolType.HARD_HAMMER, GTToolType.WRENCH, GTToolType.FILE, GTToolType.CROWBAR, GTToolType.SCREWDRIVER, GTToolType.WIRE_CUTTER, GTToolType.SCYTHE, GTToolType.KNIFE, GTToolType.BUTCHERY_KNIFE, GTToolType.DRILL_LV, GTToolType.DRILL_MV, GTToolType.DRILL_HV, GTToolType.DRILL_EV, GTToolType.DRILL_IV, GTToolType.CHAINSAW_LV, GTToolType.WRENCH_LV, GTToolType.WRENCH_HV, GTToolType.WRENCH_IV, GTToolType.BUZZSAW, GTToolType.SCREWDRIVER_LV, GTToolType.WIRE_CUTTER_LV, GTToolType.WIRE_CUTTER_HV,  GTToolType.WIRE_CUTTER_IV]))
 	
     event.create('sterile_bio_alloy')
@@ -453,14 +458,17 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 		.appearanceBlock(() => Block.getBlock('create:andesite_casing'))
         .recipeTypes('resource_combinator')
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle('CGGGC', 'CGGGC','CGGGC')
-            .aisle('CGGGC', 'CAAAC','CGGGC')
-            .aisle('CGGGC', 'CGGGM','CGGGC')
+            .aisle('BBB', 'F F','F F','CCC','CGC','CGC','CGC','CCC')
+            .aisle('BBB', '   ','   ','CHC','GEG','GEG','GEG','CCC')
+            .aisle('BBB', 'F F','F F','CMC','CGC','CGC','CGC','CCC')
 			.where('M', Predicates.controller(Predicates.blocks(definition.get())))
-	        .where('A', Predicates.blocks('gtceu:cupronickel_coil_block'))
-            .where('G', Predicates.blocks('create:framed_glass'))
-			.where('C', Predicates.blocks('gtceu:heatproof_machine_casing')
+	        .where('F', Predicates.blocks('gtceu:blazing_frame'))
+            .where('G', Predicates.blocks('botania:mana_glass'))
+            .where('C', Predicates.blocks('gtceu:heatproof_machine_casing')
                 .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+            .where('E', Predicates.blocks('gtceu:kanthal_coil_block'))
+            .where('H',	Predicates.abilities(PartAbility.MUFFLER))
+			.where('B', Predicates.blocks('gtceu:bronze_firebox_casing'))
         	.build())
         .workableCasingRenderer(
             "gtceu:block/casings/solid/machine_casing_heatproof",
@@ -1019,13 +1027,13 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('crop_simulator')
         .category('crop_simulator')
         .setEUIO('in')
-        .setMaxIOSize(1, 2, 1, 0)
+        .setMaxIOSize(2, 2, 1, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.BATH)
     event.create('resource_combinator')
         .category('resource_combinator')
         .setEUIO('in')
-        .setMaxIOSize(1, 1, 1, 0)
+        .setMaxIOSize(16, 1, 1, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.BATH)
     event.create('caster')
@@ -1071,7 +1079,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
    event.create('dream_room_amplifier')
         .category('dream_room_amplifier')
         .setEUIO('in')
-        .setMaxIOSize(6, 1, 2, 1) 
+        .setMaxIOSize(9, 1, 2, 1) 
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
