@@ -1188,7 +1188,7 @@ event.recipes.create.pressing('gtceu:copper_plate', 'gtceu:copper_ingot')
     'CDE',
 	'FBF'
   ], {
-    A: '#forge/glass',
+    A: '#forge:glass',
 	B: '#gtceu:circuits/lv',
 	C: 'gtceu:lv_electric_piston',
 	D: 'gtceu:lv_machine_hull',
@@ -1201,7 +1201,7 @@ event.recipes.create.pressing('gtceu:copper_plate', 'gtceu:copper_ingot')
     'CDC',
 	'EFE'
   ], {
-    A: '#forge/glass',
+    A: '#forge:glass',
 	B: 'gtceu:natures_alloy_rotor',
 	C: 'gtceu:blazing_single_cable',
 	D: 'gtceu:lv_electric_motor',
@@ -1215,7 +1215,7 @@ event.recipes.create.pressing('gtceu:copper_plate', 'gtceu:copper_ingot')
 	'DED'
   ], {
     A: 'gtceu:natures_alloy_plate',
-	B: '#forge/glass',
+	B: '#forge:glass',
 	C: 'gtceu:lv_machine_hull',
 	D: '#gtceu:circuits/lv',
 	E: 'gtceu:lv_electric_pump'
