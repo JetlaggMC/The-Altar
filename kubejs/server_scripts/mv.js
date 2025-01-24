@@ -10,6 +10,7 @@ ServerEvents.recipes(event => {
 	event.remove({ output: 'gtceu:mv_voltage_coil' })
 	event.remove({ output: 'gtceu:mv_energy_input_hatch' })
 	event.remove({ output: 'gtceu:mv_circuit_assembler' })
+	event.remove({ output: 'gtceu:kanthal_coil_block' })
 
 	event.recipes.extendedcrafting.shaped_table(
 		"gtceu:mv_dna_fabricator",
@@ -274,6 +275,13 @@ ServerEvents.recipes(event => {
 		.itemOutputs(Item.of('1x gtceu:mv_emitter'))
 		.duration(50)
 		.EUt(30)
-	
+//coil
+	event.recipes.gtceu.assembler('kanthal_coil_block')
+		.itemInputs(Item.of('8x gtceu:elementium_double_wire'))
+		.itemInputs(Item.of('8x gtceu:magical_alloy_foil'))
+		.inputFluids(Fluid.of('kubejs:infused_source',144))
+		.itemOutputs(Item.of('1x gtceu:kanthal_coil_block'))
+		.duration(300)
+		.EUt(120)
 
 	})

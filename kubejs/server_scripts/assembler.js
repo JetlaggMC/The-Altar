@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
 		.itemInputs(Item.of('1x minecraft:rabbit'))
 		.itemInputs(Item.of('1x minecraft:porkchop'))
 		.itemOutputs(Item.of('1x kubejs:raw_meat_glob'))
-		.inputFluids(Fluid.of('kubejs:fermented_biomass',288))
+		.inputFluids(Fluid.of('gtceu:fermented_biomass',288))
 
 		.duration(50)
 		.EUt(16)

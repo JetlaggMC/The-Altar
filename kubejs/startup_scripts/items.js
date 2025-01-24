@@ -250,6 +250,10 @@ StartupEvents.registry("fluid", (event) => {
     .thinTexture(0x39c1b8)
     .bucketColor(0x39c1b8)
     .displayName('Mana-Flora-Etyhlene')
+  event.create('dense_insulator')
+    .thinTexture(0x4A1408)
+    .bucketColor(0x4A1408)
+    .displayName('Dense Insulator')
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
@@ -279,7 +283,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 		.liquid()
 		.color(0xec52c8).iconSet(GTMaterialIconSet.METALLIC)
         .cableProperties(GTValues.V[GTValues.MV],16,0,true)
-        .flags(GTMaterialFlags.IS_MAGNETIC,GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING,GTMaterialFlags.GENERATE_FINE_WIRE,GTMaterialFlags.GENERATE_FRAME)
+        .flags(GTMaterialFlags.IS_MAGNETIC,GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING,GTMaterialFlags.GENERATE_FINE_WIRE,GTMaterialFlags.GENERATE_FRAME,GTMaterialFlags.GENERATE_FOIL)
 	event.create('weak_synthetic')
         .ingot()
 		.liquid()
@@ -416,7 +420,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .recipeType('crop_simulator',true,true)
 
 	//dna_fabricator
-	event.create('dna_fabricator', 'simple', 0, GTValues.LV,GTValues.MV)
+	event.create('dna_fabricator', 'simple', 0, GTValues.LV,GTValues.MV,GTValues.HV,GTValues.EV)
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('dna_fabricator',true,true)
 		.workableTieredHullRenderer(GTCEu.id("block/machines/dna_fabricator"))
