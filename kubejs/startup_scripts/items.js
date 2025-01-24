@@ -39,6 +39,9 @@ StartupEvents.registry('item', e => {
   e.create('elementium_dust')
 	
   e.create('cooked_sterile_meat')
+  e.create('dense_insulator_sheet')
+  e.create('crude_insulator_sheet')
+  e.create('hyper_insulator_sheet')
 
 	
 
@@ -254,6 +257,14 @@ StartupEvents.registry("fluid", (event) => {
     .thinTexture(0x4A1408)
     .bucketColor(0x4A1408)
     .displayName('Dense Insulator')
+    event.create('hyper_insulator')
+    .thinTexture(0x331650)
+    .bucketColor(0x331650)
+    .displayName('Hyper Insulator')
+    event.create('living_matter')
+    .thinTexture(0xBD5B79)
+    .bucketColor(0xBD5B79)
+    .displayName('Living Matter')
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
@@ -348,7 +359,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 		.ingot()
 		.liquid()
         .color(0xe2230d).iconSet(GTMaterialIconSet.METALLIC)
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING,GTMaterialFlags.GENERATE_FOIL,GTMaterialFlags.GENERATE_FINE_WIRE)
         .toolStats(new ToolProperty(5.0, 5.0, 1024, 5, [GTToolType.SWORD, GTToolType.PICKAXE, GTToolType.SHOVEL, GTToolType.AXE, GTToolType.HOE, GTToolType.MINING_HAMMER, GTToolType.SPADE, GTToolType.SAW, GTToolType.HARD_HAMMER, GTToolType.WRENCH, GTToolType.FILE, GTToolType.CROWBAR, GTToolType.SCREWDRIVER, GTToolType.WIRE_CUTTER, GTToolType.SCYTHE, GTToolType.KNIFE, GTToolType.BUTCHERY_KNIFE, GTToolType.DRILL_LV, GTToolType.DRILL_MV, GTToolType.DRILL_HV, GTToolType.DRILL_EV, GTToolType.DRILL_IV, GTToolType.CHAINSAW_LV, GTToolType.WRENCH_LV, GTToolType.WRENCH_HV, GTToolType.WRENCH_IV, GTToolType.BUZZSAW, GTToolType.SCREWDRIVER_LV, GTToolType.WIRE_CUTTER_LV, GTToolType.WIRE_CUTTER_HV,  GTToolType.WIRE_CUTTER_IV]))
 
     event.create('champions_alloy')

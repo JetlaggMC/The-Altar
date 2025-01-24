@@ -271,7 +271,7 @@ event.recipes.gtceu.assembler('hv_machine_hull')
     A: 'gtceu:awakened_echo_single_cable',
 	B: 'gtceu:synthetic_neuron_rod',
 	C: '#gtceu:circuits/hv',
-	D: 'botania:life_essence'
+	D: 'botania:corporea_spark_master'
   }
 )
 	event.recipes.gtceu.assembler('hv_emitter')

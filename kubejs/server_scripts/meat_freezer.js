@@ -4,5 +4,12 @@ ServerEvents.recipes(event => {
 		.itemInputs(Item.of('1x botania:corporea_spark_master'))
 		.outputFluids(Fluid.of('kubejs:clean_growth_medium'),1000)
 		.duration(200)
-		.EUt(8)	
+		.EUt(120)	
+
+	event.recipes.gtceu.meat_freezer('sterile_meat')
+		.inputFluids(Fluid.of('kubejs:clean_growth_medium'),288)
+		.itemInputs(Item.of('1x kubejs:raw_meat_glob'))
+		.itemOutputs(Item.of('1x kubejs:sterile_meat'))
+		.duration(200)
+		.EUt(120)	
 })
