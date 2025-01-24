@@ -271,9 +271,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('andesite_alloy')
         .ingot()
 		.liquid()
-		.color(0xb9c1b5).iconSet(GTMaterialIconSet.METALLIC)
+		.color(0xb9c1b5).iconSet(GTMaterialIconSet.getByName('alloy'))
         .components('1x andesite', '1x iron')
-        .flags(GTMaterialFlags.IS_MAGNETIC,GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING)
+        .flags(GTMaterialFlags.IS_MAGNETIC,GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMELTING)
         .toolStats(new ToolProperty(2.0, 2.0, 256, 2, [GTToolType.SWORD, GTToolType.PICKAXE, GTToolType.SHOVEL, GTToolType.AXE, GTToolType.HOE, GTToolType.MINING_HAMMER, GTToolType.SPADE, GTToolType.SAW, GTToolType.HARD_HAMMER, GTToolType.WRENCH, GTToolType.FILE, GTToolType.CROWBAR, GTToolType.SCREWDRIVER, GTToolType.WIRE_CUTTER, GTToolType.SCYTHE, GTToolType.KNIFE, GTToolType.BUTCHERY_KNIFE, GTToolType.DRILL_LV, GTToolType.DRILL_MV, GTToolType.DRILL_HV, GTToolType.DRILL_EV, GTToolType.DRILL_IV, GTToolType.CHAINSAW_LV, GTToolType.WRENCH_LV, GTToolType.WRENCH_HV, GTToolType.WRENCH_IV, GTToolType.BUZZSAW, GTToolType.SCREWDRIVER_LV, GTToolType.WIRE_CUTTER_LV, GTToolType.WIRE_CUTTER_HV,  GTToolType.WIRE_CUTTER_IV]))
 
     event.create('glowing')

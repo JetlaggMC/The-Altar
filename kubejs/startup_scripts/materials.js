@@ -9,3 +9,12 @@ const $WireProperties = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.
     	GTMaterials.get('gtceu:plutonium_241').setProperty(PropertyKey.WIRE, new $WireProperties(GTValues.V[GTValues.IV],16,1))
 
 });
+
+GTCEuStartupEvents.materialModification( event => {
+    TagPrefix.ingot.setIgnored(GTMaterialRegistry.getMaterial("andesite_alloy"))
+})
+
+GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
+    event.create('alloy')
+        .parent('metallic')
+})

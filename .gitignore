@@ -37,3 +37,5 @@ usernamecache.json
 /.vscode
 config/ad_astra.jsonc
 config/embeddium-fingerprint.json
+/config/
+/XaeroWaypoints_BACKUP240807/

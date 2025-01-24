@@ -476,7 +476,33 @@ event.recipes.create.pressing('gtceu:copper_plate', 'gtceu:copper_ingot')
 
   }
 )
-	
+event.shaped('1x create:encased_fan', [
+        'DSH',
+        'CBR',
+        ' SW'
+], {
+    D: '#forge:tools/screwdrivers',
+    W: '#forge:tools/wrenches',
+    H: '#forge:tools/hammers',
+    S: 'gtceu:andesite_alloy_screw',
+    C: 'create:andesite_casing',
+    B: 'create:shaft',
+    R: 'gtceu:iron_rotor'
+}).damageIngredient('#forge:tools/wrenches').damageIngredient('#forge:tools/screwdrivers').damageIngredient('#forge:tools/hammers')
+
+event.shaped('1x create:mechanical_drill', [
+    ' WD',
+    'BCH',
+    ' SD'
+], {
+    D: '#forge:double_plates/iron',
+    W: '#forge:tools/wrenches',
+    S: '#forge:tools/screwdrivers',
+    C: 'create:andesite_casing',
+    B: 'create:shaft',
+    H: 'gtceu:iron_drill_head'
+}).damageIngredient('#forge:tools/wrenches').damageIngredient('#forge:tools/screwdrivers')
+
 	event.shaped('1x create:mechanical_press', [
     'ABC', 
     'DED',
