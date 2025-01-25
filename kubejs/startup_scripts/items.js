@@ -32,9 +32,6 @@ StartupEvents.registry('item', e => {
   e.create('taiga_dust')
   e.create('source_gem_dust')
 
- 
-  e.create('plant_sample_1')
-
   e.create('terrasteel_dust')
   e.create('elementium_dust')
 	
@@ -265,6 +262,10 @@ StartupEvents.registry("fluid", (event) => {
     .thinTexture(0xBD5B79)
     .bucketColor(0xBD5B79)
     .displayName('Living Matter')
+    event.create('sterile_meat')
+    .thinTexture(0x98478d)
+    .bucketColor(0x98478d)
+    .displayName('Sterile Meat')
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {

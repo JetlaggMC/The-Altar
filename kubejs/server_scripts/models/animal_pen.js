@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
 		.itemOutputs(Item.of('16x minecraft:leather'))
 		.itemOutputs(Item.of('16x minecraft:beef'))
 		.outputFluids(Fluid.of('minecraft:milk', 8000))
-		.outputFluids(Fluid.of('gtceu:biomass',10))
+		.outputFluids(Fluid.of('gtceu:biomass',100))
 
 		.duration(1200)
 		.EUt(92)

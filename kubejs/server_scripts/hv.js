@@ -12,37 +12,72 @@ ServerEvents.recipes(event => {
 	event.remove({ output: 'gtceu:hv_circuit_assembler' })
 	event.remove({ output: 'gtceu:hv_machine_hull' })
 	event.remove({ output: 'gtceu:nichrome_coil_block' })
+	event.remove({ output: 'gtceu:hv_machine_casing' })
+	event.remove({ output: 'gtceu:hv_laser_engraver' })
 
 	event.recipes.extendedcrafting.shaped_table(
 		"gtceu:hv_dna_fabricator",
-		['ABCDA', 
-		 'EFGHI',
-		 'JKLKJ',
-		 'MNOPQ',
-		 'ARSTA'
+		['ABCDEFA', 
+		 'GHIJKHL',
+		 'MNOPOQR',
+		 'STPUPVS',
+		 'XYOPOab',
+		 'cHdefHg',
+		 'AhijklA'
 	], {
 	A: 'gtceu:hv_voltage_coil',
-	B: 'kubejs:slime_model_2',
-	C: 'kubejs:skeleton_model_2',
-	D: 'kubejs:spider_model_2',
-	E: 'kubejs:wheat_seeds_mk2',
-	F: 'kubejs:carrots_mk2',
-	G: 'kubejs:glow_berries_mk2',
-	H: 'kubejs:potatoes_mk2',
-	I: 'kubejs:kelp_mk2',
-	J: 'gtceu:hv_conveyor_module',
-    K: '#gtceu:circuits/hv',
-	L: 'gtceu:hv_machine_hull',
-	M: 'kubejs:cow_model_2',
-	N: 'kubejs:squid_model_2',
-	O: 'kubejs:chicken_model_2',
-	P: 'kubejs:fish_model_2',
-	Q: 'kubejs:bee_model_2',
-	R: 'kubejs:blaze_model_2',
-	S: 'kubejs:enderman_model_2',
-	T: 'kubejs:wither_skeleton_model_2'
+	B: 'kubejs:cactus_1',
+	C: 'kubejs:glowberries_1',
+	D: 'kubejs:trees_1',
+	E: 'kubejs:kelp_1',
+	F: 'kubejs:wheat_seeds_1',
+	G: 'kubejs:carrots_1',
+	H: 'gtceu:synthetic_neuron_rotor',
+	I: 'kubejs:spider_model_1',
+	J: 'kubejs:skeleton_model_1',
+    K: 'kubejs:slime_model_1',
+	L: 'kubejs:potatoes_1',
+	M: 'kubejs:mystical_flowers_1',
+	N: 'kubejs:wither_skeleton_model_1',
+	O: 'gtceu:awakened_echo_frame',
+	P: '#gtceu:circuits/ev',
+	Q: 'kubejs:phantom_model_1',
+	R: 'kubejs:sourceberries_1',
+	S: 'gtceu:hv_conveyor_module',
+	T: 'kubejs:blaze_model_1',
+	U: 'gtceu:hv_machine_hull',
+	V: 'kubejs:shulker_model_1',
+	X: 'kubejs:squid_model_2',
+	Y: 'kubejs:magma_model_1',
+	a: 'kubejs:enderman_model_1',
+	b: 'kubejs:bee_model_2',
+	c: 'kubejs:cow_model_2',
+	d: 'kubejs:ghast_model_1',
+	e: 'kubejs:creeper_model_1',
+	f: 'kubejs:zombie_model_1',
+	g: 'kubejs:fish_model_2',
+	h: 'kubejs:sheep_model_2',
+	i: 'kubejs:rabbit_model_2',
+	j: 'kubejs:pig_model_2',
+	k: 'kubejs:chicken_model_2',
+	l: 'kubejs:axolotl_model_2'
+
 	}).id('kubejs:extended/hv_dna_fabricator');
-	
+	event.shaped('1x gtceu:hv_machine_casing', [
+		'AAA', 
+		'ABA',
+		'AAA'
+	  ], {
+		A: 'gtceu:sterile_bio_alloy_plate',
+		B: '#forge:tools/wrenches'
+	  }
+	).damageIngredient('#forge:tools/wrenches')	
+	event.recipes.gtceu.assembler('hv_machine_casing')
+	.circuit(8)
+	.itemInputs(Item.of('8x gtceu:sterile_bio_alloy_plate'))
+	.itemOutputs(Item.of('1x gtceu:hv_machine_casing'))
+	.duration(50)
+	.EUt(16)
 	event.shaped('1x gtceu:hv_machine_hull', [
     'ABA', 
     'CDC'
@@ -109,13 +144,26 @@ event.recipes.gtceu.assembler('hv_machine_hull')
 	'FBF'
   ], {
     A: 'gtceu:hv_robot_arm',
-	B: '#gtceu:circuits/hv',
+	B: '#gtceu:circuits/ev',
 	C: 'gtceu:hv_emitter',
 	D: 'gtceu:hv_conveyor_module',
 	E: 'gtceu:hv_machine_hull',
 	F: 'gtceu:awakened_echo_single_cable'
   }
 )
+	//laser_engraver
+	event.shaped('1x gtceu:hv_laser_engraver', [
+		'ABA', 
+		'CDC',
+		'ECE'
+	  ], {
+		A: 'gtceu:hv_electric_piston',
+		B: 'gtceu:hv_emitter',
+		C: '#gtceu:circuits/hv',
+		D: 'gtceu:hv_machine_hull',
+		E: 'gtceu:awakened_echo_single_cable'
+	  }
+	)
 	//voltage coil
 		event.recipes.gtceu.assembler('hv_voltage_coil')
 		.circuit(1)

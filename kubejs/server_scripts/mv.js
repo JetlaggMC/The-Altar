@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
 	event.remove({ output: 'gtceu:mv_energy_input_hatch' })
 	event.remove({ output: 'gtceu:mv_circuit_assembler' })
 	event.remove({ output: 'gtceu:kanthal_coil_block' })
-
+	event.remove({ output: 'gtceu:mv_machine_casing' })
 	event.recipes.extendedcrafting.shaped_table(
 		"gtceu:mv_dna_fabricator",
 		['ABCDA', 
@@ -21,14 +21,14 @@ ServerEvents.recipes(event => {
 		 'ARSTA'
 	], {
 	A: 'gtceu:mv_voltage_coil',
-	B: 'kubejs:slime_model_1',
-	C: 'kubejs:skeleton_model_1',
-	D: 'kubejs:spider_model_1',
-	E: 'kubejs:wheat_seeds_mk1',
-	F: 'kubejs:carrots_mk1',
-	G: 'kubejs:glow_berries_mk1',
-	H: 'kubejs:potatoes_mk1',
-	I: 'kubejs:kelp_mk1',
+	B: 'botania:life_essence',
+	C: 'botania:gaia_pylon',
+	D: 'minecraft:echo_shard',
+	E: 'kubejs:axolotl_model_1',
+	F: 'kubejs:snow_golem_model_1',
+	G: 'kubejs:pig_model_1',
+	H: 'kubejs:sheep_model_1',
+	I: 'kubejs:rabbit_model_1',
 	J: 'gtceu:mv_conveyor_module',
     K: '#gtceu:circuits/hv',
 	L: 'gtceu:mv_machine_hull',
@@ -37,11 +37,19 @@ ServerEvents.recipes(event => {
 	O: 'kubejs:chicken_model_1',
 	P: 'kubejs:fish_model_1',
 	Q: 'kubejs:bee_model_1',
-	R: 'kubejs:blaze_model_1',
-	S: 'kubejs:enderman_model_1',
-	T: 'kubejs:wither_skeleton_model_1'
+	R: 'minecraft:nether_star',
+	S: 'botania:gaia_pylon',
+	T: 'minecraft:end_crystal'
 	}).id('kubejs:extended/mv_dna_fabricator');
-	
+	event.shaped('1x gtceu:mv_machine_casing', [
+		'AAA', 
+		'ABA',
+		'AAA'
+	  ], {
+		A: 'gtceu:magical_alloy_plate',
+		B: '#forge:tools/wrenches'
+	  }
+	).damageIngredient('#forge:tools/wrenches')	
 	event.shaped('1x gtceu:mv_machine_hull', [
     'ABA', 
     'CDC'
@@ -108,6 +116,19 @@ ServerEvents.recipes(event => {
 	F: 'gtceu:weak_synthetic_single_cable'
   }
 )
+	//laser_engraver
+	event.shaped('1x gtceu:mv_laser_engraver', [
+		'ABA', 
+		'CDC',
+		'ECE'
+	  ], {
+		A: 'gtceu:mv_electric_piston',
+		B: 'gtceu:mv_emitter',
+		C: '#gtceu:circuits/mv',
+		D: 'gtceu:mv_machine_hull',
+		E: 'gtceu:weak_synthetic_single_cable'
+	  }
+	)
 	//voltage coil
 		event.recipes.gtceu.assembler('mv_voltage_coil')
 		.circuit(1)

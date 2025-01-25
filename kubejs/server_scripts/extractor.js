@@ -16,7 +16,11 @@ ServerEvents.recipes(event => {
 		.outputFluids(Fluid.of('create:honey', 100))
 		.duration(40)
 		.EUt(2)
-	
+		event.recipes.gtceu.extractor('sterile_meat')
+		.itemInputs(Item.of('1x kubejs:sterile_meat'))
+		.outputFluids(Fluid.of('kubejs:sterile_meat', 1000))
+		.duration(40)
+		.EUt(2)
 	event.recipes.gtceu.extractor('white_petal')
 		.itemInputs(Item.of('16x botania:white_petal'))
 		.itemOutputs(Item.of('8x gtceu:silicon_dust'))
