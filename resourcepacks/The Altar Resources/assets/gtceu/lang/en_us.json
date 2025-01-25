@@ -17,6 +17,8 @@
 	  "item.gtceu.silicon_boule": "Arcane-Silicon Boule",
 	  "item.gtceu.silicon_wafer": "Arcane-Silicon Wafer",
 	  "item.gtceu.plastic_circuit_board": "Living Circuit Board",
-	  "item.gtceu.plastic_printed_circuit_board": "Living Printed Circuit Board"
+	  "item.gtceu.plastic_printed_circuit_board": "Living Printed Circuit Board",
+	  "item.gtceu.phosphorus_boule": "Awakened Echo-doped Silicon Boule",
+	  "item.gtceu.phosphorus_wafer": "Awakened Echo-doped wafer"
 
 }
