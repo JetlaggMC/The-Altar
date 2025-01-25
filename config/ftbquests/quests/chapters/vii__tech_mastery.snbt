@@ -6,7 +6,367 @@
 	icon: "kubejs:nano_star"
 	id: "3F6E9AA1C9071F8C"
 	order_index: 6
-	quest_links: [ ]
-	quests: [ ]
+	quest_links: [
+		{
+			id: "130BD1551DEE75DC"
+			linked_quest: "3CD777CF7ED7A1BA"
+			shape: "diamond"
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			id: "445641A022CA8ED6"
+			linked_quest: "6116C62DCE177E8C"
+			shape: "diamond"
+			x: -1.0d
+			y: 3.0d
+		}
+	]
+	quests: [
+		{
+			id: "057919927927391B"
+			shape: "diamond"
+			tasks: [{
+				id: "4D844FEA3AA21277"
+				item: "gtceu:cupronickel_coil_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "45E706F4DE719CB0"
+			shape: "diamond"
+			tasks: [{
+				id: "72407692AB33862D"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			id: "05ED70DB604398CB"
+			shape: "diamond"
+			tasks: [{
+				id: "3DB95A974FA2573F"
+				item: "gtceu:nichrome_coil_block"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			id: "037FB3F5C2906707"
+			tasks: [{
+				id: "54381C4EFBB833AE"
+				item: "gtceu:rtm_alloy_coil_block"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			id: "1125A6A0A688C102"
+			tasks: [{
+				id: "260115260C8FFBCC"
+				item: "gtceu:hssg_coil_block"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			id: "797D79588704CA55"
+			tasks: [{
+				id: "5BEAA9C9B83D090D"
+				item: "gtceu:trinium_coil_block"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			id: "1D4D8DF2ED03BF84"
+			tasks: [{
+				id: "1BA6E14193349D2D"
+				item: "gtceu:naquadah_coil_block"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			id: "1064F4FBDA1B7069"
+			tasks: [{
+				id: "5E219783BB1722FD"
+				item: "gtceu:tritanium_coil_block"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			id: "1E31B754A456B4C1"
+			shape: "diamond"
+			tasks: [{
+				id: "7A44E9E747119B0F"
+				item: "gtceu:lv_circuit_assembler"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			id: "10728BDA9AB006E4"
+			shape: "diamond"
+			tasks: [{
+				id: "0CA2E16D587C5846"
+				item: "gtceu:mv_circuit_assembler"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			id: "35A28865FDFDD252"
+			shape: "diamond"
+			tasks: [{
+				id: "43D290CE1B492540"
+				item: "gtceu:hv_circuit_assembler"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			id: "79E37F30FA6638EB"
+			shape: "diamond"
+			tasks: [{
+				id: "13430D043FE9DAD9"
+				item: "gtceu:basic_integrated_circuit"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			id: "6E93124E3F8C36C2"
+			shape: "diamond"
+			tasks: [{
+				id: "4387214A78B2FB8B"
+				item: "gtceu:good_integrated_circuit"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			id: "5C8CB96CC97920B6"
+			shape: "diamond"
+			tasks: [{
+				id: "1645E7F499A04C2F"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			id: "7F1DB8846BE861D7"
+			shape: "diamond"
+			tasks: [{
+				id: "154321374FEC3C5B"
+				item: "gtceu:microchip_processor"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			id: "7B005CA3467BA88B"
+			shape: "diamond"
+			tasks: [{
+				id: "34CEA177CD275A51"
+				item: "gtceu:micro_processor"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			id: "335928E615F90728"
+			shape: "diamond"
+			tasks: [{
+				id: "0858A6BFA6960827"
+				item: "gtceu:micro_processor_assembly"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			id: "013DDE55CB493A81"
+			shape: "diamond"
+			tasks: [{
+				id: "2119FC7ED4D28E48"
+				item: "gtceu:micro_processor_computer"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			id: "43C150692C5172A4"
+			shape: "diamond"
+			tasks: [{
+				id: "2A7CC5175BB00ECF"
+				item: "gtceu:micro_processor_mainframe"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			id: "183DFFAF9CEB219C"
+			tasks: [{
+				id: "5C368911D030140C"
+				item: "gtceu:nano_processor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			id: "60983A890C61D66D"
+			tasks: [{
+				id: "01D4DD6CDAFE9845"
+				item: "gtceu:nano_processor_assembly"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			id: "1906EC8520778DC9"
+			tasks: [{
+				id: "2A3B18793BC0ADE0"
+				item: "gtceu:nano_processor_computer"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			id: "611F61DD57A76971"
+			tasks: [{
+				id: "43B0C945507DC493"
+				item: "gtceu:nano_processor_mainframe"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			id: "00A959928C219A05"
+			tasks: [{
+				id: "66D561A878C0EB5A"
+				item: "gtceu:crystal_processor"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			id: "54B59EA5AF9A67C6"
+			tasks: [{
+				id: "757300BE41B33446"
+				item: "gtceu:quantum_processor"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			id: "5CD4E87422AAE641"
+			tasks: [{
+				id: "7B60B7C7A79F722E"
+				item: "gtceu:quantum_processor_assembly"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			id: "5500CE4595DEDB27"
+			tasks: [{
+				id: "5C7DD7AAB9FB7126"
+				item: "gtceu:quantum_processor_computer"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 8.0d
+		}
+		{
+			id: "77A2B8C606BFA0FE"
+			tasks: [{
+				id: "49FC8A044EE259D5"
+				item: "gtceu:quantum_processor_mainframe"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			id: "68491631DA696D6A"
+			tasks: [{
+				id: "6C5518C202E1B491"
+				item: "gtceu:crystal_processor_assembly"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			id: "67632937F803756B"
+			tasks: [{
+				id: "7D2166881F327A54"
+				item: "gtceu:crystal_processor_computer"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 9.0d
+		}
+		{
+			id: "1596B797BD5868FD"
+			tasks: [{
+				id: "420B3A4703968F82"
+				item: "gtceu:crystal_processor_mainframe"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			id: "6A94584200B929EC"
+			tasks: [{
+				id: "04D762A5BFCA9AC9"
+				item: "gtceu:ev_circuit_assembler"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			id: "149039237AA70338"
+			tasks: [{
+				id: "6D42670BDA8F1D38"
+				item: "gtceu:iv_circuit_assembler"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+	]
 	title: "VII - Tech Mastery"
 }

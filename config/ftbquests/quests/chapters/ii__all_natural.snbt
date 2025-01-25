@@ -114,124 +114,6 @@
 			y: -0.5d
 		}
 		{
-			dependencies: [
-				"35D3CEBAC7896043"
-				"32D2E63CCB6DA9F1"
-			]
-			id: "4969229DCDC618C0"
-			shape: "diamond"
-			tasks: [{
-				id: "454C39624F2B937E"
-				item: "kubejs:life_sample_1"
-				type: "item"
-			}]
-			x: 17.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["61FFB322F5712D5B"]
-			id: "49F99471B212281D"
-			shape: "diamond"
-			tasks: [{
-				id: "03F2AC08F9044EB9"
-				item: "gtceu:lv_dna_fabricator"
-				type: "item"
-			}]
-			x: 15.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["49F99471B212281D"]
-			icon: "kubejs:cow_model_1"
-			id: "35D3CEBAC7896043"
-			shape: "diamond"
-			tasks: [
-				{
-					id: "3D5E881706AA772C"
-					item: "kubejs:cow_model_1"
-					type: "item"
-				}
-				{
-					id: "0CEFB211FCBC2208"
-					item: "kubejs:sheep_model_1"
-					type: "item"
-				}
-				{
-					id: "54AD0BCCF0BF640A"
-					item: "kubejs:pig_model_1"
-					type: "item"
-				}
-				{
-					id: "3CD282F62CFBF112"
-					item: "kubejs:chicken_model_1"
-					type: "item"
-				}
-				{
-					id: "4F04B664E222F3EA"
-					item: "kubejs:axolotl_model_1"
-					type: "item"
-				}
-				{
-					id: "2AEBFAE30D15360D"
-					item: "kubejs:squid_model_1"
-					type: "item"
-				}
-				{
-					id: "4DCAAE82C964C393"
-					item: "kubejs:bee_model_1"
-					type: "item"
-				}
-				{
-					id: "49FEC5698896D42A"
-					item: "kubejs:rabbit_model_1"
-					type: "item"
-				}
-				{
-					id: "59B0DEADC5D1E966"
-					item: "kubejs:fish_model_1"
-					type: "item"
-				}
-			]
-			title: "Animal Models MK01"
-			x: 16.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["35D3CEBAC7896043"]
-			id: "30C3D61CC0F20B98"
-			shape: "diamond"
-			tasks: [{
-				id: "38E856296D67BA16"
-				item: "gtceu:lv_animal_pen"
-				type: "item"
-			}]
-			x: 16.5d
-			y: 0.5d
-		}
-		{
-			id: "50B558DC474B447F"
-			shape: "diamond"
-			tasks: [{
-				id: "2AF6DF852025E6D0"
-				item: "gtceu:resource_combinator"
-				type: "item"
-			}]
-			x: 16.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["50B558DC474B447F"]
-			id: "2699782A3CAE8893"
-			shape: "diamond"
-			tasks: [{
-				id: "0098A9C439555227"
-				item: "kubejs:wheat_seeds_mk1"
-				type: "item"
-			}]
-			x: 16.5d
-			y: -4.0d
-		}
-		{
 			dependencies: ["256358FD632BE3DE"]
 			id: "3809BDE5709AC22C"
 			shape: "diamond"
@@ -348,22 +230,11 @@
 				item: "kubejs:natural_star"
 				type: "item"
 			}]
-			x: 20.0d
-			y: -1.0d
+			x: 18.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["2699782A3CAE8893"]
-			id: "0C85063A5BEF9AC0"
-			shape: "diamond"
-			tasks: [{
-				id: "14F9FA96B3F92437"
-				item: "gtceu:lv_crop_simulator"
-				type: "item"
-			}]
-			x: 16.5d
-			y: -3.0d
-		}
-		{
+			dependencies: ["1CEF6A5EEC67CE55"]
 			id: "38B6117F642F1DC1"
 			shape: "diamond"
 			tasks: [{
@@ -508,9 +379,9 @@
 		{
 			dependencies: [
 				"7B090216B2359C45"
-				"4C2D2F43DE1F02C2"
 				"481FE4ABD35FF0F5"
 				"1E5C94EF27C7091D"
+				"30B99297B406F321"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -564,18 +435,6 @@
 			}]
 			x: 6.0d
 			y: -4.0d
-		}
-		{
-			dependencies: ["2FFAE832EE95157C"]
-			id: "4C2D2F43DE1F02C2"
-			shape: "diamond"
-			tasks: [{
-				id: "70DEF6195ED4E44E"
-				item: "gtceu:glowing_single_cable"
-				type: "item"
-			}]
-			x: 6.0d
-			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -758,6 +617,19 @@
 			}]
 			x: 3.0d
 			y: -0.5d
+		}
+		{
+			dependencies: ["301EFA67533B98BD"]
+			hide_dependency_lines: true
+			id: "30B99297B406F321"
+			shape: "diamond"
+			tasks: [{
+				id: "01A2B1043FFD7C57"
+				item: "gtceu:blazing_single_cable"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
 		}
 	]
 	title: "II - All Natural"

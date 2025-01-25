@@ -7,13 +7,29 @@
 	icon: "kubejs:bio_star"
 	id: "5A81F3E815C6CDDF"
 	order_index: 3
-	quest_links: [{
-		id: "5CD2E67D69078A9A"
-		linked_quest: "7385341D276EA8EB"
-		shape: "diamond"
-		x: -1.0d
-		y: -1.0d
-	}]
+	quest_links: [
+		{
+			id: "5CD2E67D69078A9A"
+			linked_quest: "7385341D276EA8EB"
+			shape: "diamond"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			id: "1600E34949CB1FEB"
+			linked_quest: "531AA4E94AAF7DE7"
+			shape: "diamond"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			id: "6F02E5A7644403B2"
+			linked_quest: "37FA06CF0CAA5875"
+			shape: "diamond"
+			x: -4.0d
+			y: 5.0d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["7385341D276EA8EB"]
@@ -27,9 +43,10 @@
 			}]
 			title: "Animal Models 2"
 			x: -1.0d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
+			dependencies: ["2485B4D2C67778EB"]
 			id: "7DAC4F681BDC1715"
 			shape: "diamond"
 			tasks: [{
@@ -37,7 +54,7 @@
 				item: "minecraft:echo_shard"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.0d
 			y: 1.0d
 		}
 		{
@@ -52,6 +69,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["7B36BBEBBB7F2BA5"]
 			id: "14B28D8649F0C786"
 			shape: "diamond"
 			tasks: [{
@@ -103,19 +121,11 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["7DAC4F681BDC1715"]
-			id: "6F8D72205E9B95D7"
-			shape: "diamond"
-			tasks: [{
-				id: "32CB6E70F1B0B829"
-				item: "kubejs:warden_model_1"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["4C1D87D1F496B4E5"]
+			dependencies: [
+				"4C1D87D1F496B4E5"
+				"380B2C28B0E30DE9"
+				"49362E8B2AEEE5FB"
+			]
 			id: "471E4D5C8574E1AC"
 			shape: "diamond"
 			tasks: [{
@@ -154,18 +164,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["0CCCC556F659BA44"]
-			id: "5D7807D91601C14D"
-			shape: "diamond"
-			tasks: [{
-				id: "699E35D5F00AA720"
-				item: "kubejs:raw_meat_glob"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 1.0d
-		}
-		{
 			dependencies: ["55AC739F3ACE44ED"]
 			id: "46E9017F42544DB7"
 			tasks: [{
@@ -187,7 +185,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["338E348FB33AB2D6"]
 			id: "0669D294D5B1F3C2"
 			tasks: [{
 				id: "1B8A6603B9C7D0A6"
@@ -198,8 +195,9 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["48F6458B79B17276"]
+			dependencies: ["37FA06CF0CAA5875"]
 			id: "1DD18F15562A11A2"
+			shape: "diamond"
 			tasks: [{
 				id: "4CA5B2C3B501B068"
 				item: "kubejs:hostile_sample_1"
@@ -223,7 +221,7 @@
 			dependencies: [
 				"4C1D87D1F496B4E5"
 				"471E4D5C8574E1AC"
-				"5D7807D91601C14D"
+				"0CCCC556F659BA44"
 			]
 			id: "55AC739F3ACE44ED"
 			tasks: [{
@@ -235,30 +233,9 @@
 			y: 3.0d
 		}
 		{
-			id: "48F6458B79B17276"
-			tasks: [{
-				id: "6B56129A4711A08F"
-				item: "kubejs:enderman_model_1"
-				type: "item"
-			}]
-			title: "Hostile Models 1"
-			x: -4.0d
-			y: 5.0d
-		}
-		{
-			id: "338E348FB33AB2D6"
-			tasks: [{
-				id: "05FBC6AD3B7D434B"
-				item: "kubejs:glow_berries_mk1"
-				type: "item"
-			}]
-			title: "Plants MK1"
-			x: -4.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["48F6458B79B17276"]
+			dependencies: ["37FA06CF0CAA5875"]
 			id: "2D0B34CA79F506A5"
+			shape: "diamond"
 			tasks: [{
 				id: "48F9CC6D743E8A32"
 				item: "gtceu:hostile_containment_unit"
@@ -266,6 +243,438 @@
 			}]
 			x: -4.0d
 			y: 6.0d
+		}
+		{
+			dependencies: ["3D173F08517FC798"]
+			id: "7B36BBEBBB7F2BA5"
+			shape: "diamond"
+			tasks: [{
+				dimension: "deeperdarker:otherside"
+				id: "71306D5AC64EA7FC"
+				type: "dimension"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"611C84E9CA36917A"
+				"22904E25A5CC77C5"
+			]
+			id: "643C76DAF8B08A5C"
+			shape: "diamond"
+			tasks: [{
+				id: "7997E9511A2E863B"
+				item: "gtceu:nichrome_coil_block"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["22904E25A5CC77C5"]
+			id: "7CEFE6F059E984E7"
+			tasks: [{
+				id: "555C37FFADCB8B65"
+				item: "gtceu:hv_machine_casing"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"7CEFE6F059E984E7"
+				"1370796EA9A2898D"
+			]
+			id: "323D338A77D77AAD"
+			shape: "diamond"
+			tasks: [{
+				id: "3A9C6D05539486DC"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			id: "380B2C28B0E30DE9"
+			shape: "diamond"
+			tasks: [{
+				id: "3A7E058527552A89"
+				item: "botania:corporea_spark_master"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			id: "49362E8B2AEEE5FB"
+			shape: "diamond"
+			tasks: [{
+				id: "572BB7BBC1515972"
+				item: "kubejs:manafloraethylene_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2867F6EE521068A0"]
+			id: "1370796EA9A2898D"
+			tasks: [{
+				id: "03DF354D1F8E78B5"
+				item: "gtceu:awakened_echo_single_cable"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["323D338A77D77AAD"]
+			id: "532FB25CF18AFD21"
+			shape: "diamond"
+			tasks: [{
+				id: "5C33A4BFF0154127"
+				item: "gtceu:hv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"3C40246A56BAE2E6"
+				"531AA4E94AAF7DE7"
+			]
+			id: "706253975A5E11EC"
+			shape: "diamond"
+			tasks: [{
+				id: "38B7F07671AB567C"
+				item: "gtceu:microchip_processor"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2867F6EE521068A0"]
+			id: "7D2313DC96A19C9E"
+			tasks: [{
+				id: "601C6213B9B8F9B6"
+				item: "gtceu:plastic_circuit_board"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["55AC739F3ACE44ED"]
+			id: "57765ACA15A800A2"
+			tasks: [{
+				id: "5544D07188AEFBA9"
+				item: "kubejs:living_matter_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["55AC739F3ACE44ED"]
+			id: "2867F6EE521068A0"
+			tasks: [{
+				id: "3BC9DCF9764449B6"
+				item: "kubejs:dense_insulator_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"7D2313DC96A19C9E"
+				"57765ACA15A800A2"
+			]
+			id: "3C40246A56BAE2E6"
+			shape: "diamond"
+			tasks: [{
+				id: "687B8B75FBB5F454"
+				item: "gtceu:plastic_printed_circuit_board"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["706253975A5E11EC"]
+			id: "1D53E3B45C66703C"
+			shape: "diamond"
+			tasks: [{
+				id: "7E8EEA964BCC2E99"
+				item: "gtceu:micro_processor"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1D53E3B45C66703C"
+				"6CDE4959CE3417EF"
+			]
+			id: "43EA43E3F18A6BAC"
+			shape: "diamond"
+			tasks: [{
+				id: "57BAC30669D59691"
+				item: "gtceu:micro_processor_assembly"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["43EA43E3F18A6BAC"]
+			id: "7003A3F435168BB0"
+			shape: "diamond"
+			tasks: [{
+				id: "27044E7417DFB020"
+				item: "gtceu:micro_processor_computer"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			id: "6CDE4959CE3417EF"
+			tasks: [{
+				id: "3E74738A7672BBE7"
+				item: "gtceu:cleanroom"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			id: "2485B4D2C67778EB"
+			shape: "diamond"
+			tasks: [{
+				entity: "minecraft:warden"
+				id: "5C42348533CF0FBD"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2485B4D2C67778EB"]
+			id: "3D173F08517FC798"
+			shape: "diamond"
+			tasks: [{
+				id: "1C8F0D524E8D60B7"
+				item: "deeperdarker:heart_of_the_deep"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"323D338A77D77AAD"
+				"7003A3F435168BB0"
+				"40616B9C25C01C27"
+			]
+			id: "52E50A79A3273564"
+			shape: "diamond"
+			tasks: [{
+				id: "75C4A5FE7E778845"
+				item: "gtceu:hv_dna_fabricator"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 6.0d
+		}
+		{
+			id: "40616B9C25C01C27"
+			tasks: [{
+				id: "6210F5C69469BC14"
+				item: "extendedcrafting:elite_table"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["52E50A79A3273564"]
+			id: "69732AF990978CA9"
+			tasks: [{
+				id: "27FDB7E5036C2509"
+				item: "kubejs:cow_model_3"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["52E50A79A3273564"]
+			id: "0BDA609508774E77"
+			tasks: [{
+				id: "194C2685E88D00FC"
+				item: "kubejs:enderman_model_2"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["52E50A79A3273564"]
+			id: "3DD5412AC01D2E6A"
+			tasks: [
+				{
+					id: "0A42A30BDF0822F1"
+					item: "kubejs:gaia_model_1"
+					type: "item"
+				}
+				{
+					id: "508875EC7601DAB3"
+					item: "kubejs:warden_model_1"
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7003A3F435168BB0"]
+			id: "4043214C3AE3EBEB"
+			shape: "diamond"
+			tasks: [{
+				id: "75C261585EE2BA57"
+				item: "gtceu:hv_circuit_assembler"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["72715145956CDF3F"]
+			id: "2461F25CB05F1AB0"
+			shape: "diamond"
+			tasks: [{
+				id: "50E83C20CE733F82"
+				item: "gtceu:phosphorus_boule"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6CDE4959CE3417EF"]
+			id: "231A65FFBF7B8457"
+			tasks: [{
+				id: "3CFAF366B1CA1E0B"
+				item: "gtceu:hv_cutter"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2461F25CB05F1AB0"
+				"231A65FFBF7B8457"
+			]
+			id: "4A108C8383785E55"
+			shape: "diamond"
+			tasks: [{
+				id: "2B6AB437C4435A32"
+				item: "gtceu:phosphorus_wafer"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4A108C8383785E55"]
+			id: "39247F05C363AB0E"
+			shape: "diamond"
+			tasks: [{
+				id: "180C8C3FD4A60981"
+				item: "gtceu:soc"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["52E50A79A3273564"]
+			icon: "kubejs:carrots_2"
+			id: "087A06BDB58DDEC7"
+			tasks: [
+				{
+					id: "31045D28A2E8A89E"
+					item: "kubejs:carrots_2"
+					type: "item"
+				}
+				{
+					id: "72854180F7BED659"
+					item: "kubejs:wheat_seeds_2"
+					type: "item"
+				}
+				{
+					id: "53ECC905466714B9"
+					item: "kubejs:potatoes_2"
+					type: "item"
+				}
+				{
+					id: "2FAD47558713FBB3"
+					item: "kubejs:pumpkin_seeds_2"
+					type: "item"
+				}
+				{
+					id: "3469141D23A47A50"
+					item: "kubejs:kelp_2"
+					type: "item"
+				}
+				{
+					id: "47FB41D1FB21F529"
+					item: "kubejs:moss_2"
+					type: "item"
+				}
+				{
+					id: "2686EC44E1BC65FD"
+					item: "kubejs:glowberries_2"
+					type: "item"
+				}
+				{
+					id: "3710F51CDF72AD1E"
+					item: "kubejs:sourceberries_2"
+					type: "item"
+				}
+				{
+					id: "24E342903B176D43"
+					item: "kubejs:trees_2"
+					type: "item"
+				}
+				{
+					id: "73C5E3B5BFF9E6A5"
+					item: "kubejs:mystical_flowers_2"
+					type: "item"
+				}
+			]
+			title: "Plant Models 2"
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			id: "43CDD61D7E739880"
+			tasks: [{
+				id: "61200211CDBACDD1"
+				item: "gtceu:hv_laser_engraver"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 3.0d
 		}
 	]
 	title: "IV - Bio-Engineering"

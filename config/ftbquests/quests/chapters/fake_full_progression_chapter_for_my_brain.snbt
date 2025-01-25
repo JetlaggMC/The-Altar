@@ -9,12 +9,6 @@
 	order_index: 1
 	quest_links: [
 		{
-			id: "39F22A75E805A928"
-			linked_quest: "48F6458B79B17276"
-			x: 20.5d
-			y: 0.5d
-		}
-		{
 			id: "2EF18BC2DF5A0225"
 			linked_quest: "1DD18F15562A11A2"
 			x: 19.5d
@@ -1176,7 +1170,6 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["48F6458B79B17276"]
 			id: "155EF7AF2DD1F8B8"
 			tasks: [{
 				id: "1E87A95CFF277C2D"
