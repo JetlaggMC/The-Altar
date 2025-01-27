@@ -6,6 +6,8 @@ event.remove({ output: 'create:shaft' })
 event.remove({ output: 'create:cogwheel' })
 event.remove({ output: 'create:large_cogwheel' })
 event.remove({ output: 'create:gearbox' })
+event.remove({ output: 'create:mechanical_drill' })
+event.remove({ output: 'create:encased_fan'})
 event.remove({ output: 'create:andesite_casing' })
 event.remove({ output: 'gtceu:wood_drum' })
 event.remove({ output: 'create:andesite_alloy', type: 'create:mixing' })
@@ -119,7 +121,34 @@ event.replaceInput(
   'create:andesite_alloy'         // Arg 3: the item to replace it with
   // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
 )
-event.replaceOutput(
+event.replaceInput(
+    { input: 'thermal:niter' },
+    'thermal:niter',
+    'gtceu:niter_gem'
+)
+event.replaceInput(
+    { input: 'thermal:niter_dust' },
+    'thermal:niter_dust',
+    'gtceu:niter_dust'
+)
+    event.replaceOutput(
+        { output: 'thermal:niter' },
+        'thermal:niter',
+        'gtceu:niter_gem'
+    )
+    event.replaceOutput(
+        { output: 'thermal:niter_dust' },
+        'thermal:niter_dust',
+        'gtceu:niter_dust'
+    )
+    event.remove({ input: 'thermal:niter_ore' })
+    event.remove({ input: 'thermal:deepslate_niter_ore' })
+    event.remove({ output: 'thermal:niter_ore' })
+    event.remove({ output: 'thermal:deepslate_niter_ore' })
+    event.remove({ input: 'thermal:niter_block' })
+    event.remove({ output: 'thermal:niter_block' })
+
+    event.replaceOutput(
   { output: 'gtceu:andesite_alloy_ingot' }, // Arg 1: the filter
   'gtceu:andesite_alloy_ingot',            // Arg 2: the item to replace
   'create:andesite_alloy'         // Arg 3: the item to replace it with

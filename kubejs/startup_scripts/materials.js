@@ -12,9 +12,14 @@ const $WireProperties = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.
 
 GTCEuStartupEvents.materialModification( event => {
     TagPrefix.ingot.setIgnored(GTMaterialRegistry.getMaterial("andesite_alloy"))
+    //TagPrefix.ingot.setIgnored(GTMaterialRegistry.getMaterial("manasteel"), $BotaniaItems.manaSteel)
+    //TagPrefix.ingot.setIgnored(GTMaterialRegistry.getMaterial("terrasteel"), $BotaniaItems.terrasteel)
+    //TagPrefix.ingot.setIgnored(GTMaterialRegistry.getMaterial("elementium"), $BotaniaItems.elementium)
 })
 
 GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
     event.create('alloy')
         .parent('metallic')
+    event.create('botanic')
+        .parent('shiny')
 })
