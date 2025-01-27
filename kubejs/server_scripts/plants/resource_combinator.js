@@ -21,10 +21,71 @@ ServerEvents.recipes(event => {
 		.duration(2000)
 		.EUt(480)	
 	
-		event.recipes.gtceu.resource_combinator('wheat_seeds_1')
-		.itemInputs(Item.of('64x minecraft:wheat_seeds'))
-		.inputFluids(Fluid.of('minecraft:water',1000))
-		.chancedOutput('1x kubejs:wheat_seeds_mk1', 500, 500)
+
+		event.recipes.gtceu.resource_combinator('carrots_1')
+		.itemInputs(Item.of('64x minecraft:carrot'))
+		.inputFluids(Fluid.of('kubejs:manafloraethylene',1000))
+		.itemOutputs('1x kubejs:carrots_1')
 		.duration(1200)
-		.EUt(32)
+		.EUt(128)
+
+		event.recipes.gtceu.resource_combinator('potatoes_1')
+		.itemInputs(Item.of('64x minecraft:potato'))
+		.inputFluids(Fluid.of('kubejs:manafloraethylene',1000))
+		.itemOutputs('1x kubejs:potatoes_1')
+		.duration(1200)
+		.EUt(128)
+
+
+		event.recipes.gtceu.resource_combinator('pumpkin_seeds_1')
+		.itemInputs(Item.of('64x minecraft:pumpkin'))
+		.inputFluids(Fluid.of('kubejs:manafloraethylene',1000))
+		.itemOutputs('1x kubejs:carrots_1')
+		.duration(1200)
+		.EUt(128)
+
+
+		event.recipes.gtceu.resource_combinator('kelp_1')
+		.itemInputs(Item.of('64x minecraft:kelp'))
+		.inputFluids(Fluid.of('kubejs:manafloraethylene',1000))
+		.itemOutputs('1x kubejs:kelp_1')
+		.duration(1200)
+		.EUt(128)
+
+		
+		event.recipes.gtceu.resource_combinator('moss_1')
+		.itemInputs(Item.of('64x minecraft:moss'))
+		.inputFluids(Fluid.of('kubejs:manafloraethylene',1000))
+		.itemOutputs('1x kubejs:moss_1')
+		.duration(1200)
+		.EUt(128)
+
+
+		event.recipes.gtceu.resource_combinator('chorus_fruit_1')
+		.itemInputs(Item.of('64x minecraft:chorus_fruit'))
+		.inputFluids(Fluid.of('kubejs:manafloraethylene',1000))
+		.itemOutputs('1x kubejs:chorus_fruit_1')
+		.duration(1200)
+		.EUt(128)
+
+		event.recipes.gtceu.resource_combinator('glowberries_1')
+		.itemInputs(Item.of('64x minecraft:glowberries'))
+		.inputFluids(Fluid.of('kubejs:manafloraethylene',1000))
+		.itemOutputs('1x kubejs:glow_berries_1')
+		.duration(1200)
+		.EUt(128)
+
+		event.recipes.gtceu.resource_combinator('sourceberries_1')
+		.itemInputs(Item.of('64x ars_nouveau:sourceberries'))
+		.inputFluids(Fluid.of('kubejs:manafloraethylene',1000))
+		.itemOutputs('1x kubejs:sourceberries_1')
+		.duration(1200)
+		.EUt(128)
+
+		event.recipes.gtceu.resource_combinator('trees_1')
+		.itemInputs(Item.of('64x #minecraft:saplings'))
+		.inputFluids(Fluid.of('kubejs:manafloraethylene',1000))
+		.itemOutputs('1x kubejs:trees_1')
+		.duration(1200)
+		.EUt(128)
 })

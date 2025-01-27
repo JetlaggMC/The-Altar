@@ -41,7 +41,6 @@ event.remove({ output: 'create:copper_casing' })
 event.remove({type: 'create:crushing'}) // Remove all campfire cooking recipes
 event.remove({ output: 'create:spout'})
 event.remove({ output: 'create:empty_blaze_burner'})
-event.remove({ output: 'create:empty_blaze_burner'})
 event.remove({type: 'gtceu:primitive_blast_furnace'}) // Remove all campfire cooking recipes
 event.remove({ output: 'gtceu:good_electronic_circuit' })
 event.remove({ output: 'gtceu:phenolic_printed_circuit_board' })
@@ -494,6 +493,14 @@ event.recipes.create.pressing('gtceu:copper_plate', 'gtceu:copper_ingot')
 
   }
 )
+event.shaped('1x gtceu:andesite_alloy_rod', [
+  'A ',
+  ' B'
+], {
+A: '#forge:tools/files',
+B: 'create:andesite_alloy'
+}).damageIngredient('#forge:tools/files')
+
 	event.shaped('1x gtceu:altar_tier_1', [
     'ADA', 
     'CBC',
@@ -1300,6 +1307,29 @@ event.shaped('1x create:mechanical_drill', [
 	E: 'gtceu:lv_electric_motor',
 	F: 'gtceu:blazing_single_cable'
   }
+)
+event.shaped('1x gtceu:resource_combinator', [
+  'ABA', 
+  'CDC',
+  'EBE'
+], {
+  A: 'botania:mana_glass',
+B: '#gtceu:circuits/hv',
+C: 'gtceu:heatproof_machine_casing',
+D: 'gtceu:lv_dna_fabricator',
+E: 'gtceu:weak_synthetic_double_cable'
+}
+)
+event.shaped('1x gtceu:dream_room_amplifier', [
+  'ABA', 
+  'CDC',
+  'ABA'
+], {
+  A: 'botania:glimmering_dreamwood_log',
+B: '#gtceu:circuits/mv',
+C: 'botania:mana_glass',
+D: 'botania:rainbow_rod'
+}
 )
 	event.shaped('1x gtceu:electric_blast_furnace', [
     'AAA', 
