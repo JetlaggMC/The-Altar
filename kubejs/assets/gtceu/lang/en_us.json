@@ -8,6 +8,9 @@
    "block.gtceu.essence_refinery_1": "Essence Refinery MK01",
    "block.gtceu.lv_dna_fabricator": "Basic DNA Fabricator",
    "block.gtceu.mv_dna_fabricator": "Advanced DNA Fabricator",
+   "block.gtceu.hv_dna_fabricator": "Advanced DNA Fabricator II",
+   "block.gtceu.ev_dna_fabricator": "Advanced DNA Fabricator III",
+
    "block.gtceu.lv_crop_simulator": "Basic Crop Simulator",
    "block.gtceu.mv_crop_simulator": "Advanced Crop Simulator",
 
@@ -34,6 +37,8 @@
    "block.gtceu.resource_combinator": "Resource Combinator",
    "gtceu.dream_room_amplifier": "Dreamroom Amplifier",
    "block.gtceu.dream_room_amplifier": "Dreamroom Amplifier",
+   "block.gtceu.hostile_containment_unit": "Hostile Containment Unit",
+
    "block.gtceu.meat_freezer": "Meat Freezer",
    "block.gtceu.twilight_awakening_chamber_mk1": "Twilight Awakening Chamber MK1",
    "block.gtceu.twilight_awakening_chamber_mk2": "Twilight Awakening Chamber MK2",

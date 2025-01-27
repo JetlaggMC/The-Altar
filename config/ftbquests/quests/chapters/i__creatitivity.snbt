@@ -24,6 +24,7 @@
 	]
 	quests: [
 		{
+			dependencies: ["591B1A5AA4F697B6"]
 			id: "198D06EA799DC550"
 			shape: "diamond"
 			size: 2.0d
@@ -966,6 +967,21 @@
 			}]
 			x: 1.0d
 			y: 8.5d
+		}
+		{
+			id: "591B1A5AA4F697B6"
+			rewards: [{
+				id: "1C7C7305D47D25B9"
+				item: "gtceu:prospector.hv"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "5837B82116CC6412"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -3.5d
 		}
 	]
 	title: "I - Getting Creative"

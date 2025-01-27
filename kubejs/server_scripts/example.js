@@ -45,6 +45,7 @@ event.remove({ output: 'create:empty_blaze_burner'})
 event.remove({type: 'gtceu:primitive_blast_furnace'}) // Remove all campfire cooking recipes
 event.remove({ output: 'gtceu:good_electronic_circuit' })
 event.remove({ output: 'gtceu:phenolic_printed_circuit_board' })
+event.remove({ output: 'gtceu:empty_mold' })
 
 event.remove({ output: 'gtceu:lv_machine_casing'})
 event.remove({ output: 'gtceu:lv_machine_hull'})
@@ -295,7 +296,7 @@ event.recipes.create.pressing('gtceu:copper_plate', 'gtceu:copper_ingot')
 	event.recipes.create.mixing('2x gtceu:cupronickel_dust',	['1x gtceu:copper_dust', '1x gtceu:nickel_dust'])
  	event.recipes.create.mixing(Fluid.of('kubejs:crude_insulator', 288),[Fluid.of('create:honey',144),Fluid.of('gtceu:rubber',144), '1x gtceu:sulfur_dust']).heated()
 	event.recipes.create.mixing('2x gtceu:fireclay_dust',	['1x gtceu:clay_dust', '1x gtceu:brick_dust']).heated()
-	event.recipes.create.mixing('1x kubjes:blank_shard',	['1x kubejs:andesite_alloy', '1x #forge:glass']).heated()
+	event.recipes.create.mixing('1x kubjes:blank_shard',	['1x create:andesite_alloy', '1x #forge:glass']).heated()
  	event.recipes.create.mixing(Fluid.of('gtceu:glowing', 288),[Fluid.of('gtceu:iron',144), '1x minecraft:glow_ink_sac']).heated()
  	event.recipes.create.mixing(Fluid.of('gtceu:red_alloy', 288),[Fluid.of('gtceu:iron',144), '1x minecraft:redstone']).heated()
  	event.recipes.create.mixing(Fluid.of('gtceu:blazing', 1296),['8x minecraft:blaze_powder', '1x kubejs:nether_dust']).superheated()
@@ -1184,7 +1185,7 @@ event.shaped('1x create:mechanical_drill', [
 )
 	event.shaped('1x gtceu:lv_kinetic_input_box', [
     'A', 
-    'C'
+    'B'
   ], {
     A: 'create:shaft',
 	B: 'gtceu:lv_machine_hull'
@@ -1321,6 +1322,15 @@ event.shaped('1x create:mechanical_drill', [
 	C: 'gtceu:blazing_frame'
   }
 )
+event.shaped('1x gtceu:empty_mold', [
+  'AB', 
+  'CC'
+], {
+  A: '#forge:tools/wrenches', 
+  B: '#forge:tools/files',
+C: 'gtceu:natures_alloy_plate'
+}
+).damageIngredient('#forge:tools/wrenches').damageIngredient('#forge:tools/screwdrivers')
 	event.shaped('1x gtceu:bronze_pipe_casing', [
     'ABA', 
     'BCB',
@@ -1355,6 +1365,21 @@ event.shaped('1x create:mechanical_drill', [
 
   }
 )
+event.shaped('1x gtceu:hostile_containment_unit', [
+  'ABC', 
+  'DED',
+  'FGF'
+], {
+A: 'gtceu:hv_robot_arm',
+B: 'gtceu:awakened_echo_rotor',
+C: 'gtceu:hv_electric_piston',
+D: '#gtceu:circuits/ev',
+E: 'deeperdarker:gloomy_sculk',
+F: 'minecraft:diamond_sword',
+G: 'gtceu:soc'
+
+}
+)
 	event.shaped('1x gtceu:steam_machine_casing', [
     'ABA', 
     'ACA',
@@ -1385,6 +1410,49 @@ event.shaped('1x create:mechanical_drill', [
 	    10000, // source cost
 	    // true // keep nbt of reagent, think like a smithing recipe
 	);
+
+  event.recipes.ars_nouveau.enchanting_apparatus(
+    [
+        "kubejs:enderman_model_1",
+        "kubejs:magma_model_1",
+        "kubejs:slime_model_1",
+        "kubejs:spider_model_1",
+        "kubejs:skeleton_model_1",
+        "kubejs:wither_skeleton_1",
+        "kubejs:phantom_model_1",
+        "kubejs:blaze_model_1",
+        "kubejs:shulker_model_1",
+        "kubejs:ghast_model_1",
+        "kubejs:zombie_model_1",
+        "kubejs:creeper_model_1"
+
+    ], // input items
+  "gtceu:natures_alloy_dust", // reagent
+  "kubejs:hostile_sample_1", // output
+  10000, // source cost
+  // true // keep nbt of reagent, think like a smithing recipe
+);
+
+event.recipes.ars_nouveau.enchanting_apparatus(
+  [
+      "kubejs:carrots_1",
+      "kubejs:wheat_seeds_1",
+      "kubejs:potatoes_1",
+      "kubejs:pumpkin_seeds_1",
+      "kubejs:kelp_1",
+      "kubejs:moss_1",
+      "kubejs:glowberries_1",
+      "kubejs:chorus_fruit_1",
+      "kubejs:sourceberries_1",
+      "kubejs:trees_1",
+      "kubejs:mystical_flowers_1"
+
+  ], // input items
+"gtceu:natures_alloy_dust", // reagent
+"kubejs:plant_sample_1", // output
+10000, // source cost
+// true // keep nbt of reagent, think like a smithing recipe
+);
 	event.recipes.ars_nouveau.enchanting_apparatus(
         [
             "gtceu:arcane_gold_dust",
