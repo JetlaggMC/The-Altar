@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
 		.EUt(480)	
 	
 		event.recipes.gtceu.resource_combinator('wheat_1')
-		.itemInputs(Item.of('64x minecraft:wheat'))
+		.itemInputs(Item.of('8x minecraft:wheat'))
 		.itemInputs(Item.of('4x minecraft:wheat_seeds'))
 		.itemInputs(Item.of('4x minecraft:dirt'))
 		.itemInputs(Item.of('4x gtceu:fine_blazing_wire'))
