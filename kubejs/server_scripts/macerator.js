@@ -1,0 +1,20 @@
+ServerEvents.recipes(event => {
+
+	event.recipes.gtceu.macerator('wheat_1')
+        .itemInputs(Item.of('4x kubejs:wheat_1'))
+        .itemOutputs('2x kubejs:wheat_1')
+        .itemOutputs('2x kubejs:wheat_seeds_1')
+        .chancedOutput('1x minecraft:wheat',5000,500)
+        .chancedOutput('1x minecraft:wheat_seeds',5000,500)
+		.duration(40)
+		.EUt(7)
+
+        event.recipes.gtceu.macerator('wheat_2')
+        .itemInputs(Item.of('4x kubejs:wheat_2'))
+        .itemOutputs('2x kubejs:wheat_2')
+        .itemOutputs('2x kubejs:wheat_seeds_2')
+        .chancedOutput('1x kubejs:wheat_1',5000,500)
+        .chancedOutput('1x kubejs:wheat_seeds_1',5000,500)
+		.duration(40)
+		.EUt(7)
+})

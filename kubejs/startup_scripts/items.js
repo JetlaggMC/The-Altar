@@ -543,6 +543,55 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             "gtceu:block/machines/alloy_smelter",
             false
         )
+
+        event.create('hydroponic_garden', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_solid_steel'))
+        .recipeTypes('hydroponic_garden')
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle(' CHC ', ' GGG ', ' GGG ',' CCC ')
+            .aisle('CSSSC', 'G   G', 'G   G','CCCCC')
+            .aisle('CSSSC', 'G   G', 'G   G','CCLCC')
+            .aisle('CSSSC', 'G   G', 'G   G','CCCCC')
+            .aisle(' CMC ', ' GGG ', ' GGG ',' CAC ')
+
+			.where('M', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('C', Predicates.blocks('gtceu:solid_machine_casing')
+  				.or(Predicates.autoAbilities(definition.getRecipeTypes())))
+            .where('G', Predicates.blocks('gtceu:tempered_glass'))
+            .where('H', Predicates.abilities(PartAbility.MUFFLER))
+            .where('A', Predicates.abilities(PartAbility.MAINTENANCE))
+        	.build())
+        .workableCasingRenderer(
+            "gtceu:block/casings/solid/machine_casing_solid_steel",
+            "gtceu:block/multiblock/processing_array",
+            false
+        )
+
+        event.create('temperate_garden', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_solid_steel'))
+        .recipeTypes('temperate_garden')
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle(' CHC ', ' GGG ', ' GGG ',' CCC ')
+            .aisle('CSSSC', 'G   G', 'G   G','CCCCC')
+            .aisle('CSSSC', 'G   G', 'G   G','CCLCC')
+            .aisle('CSSSC', 'G   G', 'G   G','CCCCC')
+            .aisle(' CMC ', ' GGG ', ' GGG ',' CAC ')
+
+			.where('M', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('C', Predicates.blocks('gtceu:solid_machine_casing')
+  				.or(Predicates.autoAbilities(definition.getRecipeTypes())))
+            .where('G', Predicates.blocks('minecraft:moss'))
+            .where('H', Predicates.abilities(PartAbility.MUFFLER))
+            .where('A', Predicates.abilities(PartAbility.MAINTENANCE))
+        	.build())
+        .workableCasingRenderer(
+            "gtceu:block/casings/solid/machine_casing_solid_steel",
+            "gtceu:block/multiblock/processing_array",
+            false
+        )
+	
 	 event.create('meat_freezer', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
 		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_frost_proof'))
@@ -1080,7 +1129,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('resource_combinator')
         .category('resource_combinator')
         .setEUIO('in')
-        .setMaxIOSize(16, 1, 1, 0)
+        .setMaxIOSize(16, 1, 2, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.BATH)
     event.create('caster')
@@ -1192,6 +1241,20 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('large_mechanical_press')
         .setEUIO('in')
         .setMaxIOSize(3, 1, 1, 0) 
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.COOLING)
+		event.create('temperate_garden')
+        .category('temperate_garden')
+        .setEUIO('in')
+        .setMaxIOSize(4, 2, 2, 0) 
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.COOLING)
+        event.create('hydroponic_garden')
+        .category('hydroponic_garden')
+        .setEUIO('in')
+        .setMaxIOSize(4, 2, 2, 0) 
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)

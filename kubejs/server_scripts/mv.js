@@ -12,6 +12,8 @@ ServerEvents.recipes(event => {
 	event.remove({ output: 'gtceu:mv_circuit_assembler' })
 	event.remove({ output: 'gtceu:kanthal_coil_block' })
 	event.remove({ output: 'gtceu:mv_machine_casing' })
+	event.remove({ output: 'gtceu:mv_laser_engraver' })
+
 	event.recipes.extendedcrafting.shaped_table(
 		"gtceu:mv_dna_fabricator",
 		['ABCDA', 
