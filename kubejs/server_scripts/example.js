@@ -1410,6 +1410,57 @@ G: 'gtceu:soc'
 
 }
 )
+event.shaped('1x gtceu:twilight_awakening_chamber_mk1', [
+  'ABA', 
+  'CDC',
+  'ABA'
+], {
+A: 'twilightforest:ironwood_ingot',
+B: 'twilightforest:naga_scale',
+C: '#gtceu:circuits/ev',
+D: 'gtceu:hv_machine_hull'
+
+}
+)
+
+event.shaped('1x gtceu:twilight_awakening_chamber_mk2', [
+  'ABA', 
+  'CDC',
+  'ABA'
+], {
+A: 'twilightforest:fiery_ingot',
+B: 'twilightforest:fiery_tears',
+C: '#gtceu:circuits/ev',
+D: 'gtceu:twilight_awakening_chamber_mk1'
+
+}
+)
+
+event.shaped('1x gtceu:twilight_awakening_chamber_mk3', [
+  'ABA', 
+  'CDC',
+  'ABA'
+], {
+A: 'twilightforest:carminite',
+B: 'twilightforest:borer_essence',
+C: '#gtceu:circuits/ev',
+D: 'gtceu:twilight_awakening_chamber_mk2'
+
+}
+)
+
+event.shaped('1x gtceu:twilight_awakening_chamber_mk4', [
+  'ABA', 
+  'CDC',
+  'ABA'
+], {
+A: 'twilightforest:auroralized_glass',
+B: 'twilightforest:aurora_block',
+C: '#gtceu:circuits/ev',
+D: 'gtceu:twilight_awakening_chamber_mk3'
+
+}
+)
 	event.shaped('1x gtceu:steam_machine_casing', [
     'ABA', 
     'ACA',
