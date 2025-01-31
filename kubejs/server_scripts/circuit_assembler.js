@@ -116,7 +116,7 @@ ServerEvents.recipes(event => {
 		.cleanroom(CleanroomType.CLEANROOM)
 
 		event.recipes.gtceu.circuit_assembler('micro_processor_mainframe')
-		.itemInputs(Item.of('2x gtceu:plutonium_frame'))
+		.itemInputs(Item.of('2x gtceu:sterile_bio_alloy_frame'))
 		.itemInputs(Item.of('2x gtceu:micro_processor_computer'))
 		.itemInputs(Item.of('8x #gtceu:inductors'))
 		.itemInputs(Item.of('16x #gtceu:capacitors'))
