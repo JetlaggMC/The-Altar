@@ -330,7 +330,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
 		.liquid()
 	    .color(0x1bb848).iconSet(GTMaterialIconSet.METALLIC)
-        .flags(GTMaterialFlags.IS_MAGNETIC,GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR,GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING,GTMaterialFlags.GENERATE_FINE_WIRE)
+        .flags(GTMaterialFlags.IS_MAGNETIC,GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR,GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING,GTMaterialFlags.GENERATE_FINE_WIRE,GTMaterialFlags.GENERATE_FRAME)
         .toolStats(new ToolProperty(3.0, 3.0, 512, 3, [GTToolType.SWORD, GTToolType.PICKAXE, GTToolType.SHOVEL, GTToolType.AXE, GTToolType.HOE, GTToolType.MINING_HAMMER, GTToolType.SPADE, GTToolType.SAW, GTToolType.HARD_HAMMER, GTToolType.WRENCH, GTToolType.FILE, GTToolType.CROWBAR, GTToolType.SCREWDRIVER, GTToolType.WIRE_CUTTER, GTToolType.SCYTHE, GTToolType.KNIFE, GTToolType.BUTCHERY_KNIFE, GTToolType.DRILL_LV, GTToolType.DRILL_MV, GTToolType.DRILL_HV, GTToolType.DRILL_EV, GTToolType.DRILL_IV, GTToolType.CHAINSAW_LV, GTToolType.WRENCH_LV, GTToolType.WRENCH_HV, GTToolType.WRENCH_IV, GTToolType.BUZZSAW, GTToolType.SCREWDRIVER_LV, GTToolType.WIRE_CUTTER_LV, GTToolType.WIRE_CUTTER_HV,  GTToolType.WIRE_CUTTER_IV]))
 		.fluidPipeProperties(50, 1855, true,false, false, false)
 
@@ -463,14 +463,14 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .recipeType('crop_simulator',true,true)
 
 	//dna_fabricator
-	event.create('dna_fabricator', 'simple', 0, GTValues.LV,GTValues.MV,GTValues.HV,GTValues.EV)
+	event.create('dna_fabricator', 'simple', 0, GTValues.LV,GTValues.MV,GTValues.HV,GTValues.EV,GTValues.IV,GTValues.LuV)
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('dna_fabricator',true,true)
 		.workableTieredHullRenderer(GTCEu.id("block/machines/dna_fabricator"))
 
 
 	//animal_pen
-	event.create('animal_pen', 'simple', 0, GTValues.LV)
+	event.create('animal_pen', 'simple', 0, GTValues.LV,GTValues.MV,GTValues.HV,GTValues.EV,GTValues.IV,GTValues.LuV)
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('animal_pen',true,true)
 		.workableTieredHullRenderer(GTCEu.id("block/machines/animal_pen"))
@@ -585,7 +585,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.blocks('gtceu:solid_machine_casing')
   				.or(Predicates.autoAbilities(definition.getRecipeTypes())))
             .where('G', Predicates.blocks('gtceu:tempered_glass'))
-            .where('S', Predicates.blocks('minecraft:moss'))
+            .where('S', Predicates.blocks('minecraft:moss_block'))
             .where('L', Predicates.blocks('gtceu:white_lamp'))
             .where('H', Predicates.abilities(PartAbility.MUFFLER))
             .where('A', Predicates.abilities(PartAbility.MAINTENANCE))
@@ -1179,7 +1179,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
    event.create('dream_room_amplifier')
         .category('dream_room_amplifier')
         .setEUIO('in')
-        .setMaxIOSize(9, 1, 2, 1) 
+        .setMaxIOSize(12, 1, 2, 1) 
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)

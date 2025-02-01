@@ -42,6 +42,7 @@ StartupEvents.registry('item', e => {
   e.create('ender_guardian_model_1')
   e.create('ignis_model_1')
 
+  e.create('wither_skeleton_model_2')
   e.create('shulker_model_2')
   e.create('enderman_model_2')
   e.create('blaze_model_2')
