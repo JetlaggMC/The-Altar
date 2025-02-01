@@ -45,6 +45,7 @@ event.remove({type: 'gtceu:primitive_blast_furnace'}) // Remove all campfire coo
 event.remove({ output: 'gtceu:good_electronic_circuit' })
 event.remove({ output: 'gtceu:phenolic_printed_circuit_board' })
 event.remove({ output: 'gtceu:empty_mold' })
+event.remove({ output: 'gtceu:cupronickel_dust' })
 
 event.remove({ output: 'gtceu:lv_machine_casing'})
 event.remove({ output: 'gtceu:lv_machine_hull'})
@@ -206,6 +207,9 @@ event.recipes.create.pressing('gtceu:copper_plate', 'gtceu:copper_ingot')
 	event.recipes.create.pressing('gtceu:rubber_plate', 'gtceu:rubber_ingot')
 	event.recipes.create.pressing('gtceu:compressed_fireclay', 'gtceu:fireclay_dust')
 
+	event.recipes.create.pressing('gtceu:natures_alloy_plate', 'gtceu:natures_alloy')
+	event.recipes.create.pressing('gtceu:andesite_alloy_ring', 'gtceu:natures_alloy_bolt')
+
 	event.recipes.create.compacting('1x gtceu:firebricks', '4x gtceu:compressed_fireclay')
 
     event.recipes.create.milling('2x kubejs:crushed_andesite', 'minecraft:andesite')
@@ -222,6 +226,8 @@ event.recipes.create.pressing('gtceu:copper_plate', 'gtceu:copper_ingot')
     event.recipes.create.milling('1x kubejs:jungle_dust', 'kubejs:jungle_shard')
     event.recipes.create.milling('1x kubejs:taiga_dust', 'kubejs:taiga_shard')
 	event.recipes.create.milling('1x gtceu:blazing_dust', 'gtceu:blazing_ingot')
+	event.recipes.create.milling('1x gtceu:flint_dust', 'minecraft:flint')
+	event.recipes.create.milling('1x gtceu:quartz_sand_dust', '#forge:sand')
 
 	
     event.recipes.create.crushing('2x gtceu:crushed_iron_ore', 'minecraft:raw_iron')
@@ -279,8 +285,8 @@ event.recipes.create.pressing('gtceu:copper_plate', 'gtceu:copper_ingot')
  	event.recipes.create.mixing(Fluid.of('kubejs:desert_essence', 1000),	['16x #minecraft:sand', '8x minecraft:cactus', '4x minecraft:gold_ingot', 'minecraft:rabbit_hide', Fluid.of('minecraft:water',1000)])
 	event.recipes.create.mixing(Fluid.of('kubejs:ocean_essence', 1000),		['16x minecraft:kelp', '8x #minecraft:sand', '4x minecraft:ink_sac', 'minecraft:prismarine_shard', Fluid.of('minecraft:water',1000)])
  	event.recipes.create.mixing(Fluid.of('kubejs:jungle_essence', 1000),	['16x minecraft:melon', '8x minecraft:mossy_cobblestone', '4x minecraft:bamboo', 'minecraft:cocoa_beans', Fluid.of('minecraft:water',1000)])
- 	event.recipes.create.mixing(Fluid.of('kubejs:nether_essence', 1000),	['16x minecraft:nether_bricks', '8x minecraft:glowstone', '4x minecraft:nether_wart', 'minecraft:quartz', Fluid.of('minecraft:water',1000)])
- 	event.recipes.create.mixing(Fluid.of('kubejs:earth_essence', 1000),		['16x minecraft:stone', '8x minecraft:deepslate', '4x minecraft:moss_block', 'minecraft:coal_block', Fluid.of('minecraft:water',1000)])
+ 	event.recipes.create.mixing(Fluid.of('kubejs:nether_essence', 1000),	['16x minecraft:nether_bricks', '8x minecraft:glowstone', '4x minecraft:nether_wart', '1x minecraft:quartz', Fluid.of('minecraft:water',1000)])
+ 	event.recipes.create.mixing(Fluid.of('kubejs:earth_essence', 1000),		['16x minecraft:stone', '8x minecraft:deepslate', '4x minecraft:moss_block', '1x minecraft:coal_block', Fluid.of('minecraft:water',1000)])
  	event.recipes.create.mixing(Fluid.of('kubejs:sky_essence', 1000),		['16x #minecraft:wool', '8x #forge:glass', '4x minecraft:string', 'minecraft:feather', Fluid.of('minecraft:water',1000)])
  	event.recipes.create.mixing(Fluid.of('kubejs:ender_essence', 1000),		['16x minecraft:end_stone', '8x minecraft:chorus_fruit', '4x minecraft:purpur_block', 'minecraft:ender_eye', Fluid.of('minecraft:water',1000)])
 	event.recipes.create.mixing(Fluid.of('kubejs:taiga_essence', 1000),		['16x minecraft:podzol', '8x minecraft:snowball', '4x minecraft:leather', 'minecraft:emerald', Fluid.of('minecraft:water',1000)])
@@ -292,13 +298,14 @@ event.recipes.create.pressing('gtceu:copper_plate', 'gtceu:copper_ingot')
 	event.recipes.create.mixing(Fluid.of('kubejs:liquid_rose_quartz', 864),		[Fluid.of('gtceu:redstone',432),'1x minecraft:quartz']).heated()
 	event.recipes.create.mixing(Fluid.of('gtceu:andesite_alloy', 144),		[Fluid.of('gtceu:iron',16),'1x kubejs:crushed_andesite']).heated()
  	event.recipes.create.mixing('1x gtceu:treated_wood_planks',	['1x #minecraft:planks', Fluid.of('gtceu:creosote',100)])
-	event.recipes.create.mixing('2x gtceu:cupronickel_dust',	['1x gtceu:copper_dust', '1x gtceu:nickel_dust'])
+	event.recipes.create.mixing('2x gtceu:cupronickel_dust',	['1x gtceu:copper_dust', '1x gtceu:nickel_dust']).heated()
  	event.recipes.create.mixing(Fluid.of('kubejs:crude_insulator', 288),[Fluid.of('create:honey',144),Fluid.of('gtceu:rubber',144), '1x gtceu:sulfur_dust']).heated()
 	event.recipes.create.mixing('2x gtceu:fireclay_dust',	['1x gtceu:clay_dust', '1x gtceu:brick_dust']).heated()
 	event.recipes.create.mixing('1x kubjes:blank_shard',	['1x create:andesite_alloy', '1x #forge:glass']).heated()
  	event.recipes.create.mixing(Fluid.of('gtceu:glowing', 288),[Fluid.of('gtceu:iron',144), '1x minecraft:glow_ink_sac']).heated()
  	event.recipes.create.mixing(Fluid.of('gtceu:red_alloy', 288),[Fluid.of('gtceu:iron',144), '1x minecraft:redstone']).heated()
  	event.recipes.create.mixing(Fluid.of('gtceu:blazing', 1296),['8x minecraft:blaze_powder', '1x kubejs:nether_dust']).superheated()
+ 	event.recipes.create.mixing(Fluid.of('gtceu:glass', 144),['1x gtceu:quartz_sand_dust', '1x gtceu:tiny_flint_dust'])
 
     event.recipes.create.sequenced_assembly('gtceu:resin_circuit_board','gtceu:treated_wood_planks', [
 		event.recipes.createPressing('gtceu:treated_wood_planks','gtceu:treated_wood_planks'),
@@ -599,6 +606,16 @@ event.shaped('1x create:mechanical_drill', [
     A: '#forge:tools/hammers', 
     B: 'create:andesite_alloy'
   }
+).damageIngredient('#forge:tools/hammers')
+
+event.shaped('1x gtceu:glass_tube', [
+  'A', 
+  'B',
+'B'
+], {
+  A: '#forge:tools/hammers', 
+  B: 'minecraft:glass'
+}
 ).damageIngredient('#forge:tools/hammers')
 	event.shaped('8x create:shaft', [
     'A', 
@@ -1459,6 +1476,30 @@ B: 'twilightforest:aurora_block',
 C: '#gtceu:circuits/ev',
 D: 'gtceu:twilight_awakening_chamber_mk3'
 
+}
+)
+
+event.shaped('1x gtceu:temperate_garden', [
+  'ABA', 
+  'CDC',
+  'ABA'
+], {
+A: 'gtceu:solid_machine_casing',
+B: 'gtceu:mv_electric_pump',
+C: '#gtceu:circuits/mv',
+D: 'minecraft:moss'
+}
+)
+
+event.shaped('1x gtceu:hydroponic_garden', [
+  'ABA', 
+  'CDC',
+  'ABA'
+], {
+A: 'gtceu:solid_machine_casing',
+B: 'gtceu:mv_electric_pump',
+C: '#gtceu:circuits/mv',
+D: 'minecraft:sand'
 }
 )
 	event.shaped('1x gtceu:steam_machine_casing', [
