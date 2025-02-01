@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
 	event.remove({ output: 'gtceu:smd_diode' })
 	event.remove({ output: 'gtceu:smd_capacitor' })
 	event.remove({ output: 'gtceu:smd_transistor' })
+	event.remove({ output: 'gtceu:solid_machine_casing' })
 
 	event.recipes.gtceu.assembler('heatproof_machine_casing')
 		.circuit(6)
@@ -142,6 +143,14 @@ ServerEvents.recipes(event => {
 		.itemInputs(Item.of('6x gtceu:awakened_echo_plate'))
 		.itemInputs(Item.of('1x gtceu:awakened_echo_frame'))
 		.itemOutputs(Item.of('1x gtceu:frostproof_machine_casing'))
+		.duration(50)
+		.EUt(16)
+
+		event.recipes.gtceu.assembler('solid_machine_casing')
+		.circuit(6)
+		.itemInputs(Item.of('6x gtceu:natures_alloy_plate'))
+		.itemInputs(Item.of('1x gtceu:natures_alloy_frame'))
+		.itemOutputs(Item.of('1x gtceu:solid_machine_casing'))
 		.duration(50)
 		.EUt(16)
 })
