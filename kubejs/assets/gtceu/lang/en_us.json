@@ -10,6 +10,8 @@
    "block.gtceu.mv_dna_fabricator": "Advanced DNA Fabricator",
    "block.gtceu.hv_dna_fabricator": "Advanced DNA Fabricator II",
    "block.gtceu.ev_dna_fabricator": "Advanced DNA Fabricator III",
+   "gtceu.dna_fabricator": "DNA Fabricator",
+
 
    "block.gtceu.lv_crop_simulator": "Basic Crop Simulator",
    "block.gtceu.mv_crop_simulator": "Advanced Crop Simulator",
@@ -28,11 +30,16 @@
    "material.gtceu.awakened_echo": "Awakened Echo",
    "material.gtceu.sterile_bio_alloy": "Sterile Bio Alloy",
    "material.gtceu.weak_synthetic": "Weak Synthetic",
+   "material.gtceu.champions_alloy": "Champion's Alloy",
+   "material.gtceu.withered": "Withered",
+   "material.gtceu.interstellar_alloy": "Interstellar Alloy",
+   "material.gtceu.radioactive": "Radioactive",
 
    "material.gtceu.synthetic_neuron": "Synthetic Neuron",
    "material.gtceu.elementium": "Elementium",
 
    "gtceu.essence_refinery": "Essence Refinery",
+
    "gtceu.resource_combinator": "Resource Combinator",
    "block.gtceu.resource_combinator": "Resource Combinator",
    "gtceu.dream_room_amplifier": "Dreamroom Amplifier",
