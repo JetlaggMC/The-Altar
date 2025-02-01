@@ -26,4 +26,5 @@ ServerEvents.recipes(event => {
         .chancedOutput('2x kubejs:wheat_seeds_1',5000,500)
 		.duration(40)
 		.EUt(7)
+
 })
