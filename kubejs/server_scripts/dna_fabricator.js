@@ -258,7 +258,7 @@ ServerEvents.recipes(event => {
 		.EUt(128)
 
 //hostile models
-event.recipes.gtceu.dna_fabricator('whither_skeleton_model_1')
+event.recipes.gtceu.dna_fabricator('wither_skeleton_model_1')
 .itemInputs(
 	'16x minecraft:nether_bricks',
 	'8x minecraft:coal',
@@ -413,4 +413,151 @@ event.recipes.gtceu.dna_fabricator('creeper_model_1')
 .itemOutputs(Item.of('1x kubejs:creeper_model_1'))
 .duration(12000)
 .EUt(128)
+
+//hostile models 2
+event.recipes.gtceu.dna_fabricator('wither_skeleton_model_2')
+.itemInputs(
+	'1x botania:rune_fire',
+	'1x botania:rune_wrath',
+	'1x botania:rune_spring',
+	'1x #gtceu:circuits/ev'
+)
+.inputFluids(Fluid.of('kubejs:living_matter', 1000))
+.itemOutputs(Item.of('1x kubejs:whither_skeleton_model_2'))
+.duration(12000)
+.EUt(128)
+
+event.recipes.gtceu.dna_fabricator('shulker_model_2')
+.itemInputs(
+	'1x botania:rune_mana',
+	'1x botania:rune_wrath',
+	'1x botania:rune_spring',
+	'1x #gtceu:circuits/ev'
+)
+.inputFluids(Fluid.of('kubejs:living_matter', 1000))
+.itemOutputs(Item.of('1x kubejs:shulker_model_2'))
+.duration(12000)
+.EUt(128)
+
+event.recipes.gtceu.dna_fabricator('enderman_model_2')
+.itemInputs(
+	'1x botania:rune_mana',
+	'1x botania:rune_pride',
+	'1x botania:rune_winter',
+	'1x #gtceu:circuits/ev'
+)
+.inputFluids(Fluid.of('kubejs:living_matter', 1000))
+.itemOutputs(Item.of('1x kubejs:enderman_model_2'))
+.duration(12000)
+.EUt(128)
+
+event.recipes.gtceu.dna_fabricator('blaze_model_2')
+.itemInputs(
+
+'1x botania:rune_fire',
+'1x botania:rune_wrath',
+'1x botania:rune_autumn',
+'1x #gtceu:circuits/ev'
+)
+.inputFluids(Fluid.of('kubejs:living_matter', 1000))
+.itemOutputs(Item.of('1x kubejs:blaze_model_2'))
+.duration(12000)
+.EUt(128)
+
+event.recipes.gtceu.dna_fabricator('phantom_model_2')
+.itemInputs(
+	'1x botania:rune_air',
+	'1x botania:rune_wrath',
+	'1x botania:rune_summer',
+	'1x #gtceu:circuits/ev'
+)
+.inputFluids(Fluid.of('kubejs:living_matter', 1000))
+.itemOutputs(Item.of('1x kubejs:phantom_model_2'))
+.duration(12000)
+.EUt(128)
+
+event.recipes.gtceu.dna_fabricator('spider_model_2')
+.itemInputs(
+	'1x botania:rune_earth',
+	'1x botania:rune_pride',
+	'1x botania:rune_autumn',
+	'1x #gtceu:circuits/ev'
+)
+.inputFluids(Fluid.of('kubejs:living_matter', 1000))
+.itemOutputs(Item.of('1x kubejs:spider_model_2'))
+.duration(12000)
+.EUt(128)
+
+event.recipes.gtceu.dna_fabricator('magma_model_2')
+.itemInputs(
+	'1x botania:rune_fire',
+	'1x botania:rune_gluttony',
+	'1x botania:rune_autumn',
+	'1x #gtceu:circuits/ev'
+)
+.inputFluids(Fluid.of('kubejs:living_matter', 1000))
+.itemOutputs(Item.of('1x kubejs:magma_model_2'))
+.duration(12000)
+.EUt(128)
+
+event.recipes.gtceu.dna_fabricator('skeleton_model_2')
+.itemInputs(
+	'1x botania:rune_earth',
+	'1x botania:rune_lust',
+	'1x botania:rune_summer',
+	'1x #gtceu:circuits/ev'
+)
+.inputFluids(Fluid.of('kubejs:living_matter', 1000))
+.itemOutputs(Item.of('1x kubejs:skeleton_model_2'))
+.duration(12000)
+.EUt(128)
+
+event.recipes.gtceu.dna_fabricator('slime_model_2')
+.itemInputs(
+	'1x botania:rune_earth',
+	'1x botania:rune_gluttony',
+	'1x botania:rune_spring',
+	'1x #gtceu:circuits/ev'
+)
+.inputFluids(Fluid.of('kubejs:living_matter', 1000))
+.itemOutputs(Item.of('1x kubejs:slime_model_2'))
+.duration(12000)
+.EUt(128)
+
+event.recipes.gtceu.dna_fabricator('ghast_model_2')
+.itemInputs(
+	'1x botania:rune_fire',
+	'1x botania:rune_envy',
+	'1x botania:rune_winter',
+	'1x #gtceu:circuits/ev'
+)
+.inputFluids(Fluid.of('kubejs:living_matter', 1000))
+.itemOutputs(Item.of('1x kubejs:ghast_model_2'))
+.duration(12000)
+.EUt(128)
+
+event.recipes.gtceu.dna_fabricator('zombie_model_2')
+.itemInputs(
+	'1x botania:rune_earth',
+	'1x botania:rune_gluttony',
+	'1x botania:rune_summer',
+	'1x #gtceu:circuits/ev'
+)
+.inputFluids(Fluid.of('kubejs:living_matter', 1000))
+.itemOutputs(Item.of('1x kubejs:zombie_model_2'))
+.duration(12000)
+.EUt(128)
+
+event.recipes.gtceu.dna_fabricator('creeper_model_2')
+.itemInputs(
+	'1x botania:rune_earth',
+	'1x botania:rune_wrath',
+	'1x botania:rune_autumn',
+	'1x #gtceu:circuits/ev'
+)
+.inputFluids(Fluid.of('kubejs:living_matter', 1000))
+.itemOutputs(Item.of('1x kubejs:creeper_model_2'))
+.duration(12000)
+.EUt(128)
+
 })
