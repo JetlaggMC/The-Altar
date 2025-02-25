@@ -56,4 +56,14 @@ ServerEvents.recipes(event => {
 
 		.duration(12000)
 		.EUt(480)	
+
+		event.recipes.gtceu.dream_room_amplifier('champions_alloy')
+		.itemInputs(Item.of('1x twilightforest:aurora_block'))
+		.itemInputs(Item.of('1x twilightforest:carminite_block'))
+		.itemInputs(Item.of('1x twilightforest:fiery_block'))
+		.itemInputs(Item.of('1x twilightforest:knightmetal_block'))
+		.itemInputs(Item.of('1x twilightforest:naga_scale'))
+		.itemOutputs(Item.of('1x gtceu:champions_alloy_block'))
+		.duration(2000)
+		.EUt(2048)	
 })
