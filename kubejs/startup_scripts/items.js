@@ -40,7 +40,10 @@ StartupEvents.registry('item', e => {
   e.create('crude_insulator_sheet')
   e.create('hyper_insulator_sheet')
 
-	
+  e.create('primitive_research')
+  e.create('andesite_research')
+  e.create('brass_research')
+  e.create('natural_research')
 
 
 	
@@ -266,6 +269,10 @@ StartupEvents.registry("fluid", (event) => {
     .thinTexture(0x98478d)
     .bucketColor(0x98478d)
     .displayName('Sterile Meat')
+    event.create('glass_residue')
+    .thinTexture(0xd5bbb6)
+    .bucketColor(0xd5bbb6)
+    .displayName('Glass Residue')
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
@@ -457,6 +464,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             "gtceu:block/machines/arc_furnace",
             false
         )
+
 	//crop_simulator
 	event.create('crop_simulator', 'simple', 0, GTValues.LV)
         .rotationState(RotationState.NON_Y_AXIS)
@@ -1087,6 +1095,46 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             "gtceu:block/machines/bender",
             false
         )
+        event.create('andesite_mechanical_drill', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+		.appearanceBlock(() => Block.getBlock('create:andesite_casing'))
+        .recipeTypes('andesite_mechanical_drill')
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('AAA', 'CDC', 'CCC',)
+            .aisle('AAA', 'C C', 'CHC',)
+            .aisle('AAA', 'CMC', 'CCC',)
+			.where('M', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('C', Predicates.blocks('create:andesite_casing')
+  				.or(Predicates.autoAbilities(definition.getRecipeTypes())))
+            .where('A', Predicates.blocks('create:andesite_alloy_block'))
+            .where('D',Predicates.abilities(PartAbility.INPUT_KINETIC).setExactLimit(1))
+            .where('H', Predicates.abilities(PartAbility.MUFFLER))
+        	.build())
+        .workableCasingRenderer(
+            "create:block/andesite_casing",
+            "gtceu:block/multiblock/large_miner",
+            false
+        )
+        event.create('brass_mechanical_drill', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+		.appearanceBlock(() => Block.getBlock('create:brass_casing'))
+        .recipeTypes('brass_mechanical_drill')
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('AAA', 'CDC', 'CCC',)
+            .aisle('AAA', 'C C', 'CHC',)
+            .aisle('AAA', 'CMC', 'CCC',)
+			.where('M', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('C', Predicates.blocks('create:brass_casing')
+  				.or(Predicates.autoAbilities(definition.getRecipeTypes())))
+            .where('A', Predicates.blocks('create:brass_block'))
+            .where('D',Predicates.abilities(PartAbility.INPUT_KINETIC).setExactLimit(1))
+            .where('H', Predicates.abilities(PartAbility.MUFFLER))
+        	.build())
+        .workableCasingRenderer(
+            "create:block/brass_casing",
+            "gtceu:block/multiblock/large_miner",
+            false
+        )
     event.create('essence_extractor_1', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
 		.appearanceBlock(() => Block.getBlock('create:copper_casing'))
@@ -1259,6 +1307,20 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('hydroponic_garden')
         .setEUIO('in')
         .setMaxIOSize(4, 2, 2, 0) 
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.COOLING)
+        event.create('andesite_mechanical_drill')
+        .category('andesite_mechanical_drill')
+        .setEUIO('in')
+        .setMaxIOSize(2, 1, 1, 0) 
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.COOLING)
+        event.create('brass_mechanical_drill')
+        .category('brass_mechanical_drill')
+        .setEUIO('in')
+        .setMaxIOSize(2, 1, 1, 0) 
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
