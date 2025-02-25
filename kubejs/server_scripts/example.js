@@ -41,6 +41,9 @@ event.remove({ output: 'create:copper_casing' })
 event.remove({type: 'create:crushing'}) // Remove all campfire cooking recipes
 event.remove({ output: 'create:spout'})
 event.remove({ output: 'create:empty_blaze_burner'})
+event.remove({ output: 'create:belt_connector'})
+event.remove({ output: 'create:andesite_funnel'})
+
 event.remove({type: 'gtceu:primitive_blast_furnace'}) // Remove all campfire cooking recipes
 event.remove({ output: 'gtceu:good_electronic_circuit' })
 event.remove({ output: 'gtceu:phenolic_printed_circuit_board' })
@@ -95,12 +98,24 @@ event.remove({ input: 'gtceu:weak_synthetic_dust'})
 event.remove({ input: 'gtceu:glowing_dust'})
 event.remove({ input: 'gtceu:blazing_dust'})
 event.remove({ input: 'gtceu:weak_synthetic_dust'})
+event.remove({ input: 'gtceu:champions_alloy_dust'})
+event.remove({ input: 'gtceu:withered_dust'})
+event.remove({ output: 'create:hand_crank'})
+event.remove({ output: 'create:basin'})
+event.remove({ output: 'create:depot'})
+event.remove({ output: 'create:mechanical_pump'})
+event.remove({ output: 'create:chute'})
+
+event.remove({ output: 'thermal:constantan_dust'})
+event.remove({ id: 'gtceu:shapeless/glass_dust_flint'})
+
 event.remove({ input: 'gtceu:elementium_dust'})
 event.remove({ input: 'gtceu:arcane_gold_dust'})
 event.remove({ input: 'gtceu:natures_alloy_dust'})
 event.remove({ input: 'gtceu:awakened_echo_dust'})
 event.remove({ output: 'gtceu:frostproof_machine_casing'})
 event.remove({ output: 'gtceu:heatproof_machine_casing'})
+event.remove({ output: 'gtceu:cupronickel_large_item_pipe'})
 
 event.remove({ output: 'gtceu:silicon'})
 
@@ -108,7 +123,8 @@ event.remove({ output: 'gtceu:diode'})
 
 event.remove({ output: 'gtceu:mv_machine_hull'})
 event.remove({ output: 'gtceu:mv_steam_turbine'})
-	
+
+event.remove({ output: Fluid.of('create:honey')})
 event.remove({ output: Fluid.of('gtceu:rubber')})
 event.remove({ output: Fluid.of('gtceu:biomass')})
 
@@ -201,20 +217,24 @@ event.shapeless('1x minecraft:flint_and_steel', [ // arg 1: output
 	event.recipes.create.pressing('gtceu:cupronickel_foil', 'gtceu:cupronickel_plate')
 event.recipes.create.pressing('gtceu:glowing_plate', 'gtceu:glowing_ingot')
 	event.recipes.create.pressing('gtceu:glowing_foil', 'gtceu:glowing_plate')
-event.recipes.create.pressing('gtceu:copper_plate', 'gtceu:copper_ingot')
+event.recipes.create.pressing('gtceu:copper_plate', '#forge:ingots/copper')
 	event.recipes.create.pressing('gtceu:copper_foil', 'gtceu:copper_plate')
 	event.recipes.create.pressing('create:polished_rose_quartz', 'create:rose_quartz')
 	event.recipes.create.pressing('gtceu:rubber_plate', 'gtceu:rubber_ingot')
 	event.recipes.create.pressing('gtceu:compressed_fireclay', 'gtceu:fireclay_dust')
 
-	event.recipes.create.pressing('gtceu:natures_alloy_plate', 'gtceu:natures_alloy')
-	event.recipes.create.pressing('gtceu:andesite_alloy_ring', 'gtceu:natures_alloy_bolt')
+	event.recipes.create.pressing('gtceu:natures_alloy_plate', 'gtceu:natures_alloy_ingot')
+	event.recipes.create.pressing('gtceu:natures_alloy_ring', 'gtceu:natures_alloy_bolt')
+
+  event.recipes.create.pressing('gtceu:blazing_plate', 'gtceu:blazing_alloy_ingot')
+	event.recipes.create.pressing('gtceu:blazing_ring', 'gtceu:blazing_bolt')
 
 	event.recipes.create.compacting('1x gtceu:firebricks', '4x gtceu:compressed_fireclay')
+	event.recipes.create.compacting('1x kubejs:crude_insulator_sheet', Fluid.of('kubejs:crude_insulator',144))
 
     event.recipes.create.milling('2x kubejs:crushed_andesite', 'minecraft:andesite')
-    event.recipes.create.milling('1x gtceu:copper_dust', '#forge:copper_ingot')
-    event.recipes.create.milling('1x gtceu:nickel_dust', '#forge:nickel_ingot')
+    event.recipes.create.milling('1x gtceu:copper_dust', '#forge:ingots/copper')
+    event.recipes.create.milling('1x gtceu:nickel_dust', '#forge:ingots/nickel')
     event.recipes.create.milling('1x gtceu:brick_dust', 'minecraft:brick')
     event.recipes.create.milling('1x gtceu:clay_dust', 'minecraft:clay')
     event.recipes.create.milling('1x kubejs:desert_dust', 'kubejs:desert_shard')
@@ -299,13 +319,19 @@ event.recipes.create.pressing('gtceu:copper_plate', 'gtceu:copper_ingot')
 	event.recipes.create.mixing(Fluid.of('gtceu:andesite_alloy', 144),		[Fluid.of('gtceu:iron',16),'1x kubejs:crushed_andesite']).heated()
  	event.recipes.create.mixing('1x gtceu:treated_wood_planks',	['1x #minecraft:planks', Fluid.of('gtceu:creosote',100)])
 	event.recipes.create.mixing('2x gtceu:cupronickel_dust',	['1x gtceu:copper_dust', '1x gtceu:nickel_dust']).heated()
- 	event.recipes.create.mixing(Fluid.of('kubejs:crude_insulator', 288),[Fluid.of('create:honey',144),Fluid.of('gtceu:rubber',144), '1x gtceu:sulfur_dust']).heated()
+  event.recipes.create.mixing(Fluid.of('gtceu:rubber',1000),	['1x gtceu:sticky_resin', Fluid.of('kubejs:glass_residue',100)])
+  event.recipes.create.mixing(Fluid.of('create:honey',1000),	'1x minecraft:honey_block')
+  event.recipes.create.mixing(Fluid.of('create:honey',144),	'1x minecraft:honeycomb')
+
+ 	event.recipes.create.mixing(Fluid.of('kubejs:crude_insulator', 288),[Fluid.of('create:honey',144),Fluid.of('gtceu:rubber',144), '1x gtceu:sulfur_dust'])
 	event.recipes.create.mixing('2x gtceu:fireclay_dust',	['1x gtceu:clay_dust', '1x gtceu:brick_dust']).heated()
-	event.recipes.create.mixing('1x kubjes:blank_shard',	['1x create:andesite_alloy', '1x #forge:glass']).heated()
+	event.recipes.create.mixing('1x kubejs:blank_shard',	['1x create:andesite_alloy', '1x #forge:glass']).heated()
  	event.recipes.create.mixing(Fluid.of('gtceu:glowing', 288),[Fluid.of('gtceu:iron',144), '1x minecraft:glow_ink_sac']).heated()
  	event.recipes.create.mixing(Fluid.of('gtceu:red_alloy', 288),[Fluid.of('gtceu:iron',144), '1x minecraft:redstone']).heated()
  	event.recipes.create.mixing(Fluid.of('gtceu:blazing', 1296),['8x minecraft:blaze_powder', '1x kubejs:nether_dust']).superheated()
- 	event.recipes.create.mixing(Fluid.of('gtceu:glass', 144),['1x gtceu:quartz_sand_dust', '1x gtceu:tiny_flint_dust'])
+   event.recipes.create.mixing('1x gtceu:glass_dust',	['1x gtceu:quartz_sand_dust', '1x gtceu:tiny_flint_dust']).heated()
+
+  event.recipes.create.mixing('1x kubejs:andesite_research',	['1x gtceu:andesite_alloy_rod', '1x create:cogwheel','1x gtceu:coke_gem','1x #forge:nuggets/zinc',Fluid.of('gtceu:creosote',144)])
 
     event.recipes.create.sequenced_assembly('gtceu:resin_circuit_board','gtceu:treated_wood_planks', [
 		event.recipes.createPressing('gtceu:treated_wood_planks','gtceu:treated_wood_planks'),
@@ -322,6 +348,14 @@ event.recipes.create.pressing('gtceu:copper_plate', 'gtceu:copper_ingot')
 		event.recipes.createFilling('gtceu:brass_plate', ['gtceu:brass_plate', Fluid.of('kubejs:crude_insulator', 16)])
 	]).transitionalItem('gtceu:brass_plate').loops(3)
 
+   event.recipes.create.sequenced_assembly('kubejs:brass_research','minecraft:glass_bottle', [
+		event.recipes.createFilling('minecraft:glass_bottle', ['minecraft:glass_bottle', Fluid.of('kubejs:liquid_rose_quartz', 144)]),
+		event.recipes.createFilling('minecraft:glass_bottle', ['minecraft:glass_bottle', Fluid.of('create:chocolate', 144)]),
+		event.recipes.createFilling('minecraft:glass_bottle', ['minecraft:glass_bottle', Fluid.of('kubejs:crude_insulator', 144)]),
+		event.recipes.createDeploying('minecraft:glass_bottle', ['minecraft:glass_bottle', 'create:dough']),
+		event.recipes.createDeploying('minecraft:glass_bottle', ['minecraft:glass_bottle', 'gtceu:brass_bolt'])
+	]).transitionalItem('minecraft:glass_bottle').loops(1)
+	
 	
 		event.recipes.gtceu.primitive_blast_furnace('natures_alloy')
 		.itemInputs(
@@ -341,47 +375,20 @@ event.recipes.create.pressing('gtceu:copper_plate', 'gtceu:copper_ingot')
 		.itemOutputs(
 				'1x gtceu:coke_gem'
 		)
+    .outputFluids(Fluid.of('gtceu:creosote', 250))
 		.duration(600)
 	
-	
-	event.recipes.gtceu.altar_research('1')
+		event.recipes.gtceu.coke_oven('glass')
 		.itemInputs(
-				'1x kubejs:primitive_star'
+				'1x gtceu:glass_dust'
 		)
 		.itemOutputs(
-				'1x kubejs:primitive_research_token'
+				'1x minecraft:glass'
 		)
-		.circuit(1)
+    .outputFluids(Fluid.of('kubejs:glass_residue', 144))
 		.duration(600)
-		.rpm(8)
 	
-	event.recipes.gtceu.altar_research('2')
-		.itemInputs(
-				'2x kubejs:primitive_star',
-				'1x kubejs:creative_star'
 
-		)
-		.itemOutputs(
-				'1x kubejs:creative_research_token'
-		)
-		.circuit(2)
-		.duration(600)
-		.rpm(64)
-
-	event.recipes.gtceu.altar_research('3')
-		.itemInputs(
-				'4x kubejs:primitive_star',
-				'2x kubejs:creative_star',
-				'1x kubejs:natural_star'
-		)
-		.itemOutputs(
-				'1x kubejs:natural_research_token'
-		)
-		.circuit(3)
-		.duration(600)
-		.rpm(64)
-	
-	
 	event.shaped('1x kubejs:earth_sample', [
     'ABC', 
     'DEF',
@@ -453,7 +460,19 @@ event.recipes.create.pressing('gtceu:copper_plate', 'gtceu:copper_ingot')
 
   }
 )
-	
+event.shaped('1x kubejs:primitive_research', [
+  ' A ', 
+  'BCD',
+  ' E '  
+], {
+  A: 'minecraft:dirt', 
+  B: 'minecraft:amethyst_shard',
+  C: 'minecraft:carrot',
+  D: 'minecraft:iron_nugget',
+  E: 'minecraft:andesite'
+
+}
+)
 	event.shaped('1x kubejs:primitive_star', [
     ' A ', 
     'BCD',
@@ -520,6 +539,49 @@ B: 'create:andesite_alloy'
 
   }
 )
+event.shaped('1x create:hand_crank', [
+  'AS ',
+  'BBB',
+  ' WC'
+], {
+A: 'gtceu:small_andesite_alloy_gear',
+B: 'gtceu:treated_wood_planks',
+C: 'create:shaft',
+W: '#forge:tools/wrenches',
+S: '#forge:tools/screwdrivers'
+}).damageIngredient('#forge:tools/wrenches').damageIngredient('#forge:tools/screwdrivers')
+event.shaped('1x create:basin', [
+  '   ',
+  'AHA',
+  'ABA'
+], {
+A: 'gtceu:double_andesite_alloy_plate',
+B: 'create:andesite_casing',
+H: '#forge:tools/hammers'
+}).damageIngredient('#forge:tools/hammers')
+
+event.shaped('1x create:depot', [
+  ' H ',
+  'SAS',
+  'TBT'
+], {
+A: 'gtceu:double_andesite_alloy_plate',
+S: 'gtceu:andesite_alloy_screw',
+B: 'create:andesite_casing',
+T: 'gtceu:treated_wood_planks',
+
+H: '#forge:tools/hammers'
+}).damageIngredient('#forge:tools/hammers')
+
+event.shaped('4x create:chute', [
+  ' H ',
+  'SAS',
+  'SAS'
+], {
+A: '#forge:barrels',
+S: 'gtceu:double_andesite_alloy_plate',
+H: '#forge:tools/hammers'
+}).damageIngredient('#forge:tools/hammers')
 event.shaped('1x create:encased_fan', [
         'DSH',
         'CBR',
@@ -762,10 +824,22 @@ event.shaped('1x gtceu:glass_tube', [
     'BCB'
   ], {
     B: 'create:shaft', 
-    A: 'gtceu:rubber_plate',
+    A: 'kubejs:crude_insulator_sheet',
     C: '#forge:tools/wrenches'
   }
 ).damageIngredient('#forge:tools/wrenches')
+event.shaped('1x create:andesite_funnel', [
+  'AA', 
+  'BB',
+  'CS'
+], {
+  B: 'kubejs:crude_insulator_sheet', 
+  A: 'gtceu:andesite_alloy_plate',
+  C: '#forge:tools/hammers',
+  S: '#forge:tools/screwdrivers'
+
+}
+).damageIngredient('#forge:tools/hammers').damageIngredient('#forge:tools/screwdrivers')
 	event.shaped('1x create:brass_hand', [
     'FAE', 
     'BAB',
