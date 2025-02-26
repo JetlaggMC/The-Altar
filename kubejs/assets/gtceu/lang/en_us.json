@@ -11,7 +11,6 @@
    "block.gtceu.hv_dna_fabricator": "Advanced DNA Fabricator II",
    "block.gtceu.ev_dna_fabricator": "Advanced DNA Fabricator III",
    "gtceu.dna_fabricator": "DNA Fabricator",
-   "block.gtceu.andesite_mechanical_drill": "Andesite Mechanical Drill",
 
 
    "block.gtceu.lv_crop_simulator": "Basic Crop Simulator",
@@ -54,6 +53,26 @@
    "block.gtceu.twilight_awakening_chamber_mk2": "Twilight Awakening Chamber MK2",
    "block.gtceu.twilight_awakening_chamber_mk3": "Twilight Awakening Chamber MK3",
    "block.gtceu.twilight_awakening_chamber_mk4": "Twilight Awakening Chamber MK4",
-   "block.gtceu.large_mechanical_press": "Large Mechanical Press"
+   "block.gtceu.large_mechanical_press": "Large Mechanical Press",
+   "block.gtceu.cupronickel_coil_block": "Glowing Coil Block",
+   "block.gtceu.kanthal_coil_block": "Elementium Coil Block",
+   "block.gtceu.nichrome_coil_block": "Synthetic Neuron Coil Block",
 
+     "block.gtceu.heatproof_machine_casing": "Heat Proof Arcane Gold Machine Casing",
+     "block.gtceu.frostproof_machine_casing": "Frost Proof Awakened Echo Machine Casing",
+     "block.gtceu.clean_machine_casing": "Clean Bio Alloy Machine Casing",
+
+     "block.gtceu.bronze_firebox_casing": "Blazing Firebox Casing",
+     "block.gtceu.bronze_large_boiler": "Large Blazing Boiler",
+     "block.gtceu.bronze_pipe_casing": "Blazing Pipe Casing",
+     "block.gtceu.steam_machine_casing": "Blazing Machine Casing",
+
+   "item.gtceu.phenolic_circuit_board": "Magical Circuit Board",
+   "item.gtceu.phenolic_printed_circuit_board": "Magical Printed Circuit Board",
+   "item.gtceu.silicon_boule": "Arcane-Silicon Boule",
+   "item.gtceu.silicon_wafer": "Arcane-Silicon Wafer",
+   "item.gtceu.plastic_circuit_board": "Living Circuit Board",
+   "item.gtceu.plastic_printed_circuit_board": "Living Printed Circuit Board",
+   "item.gtceu.phosphorus_boule": "Awakened Echo-doped Silicon Boule",
+   "item.gtceu.phosphorus_wafer": "Awakened Echo-doped wafer"
 }
