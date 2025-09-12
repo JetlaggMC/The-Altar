@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Specification-Title: Create
+Specification-Vendor: simibubi
+Specification-Version: 6.0.4
+Implementation-Title: Create
+Implementation-Version: 6.0.4
+Implementation-Vendor: simibubi
+Implementation-Timestamp: 2025-03-19T19:55:21+0000
+Timestampe: 1742414121841
+Built-On-Java: 17.0.14+7 (Eclipse Adoptium)
+Built-On-Minecraft: 1.20.1
+MixinConfigs: create.mixins.json
+Git-Hash: 254bb816aee1c056c74b2ad4beb88222a499da78
+
