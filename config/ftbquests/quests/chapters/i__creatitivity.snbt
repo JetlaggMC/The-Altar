@@ -2,29 +2,18 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "i__creatitivity"
-	group: "1909C539EC7E396E"
+	group: ""
+	hide_quest_until_deps_visible: true
 	icon: "kubejs:creative_star"
 	id: "3D5F717908F64A39"
-	order_index: 0
-	quest_links: [
-		{
-			id: "15A183C178AC0FE0"
-			linked_quest: "7A04468403235DC1"
-			shape: "diamond"
-			x: -1.0d
-			y: 9.5d
-		}
-		{
-			id: "23BA9DA79249E4A5"
-			linked_quest: "1CEF6A5EEC67CE55"
-			shape: "diamond"
-			x: -1.0d
-			y: 8.5d
-		}
-	]
+	order_index: 1
+	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["591B1A5AA4F697B6"]
+			dependencies: [
+				"591B1A5AA4F697B6"
+				"1EE592CCEBDD19F4"
+			]
 			id: "198D06EA799DC550"
 			shape: "diamond"
 			size: 2.0d
@@ -33,8 +22,8 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.0d
+			x: 1.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["198D06EA799DC550"]
@@ -170,8 +159,8 @@
 				}
 			]
 			title: "Andesite Alloy Tools"
-			x: 0.0d
-			y: -0.5d
+			x: 2.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["275B875F1165AD08"]
@@ -276,11 +265,14 @@
 				}
 			]
 			title: "Gregtech Mining Tools"
-			x: 1.0d
-			y: -0.5d
+			x: 2.5d
+			y: -3.5d
 		}
 		{
-			dependencies: ["275B875F1165AD08"]
+			dependencies: [
+				"275B875F1165AD08"
+				"2C45BA6DB939FA34"
+			]
 			icon: "gtceu:coke_oven"
 			id: "5FD6BEFC70CC297A"
 			shape: "diamond"
@@ -297,8 +289,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 0.5d
+			x: 3.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5FD6BEFC70CC297A"]
@@ -309,8 +301,8 @@
 				item: "gtceu:creosote_bucket"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.5d
+			x: 4.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["4CF57BD5C7E17D6D"]
@@ -321,24 +313,35 @@
 				item: "gtceu:treated_wood_planks"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.5d
+			x: 4.5d
+			y: -4.0d
 		}
 		{
-			dependencies: ["3AD198CE2A2785B9"]
-			hide: false
+			dependencies: [
+				"3AD198CE2A2785B9"
+				"29E81097898C3094"
+			]
+			hide_until_deps_visible: false
 			id: "3D622E7ABF912E2E"
+			rewards: [{
+				id: "597522FAE4A02418"
+				item: "create:wrench"
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "2F985DC574688FA8"
 				item: "create:andesite_casing"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 3.5d
+			x: 5.5d
+			y: -4.0d
 		}
 		{
-			dependencies: ["3D622E7ABF912E2E"]
+			dependencies: [
+				"5BBC05724262FC25"
+				"3D622E7ABF912E2E"
+			]
 			description: ["Allows for 1:1 plate making!"]
 			id: "45587882DD96192C"
 			shape: "diamond"
@@ -347,21 +350,8 @@
 				item: "create:mechanical_press"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["3D622E7ABF912E2E"]
-			description: ["Automatic rod production!"]
-			id: "7F6D37B66F061CF2"
-			shape: "rsquare"
-			tasks: [{
-				id: "600C7805CE890B95"
-				item: "create:mechanical_saw"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 4.5d
+			x: 6.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["45587882DD96192C"]
@@ -372,8 +362,8 @@
 				item: "gtceu:andesite_alloy_ring"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.5d
+			x: 7.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["11EEEC8EC4EFBC99"]
@@ -384,8 +374,8 @@
 				item: "gtceu:andesite_alloy_rotor"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 6.5d
+			x: 8.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1931A5627B5D3E6E"]
@@ -396,8 +386,8 @@
 				id: "0E62212221831BE6"
 				type: "dimension"
 			}]
-			x: 1.0d
-			y: 7.5d
+			x: 5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -411,8 +401,8 @@
 				item: "create:blaze_burner"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 8.5d
+			x: 9.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["30BB0E5F34F229E1"]
@@ -423,8 +413,8 @@
 				item: "minecraft:obsidian"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 6.5d
+			x: 4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1D4D4FFD665C42C2"]
@@ -441,72 +431,125 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
-			y: 5.5d
+			x: 3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
-				"7A04468403235DC1"
 				"78CE7FD6C48CB18F"
 				"691E4266326D73D0"
 				"1CEF6A5EEC67CE55"
+				"0E5120F857255B90"
 			]
-			icon: "gtceu:foundry"
+			description: ["Used to melt down metals into fluid form"]
+			icon: "mbd2:kinetic_foundry"
 			id: "632A62D558C6F37E"
 			shape: "diamond"
 			tasks: [
 				{
 					id: "5710D7320108E57F"
-					item: "gtceu:foundry"
-					type: "item"
-				}
-				{
-					id: "6F07D7CEBF7DF77B"
-					item: "gtceu:ulv_input_bus"
-					type: "item"
-				}
-				{
-					id: "0543DB1D4E45C2B2"
-					item: "gtceu:ulv_input_hatch"
-					type: "item"
-				}
-				{
-					id: "2171895E22396D12"
-					item: "gtceu:ulv_output_hatch"
-					type: "item"
-				}
-				{
-					id: "26C7636E719AF455"
-					item: "gtceu:lv_kinetic_input_box"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "2A23244BCA7FCC39"
-					item: "create:andesite_casing"
+					item: "mbd2:kinetic_foundry"
 					type: "item"
 				}
 				{
 					count: 8L
-					id: "391EAF3BDFC05FB2"
-					item: "gtceu:cupronickel_coil_block"
+					id: "0FD484BF981F8F78"
+					item: { Count: 8, id: "gtceu:cupronickel_coil_block" }
+					type: "item"
+				}
+				{
+					count: 13L
+					id: "338D87735782C3C9"
+					item: { Count: 16, id: "create:andesite_casing" }
+					type: "item"
+				}
+				{
+					id: "2F8F97FE0FFF3E04"
+					item: "mbd2:kinetic_stress_input"
+					type: "item"
+				}
+				{
+					id: "62B4D7D8A14A7370"
+					item: "mbd2:andesite_input_bus"
+					type: "item"
+				}
+				{
+					id: "3948608B059978C7"
+					item: "mbd2:cupronickel_input_hatch"
+					type: "item"
+				}
+				{
+					id: "65D04C5DD11D37B5"
+					item: "mbd2:cupronickel_output_hatch"
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 9.5d
+			x: 10.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["632A62D558C6F37E"]
+			dependencies: [
+				"632A62D558C6F37E"
+				"0E5120F857255B90"
+			]
+			description: [
+				"Used to cast liquids into solid form."
+				"{image: width:100 height:100 align:center}"
+			]
+			icon: "mbd2:casting_tower"
 			id: "7468FC23297E765B"
 			shape: "diamond"
-			tasks: [{
-				id: "718F6B3BC53FC1AE"
-				item: "gtceu:lv_caster"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 10.5d
+			tasks: [
+				{
+					id: "718F6B3BC53FC1AE"
+					item: "mbd2:casting_tower"
+					type: "item"
+				}
+				{
+					id: "246ECDB3AE169DF0"
+					item: "create:spout"
+					type: "item"
+				}
+				{
+					id: "028F3C977292163A"
+					item: "create:depot"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "279EA51A7C8D8BD7"
+					item: { Count: 12, id: "minecraft:glass" }
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "1CDED23CA323EC69"
+					item: "create:copper_casing"
+					type: "item"
+				}
+				{
+					id: "0B7503D345443D38"
+					item: "mbd2:kinetic_stress_input"
+					type: "item"
+				}
+				{
+					id: "32165D5720D99ACB"
+					item: "mbd2:andesite_input_bus"
+					type: "item"
+				}
+				{
+					id: "65F9B2965B25A86F"
+					item: "mbd2:andesite_output_bus"
+					type: "item"
+				}
+				{
+					id: "2C52469829F5119A"
+					item: "mbd2:cupronickel_input_hatch"
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["477575BE4F0DC583"]
@@ -525,11 +568,15 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 7.5d
+			x: 9.5d
+			y: -4.0d
 		}
 		{
-			dependencies: ["7468FC23297E765B"]
+			dependencies: [
+				"7468FC23297E765B"
+				"5C003A3265C6291A"
+			]
+			description: ["1 iron ingot -> 9 andesite alloy"]
 			icon: "create:andesite_alloy"
 			id: "10488FB6581A666D"
 			shape: "diamond"
@@ -556,8 +603,8 @@
 				}
 			]
 			title: "Andesite Alloy II"
-			x: -1.0d
-			y: 10.5d
+			x: 11.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["7468FC23297E765B"]
@@ -568,11 +615,14 @@
 				item: "gtceu:brass_ingot"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 10.5d
+			x: 12.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["04C58079B7470336"]
+			dependencies: [
+				"04C58079B7470336"
+				"174126B645CF359B"
+			]
 			id: "294A034B0F6698FF"
 			shape: "diamond"
 			tasks: [{
@@ -580,8 +630,8 @@
 				item: "create:brass_casing"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 11.5d
+			x: 13.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -595,11 +645,14 @@
 				item: "create:mechanical_crafter"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 12.5d
+			x: 15.5d
+			y: -4.0d
 		}
 		{
-			dependencies: ["7468FC23297E765B"]
+			dependencies: [
+				"7468FC23297E765B"
+				"0DA754C0C31982D8"
+			]
 			id: "09E0DB945F8CF866"
 			shape: "diamond"
 			tasks: [{
@@ -607,8 +660,8 @@
 				item: "create:electron_tube"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 11.5d
+			x: 12.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -622,11 +675,14 @@
 				item: "create:deployer"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 12.5d
+			x: 14.5d
+			y: -4.0d
 		}
 		{
-			dependencies: ["04C58079B7470336"]
+			dependencies: [
+				"04C58079B7470336"
+				"0DA754C0C31982D8"
+			]
 			id: "41FAFDEC686F1D80"
 			shape: "diamond"
 			tasks: [{
@@ -634,8 +690,8 @@
 				item: "create:brass_hand"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 11.5d
+			x: 13.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -651,8 +707,8 @@
 				item: "kubejs:creative_star"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 16.0d
+			x: 19.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -667,11 +723,14 @@
 				item: "create:precision_mechanism"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 12.5d
+			x: 14.5d
+			y: -6.0d
 		}
 		{
-			dependencies: ["78CE7FD6C48CB18F"]
+			dependencies: [
+				"78CE7FD6C48CB18F"
+				"44414F30D34E7934"
+			]
 			icon: "gtceu:primitive_blast_furnace"
 			id: "2EC4DCFDCAE8527B"
 			shape: "diamond"
@@ -688,8 +747,8 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
-			y: 7.5d
+			x: 8.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5FD6BEFC70CC297A"]
@@ -700,8 +759,8 @@
 				item: "gtceu:coke_gem"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 0.5d
+			x: 3.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["0BC2D4ACF6D90A46"]
@@ -712,8 +771,8 @@
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 12.5d
+			x: 15.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["31009874062A2C1D"]
@@ -725,8 +784,8 @@
 				type: "item"
 			}]
 			title: "Ore Doubling I"
-			x: -2.0d
-			y: 12.5d
+			x: 14.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -737,11 +796,11 @@
 			shape: "diamond"
 			tasks: [{
 				id: "372C2B7CD4D5E45D"
-				item: "gtceu:large_mechanical_press"
+				item: "mbd2:large_mechanical_press"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 13.5d
+			x: 16.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["60B83DD731DECF58"]
@@ -752,8 +811,8 @@
 				item: "kubejs:mega_brass_casing"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 14.5d
+			x: 17.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["60B83DD731DECF58"]
@@ -764,23 +823,14 @@
 				item: "kubejs:mega_andesite_casing"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 14.5d
+			x: 17.5d
+			y: -5.0d
 		}
 		{
-			dependencies: ["127462DD1590CFAA"]
-			id: "55EBA745787C475C"
-			shape: "diamond"
-			tasks: [{
-				id: "2B8AAE497D8D18E4"
-				item: "gtceu:cupronickel_ingot"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 7.5d
-		}
-		{
-			dependencies: ["256358FD632BE3DE"]
+			dependencies: [
+				"256358FD632BE3DE"
+				"533AA53A4CF175BA"
+			]
 			id: "127462DD1590CFAA"
 			shape: "diamond"
 			tasks: [{
@@ -788,11 +838,14 @@
 				item: "gtceu:cupronickel_dust"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 7.5d
+			x: 10.5d
+			y: -5.0d
 		}
 		{
-			dependencies: ["55EBA745787C475C"]
+			dependencies: [
+				"127462DD1590CFAA"
+				"533AA53A4CF175BA"
+			]
 			id: "06A2805723D9C27F"
 			shape: "diamond"
 			tasks: [{
@@ -800,33 +853,46 @@
 				item: "create:fluid_pipe"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 8.5d
+			x: 10.5d
+			y: -6.0d
 		}
 		{
-			dependencies: ["06A2805723D9C27F"]
+			dependencies: [
+				"06A2805723D9C27F"
+				"533AA53A4CF175BA"
+			]
+			description: ["Use mechanical pumps connected to rotational power to move your fluids through pipes!"]
 			id: "58F47BE825CFCCA6"
+			shape: "diamond"
 			tasks: [{
 				id: "0BC7DEB3DA0A9811"
 				item: "create:mechanical_pump"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 9.5d
+			x: 10.5d
+			y: -7.0d
 		}
 		{
-			dependencies: ["06A2805723D9C27F"]
+			dependencies: [
+				"06A2805723D9C27F"
+				"533AA53A4CF175BA"
+			]
 			id: "5403B1E29129A8B2"
+			shape: "diamond"
 			tasks: [{
 				id: "079BB57E6AB1ABDD"
 				item: "create:spout"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 9.5d
+			x: 10.5d
+			y: -9.0d
 		}
 		{
-			dependencies: ["06A2805723D9C27F"]
+			dependencies: [
+				"06A2805723D9C27F"
+				"533AA53A4CF175BA"
+			]
+			description: ["Use tanks to store your fluids!"]
 			id: "7380F02CC413E392"
 			shape: "diamond"
 			tasks: [{
@@ -834,19 +900,20 @@
 				item: "create:fluid_tank"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 9.5d
+			x: 10.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["60B83DD731DECF58"]
 			id: "14C692C911E1B2B7"
+			shape: "diamond"
 			tasks: [{
 				id: "4F33B33F22A7FC00"
-				item: "kubejs:mega_copper_casing"
+				item: "kubejs:mega_cupronickel_casing"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 14.5d
+			x: 17.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -861,11 +928,11 @@
 				item: "kubejs:crude_insulator_bucket"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 12.5d
+			x: 9.5d
+			y: -6.0d
 		}
 		{
-			dependencies: ["78CE7FD6C48CB18F"]
+			dependencies: ["256358FD632BE3DE"]
 			hide_dependency_lines: true
 			id: "6EB7ED7883C25877"
 			shape: "diamond"
@@ -874,12 +941,15 @@
 				item: "create:honey_bucket"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 12.5d
+			x: 9.5d
+			y: -7.0d
 		}
 		{
-			dependencies: ["632A62D558C6F37E"]
-			hide_dependency_lines: true
+			dependencies: [
+				"18177A01E335621A"
+				"256358FD632BE3DE"
+			]
+			hide_dependency_lines: false
 			id: "332845EB43340DF4"
 			shape: "diamond"
 			tasks: [{
@@ -887,8 +957,8 @@
 				item: "gtceu:rubber_bucket"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 11.5d
+			x: 9.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["05E6730095A0C5C5"]
@@ -900,8 +970,8 @@
 				item: "gtceu:sulfur_dust"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 13.5d
+			x: 8.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["7A04468403235DC1"]
@@ -913,8 +983,8 @@
 				item: "create:cinder_flour"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 13.5d
+			x: 16.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["7B86B6F4DA9EAD0E"]
@@ -925,8 +995,8 @@
 				item: "create:blaze_cake_base"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 13.5d
+			x: 16.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -934,6 +1004,7 @@
 				"1B3FF6FCAD5398B3"
 				"4F37A58187A4211B"
 			]
+			hide_dependency_lines: true
 			id: "1DA1ACD5D8972CB9"
 			shape: "diamond"
 			tasks: [{
@@ -941,8 +1012,8 @@
 				item: "create:blaze_cake"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 13.5d
+			x: 16.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["072FA5DBAB44ADFB"]
@@ -953,26 +1024,34 @@
 				item: "gtceu:cupronickel_coil_block"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 9.5d
+			x: 10.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["78CE7FD6C48CB18F"]
 			id: "072FA5DBAB44ADFB"
 			shape: "diamond"
 			tasks: [{
+				count: 64L
 				id: "4C10C470AE31E4D9"
 				item: "gtceu:glowing_ingot"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 8.5d
+			x: 9.5d
+			y: -2.0d
 		}
 		{
+			dependencies: ["1EE592CCEBDD19F4"]
 			id: "591B1A5AA4F697B6"
 			rewards: [{
-				id: "1C7C7305D47D25B9"
-				item: "gtceu:prospector.hv"
+				id: "687ACAD543B1990D"
+				item: {
+					Count: 1
+					id: "gtceu:prospector.hv"
+					tag: {
+						Charge: 1600000L
+					}
+				}
 				type: "item"
 			}]
 			shape: "diamond"
@@ -980,8 +1059,168 @@
 				id: "5837B82116CC6412"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: -3.5d
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"3AD198CE2A2785B9"
+				"62E4B4414CE3725E"
+			]
+			id: "5BBC05724262FC25"
+			shape: "diamond"
+			tasks: [{
+				id: "58DEF9EB0D45A760"
+				item: "create:hand_crank"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["532A4F710807A930"]
+			icon: "minecraft:glass"
+			id: "18177A01E335621A"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "22C0FB12B81F4465"
+					item: "gtceu:tiny_flint_dust"
+					type: "item"
+				}
+				{
+					id: "5325BE50A460625B"
+					item: "gtceu:quartz_sand_dust"
+					type: "item"
+				}
+				{
+					id: "380B52AA3A949ACB"
+					item: "gtceu:glass_dust"
+					type: "item"
+				}
+				{
+					id: "0F53C40622287545"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "2A3CAFC2FB068B99"
+					item: "kubejs:glass_residue_bucket"
+					type: "item"
+				}
+			]
+			title: "Glass"
+			x: 8.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["477575BE4F0DC583"]
+			id: "532A4F710807A930"
+			shape: "diamond"
+			tasks: [{
+				id: "241121CB2332DC00"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"2986C18126186298"
+				"60B83DD731DECF58"
+			]
+			id: "4A14915E4E192E78"
+			tasks: [{
+				id: "2E2E5272EDF09D96"
+				item: "mbd2:andesite_mechanical_drill"
+				type: "item"
+			}]
+			x: 16.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"7468FC23297E765B"
+				"228552E97C93D5BD"
+			]
+			description: ["1 amethyst ore -> 2 amethyst shard"]
+			icon: "minecraft:amethyst_shard"
+			id: "0395EF2A542C1A32"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "1AA01198049FA49D"
+					item: "kubejs:molten_amethyst_bucket"
+					type: "item"
+				}
+				{
+					id: "0E1CACE0C735601D"
+					item: "kubejs:glass_residue_bucket"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0D1675F3DDDCFAAE"
+					item: { Count: 2, id: "minecraft:amethyst_shard" }
+					type: "item"
+				}
+			]
+			title: "Amethyst Processing I"
+			x: 12.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["256358FD632BE3DE"]
+			id: "62B302897DD8D029"
+			shape: "diamond"
+			tasks: [{
+				id: "7233D0FF7DD543C5"
+				item: "kubejs:andesite_research"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4260CFE179EBE367"]
+			id: "6CBB1C7254AF624D"
+			shape: "diamond"
+			tasks: [{
+				id: "60B23A0CAD964B95"
+				item: "kubejs:brass_research"
+				type: "item"
+			}]
+			x: 14.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"0395EF2A542C1A32"
+				"274900C493F5DBC6"
+				"10488FB6581A666D"
+			]
+			id: "3148B2F54204E01A"
+			shape: "diamond"
+			tasks: [{
+				count: 4L
+				id: "67985B158C50C916"
+				item: { Count: 4, id: "kubejs:primitive_research" }
+				type: "item"
+			}]
+			title: "Primitive Research II"
+			x: 13.5d
+			y: -1.0d
+		}
+		{
+			id: "312C1CB439CF0C7B"
+			tasks: [{
+				id: "04CB940240E33C80"
+				item: "mbd2:large_mechanical_mixer"
+				type: "item"
+			}]
+			x: 16.5d
+			y: -7.5d
 		}
 	]
 	title: "I - Getting Creative"

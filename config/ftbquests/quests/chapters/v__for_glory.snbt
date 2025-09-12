@@ -1,16 +1,14 @@
 {
-	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "v__for_glory"
-	group: "1909C539EC7E396E"
+	group: ""
 	icon: "kubejs:champion_star"
 	id: "16653CACDBB86592"
-	order_index: 4
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["4B73067DF4A9CFDB"]
 			id: "14306442D401A9D1"
 			tasks: [{
 				id: "37CDC91A4E44EA80"
@@ -18,7 +16,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 4.5d
+			y: 8.0d
 		}
 		{
 			id: "5ED722676CB7769B"
@@ -223,27 +221,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["59EAA48FF5F312C3"]
-			id: "4B73067DF4A9CFDB"
-			tasks: [{
-				id: "4E96EE64D3536489"
-				item: "twilightforest:twilight_portal_miniature_structure"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 3.5d
-		}
-		{
-			id: "457E5B03E71B1DAF"
-			tasks: [{
-				id: "6B786F5DB1744D2E"
-				title: "withered cable"
-				type: "checkmark"
-			}]
-			x: 3.0d
-			y: 4.5d
-		}
-		{
 			id: "7B72476EAC37CD1F"
 			tasks: [{
 				id: "0A3F562EC952C676"
@@ -262,6 +239,147 @@
 			}]
 			x: 5.0d
 			y: 3.5d
+		}
+		{
+			dependencies: ["14306442D401A9D1"]
+			id: "42FE8924A6F76C92"
+			tasks: [{
+				id: "2117E067FAED9D12"
+				item: "gtceu:ev_machine_casing"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 9.0d
+		}
+		{
+			id: "77DB30678027D70E"
+			tasks: [{
+				id: "1EE7730E2A50B776"
+				item: "gtceu:ev_circuit_assembler"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			id: "6AD7C38401509882"
+			tasks: [{
+				id: "5F37F170599B167D"
+				item: "gtceu:nano_processor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 11.0d
+		}
+		{
+			id: "6CC5EA754D2C3612"
+			tasks: [{
+				id: "346DCAC62581FBCE"
+				item: "gtceu:nano_processor_assembly"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 12.0d
+		}
+		{
+			id: "22433D9DC2DAC142"
+			tasks: [{
+				id: "6383F0404CD45C49"
+				item: "gtceu:nano_processor_computer"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 13.0d
+		}
+		{
+			id: "696B6718C3FF1C37"
+			tasks: [{
+				id: "366F69E28C252BA2"
+				item: "gtceu:nano_processor_mainframe"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			id: "39209ECC95AFE64F"
+			tasks: [{
+				id: "1885B679031644DF"
+				item: "gtceu:withered_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			id: "67C1FB1EEDBBE5F0"
+			tasks: [{
+				id: "6E9B6CD0BC7E930A"
+				item: "gtceu:champions_alloy_dust"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			id: "7748D850578B6DFD"
+			tasks: [{
+				id: "029FECED2700D011"
+				item: "twilightforest:naga_scale"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			id: "13380E30F1AEE634"
+			tasks: [{
+				id: "58EACDB670851B15"
+				item: "twilightforest:aurora_block"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 4.5d
+		}
+		{
+			id: "45C8D4F23D8A8F80"
+			tasks: [{
+				id: "310A061E84ADFC8B"
+				item: "twilightforest:carminite"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			id: "7FB4DBE12B4B277C"
+			tasks: [{
+				id: "790A7B18C8406FFA"
+				item: "gtceu:arcane_gold_dust"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			id: "32C040DC05CB3589"
+			tasks: [{
+				id: "4E264E35F3A0650A"
+				item: "twilightforest:fiery_blood"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 4.5d
+		}
+		{
+			id: "6959E73797C6C807"
+			tasks: [{
+				id: "38F0D9173B09D697"
+				item: "gtceu:distillation_tower"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
 		}
 	]
 	title: "V - For Glory!"

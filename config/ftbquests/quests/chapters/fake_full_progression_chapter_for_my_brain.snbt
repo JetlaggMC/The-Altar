@@ -1,12 +1,20 @@
 {
+	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "fake_full_progression_chapter_for_my_brain"
 	group: ""
 	hide_quest_details_until_startable: true
 	hide_quest_until_deps_visible: true
+	icon: {
+		Count: 1
+		id: "ars_nouveau:arcanist_hood"
+		tag: {
+			Damage: 0
+		}
+	}
 	id: "3A3F350A5155FE58"
-	order_index: 1
+	order_index: 7
 	quest_links: [
 		{
 			id: "2EF18BC2DF5A0225"
@@ -26,6 +34,75 @@
 			x: 19.5d
 			y: -1.5d
 		}
+		{
+			id: "28A29F6847F8AE8D"
+			linked_quest: "1EE592CCEBDD19F4"
+			x: 18.0d
+			y: 15.5d
+		}
+		{
+			id: "1CBF233B3DA16D46"
+			linked_quest: "5C003A3265C6291A"
+			x: 18.0d
+			y: 16.5d
+		}
+		{
+			id: "4B23669EFE86825E"
+			linked_quest: "2E1348862E7C7D4A"
+			x: 19.0d
+			y: 15.5d
+		}
+		{
+			id: "613E32C04CC59BC7"
+			linked_quest: "391CCD76057F848E"
+			x: 19.0d
+			y: 16.5d
+		}
+		{
+			id: "66070FEE08648DB9"
+			linked_quest: "2C45BA6DB939FA34"
+			x: 17.0d
+			y: 15.5d
+		}
+		{
+			id: "075C6B2584E514D1"
+			linked_quest: "78513CFE449AA3E6"
+			shape: "square"
+			x: 17.0d
+			y: 16.5d
+		}
+		{
+			id: "522967FA17CF3373"
+			linked_quest: "3DD56A853D117419"
+			shape: "square"
+			x: 16.0d
+			y: 15.5d
+		}
+		{
+			id: "02CC99C84A1BFDCB"
+			linked_quest: "228552E97C93D5BD"
+			x: 13.0d
+			y: 15.5d
+		}
+		{
+			id: "68EAF56BB9958F1D"
+			linked_quest: "7685F6E5B53BC39D"
+			x: 14.0d
+			y: 15.5d
+		}
+		{
+			id: "022C3DEF4247419A"
+			linked_quest: "6220976AB0C5C918"
+			x: 15.0d
+			y: 15.5d
+		}
+		{
+			id: "52B47224BA4AE4F2"
+			linked_quest: "2B7C9F4C45AF07A0"
+			shape: "square"
+			x: 13.0d
+			y: 16.5d
+		}
 	]
 	quests: [
 		{
@@ -36,7 +113,7 @@
 				item: "gtceu:natures_alloy_dust"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -6.5d
 			y: -0.5d
 		}
 		{
@@ -47,7 +124,7 @@
 				item: "kubejs:taiga_dust"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -7.5d
 			y: -0.5d
 		}
 		{
@@ -58,7 +135,7 @@
 				item: "kubejs:taiga_shard"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -8.5d
 			y: -0.5d
 		}
 		{
@@ -69,7 +146,7 @@
 				item: "kubejs:taiga_essence_bucket"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -9.5d
 			y: -0.5d
 		}
 		{
@@ -80,29 +157,31 @@
 				item: "create:mechanical_mixer"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -10.5d
 			y: -0.5d
 		}
 		{
-			dependencies: ["61AF20DC9BE915B7"]
+			dependencies: [
+				"61AF20DC9BE915B7"
+				"6FD66333A41E784C"
+			]
 			id: "09528239C4442F98"
 			tasks: [{
 				id: "420E1DDBC091F3D0"
 				item: "gtceu:natures_alloy_ingot"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -5.5d
 			y: -0.5d
 		}
 		{
-			dependencies: ["09528239C4442F98"]
 			id: "6FD66333A41E784C"
 			tasks: [{
 				id: "6ABA6BDB71B719B4"
 				item: "gtceu:primitive_blast_furnace"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -5.5d
 			y: -1.5d
 		}
 		{
@@ -112,8 +191,8 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -1.5d
+			x: -16.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["5685B678C02F9381"]
@@ -123,7 +202,7 @@
 				item: "gtceu:treated_wood_planks"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -12.5d
 			y: -0.5d
 		}
 		{
@@ -148,8 +227,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.5d
-			y: -1.5d
+			x: -15.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["2B6DD164BC8ABF78"]
@@ -159,7 +238,7 @@
 				item: "create:andesite_casing"
 				type: "item"
 			}]
-			x: -5.5d
+			x: -11.5d
 			y: -0.5d
 		}
 		{
@@ -170,7 +249,7 @@
 				item: "gtceu:coke_oven"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -14.5d
 			y: -0.5d
 		}
 		{
@@ -181,7 +260,7 @@
 				item: "gtceu:creosote_bucket"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -13.5d
 			y: -0.5d
 		}
 		{
@@ -192,56 +271,19 @@
 				item: "gtceu:lv_machine_casing"
 				type: "item"
 			}]
-			x: 1.5d
+			x: -1.5d
 			y: -0.5d
 		}
 		{
-			dependencies: [
-				"6839E0BF07B626FF"
-				"496513D20CBC3FB8"
-				"020A86E47AD84BAC"
-			]
+			dependencies: ["020A86E47AD84BAC"]
 			id: "59418ADDEF745C30"
 			tasks: [{
 				id: "668141D00CFD8D18"
 				item: "gtceu:lv_machine_hull"
 				type: "item"
 			}]
-			x: 2.5d
+			x: -0.5d
 			y: -0.5d
-		}
-		{
-			dependencies: ["5EE191E883E32C09"]
-			id: "6839E0BF07B626FF"
-			tasks: [{
-				id: "36BD11DD23E56FFF"
-				item: "gtceu:rubber_ingot"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["2FB374C62284F6D2"]
-			id: "4902E57417905889"
-			tasks: [{
-				id: "743976C3149B35DA"
-				item: "gtceu:lv_caster"
-				type: "item"
-			}]
-			x: -2.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["4902E57417905889"]
-			id: "5EE191E883E32C09"
-			tasks: [{
-				id: "153260204FBCB2B1"
-				item: "gtceu:rubber_bucket"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -2.5d
 		}
 		{
 			dependencies: ["37B14FFFD36B3E80"]
@@ -251,18 +293,7 @@
 				item: "kubejs:nether_shard"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["1884A3CEAF0C446E"]
-			id: "496513D20CBC3FB8"
-			tasks: [{
-				id: "6DC4C57B7BD5F2E1"
-				item: "gtceu:red_alloy_single_cable"
-				type: "item"
-			}]
-			x: 3.5d
+			x: -8.5d
 			y: -1.5d
 		}
 		{
@@ -276,7 +307,7 @@
 				item: "kubejs:crude_insulator_bucket"
 				type: "item"
 			}]
-			x: 3.5d
+			x: -3.5d
 			y: -2.5d
 		}
 		{
@@ -286,7 +317,7 @@
 				item: "create:honey_bucket"
 				type: "item"
 			}]
-			x: 4.5d
+			x: -2.5d
 			y: -3.5d
 		}
 		{
@@ -296,7 +327,7 @@
 				item: "gtceu:sulfur_dust"
 				type: "item"
 			}]
-			x: 2.5d
+			x: -4.5d
 			y: -3.5d
 		}
 		{
@@ -310,7 +341,7 @@
 				item: "gtceu:lv_electric_motor"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 0.5d
 			y: 0.5d
 		}
 		{
@@ -325,8 +356,8 @@
 				item: "gtceu:lv_bender"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 0.5d
+			x: 0.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["09528239C4442F98"]
@@ -350,19 +381,22 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: -5.5d
 			y: 0.5d
 		}
 		{
-			dependencies: ["59418ADDEF745C30"]
+			dependencies: [
+				"59418ADDEF745C30"
+				"4D1F4C2CCBF98F45"
+			]
 			id: "1F4C2FC7E25BC052"
 			tasks: [{
 				id: "486097A197BEE960"
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -0.5d
+			x: 0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3BFF06B8C09F1277"]
@@ -372,7 +406,7 @@
 				item: "gtceu:glowing_single_wire"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 0.5d
 			y: 1.5d
 		}
 		{
@@ -382,7 +416,7 @@
 				item: "gtceu:glowing_ingot"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 0.5d
 			y: 2.5d
 		}
 		{
@@ -474,7 +508,7 @@
 				item: "gtceu:lv_extractor"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 1.5d
 			y: -0.5d
 		}
 		{
@@ -499,7 +533,7 @@
 				item: "gtceu:lv_chemical_reactor"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 3.0d
 			y: -0.5d
 		}
 		{
@@ -879,8 +913,8 @@
 				type: "item"
 			}]
 			title: "LV Power"
-			x: 3.5d
-			y: -6.0d
+			x: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -2101,7 +2135,7 @@
 				type: "item"
 			}]
 			x: 11.0d
-			y: 8.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -3400,6 +3434,1062 @@
 			}]
 			x: 63.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["09528239C4442F98"]
+			id: "6E22DBEB9F2108D2"
+			tasks: [{
+				id: "4289E6F6B390BF2B"
+				item: "mbd2:casting_tower"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4D98132F9FE4F42A"]
+			id: "4BF1277B13FA2A69"
+			tasks: [{
+				id: "7D98479D4C2EC47E"
+				item: "gtceu:blazing_ingot"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["577C32109A5C52A3"]
+			id: "4D98132F9FE4F42A"
+			tasks: [{
+				id: "70EF503352467CF1"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"738F254AEEDF1B28"
+				"1446C74D25C88B4D"
+			]
+			id: "577C32109A5C52A3"
+			tasks: [{
+				id: "539564A6869B8294"
+				item: "mbd2:large_mechanical_press"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["09528239C4442F98"]
+			id: "66E5D684A5BE719D"
+			tasks: [{
+				id: "5141A5D76660D733"
+				item: "mbd2:kinetic_foundry"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"66E5D684A5BE719D"
+				"6E22DBEB9F2108D2"
+			]
+			id: "7791CF9C2C276693"
+			tasks: [{
+				id: "1AC778AB96666D54"
+				item: "gtceu:brass_ingot"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"66E5D684A5BE719D"
+				"6E22DBEB9F2108D2"
+			]
+			id: "5ADB6EBB3941DD6C"
+			tasks: [{
+				id: "2F55158FD2C77442"
+				item: "create:rose_quartz"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"7791CF9C2C276693"
+				"1884A3CEAF0C446E"
+			]
+			id: "738F254AEEDF1B28"
+			tasks: [{
+				id: "421ABEE88BB6D844"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4D51B24BCEA40B70"]
+			id: "46B4E6F104258BB5"
+			tasks: [{
+				id: "2A05C8AF578F4D0C"
+				item: "gtceu:rubber_bucket"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["010D1FC77A281F23"]
+			id: "4D51B24BCEA40B70"
+			tasks: [{
+				id: "0CB37673CFB49F77"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			x: -14.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5ADB6EBB3941DD6C"]
+			id: "1446C74D25C88B4D"
+			tasks: [{
+				id: "478E14F57CB284D2"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"1884A3CEAF0C446E"
+				"4BF1277B13FA2A69"
+			]
+			id: "65703EE8F2431F61"
+			tasks: [{
+				id: "14D794F6ADAC148A"
+				item: "gtceu:blazing_single_cable"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1EE592CCEBDD19F4"]
+			icon_scale: 1.5d
+			id: "02181021D586E7B9"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "7C25BDE20B802156"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			x: 18.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["02181021D586E7B9"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/andesite_alloy_4"
+				}
+			}
+			icon_scale: 1.5d
+			id: "39ADAC1FE5ED519A"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "47354C95A95A7B87"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Andesite Alloy IV"
+			x: 18.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["39ADAC1FE5ED519A"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/andesite_alloy_5"
+				}
+			}
+			icon_scale: 1.5d
+			id: "1AF1624F46BF239B"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "32ADCF46E6BF616C"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Andesite Alloy V"
+			x: 18.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["1AF1624F46BF239B"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/universal_andesite_alloy"
+				}
+			}
+			icon_scale: 1.5d
+			id: "5390EA484DC5FE9C"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "14B9B6FEFD9DCEC8"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Universal Andesite Alloy"
+			x: 18.0d
+			y: 20.5d
+		}
+		{
+			dependencies: ["391CCD76057F848E"]
+			description: ["{image:kubejs:icons/natures_alloy_3_page width:176 height:105 align:center}"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/natures_alloy_3"
+				}
+			}
+			icon_scale: 1.5d
+			id: "099C0D93D65ED8FC"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "73CB2EEA6D68925E"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Natures Alloy III"
+			x: 19.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["099C0D93D65ED8FC"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/natures_alloy_4"
+				}
+			}
+			icon_scale: 1.5d
+			id: "768EC420AC00FA95"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "4D738D05E62B32AE"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Natures Alloy IV"
+			x: 19.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["768EC420AC00FA95"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/natures_alloy_5"
+				}
+			}
+			icon_scale: 1.5d
+			id: "649F9D9337927330"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "630610E06581CC96"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Natures Alloy V"
+			x: 19.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["649F9D9337927330"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/universal_natures_alloy"
+				}
+			}
+			icon_scale: 1.5d
+			id: "1CDB79DA9F623868"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "2C393F5AEC49F9D3"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Universal Natures Alloy"
+			x: 19.0d
+			y: 20.5d
+		}
+		{
+			dependencies: ["78513CFE449AA3E6"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/coal_processing_3"
+				}
+			}
+			icon_scale: 1.5d
+			id: "37FF2848E83A3F77"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "200B1FA9A4A12EDD"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Coal III"
+			x: 17.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["37FF2848E83A3F77"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/coal_processing_4"
+				}
+			}
+			icon_scale: 1.5d
+			id: "5E35732404E123BA"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "2650593B9C2D216A"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Coal IV"
+			x: 17.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["5E35732404E123BA"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/coal_processing_5"
+				}
+			}
+			icon_scale: 1.5d
+			id: "794FB3BE85A22A4F"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "655A4D49CEF38D90"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Coal V"
+			x: 17.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["794FB3BE85A22A4F"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/universal_coal_processing"
+				}
+			}
+			icon_scale: 1.5d
+			id: "4ADD69C535CADF69"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "5A32B425B1C2B4B3"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Universal Coal"
+			x: 17.0d
+			y: 20.5d
+		}
+		{
+			dependencies: ["3DD56A853D117419"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/zinc_2"
+				}
+			}
+			icon_scale: 1.5d
+			id: "48DFADCB31556F79"
+			shape: "square"
+			tasks: [
+				{
+					count: 16L
+					id: "058CFE9F57F64A35"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "442A426B0C4D2596"
+					item: { Count: 3, id: "kubejs:andesite_research" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5F996CC63C5FC176"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+			]
+			title: "Zinc II"
+			x: 16.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["48DFADCB31556F79"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/zinc_3"
+				}
+			}
+			icon_scale: 1.5d
+			id: "3692073956A90673"
+			shape: "square"
+			tasks: [
+				{
+					count: 16L
+					id: "6BC39AD521B6D67C"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "2A620B7F8AB35B8D"
+					item: { Count: 3, id: "kubejs:andesite_research" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "222957A82DEC63EC"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+			]
+			title: "Zinc III"
+			x: 16.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["3692073956A90673"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/zinc_4"
+				}
+			}
+			icon_scale: 1.5d
+			id: "3F8CB966A836E4C0"
+			shape: "square"
+			tasks: [
+				{
+					count: 16L
+					id: "02794F1E93CABF66"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "435AD538E0E91C3E"
+					item: { Count: 3, id: "kubejs:andesite_research" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "52AFD89C0DAF67F9"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+			]
+			title: "Zinc IV"
+			x: 16.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["3F8CB966A836E4C0"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/zinc_5"
+				}
+			}
+			icon_scale: 1.5d
+			id: "06D2585210CBA23A"
+			shape: "square"
+			tasks: [
+				{
+					count: 16L
+					id: "120F1E3D91ED06E0"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "02EDB5B56EAE49AB"
+					item: { Count: 3, id: "kubejs:andesite_research" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6EEE4C730610935C"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+			]
+			title: "Zinc V"
+			x: 16.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["06D2585210CBA23A"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/universal_zinc"
+				}
+			}
+			icon_scale: 1.5d
+			id: "5976A0F802B07E8B"
+			shape: "square"
+			tasks: [
+				{
+					count: 16L
+					id: "70301609D97ED1F0"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "4BCC8429396B76B9"
+					item: { Count: 3, id: "kubejs:andesite_research" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "73F1813C439BC101"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+			]
+			title: "Universal Zinc"
+			x: 16.0d
+			y: 20.5d
+		}
+		{
+			description: ["{image:kubejs:icons/natures_alloy_3_page width:176 height:105 align:center}"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/copper_2"
+				}
+			}
+			icon_scale: 1.5d
+			id: "6468AAAED87CCC8D"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "14D70AF5CE5F7CE4"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Copper II"
+			x: 15.0d
+			y: 16.5d
+		}
+		{
+			description: ["{image:kubejs:icons/natures_alloy_3_page width:176 height:105 align:center}"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/copper_3"
+				}
+			}
+			icon_scale: 1.5d
+			id: "4D86555A3CB889F8"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "5C61EDE3E6E57033"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Copper III"
+			x: 15.0d
+			y: 17.5d
+		}
+		{
+			description: ["{image:kubejs:icons/natures_alloy_3_page width:176 height:105 align:center}"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/copper_4"
+				}
+			}
+			icon_scale: 1.5d
+			id: "1664F9849AD3918E"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "0C30A682F827AE7F"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Copper IV"
+			x: 15.0d
+			y: 18.5d
+		}
+		{
+			description: ["{image:kubejs:icons/natures_alloy_3_page width:176 height:105 align:center}"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/copper_5"
+				}
+			}
+			icon_scale: 1.5d
+			id: "12A29F75F5B9705D"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "15E214365D2EB0EA"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Copper V"
+			x: 15.0d
+			y: 19.5d
+		}
+		{
+			description: ["{image:kubejs:icons/natures_alloy_3_page width:176 height:105 align:center}"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/copper_6"
+				}
+			}
+			icon_scale: 1.5d
+			id: "5D9E14F3F5240BAF"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "767D58244DBBAF29"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Universal Copper"
+			x: 15.0d
+			y: 20.5d
+		}
+		{
+			description: ["{image:kubejs:icons/natures_alloy_3_page width:176 height:105 align:center}"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/iron_2"
+				}
+			}
+			icon_scale: 1.5d
+			id: "788EF4C7DD8C8B96"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "27E283EC0DBE95C6"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Iron II"
+			x: 14.0d
+			y: 16.5d
+		}
+		{
+			description: ["{image:kubejs:icons/natures_alloy_3_page width:176 height:105 align:center}"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/iron_3"
+				}
+			}
+			icon_scale: 1.5d
+			id: "70841DD592F6B48E"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "3265E7E15E909B72"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Iron III"
+			x: 14.0d
+			y: 17.5d
+		}
+		{
+			description: ["{image:kubejs:icons/natures_alloy_3_page width:176 height:105 align:center}"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/iron_4"
+				}
+			}
+			icon_scale: 1.5d
+			id: "406CFF6B025DF2EB"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "1B18AD5D0CBB626F"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Iron IV"
+			x: 14.0d
+			y: 18.5d
+		}
+		{
+			description: ["{image:kubejs:icons/natures_alloy_3_page width:176 height:105 align:center}"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/iron_5"
+				}
+			}
+			icon_scale: 1.5d
+			id: "36AB75379D752FB5"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "6EFD064A978002AD"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Iron V"
+			x: 14.0d
+			y: 19.5d
+		}
+		{
+			description: ["{image:kubejs:icons/natures_alloy_3_page width:176 height:105 align:center}"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/universal_iron"
+				}
+			}
+			icon_scale: 1.5d
+			id: "7DCB226C5EADE199"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "56BB7A1B211B572D"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Universal Iron"
+			x: 14.0d
+			y: 20.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/amethyst_processing_3"
+				}
+			}
+			icon_scale: 1.5d
+			id: "3864243923091548"
+			shape: "square"
+			tasks: [
+				{
+					count: 10L
+					id: "13C01CBCE0D3AB53"
+					item: { Count: 6, id: "kubejs:primitive_research" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "420E2EA7D2877B79"
+					item: { Count: 3, id: "kubejs:andesite_research" }
+					type: "item"
+				}
+			]
+			title: "Amethyst III"
+			x: 13.0d
+			y: 17.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/amethyst_processing_4"
+				}
+			}
+			icon_scale: 1.5d
+			id: "7565A567977BED67"
+			shape: "square"
+			tasks: [
+				{
+					count: 10L
+					id: "4A8958548E5F8FB3"
+					item: { Count: 6, id: "kubejs:primitive_research" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "36F299D194D9C05E"
+					item: { Count: 3, id: "kubejs:andesite_research" }
+					type: "item"
+				}
+			]
+			title: "Amethyst IV"
+			x: 13.0d
+			y: 18.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/amethyst_processing_5"
+				}
+			}
+			icon_scale: 1.5d
+			id: "7BEFE82A6B02733B"
+			shape: "square"
+			tasks: [
+				{
+					count: 10L
+					id: "2D40A9538FD7FC8F"
+					item: { Count: 6, id: "kubejs:primitive_research" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "4CA616B3F801D318"
+					item: { Count: 3, id: "kubejs:andesite_research" }
+					type: "item"
+				}
+			]
+			title: "Amethyst V"
+			x: 13.0d
+			y: 19.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/universal_amethyst_processing"
+				}
+			}
+			icon_scale: 1.5d
+			id: "7EBD8F6FD5F6A53D"
+			shape: "square"
+			tasks: [
+				{
+					count: 10L
+					id: "0A18A5F2A206B95D"
+					item: { Count: 6, id: "kubejs:primitive_research" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "56D005B291C343AE"
+					item: { Count: 3, id: "kubejs:andesite_research" }
+					type: "item"
+				}
+			]
+			title: "Universal Amethyst"
+			x: 13.0d
+			y: 20.5d
 		}
 	]
 	title: "fake full progression chapter for my brain"

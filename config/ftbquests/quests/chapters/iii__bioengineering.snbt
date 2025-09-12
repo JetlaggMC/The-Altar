@@ -1,12 +1,11 @@
 {
-	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "iii__bioengineering"
-	group: "1909C539EC7E396E"
+	group: ""
 	icon: "kubejs:bio_star"
 	id: "5A81F3E815C6CDDF"
-	order_index: 3
+	order_index: 4
 	quest_links: [
 		{
 			id: "5CD2E67D69078A9A"
@@ -33,7 +32,7 @@
 	quests: [
 		{
 			dependencies: ["7385341D276EA8EB"]
-			hide: false
+			hide_until_deps_visible: false
 			id: "0CCCC556F659BA44"
 			shape: "diamond"
 			tasks: [{
@@ -354,6 +353,7 @@
 				item: "gtceu:microchip_processor"
 				type: "item"
 			}]
+			title: "Third LV Circuit"
 			x: 4.0d
 			y: 4.0d
 		}
@@ -414,6 +414,7 @@
 				item: "gtceu:micro_processor"
 				type: "item"
 			}]
+			title: "Third MV Circuit"
 			x: 5.0d
 			y: 4.0d
 		}
@@ -429,6 +430,7 @@
 				item: "gtceu:micro_processor_assembly"
 				type: "item"
 			}]
+			title: "Second HV Circuit"
 			x: 6.0d
 			y: 4.0d
 		}
@@ -441,6 +443,7 @@
 				item: "gtceu:micro_processor_computer"
 				type: "item"
 			}]
+			title: "First EV Circuit"
 			x: 7.0d
 			y: 4.0d
 		}
@@ -543,18 +546,6 @@
 			]
 			x: 9.0d
 			y: 6.0d
-		}
-		{
-			dependencies: ["7003A3F435168BB0"]
-			id: "4043214C3AE3EBEB"
-			shape: "diamond"
-			tasks: [{
-				id: "75C261585EE2BA57"
-				item: "gtceu:hv_circuit_assembler"
-				type: "item"
-			}]
-			x: 8.0d
-			y: 4.0d
 		}
 		{
 			dependencies: ["72715145956CDF3F"]
@@ -675,6 +666,39 @@
 			}]
 			x: 7.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["4043214C3AE3EBEB"]
+			id: "5B28785AFEEC5BE1"
+			tasks: [{
+				id: "6C3BE208214D2904"
+				item: "gtceu:micro_processor_mainframe"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7003A3F435168BB0"]
+			id: "4043214C3AE3EBEB"
+			shape: "diamond"
+			tasks: [{
+				id: "75C261585EE2BA57"
+				item: "gtceu:hv_circuit_assembler"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			id: "631D8DBF85159C6C"
+			tasks: [{
+				id: "2739344AB1B172FB"
+				item: "gtceu:large_chemical_reactor"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 8.5d
 		}
 	]
 	title: "IV - Bio-Engineering"

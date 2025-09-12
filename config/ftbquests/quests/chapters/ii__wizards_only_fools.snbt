@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ii__wizards_only_fools"
-	group: "1909C539EC7E396E"
+	group: ""
 	icon: "kubejs:magical_star"
 	id: "4A4C9EE82113EA5E"
-	order_index: 2
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -209,7 +209,7 @@
 				type: "checkmark"
 			}]
 			title: "Botania Time!"
-			x: 3.5d
+			x: 2.5d
 			y: -5.0d
 		}
 		{
@@ -233,8 +233,8 @@
 				item: "botania:hydroangeas"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -4.5d
+			x: 2.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["41BF7094697E2A42"]
@@ -249,7 +249,10 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["27ABF847308C8123"]
+			dependencies: [
+				"27ABF847308C8123"
+				"16A125700C0321D7"
+			]
 			id: "67033F16B6A1175B"
 			shape: "diamond"
 			tasks: [{
@@ -309,8 +312,8 @@
 				item: "botania:elementium_ingot"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -1.5d
+			x: 5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["7D7C4A4AECCC000E"]
@@ -397,7 +400,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -593,11 +596,14 @@
 				type: "item"
 			}]
 			title: "First MV Circuit"
-			x: 10.5d
+			x: 6.5d
 			y: -4.0d
 		}
 		{
-			dependencies: ["7A59CB342FA97AF3"]
+			dependencies: [
+				"7A59CB342FA97AF3"
+				"306836430D65B1F6"
+			]
 			id: "7E4AC52F60747514"
 			shape: "diamond"
 			tasks: [{
@@ -605,8 +611,8 @@
 				item: "gtceu:phenolic_printed_circuit_board"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -4.0d
+			x: 6.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -621,11 +627,11 @@
 				item: "gtceu:phenolic_circuit_board"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -4.0d
+			x: 5.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["35956C8118B06DC5"]
+			dependencies: ["11EC5B0A9F49CCA4"]
 			id: "467A757AA817DFC8"
 			shape: "diamond"
 			tasks: [{
@@ -657,8 +663,8 @@
 				item: "gtceu:diode"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -5.0d
+			x: 5.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["18DF975EA8122557"]
@@ -836,7 +842,7 @@
 				item: "gtceu:lv_circuit_assembler"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 14.5d
 			y: -4.0d
 		}
 		{
@@ -849,7 +855,7 @@
 				type: "item"
 			}]
 			title: "Second LV Circuit"
-			x: 12.5d
+			x: 14.5d
 			y: -3.0d
 		}
 		{
@@ -862,8 +868,8 @@
 				type: "item"
 			}]
 			title: "Second MV Circuit"
-			x: 13.5d
-			y: -3.0d
+			x: 14.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["23480E5F279493B4"]
@@ -876,7 +882,7 @@
 			}]
 			title: "First HV Circuit"
 			x: 14.5d
-			y: -3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3CD3A304326B6BB1"]
@@ -888,7 +894,7 @@
 				type: "item"
 			}]
 			x: 15.5d
-			y: -3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1053,7 +1059,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -5.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["35D3CEBAC7896043"]
@@ -1068,7 +1074,10 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["49F99471B212281D"]
+			dependencies: [
+				"49F99471B212281D"
+				"5460FDB495A6F19D"
+			]
 			icon: "kubejs:cow_model_1"
 			id: "35D3CEBAC7896043"
 			shape: "diamond"
@@ -1215,6 +1224,85 @@
 			}]
 			x: 13.5d
 			y: 0.0d
+		}
+		{
+			id: "06EF031CDE99761D"
+			tasks: [{
+				id: "01764CA27EEEF120"
+				item: "gtceu:hydroponic_garden"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 0.5d
+		}
+		{
+			id: "0AA591507C2017E0"
+			tasks: [{
+				id: "5A2BCE6556AC21A8"
+				item: "gtceu:temperate_garden"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"44FA5F068715272C"
+				"2E6BDB95BFDFC2F1"
+			]
+			hide_dependency_lines: true
+			id: "5460FDB495A6F19D"
+			shape: "diamond"
+			subtitle: "Gross dude."
+			tasks: [{
+				id: "240777780420EFC3"
+				item: "kubejs:raw_meat_glob"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"126AD44A29E49574"
+				"7C0E437363F47CD7"
+				"35956C8118B06DC5"
+			]
+			id: "11EC5B0A9F49CCA4"
+			tasks: [{
+				id: "13B9EB01239DAAB7"
+				item: "kubejs:magical_research"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"7B714E4C469C4AB4"
+				"531E17B405C41383"
+			]
+			id: "7C0E437363F47CD7"
+			shape: "diamond"
+			subtitle: "Less... gross??"
+			tasks: [{
+				id: "317C2E731C9CE766"
+				item: "kubejs:magical_meat_glob"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B714E4C469C4AB4"]
+			id: "126AD44A29E49574"
+			tasks: [{
+				id: "673A6F509686D18E"
+				item: "kubejs:magical_plant_glob"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 2.0d
 		}
 	]
 	title: "III - Wizards Only Fools"

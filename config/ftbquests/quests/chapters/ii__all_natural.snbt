@@ -2,14 +2,18 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ii__all_natural"
-	group: "1909C539EC7E396E"
+	group: ""
+	hide_quest_until_deps_complete: true
 	icon: "kubejs:natural_star"
 	id: "1E081181A45A012C"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["0C97899C883282D3"]
+			dependencies: [
+				"0C97899C883282D3"
+				"2E1348862E7C7D4A"
+			]
 			id: "2AA3D0955FB6D9BA"
 			shape: "diamond"
 			tasks: [{
@@ -21,7 +25,10 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["682CC3F306100735"]
+			dependencies: [
+				"682CC3F306100735"
+				"2E1348862E7C7D4A"
+			]
 			id: "5FBA3FCA1E0D8C61"
 			shape: "diamond"
 			tasks: [{
@@ -33,7 +40,10 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["356A25C860147670"]
+			dependencies: [
+				"356A25C860147670"
+				"2E1348862E7C7D4A"
+			]
 			id: "17309E9A72D0E7B3"
 			shape: "diamond"
 			tasks: [{
@@ -45,7 +55,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["1029D262A9A888F1"]
+			dependencies: [
+				"1029D262A9A888F1"
+				"2E1348862E7C7D4A"
+			]
 			id: "6A8C0584FEBABFA2"
 			shape: "diamond"
 			tasks: [{
@@ -57,7 +70,10 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["173C54E0EFF637AB"]
+			dependencies: [
+				"173C54E0EFF637AB"
+				"2E1348862E7C7D4A"
+			]
 			id: "4F3D7CCBAADE084C"
 			shape: "diamond"
 			tasks: [{
@@ -69,7 +85,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["01546FCFAAA6497D"]
+			dependencies: [
+				"01546FCFAAA6497D"
+				"2E1348862E7C7D4A"
+			]
 			id: "17EBCC720077E7AB"
 			shape: "diamond"
 			tasks: [{
@@ -81,7 +100,10 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["694B928832BA5D4F"]
+			dependencies: [
+				"694B928832BA5D4F"
+				"2E1348862E7C7D4A"
+			]
 			id: "6F426ECBC3264C97"
 			shape: "diamond"
 			tasks: [{
@@ -102,6 +124,7 @@
 				"17309E9A72D0E7B3"
 				"2AA3D0955FB6D9BA"
 				"5FBA3FCA1E0D8C61"
+				"2E1348862E7C7D4A"
 			]
 			id: "29205A2A38E6964F"
 			shape: "diamond"
@@ -114,7 +137,10 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["256358FD632BE3DE"]
+			dependencies: [
+				"256358FD632BE3DE"
+				"2E1348862E7C7D4A"
+			]
 			id: "3809BDE5709AC22C"
 			shape: "diamond"
 			tasks: [{
@@ -126,7 +152,10 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["256358FD632BE3DE"]
+			dependencies: [
+				"256358FD632BE3DE"
+				"2E1348862E7C7D4A"
+			]
 			id: "694B928832BA5D4F"
 			shape: "diamond"
 			tasks: [{
@@ -138,7 +167,10 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["256358FD632BE3DE"]
+			dependencies: [
+				"256358FD632BE3DE"
+				"2E1348862E7C7D4A"
+			]
 			id: "0C97899C883282D3"
 			shape: "diamond"
 			tasks: [{
@@ -150,7 +182,11 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["256358FD632BE3DE"]
+			dependencies: [
+				"256358FD632BE3DE"
+				"2E1348862E7C7D4A"
+			]
+			hide_until_deps_complete: true
 			id: "682CC3F306100735"
 			shape: "diamond"
 			tasks: [{
@@ -162,7 +198,10 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["256358FD632BE3DE"]
+			dependencies: [
+				"256358FD632BE3DE"
+				"2E1348862E7C7D4A"
+			]
 			id: "356A25C860147670"
 			shape: "diamond"
 			tasks: [{
@@ -174,7 +213,10 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["256358FD632BE3DE"]
+			dependencies: [
+				"256358FD632BE3DE"
+				"2E1348862E7C7D4A"
+			]
 			id: "1029D262A9A888F1"
 			shape: "diamond"
 			tasks: [{
@@ -186,7 +228,10 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["256358FD632BE3DE"]
+			dependencies: [
+				"256358FD632BE3DE"
+				"2E1348862E7C7D4A"
+			]
 			id: "173C54E0EFF637AB"
 			shape: "diamond"
 			tasks: [{
@@ -198,7 +243,10 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["256358FD632BE3DE"]
+			dependencies: [
+				"256358FD632BE3DE"
+				"2E1348862E7C7D4A"
+			]
 			id: "01546FCFAAA6497D"
 			shape: "diamond"
 			tasks: [{
@@ -210,7 +258,10 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["3809BDE5709AC22C"]
+			dependencies: [
+				"3809BDE5709AC22C"
+				"2E1348862E7C7D4A"
+			]
 			id: "7A04468403235DC1"
 			shape: "diamond"
 			tasks: [{
@@ -230,8 +281,8 @@
 				item: "kubejs:natural_star"
 				type: "item"
 			}]
-			x: 18.0d
-			y: 0.0d
+			x: 25.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["1CEF6A5EEC67CE55"]
@@ -327,6 +378,7 @@
 		}
 		{
 			dependencies: ["1DA1ACD5D8972CB9"]
+			hide_dependent_lines: true
 			id: "44FA5F068715272C"
 			shape: "diamond"
 			tasks: [{
@@ -421,7 +473,10 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["072FA5DBAB44ADFB"]
+			dependencies: [
+				"072FA5DBAB44ADFB"
+				"402A119BCFD1FF6B"
+			]
 			description: [
 				"You should now be able to make "
 				"&bGlowing Ingots &feasier with molten iron!"
@@ -452,7 +507,10 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["22C6A0D434951EA7"]
+			dependencies: [
+				"22C6A0D434951EA7"
+				"402A119BCFD1FF6B"
+			]
 			id: "0539429F3ECF4945"
 			shape: "diamond"
 			tasks: [{
@@ -537,7 +595,7 @@
 				item: "gtceu:lv_chemical_reactor"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 15.5d
 			y: -0.5d
 		}
 		{
@@ -604,9 +662,11 @@
 		{
 			dependencies: [
 				"29205A2A38E6964F"
+				"2E1348862E7C7D4A"
 				"2EC4DCFDCAE8527B"
-				"36E36A264439EE73"
 			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
 			id: "1CEF6A5EEC67CE55"
 			shape: "diamond"
 			size: 2.0d
@@ -630,6 +690,274 @@
 			}]
 			x: 6.0d
 			y: -3.0d
+		}
+		{
+			dependencies: [
+				"5460FDB495A6F19D"
+				"2229939C8329BAF3"
+				"76E865F5FBBF8662"
+				"5AF3BE42B69DC7D9"
+			]
+			hide_dependency_lines: true
+			id: "1E67B1FC5B43437D"
+			shape: "diamond"
+			tasks: [{
+				id: "4FC2793008368DD1"
+				item: "kubejs:natural_research"
+				type: "item"
+			}]
+			x: 19.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"67B0E46D73DC7BCF"
+				"1AD8A4D87418047C"
+				"6116C62DCE177E8C"
+			]
+			hide_dependent_lines: true
+			id: "2E6BDB95BFDFC2F1"
+			shape: "diamond"
+			tasks: [{
+				id: "223CF8826742128F"
+				item: "gtceu:lv_mixer"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"6116C62DCE177E8C"
+				"1AD8A4D87418047C"
+				"1D0062BB7D6A6B77"
+			]
+			hide_dependent_lines: true
+			id: "1A087FB866DCE5A3"
+			shape: "diamond"
+			tasks: [{
+				id: "498C30A0F46B07C6"
+				item: "gtceu:lv_fermenter"
+				type: "item"
+			}]
+			x: 14.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["183CC4A761A4CE55"]
+			id: "2229939C8329BAF3"
+			tasks: [{
+				id: "0CAB2E4C25118161"
+				item: "gtceu:sulfuric_acid_bucket"
+				type: "item"
+			}]
+			x: 19.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["198F5773C039591A"]
+			id: "183CC4A761A4CE55"
+			tasks: [{
+				id: "3D880A98ED0B6230"
+				item: "gtceu:sulfur_trioxide_bucket"
+				type: "item"
+			}]
+			x: 19.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3FAF0B12B9D32A19"]
+			id: "198F5773C039591A"
+			tasks: [{
+				id: "605655CE4D1C03CA"
+				item: "gtceu:sulfur_dioxide_bucket"
+				type: "item"
+			}]
+			x: 19.0d
+			y: -3.5d
+		}
+		{
+			id: "3FAF0B12B9D32A19"
+			tasks: [{
+				id: "7150BEB01C86AD89"
+				item: "gtceu:oxygen_bucket"
+				type: "item"
+			}]
+			x: 19.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0EC291FB7FC99B9E"]
+			hide_dependency_lines: true
+			id: "33DC9EB84E6EB981"
+			tasks: [{
+				id: "3364BE4E373D49E3"
+				item: "gtceu:air_bucket"
+				type: "item"
+			}]
+			x: 19.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"6116C62DCE177E8C"
+				"1AD8A4D87418047C"
+				"1D0062BB7D6A6B77"
+			]
+			id: "0EC291FB7FC99B9E"
+			shape: "diamond"
+			tasks: [{
+				id: "6897C348D9217059"
+				item: "gtceu:lv_gas_collector"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"61FFB322F5712D5B"
+				"1E67B1FC5B43437D"
+			]
+			id: "7186BED310D58C95"
+			tasks: [{
+				id: "2D5165AFA1A9D9D6"
+				item: "gtceu:mega_press"
+				type: "item"
+			}]
+			x: 21.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"61FFB322F5712D5B"
+				"1E67B1FC5B43437D"
+			]
+			id: "26BC9794A16E7E52"
+			tasks: [{
+				id: "64747F5FF78BB5EB"
+				item: "gtceu:mega_mixer"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"66563B6F34701CDD"
+				"71EFF70FFC68D827"
+				"7186BED310D58C95"
+			]
+			id: "07FDEA04B8FA7541"
+			tasks: [{
+				id: "42DDA28F4BCD014A"
+				item: "kubejs:mega_lv_machine_casing"
+				type: "item"
+			}]
+			x: 22.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["45D7A7F543B8FDAC"]
+			id: "66563B6F34701CDD"
+			tasks: [{
+				id: "280C50438E1D50F3"
+				item: "gtceu:polyethylene_bucket"
+				type: "item"
+			}]
+			x: 21.5d
+			y: -2.5d
+		}
+		{
+			id: "71EFF70FFC68D827"
+			tasks: [{
+				id: "08E06845C5C0118E"
+				item: "gtceu:carbon_dioxide_bucket"
+				type: "item"
+			}]
+			x: 22.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4BE1E61D790D4347"]
+			id: "45D7A7F543B8FDAC"
+			tasks: [{
+				id: "22272863DACE932B"
+				item: "gtceu:ethylene_bucket"
+				type: "item"
+			}]
+			x: 21.5d
+			y: -3.5d
+		}
+		{
+			description: ["i believe this is the only route to get ethylene at this stage, let me know if not!"]
+			id: "77BBCD55062815C2"
+			tasks: [{
+				id: "2DFFA3C01F9FB73D"
+				item: "gtceu:oil_medium_bucket"
+				type: "item"
+			}]
+			x: 21.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["77BBCD55062815C2"]
+			id: "5AC2DA80BDB7508C"
+			tasks: [
+				{
+					id: "6DCA9BBF5067CEBB"
+					item: "gtceu:sulfuric_naphtha_bucket"
+					type: "item"
+				}
+				{
+					id: "2A595274A8670C25"
+					item: "gtceu:hydrogen_bucket"
+					type: "item"
+				}
+			]
+			x: 21.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5AC2DA80BDB7508C"]
+			id: "637070C92C226157"
+			tasks: [
+				{
+					id: "7E7F539CD7922828"
+					item: "gtceu:naphtha_bucket"
+					type: "item"
+				}
+				{
+					id: "305C4E3C9C80E450"
+					item: "gtceu:steam_bucket"
+					type: "item"
+				}
+			]
+			x: 21.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["637070C92C226157"]
+			id: "4BE1E61D790D4347"
+			tasks: [{
+				id: "72A4033661CC2067"
+				item: "gtceu:severely_steam_cracked_naphtha_bucket"
+				type: "item"
+			}]
+			x: 21.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2E6BDB95BFDFC2F1"]
+			id: "5AF3BE42B69DC7D9"
+			shape: "diamond"
+			tasks: [{
+				id: "706F8FED46F893B7"
+				item: "kubejs:plant_glob"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -0.5d
 		}
 	]
 	title: "II - All Natural"
