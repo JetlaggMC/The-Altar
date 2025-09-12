@@ -41,6 +41,11 @@ JEIEvents.hideItems(event => {
   event.hide('thermal:dynamo_lapidary' )
   event.hide('thermal:dynamo_disenchantment' )
   event.hide('thermal:dynamo_gourmand' )
+  event.hide('gtceu:firebrick' )
+  event.hide('create:brass_ingot' )
+  event.hide('create:brass_nugget' )
+  event.hide('create:brass_sheet' )
+
 })
 
 ClientEvents.lang('en_us', event => {
