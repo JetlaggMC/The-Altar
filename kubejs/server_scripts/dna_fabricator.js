@@ -38,6 +38,7 @@ ServerEvents.recipes(event => {
 			'8x minecraft:leather',
 			'4x minecraft:beef',
 			'1x kubejs:taiga_dust',
+			'1x kubejs:raw_meat_glob',
 			'1x #gtceu:circuits/mv'
 		)
 		.inputFluids(Fluid.of('minecraft:milk', 1000))
@@ -52,6 +53,7 @@ ServerEvents.recipes(event => {
 			'4x minecraft:mutton',
 			'1x minecraft:grass_block',
 			'1x kubejs:taiga_dust',
+			'1x kubejs:raw_meat_glob',
 			'1x #gtceu:circuits/mv'
 		)
 		.itemOutputs(Item.of('1x kubejs:sheep_model_1'))
@@ -63,8 +65,8 @@ ServerEvents.recipes(event => {
 			'16x minecraft:carrot',
 			'8x minecraft:mud',
 			'4x minecraft:porkchop',
-			'1x minecraft:bone_meal',
 			'1x kubejs:earth_dust',
+			'1x kubejs:raw_meat_glob',
 			'1x #gtceu:circuits/mv'
 		)
 		.itemOutputs(Item.of('1x kubejs:pig_model_1'))
@@ -76,8 +78,8 @@ ServerEvents.recipes(event => {
 			'16x #forge:seeds',
 			'8x minecraft:feather',
 			'4x minecraft:chicken',
-			'1x minecraft:egg',
 			'1x kubejs:sky_dust',
+			'1x kubejs:raw_meat_glob',
 			'1x #gtceu:circuits/mv'
 		)
 		.itemOutputs(Item.of('1x kubejs:chicken_model_1'))
@@ -88,9 +90,9 @@ ServerEvents.recipes(event => {
 		.itemInputs(
 			'16x minecraft:honeycomb_block',
 			'8x #minecraft:flowers',
-			'4x minecraft:honey_bottle',
-			'1x minecraft:campfire',
+			'4x minecraft:campfire',
 			'1x kubejs:sky_dust',
+			'1x kubejs:raw_meat_glob',
 			'1x #gtceu:circuits/mv'
 		)
 		.itemOutputs(Item.of('1x kubejs:bee_model_1'))
@@ -102,8 +104,8 @@ ServerEvents.recipes(event => {
 			'16x minecraft:carrot',
 			'8x minecraft:rabbit',
 			'4x minecraft:rabbit_hide',
-			'1x minecraft:hay_block',
 			'1x kubejs:desert_dust',
+			'1x kubejs:raw_meat_glob',
 			'1x #gtceu:circuits/mv'
 		)
 		.itemOutputs(Item.of('1x kubejs:rabbit_model_1'))
@@ -116,6 +118,7 @@ ServerEvents.recipes(event => {
 			'8x minecraft:black_dye',
 			'4x minecraft:glow_ink_sac',
 			'1x kubejs:ocean_dust',
+			'1x kubejs:raw_meat_glob',
 			'1x #gtceu:circuits/mv'
 		)
 		.inputFluids(Fluid.of('minecraft:water', 1000))
@@ -129,6 +132,7 @@ ServerEvents.recipes(event => {
 			'4x minecraft:bread',
 			'1x minecraft:fishing_rod',
 			'1x kubejs:ocean_dust',
+			'1x kubejs:raw_meat_glob',
 			'1x #gtceu:circuits/mv'
 		)
 		.inputFluids(Fluid.of('gtceu:fish_oil', 1000))

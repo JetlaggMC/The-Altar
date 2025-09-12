@@ -1,0 +1,22 @@
+ServerEvents.recipes(event => {
+	event.recipes.gtceu.mega_mixer('desert_essence')
+		.itemInputs(Item.of('64x minecraft:cactus'))
+		.itemInputs(Item.of('32x allthecompressed:sand_1x'))
+		.itemInputs(Item.of('16x minecraft:gold_block'))
+		.itemInputs(Item.of('1x kubejs:rabbit_model_1'))
+		.inputFluids(Fluid.of('gtceu:biomass',1000))
+		.outputFluids(Fluid.of('kubejs:desert_essence',8000))
+		.duration(600)
+		.EUt(120)
+
+	event.recipes.gtceu.mega_mixer('desert_essence_2')
+		.itemInputs(Item.of('4x kubejs:cactus_1'))
+		.itemInputs(Item.of('4x allthecompressed:sand_3x'))
+		.itemInputs(Item.of('4x allthecompressed:gold_block_2x'))
+		.itemInputs(Item.of('1x kubejs:rabbit_model_2'))
+		.inputFluids(Fluid.of('kubejs:living_matter',1000))
+		.outputFluids(Fluid.of('kubejs:desert_essence',16000))
+		.duration(1200)
+		.EUt(480)	
+	
+})

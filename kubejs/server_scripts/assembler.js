@@ -135,9 +135,6 @@ ServerEvents.recipes(event => {
 		.inputFluids(Fluid.of('kubejs:crude_insulator',288))
 		.duration(50)
 		.EUt(16)
-
-		.duration(50)
-		.EUt(16)
 	event.recipes.gtceu.assembler('frostproof_machine_casing')
 		.circuit(6)
 		.itemInputs(Item.of('6x gtceu:awakened_echo_plate'))
