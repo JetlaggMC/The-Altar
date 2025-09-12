@@ -35,7 +35,7 @@ StartupEvents.registry('item', e => {
   e.create('terrasteel_dust')
   e.create('elementium_dust')
 	
-  e.create('cooked_sterile_meat')
+  e.create('cooked_sterile_meat_glob')
   e.create('dense_insulator_sheet')
   e.create('crude_insulator_sheet')
   e.create('hyper_insulator_sheet')
@@ -44,15 +44,19 @@ StartupEvents.registry('item', e => {
   e.create('andesite_research')
   e.create('brass_research')
   e.create('natural_research')
+  e.create('magical_research')
 
-
-	
   e.create('unborn_naga_trophy')
   e.create('unborn_lich_trophy')
   e.create('unborn_hydra_trophy')
   e.create('unborn_urghast_trophy')
   e.create('unborn_snow_queen_trophy')
 	
+  e.create('plant_glob')
+  e.create('magical_plant_glob')
+  e.create('magical_meat_glob')
+
+  e.create('processed_iron_ore')
 
 
 	
@@ -168,12 +172,19 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("mineable/axe") //can be mined faster with an axe
   	.textureAll("kubejs:block/mega_brass_casing")
 	.model('kubejs:block/mega_brass_casing')
-		event.create("mega_copper_casing") // Create a new block
-    .displayName("Mega Copper Casing") // Set a custom name
+		event.create("mega_cupronickel_casing") // Create a new block
+    .displayName("Mega Cupronickel Casing") // Set a custom name
     .material("wood") // Set a material (affects the sounds and some properties)
     .tagBlock("mineable/axe") //can be mined faster with an axe
-  	.textureAll("kubejs:block/mega_copper_casing")
-	.model('kubejs:block/mega_copper_casing')
+  	.textureAll("kubejs:block/mega_cupronickel_casing")
+	.model('kubejs:block/mega_cupronickel_casing')
+			event.create("mega_lv_machine_casing") // Create a new block
+    .displayName("Mega LV Machine Casing") // Set a custom name
+    .material("metal") // Set a material (affects the sounds and some properties)
+    .tagBlock("mineable/pickaxe") //can be mined faster with an axe
+  	.textureAll("kubejs:block/mega_lv_machine_casing")
+	.model('kubejs:block/mega_lv_machine_casing')
+
 })
 
 StartupEvents.registry("fluid", (event) => {
@@ -221,6 +232,8 @@ StartupEvents.registry("fluid", (event) => {
     .thinTexture(0xF66CFA)
     .bucketColor(0xF66CFA)
     .displayName('Taiga Essence')
+
+
   event.create('raw_source')
     .thinTexture(0x8726a2)
     .bucketColor(0x8726a2)
@@ -273,6 +286,30 @@ StartupEvents.registry("fluid", (event) => {
     .thinTexture(0xd5bbb6)
     .bucketColor(0xd5bbb6)
     .displayName('Glass Residue')
+    event.create('molten_amethyst')
+    .thinTexture(0xDF98E3)
+    .bucketColor(0xDF98E3)
+    .displayName('Molten Amethyst')
+    event.create('carrot_juice')
+    .thinTexture(0xFF9F1F)
+    .bucketColor(0xFF9F1F)
+    .displayName('Carrot Juice')
+	    event.create('dandelion_juice')
+    .thinTexture(0x77B071)
+    .bucketColor(0x77B071)
+    .displayName('Dandelion Juice')
+	    event.create('melon_juice')
+    .thinTexture(0x700025)
+    .bucketColor(0x700025)
+    .displayName('Melon Juice')
+    event.create('apple_cider')
+    .thinTexture(0xC48056)
+    .bucketColor(0xC48056)
+    .displayName('Apple Cider')
+   event.create('fermented_garlic_honey')
+    .thinTexture(0xFFCD4A)
+    .bucketColor(0xFFCD4A)
+    .displayName('Fermented Garlic Honey')
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
@@ -296,7 +333,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 		.color(0xff603b).iconSet(GTMaterialIconSet.METALLIC)
         .cableProperties(GTValues.V[GTValues.LV],16,1)
         .flags(GTMaterialFlags.IS_MAGNETIC,GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING,GTMaterialFlags.GENERATE_FINE_WIRE,GTMaterialFlags.GENERATE_FRAME)
-
+		.toolStats(new ToolProperty(2.0, 2.0, 256, 2, [GTToolType.DRILL_LV]))
 	event.create('weak_synthetic')
         .ingot()
 		.liquid()
@@ -456,36 +493,99 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 	//kinetic_caster
-	event.create('caster', 'kinetic', GTValues.LV)
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('caster',true,true)
-	    .workableCasingRenderer(
-            "create:block/andesite_casing",
-            "gtceu:block/machines/arc_furnace",
-            false
+	event.create('caster', 'simple')
+  .tiers(GTValues.LV,GTValues.MV,GTValues.HV,GTValues.EV,GTValues.IV,GTValues.LuV)
+  .definition((tier, builder) =>
+      builder
+          .langValue(GTValues.VLVH[tier] + " Crop Simulator")
+          .recipeType('crop_simulator')
+          .workableTieredHullRenderer('gtceu:block/machines/crop_simulator')
+  )
+	//crop_simulator
+	event.create('crop_simulator', 'simple')
+        .tiers(GTValues.LV,GTValues.MV,GTValues.HV,GTValues.EV,GTValues.IV,GTValues.LuV)
+        .definition((tier, builder) =>
+            builder
+                .langValue(GTValues.VLVH[tier] + " Crop Simulator")
+                .recipeType('crop_simulator')
+                .workableTieredHullRenderer('gtceu:block/machines/crop_simulator')
+        )
+	//dna_fabricator
+	event.create('dna_fabricator', 'simple')
+        .tiers(GTValues.LV,GTValues.MV,GTValues.HV,GTValues.EV,GTValues.IV,GTValues.LuV)
+        .definition((tier, builder) =>
+            builder
+                .langValue(GTValues.VLVH[tier] + " DNA Fabricator")
+                .recipeType('dna_fabricator')
+                .workableTieredHullRenderer('gtceu:block/machines/dna_fabricator')
         )
 
-	//crop_simulator
-	event.create('crop_simulator', 'simple', 0, GTValues.LV)
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('crop_simulator',true,true)
-
-	//dna_fabricator
-	event.create('dna_fabricator', 'simple', 0, GTValues.LV,GTValues.MV,GTValues.HV,GTValues.EV,GTValues.IV,GTValues.LuV)
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('dna_fabricator',true,true)
-		.workableTieredHullRenderer(GTCEu.id("block/machines/dna_fabricator"))
-
-
+ 
 	//animal_pen
-	event.create('animal_pen', 'simple', 0, GTValues.LV,GTValues.MV,GTValues.HV,GTValues.EV,GTValues.IV,GTValues.LuV)
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('animal_pen',true,true)
-		.workableTieredHullRenderer(GTCEu.id("block/machines/animal_pen"))
+	event.create('animal_pen', 'simple')
+    .tiers(GTValues.LV,GTValues.MV,GTValues.HV,GTValues.EV,GTValues.IV,GTValues.LuV)
+    .definition((tier, builder) =>
+        builder
+            .langValue(GTValues.VLVH[tier] + " Animal Pen")
+            .recipeType('animal_pen')
+            .workableTieredHullRenderer('gtceu:block/machines/animal_pen')
+    )
+//large mixer
+	 event.create('mega_mixer', 'multiblock')
+		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_solid_steel'))
+        .recipeTypes('mega_mixer')
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('CCC', 'GGG','GGG','BVB','LLL','CCC')
+            .aisle('CPC', 'GEG','GGG','VXV','L L','CAC')
+            .aisle('CMC', 'GGG','GGG','BVB','LLL','CHC')
+			.where('M', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('C', Predicates.blocks('gtceu:solid_machine_casing')
+  				.or(Predicates.autoAbilities(definition.getRecipeTypes())))
+            .where('G', Predicates.blocks('create:framed_glass'))
+            .where('E', Predicates.blocks('create:basin'))
+            .where('B', Predicates.blocks('kubejs:mega_cupronickel_casing'))
+            .where('V', Predicates.blocks('gtceu:heat_vent'))
+            .where('X', Predicates.blocks('create:mechanical_mixer'))
+            .where('L', Predicates.blocks('gtceu:cupronickel_coil_block'))
+            .where('P', Predicates.blocks('gtceu:bronze_pipe_casing'))
 
+            .where('A', Predicates.abilities(PartAbility.MUFFLER))
+            .where('H', Predicates.abilities(PartAbility.MAINTENANCE))
+        	.build())
+        .workableCasingRenderer(
+            "gtceu:block/casings/solid/machine_casing_solid_steel",
+            "gtceu:block/machines/mixer",
+            false
+        )
+//large press
+	 event.create('mega_press', 'multiblock')
+		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_solid_steel'))
+        .recipeTypes('mega_press')
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('CLBCCCC', 'CLCGGGC','CLCGGGC','CLBCCCC')
+            .aisle('CLCCCCC', 'C PEEEP','A C   V','CLCXXXC')
+            .aisle('CLBCMHC', 'CLCGGGC','CLCGGGC','CLBCCCC')
+			.where('M', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('C', Predicates.blocks('gtceu:solid_machine_casing')
+  				.or(Predicates.autoAbilities(definition.getRecipeTypes())))
+            .where('G', Predicates.blocks('create:framed_glass'))
+            .where('E', Predicates.blocks('create:depot'))
+            .where('B', Predicates.blocks('kubejs:mega_andesite_casing'))
+            .where('V', Predicates.blocks('gtceu:heat_vent'))
+            .where('X', Predicates.blocks('create:mechanical_press'))
+            .where('L', Predicates.blocks('gtceu:cupronickel_coil_block'))
+            .where('P', Predicates.blocks('gtceu:bronze_pipe_casing'))
+
+            .where('A', Predicates.abilities(PartAbility.MUFFLER))
+            .where('H', Predicates.abilities(PartAbility.MAINTENANCE))
+        	.build())
+        .workableCasingRenderer(
+            "gtceu:block/casings/solid/machine_casing_solid_steel",
+            "gtceu:block/machines/bender",
+            false
+        )
 //dreamroom
 		 event.create('dream_room_amplifier', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
 		.appearanceBlock(() => Block.getBlock('botania:glimmering_dreamwood_log'))
         .recipeTypes('dream_room_amplifier')
         .pattern(definition => FactoryBlockPattern.start()
@@ -509,7 +609,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             false
 		)
 	 event.create('resource_combinator', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
 		.appearanceBlock(() => Block.getBlock('create:andesite_casing'))
         .recipeTypes('resource_combinator')
         .pattern(definition => FactoryBlockPattern.start()
@@ -530,30 +629,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             "gtceu:block/machines/alloy_smelter",
             false
 		)
-	 event.create('foundry', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-		.appearanceBlock(() => Block.getBlock('create:andesite_casing'))
-        .recipeTypes('foundry')
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle('CKC', 'AAA','CCC')
-            .aisle('CCI', 'A A','C C')
-            .aisle('OMF', 'AAA','CCC')
-			.where('M', Predicates.controller(Predicates.blocks(definition.get())))
-	        .where('A', Predicates.blocks('gtceu:cupronickel_coil_block'))
-			.where('K', Predicates.abilities(PartAbility.INPUT_KINETIC).setExactLimit(1))
-			.where('I', Predicates.blocks('gtceu:ulv_input_bus'))
-			.where('F', Predicates.blocks('gtceu:ulv_input_hatch'))
-			.where('O', Predicates.blocks('gtceu:ulv_output_hatch'))
-            .where('C', Predicates.blocks('create:andesite_casing'))
-        	.build())
-        .workableCasingRenderer(
-            "create:block/andesite_casing",
-            "gtceu:block/machines/alloy_smelter",
-            false
-        )
 
         event.create('hydroponic_garden', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
 		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_solid_steel'))
         .recipeTypes('hydroponic_garden')
         .pattern(definition => FactoryBlockPattern.start()
@@ -579,7 +656,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         )
 
         event.create('temperate_garden', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
 		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_solid_steel'))
         .recipeTypes('temperate_garden')
         .pattern(definition => FactoryBlockPattern.start()
@@ -605,7 +681,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         )
 	
 	 event.create('meat_freezer', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
 		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_frost_proof'))
         .recipeTypes('meat_freezer')
         .pattern(definition => FactoryBlockPattern.start()
@@ -627,7 +702,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         )
 	
 	 event.create('hostile_containment_unit', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
 		.appearanceBlock(() => Block.getBlock('deeperdarker:gloomy_sculk'))
         .recipeTypes('hostile_containment_unit')
         .pattern(definition => FactoryBlockPattern.start()
@@ -651,7 +725,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 	
 //twilight_awakening_chamber
 		 event.create('twilight_awakening_chamber_mk1', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
 		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_clean_stainless_steel'))
         .recipeTypes('twilight_awakening_chamber_mk1')
         .pattern(definition => FactoryBlockPattern.start()
@@ -673,7 +746,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             false
 		)
 			 event.create('twilight_awakening_chamber_mk2', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
 		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_clean_stainless_steel'))
         .recipeTypes('twilight_awakening_chamber_mk2')
         .pattern(definition => FactoryBlockPattern.start()
@@ -695,7 +767,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             false
 		)
 			 event.create('twilight_awakening_chamber_mk3', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
 		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_clean_stainless_steel'))
         .recipeTypes('twilight_awakening_chamber_mk3')
         .pattern(definition => FactoryBlockPattern.start()
@@ -717,7 +788,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             false
 		)
 			 event.create('twilight_awakening_chamber_mk4', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
 		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_clean_stainless_steel'))
         .recipeTypes('twilight_awakening_chamber_mk4')
         .pattern(definition => FactoryBlockPattern.start()
@@ -739,7 +809,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             false
 		)
 			 event.create('dimensional_reactor', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
 		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_stable_titanium'))
         .recipeTypes('dimensional_reactor')
         .pattern(definition => FactoryBlockPattern.start()
@@ -767,7 +836,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 		)
 	
 			 event.create('planetary_simulation_chamber', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
 		.appearanceBlock(() => Block.getBlock('ad_astra:glowing_calorite_pillar'))
         .recipeTypes('planetary_simulation_chamber')
         .pattern(definition => FactoryBlockPattern.start()
@@ -803,340 +871,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             "gtceu:block/machines/alloy_smelter",
             false
 		)
-	
-    event.create('altar_tier_1', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-		.appearanceBlock(() => Block.getBlock('gtceu:machine_primitive_bricks'))
-        .recipeTypes('altar_research')
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle('  CEC  ', '  AAA  ')
-            .aisle(' CCCCC ', ' AAAAA ')
-            .aisle('CCCCCCC', 'AAAAAAA')
-			.aisle('ICCCCCO', 'AAAAAAA')
-            .aisle('CCCCCCC', 'AAAAAAA')
-            .aisle(' CCCCC ', ' KAAAA ')
-            .aisle('  CMC  ', '  APA  ')
-			.where('M', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('P', Predicates.blocks('kubejs:primitive_star_block'))
-            .where('A', Predicates.blocks('kubejs:altar_block'))
-	        .where('K', Predicates.blocks('kubejs:key_block'))
-            .where('C', Predicates.blocks('gtceu:firebricks'))
-	        .where('I', Predicates.blocks('gtceu:ulv_input_bus'))
-            .where('O', Predicates.blocks('gtceu:ulv_output_bus'))
-            .where('E', Predicates.blocks('gtceu:ulv_energy_input_hatch'))
-        	.build())
-        .workableCasingRenderer(
-            "gtceu:block/casings/solid/machine_primitive_bricks",
-            "gtceu:block/multiblock/research_station",
-            false
-        )
-	
-	
-	    event.create('altar_tier_2', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_solid_steel'))
-        .recipeTypes('altar_research')
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle('  LEL  ', '#######', '  AAA  ')
-            .aisle(' LLLLL ', '##NNN##', ' AAAAA ')
-            .aisle('LLLLLLL', '#NNNNN#', 'AAAAAAA')
-			.aisle('ILLLLLO', '#NNNNN#', 'KAAAAAA')
-            .aisle('LLLLLLL', '#NNNNN#', 'AAAAAAA')
-            .aisle(' LLLLL ', '##NNN##', ' CAAAA ')
-            .aisle('  LML  ', '#######', '  APA  ')
-			.where('M', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('N', Predicates.blocks('gtceu:cupronickel_coil_block'))
-            .where('#', Predicates.blocks('minecraft:air'))
-            .where('P', Predicates.blocks('kubejs:primitive_star_block'))
-	        .where('C', Predicates.blocks('kubejs:creative_star_block'))
-            .where('A', Predicates.blocks('kubejs:altar_block'))
-	        .where('K', Predicates.blocks('kubejs:key_block'))
-	        .where('L', Predicates.blocks('gtceu:lv_machine_casing'))
-	        .where('I', Predicates.blocks('gtceu:lv_input_bus'))
-            .where('O', Predicates.blocks('gtceu:lv_output_bus'))
-            .where('E', Predicates.abilities(PartAbility.INPUT_KINETIC).setExactLimit(1))
-        	.build())
-        .workableCasingRenderer(
-            "gtceu:block/casings/solid/machine_casing_solid_steel",
-            "gtceu:block/multiblock/research_station",
-            false
-        )
-	
-	    event.create('altar_tier_3', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_frost_proof'))
-        .recipeTypes('altar_research')
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle('  LEL  ', '###F###', '###F###', '  AAA  ')
-            .aisle(' LLLLL ', '##NNN##', '##NNN##', ' KAAAA ')
-            .aisle('LLLLLLL', '#NNNNN#', '#NNNNN#', 'AAAAAAA')
-			.aisle('ILLLLLO', 'FNNNNNF', 'FNNNNNF', '3AAAAAA')
-            .aisle('LLLLLLL', '#NNNNN#', '#NNNNN#', 'AAAAAAA')
-            .aisle(' LLLLL ', '##NNN##', '##NNN##', ' 2AAAA ')
-            .aisle('  LML  ', '###F###', '###F###', '  A1A  ')
-			.where('M', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('N', Predicates.blocks('gtceu:kanthal_coil_block'))
-            .where('#', Predicates.blocks('minecraft:air'))
-            .where('1', Predicates.blocks('kubejs:primitive_star_block'))
-	        .where('2', Predicates.blocks('kubejs:creative_star_block'))
-	        .where('3', Predicates.blocks('kubejs:natural_star_block'))
-            .where('A', Predicates.blocks('kubejs:altar_block'))
-	        .where('K', Predicates.blocks('kubejs:key_block'))
-	        .where('L', Predicates.blocks('gtceu:frostproof_machine_casing'))
-	        .where('I', Predicates.blocks('gtceu:mv_input_bus'))
-            .where('O', Predicates.blocks('gtceu:mv_output_bus'))
-            .where('E', Predicates.abilities(PartAbility.INPUT_KINETIC).setExactLimit(1))
-            .where('F', Predicates.blocks('gtceu:aluminium_frame'))
-        	.build())
-        .workableCasingRenderer(
-            "gtceu:block/casings/solid/machine_casing_frost_proof",
-            "gtceu:block/multiblock/research_station",
-            false
-        )
-	
-	
-	    event.create('altar_tier_4', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_clean_stainless_steel'))
-        .recipeTypes('altar_research')
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle('          AKA          ', '                       ', '                       ', '                       ', '                       ', '                       ', '          LEL          ', '           F           ', '           F           ', '           F           ', '          LLL          ')
-            .aisle('         4AAAA         ', ' DDD              CCCCC', ' BBB              CGGGC', ' BBB              CGGGC', ' BBB              CGGGC', ' BBB              CGGGC', ' DDD     LLLLL    CCCCC', '          NNN          ', '          NNN          ', '          NNN          ', '         LLLLL         ')
-            .aisle('        AAAAAAA        ', 'DDDDD             CCCCC', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'DDDDD   LLLLLLL   CCCCC', '         NNNNN         ', '         NNNNN         ', '         NNNNN         ', '        LLLLLLL        ')
-			.aisle('        3AAAAAA        ', 'DDDDD             CCCCC', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'DDDDD   ILLLLLO   CCCCC', '  F     FNNNNNF     F  ', '  FF    FNNNNNF    FF  ', '   FFF  FNNNNNF  FFF   ', '     FFFLLLLLLLFFF     ')
-            .aisle('        AAAAAAA        ', 'DDDDD             CCCCC', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'DDDDD   LLLLLLL   CCCCC', '         NNNNN         ', '         NNNNN         ', '         NNNNN         ', '        LLLLLLL        ')
-            .aisle('         2AAAA         ', ' DDD              CCCCC', ' BBB              CGGGC', ' BBB              CGGGC', ' BBB              CGGGC', ' BBB              CGGGC', ' DDD     LLLLL    CCCCC', '          NNN          ', '          NNN          ', '          NNN          ', '         LLLLL         ')
-            .aisle('          A1A          ', '                       ', '                       ', '                       ', '                       ', '                       ', '          LML          ', '           F           ', '           F           ', '           F           ', '          LLL          ')
-            .where('N', Predicates.blocks('gtceu:nichrome_coil_block'))
-            .where('#', Predicates.blocks('minecraft:air'))
-            .where('1', Predicates.blocks('kubejs:primitive_star_block'))
-	        .where('2', Predicates.blocks('kubejs:creative_star_block'))
-	        .where('3', Predicates.blocks('kubejs:natural_star_block'))
-	        .where('4', Predicates.blocks('kubejs:magical_star_block'))
-            .where('A', Predicates.blocks('kubejs:altar_block'))
-            .where('B', Predicates.blocks('forbidden_arcanus:deorum_glass'))
-            .where('C', Predicates.blocks('create:andesite_casing'))
-	        .where('D', Predicates.blocks('forbidden_arcanus:arcane_polished_darkstone'))
-            .where('E', Predicates.blocks('gtceu:hv_energy_input_hatch'))
-            .where('F', Predicates.blocks('gtceu:stainless_steel_frame'))
-            .where('G', Predicates.blocks('create:framed_glass'))
-	        .where('I', Predicates.blocks('gtceu:hv_input_bus'))
-	        .where('K', Predicates.blocks('kubejs:key_block'))
-	        .where('L', Predicates.blocks('gtceu:clean_machine_casing'))
-			.where('M', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('O', Predicates.blocks('gtceu:hv_output_bus'))
-        	.build())
-        .workableCasingRenderer(
-            "gtceu:block/casings/solid/machine_casing_clean_stainless_steel",
-            "gtceu:block/multiblock/research_station",
-            false
-        )
-	    event.create('altar_tier_5', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_stable_titanium'))
-        .recipeTypes('altar_research')
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle('          A5A          ', '                       ', '                       ', '                       ', '                       ', '                       ', '          LEL          ', '           F           ', '           F           ', '           F           ', '           F           ', '          LLL          ')
-            .aisle('         4AAAK         ', ' DDD              CCCCC', ' BBB              CGGGC', ' BBB              CGGGC', ' BBB              CGGGC', ' BBB              CGGGC', ' DDD     LLLLL    CCCCC', '          NNN          ', '          NNN          ', '          NNN          ', '          NNN          ', '         LLLLL         ')
-            .aisle('        AAAAAAA        ', 'DDDDD             CCCCC', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'DDDDD   LLLLLLL   CCCCC', '         NNNNN         ', '         NNNNN         ', '         NNNNN         ', '         NNNNN         ', '        LLLLLLL        ')
-			.aisle('        3AAAAAA        ', 'DDDDD             CCCCC', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'DDDDD   ILLLLLO   CCCCC', '  F     FNNNNNF     F  ', '  F     FNNNNNF     F  ', '  FF    FNNNNNF    FF  ', '   FF   FNNNNNF   FF   ', '    FFFFLLLLLLLFFFF    ')
-            .aisle('        AAAAAAA        ', 'DDDDD             CCCCC', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'DDDDD   LLLLLLL   CCCCC', '         NNNNN         ', '         NNNNN         ', '         NNNNN         ', '         NNNNN         ', '        LLLLLLL        ')
-            .aisle('         2AAAA         ', ' DDD              CCCCC', ' BBB              CGGGC', ' BBB              CGGGC', ' BBB              CGGGC', ' BBB              CGGGC', ' DDD     LLLLL    CCCCC', '          NNN          ', '          NNN          ', '          NNN          ', '          NNN          ', '         LLLLL         ')
-            .aisle('          A1A          ', '                       ', '                       ', '                       ', '                       ', '                       ', '          LML          ', '           F           ', '           F           ', '           F           ', '           F           ', '          LLL          ')
-            .where('N', Predicates.blocks('gtceu:rtm_alloy_coil_block'))
-            .where('#', Predicates.blocks('minecraft:air'))
-            .where('1', Predicates.blocks('kubejs:primitive_star_block'))
-	        .where('2', Predicates.blocks('kubejs:creative_star_block'))
-	        .where('3', Predicates.blocks('kubejs:natural_star_block'))
-	        .where('4', Predicates.blocks('kubejs:magical_star_block'))
-	        .where('5', Predicates.blocks('kubejs:nano_star_block'))
-            .where('A', Predicates.blocks('kubejs:altar_block'))
-            .where('B', Predicates.blocks('forbidden_arcanus:deorum_glass'))
-            .where('C', Predicates.blocks('create:andesite_casing'))
-	        .where('D', Predicates.blocks('forbidden_arcanus:arcane_polished_darkstone'))
-            .where('E', Predicates.blocks('gtceu:ev_energy_input_hatch'))
-            .where('F', Predicates.blocks('gtceu:titanium_frame'))
-            .where('G', Predicates.blocks('create:framed_glass'))
-	        .where('I', Predicates.blocks('gtceu:ev_input_bus'))
-	        .where('K', Predicates.blocks('kubejs:key_block'))
-	        .where('L', Predicates.blocks('gtceu:stable_machine_casing'))
-			.where('M', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('O', Predicates.blocks('gtceu:ev_output_bus'))
-        	.build())
-        .workableCasingRenderer(
-            "gtceu:block/casings/solid/machine_casing_stable_titanium",
-            "gtceu:block/multiblock/research_station",
-            false
-        )
-	    event.create('altar_tier_6', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_robust_tungstensteel'))
-        .recipeTypes('altar_research')
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle('          A5A          ', '                       ', '                       ', '                       ', '                       ', '                       ', '          LEL          ', '           F           ', '           F           ', '           F           ', '           F           ', '          LLL          ')
-            .aisle('         4AAA6         ', ' DDD              CCCCC', ' BBB              CGGGC', ' BBB              CGGGC', ' BBB              CGGGC', ' BBB              CGGGC', ' DDD     LLLLL    CCCCC', '          NNN          ', '          NNN          ', '          NNN          ', '          NNN          ', '         LLLLL         ')
-            .aisle('        AAAAAAA        ', 'DDDDD             CCCCC', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'DDDDD   LLLLLLL   CCCCC', '         NNNNN         ', '         NNNNN         ', '         NNNNN         ', '         NNNNN         ', '        LLLLLLL        ')
-			.aisle('        3AAAAAK        ', 'DDDDD             CCCCC', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'DDDDD   ILLLLLO   CCCCC', '  F     FNNNNNF     F  ', '  F     FNNNNNF     F  ', '  FF    FNNNNNF    FF  ', '   FF   FNNNNNF   FF   ', '    FFFFLLLLLLLFFFF    ')
-            .aisle('        AAAAAAA        ', 'DDDDD             CCCCC', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'DDDDD   LLLLLLL   CCCCC', '         NNNNN         ', '         NNNNN         ', '         NNNNN         ', '         NNNNN         ', '        LLLLLLL        ')
-            .aisle('         2AAAA         ', ' DDD              CCCCC', ' BBB              CGGGC', ' BBB              CGGGC', ' BBB              CGGGC', ' BBB              CGGGC', ' DDD     LLLLL    CCCCC', '          NNN          ', '          NNN          ', '          NNN          ', '          NNN          ', '         LLLLL         ')
-            .aisle('          A1A          ', '                       ', '                       ', '                       ', '                       ', '                       ', '          LML          ', '           F           ', '           F           ', '           F           ', '           F           ', '          LLL          ')
-            .where('N', Predicates.blocks('gtceu:rtm_alloy_coil_block'))
-            .where('#', Predicates.blocks('minecraft:air'))
-            .where('1', Predicates.blocks('kubejs:primitive_star_block'))
-	        .where('2', Predicates.blocks('kubejs:creative_star_block'))
-	        .where('3', Predicates.blocks('kubejs:natural_star_block'))
-	        .where('4', Predicates.blocks('kubejs:magical_star_block'))
-	        .where('5', Predicates.blocks('kubejs:nano_star_block'))
-	        .where('6', Predicates.blocks('kubejs:champion_star_block'))
 
-            .where('A', Predicates.blocks('kubejs:altar_block'))
-            .where('B', Predicates.blocks('forbidden_arcanus:deorum_glass'))
-            .where('C', Predicates.blocks('create:andesite_casing'))
-	        .where('D', Predicates.blocks('forbidden_arcanus:arcane_polished_darkstone'))
-            .where('E', Predicates.blocks('gtceu:iv_energy_input_hatch'))
-            .where('F', Predicates.blocks('gtceu:tungsten_frame'))
-            .where('G', Predicates.blocks('create:framed_glass'))
-	        .where('I', Predicates.blocks('gtceu:iv_input_bus'))
-	        .where('K', Predicates.blocks('kubejs:key_block'))
-	        .where('L', Predicates.blocks('gtceu:robust_machine_casing'))
-			.where('M', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('O', Predicates.blocks('gtceu:iv_output_bus'))
-        	.build())
-        .workableCasingRenderer(
-            "gtceu:block/casings/solid/machine_casing_robust_tungstensteel",
-            "gtceu:block/multiblock/research_station",
-            false
-        )
-	    event.create('altar_tier_7', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_robust_tungstensteel'))
-        .recipeTypes('altar_research')
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle('          A5A          ', '                       ', '                       ', '                       ', '                       ', '                       ', '          LEL          ', '           F           ', '           F           ', '           F           ', '           F           ', '          LLL          ')
-            .aisle('         4AAA6         ', ' DDD              CCCCC', ' BBB              CGGGC', ' BBB              CGGGC', ' BBB              CGGGC', ' BBB              CGGGC', ' DDD     LLLLL    CCCCC', '          NNN          ', '          NNN          ', '          NNN          ', '          NNN          ', '         LLLLL         ')
-            .aisle('        AAAAAAA        ', 'DDDDD             CCCCC', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'DDDDD   LLLLLLL   CCCCC', '         NNNNN         ', '         NNNNN         ', '         NNNNN         ', '         NNNNN         ', '        LLLLLLL        ')
-			.aisle('        3AAAAA7        ', 'DDDDD             CCCCC', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'DDDDD   ILLLLLO   CCCCC', '  F     FNNNNNF     F  ', '  F     FNNNNNF     F  ', '  FF    FNNNNNF    FF  ', '   FF   FNNNNNF   FF   ', '    FFFFLLLLLLLFFFF    ')
-            .aisle('        AAAAAAA        ', 'DDDDD             CCCCC', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'B   B             G   G', 'DDDDD   LLLLLLL   CCCCC', '         NNNNN         ', '         NNNNN         ', '         NNNNN         ', '         NNNNN         ', '        LLLLLLL        ')
-            .aisle('         2AAAK         ', ' DDD              CCCCC', ' BBB              CGGGC', ' BBB              CGGGC', ' BBB              CGGGC', ' BBB              CGGGC', ' DDD     LLLLL    CCCCC', '          NNN          ', '          NNN          ', '          NNN          ', '          NNN          ', '         LLLLL         ')
-            .aisle('          A1A          ', '                       ', '                       ', '                       ', '                       ', '                       ', '          LML          ', '           F           ', '           F           ', '           F           ', '           F           ', '          LLL          ')
-            .where('N', Predicates.blocks('gtceu:rtm_alloy_coil_block'))
-            .where('#', Predicates.blocks('minecraft:air'))
-            .where('1', Predicates.blocks('kubejs:primitive_star_block'))
-	        .where('2', Predicates.blocks('kubejs:creative_star_block'))
-	        .where('3', Predicates.blocks('kubejs:natural_star_block'))
-	        .where('4', Predicates.blocks('kubejs:magical_star_block'))
-	        .where('5', Predicates.blocks('kubejs:nano_star_block'))
-	        .where('6', Predicates.blocks('kubejs:champion_star_block'))
-	        .where('7', Predicates.blocks('kubejs:galactic_star_block'))
 
-            .where('A', Predicates.blocks('kubejs:altar_block'))
-            .where('B', Predicates.blocks('forbidden_arcanus:deorum_glass'))
-            .where('C', Predicates.blocks('create:andesite_casing'))
-	        .where('D', Predicates.blocks('forbidden_arcanus:arcane_polished_darkstone'))  
-            .where('E', Predicates.blocks('gtceu:luv_energy_input_hatch'))
-            .where('F', Predicates.blocks('ad_astra:glowing_calorite_pillar'))
-            .where('G', Predicates.blocks('create:framed_glass'))
-	        .where('I', Predicates.blocks('gtceu:luv_input_bus'))
-	        .where('K', Predicates.blocks('kubejs:key_block'))
-	        .where('L', Predicates.blocks('gtceu:laser_safe_engraving_casing'))
-			.where('M', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('O', Predicates.blocks('gtceu:luv_output_bus'))
-        	.build())
-        .workableCasingRenderer(
-            "gtceu:block/casings/solid/machine_casing_robust_tungstensteel",
-            "gtceu:block/multiblock/research_station",
-            false
-        )
-    event.create('essence_refinery_1', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-		.appearanceBlock(() => Block.getBlock('create:copper_casing'))
-        .recipeTypes('essence_refinery')
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle('ECO', 'T T', 'T T','T T', 'CCC')
-            .aisle('ICC', 'P P', '   ','P P', 'CCC')
-            .aisle('CMF', 'B B', '   ','S S', 'CCC')
-			.where('M', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('C', Predicates.blocks('create:copper_casing'))
-            .where('T', Predicates.blocks('create:fluid_tank'))
-            .where('P', Predicates.blocks('create:fluid_pipe'))
-            .where('S', Predicates.blocks('create:spout'))
-            .where('B', Predicates.blocks('create:basin'))
-	        .where('I', Predicates.blocks('gtceu:ulv_input_bus'))
-            .where('O', Predicates.blocks('gtceu:ulv_output_hatch'))
-            .where('F', Predicates.blocks('gtceu:ulv_input_hatch'))
-
-            .where('E', Predicates.abilities(PartAbility.INPUT_KINETIC).setExactLimit(1))
-        	.build())
-        .workableCasingRenderer(
-            "create:block/copper_casing",
-            "gtceu:block/machines/chemical_bath",
-            false
-        )
-    event.create('large_mechanical_press', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-		.appearanceBlock(() => Block.getBlock('create:brass_casing'))
-        .recipeTypes('large_mechanical_press')
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle('CEC', 'CPC', 'CCC','SSS')
-            .aisle('CDC', 'P P', 'CAC','SSS')
-            .aisle('CMC', 'CPC', 'CCC','SSS')
-			.where('M', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('C', Predicates.blocks('create:brass_casing')
-  				.or(Predicates.autoAbilities(definition.getRecipeTypes())))
-			.where('E',Predicates.abilities(PartAbility.INPUT_KINETIC).setExactLimit(1))
-            .where('S', Predicates.blocks('create:seat'))
-            .where('P', Predicates.blocks('create:framed_glass'))
-            .where('A', Predicates.blocks('create:mechanical_press'))
-            .where('D', Predicates.blocks('create:depot'))
-
-        	.build())
-        .workableCasingRenderer(
-            "create:block/brass_casing",
-            "gtceu:block/machines/bender",
-            false
-        )
-        event.create('andesite_mechanical_drill', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-		.appearanceBlock(() => Block.getBlock('create:andesite_casing'))
-        .recipeTypes('andesite_mechanical_drill')
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle('AAA', 'CDC', 'CCC',)
-            .aisle('AAA', 'C C', 'CHC',)
-            .aisle('AAA', 'CMC', 'CCC',)
-			.where('M', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('C', Predicates.blocks('create:andesite_casing')
-  				.or(Predicates.autoAbilities(definition.getRecipeTypes())))
-            .where('A', Predicates.blocks('create:andesite_alloy_block'))
-            .where('D',Predicates.abilities(PartAbility.INPUT_KINETIC).setExactLimit(1))
-            .where('H', Predicates.abilities(PartAbility.MUFFLER))
-        	.build())
-        .workableCasingRenderer(
-            "create:block/andesite_casing",
-            "gtceu:block/multiblock/large_miner",
-            false
-        )
-        event.create('brass_mechanical_drill', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-		.appearanceBlock(() => Block.getBlock('create:brass_casing'))
-        .recipeTypes('brass_mechanical_drill')
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle('AAA', 'CDC', 'CCC',)
-            .aisle('AAA', 'C C', 'CHC',)
-            .aisle('AAA', 'CMC', 'CCC',)
-			.where('M', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('C', Predicates.blocks('create:brass_casing')
-  				.or(Predicates.autoAbilities(definition.getRecipeTypes())))
-            .where('A', Predicates.blocks('create:brass_block'))
-            .where('D',Predicates.abilities(PartAbility.INPUT_KINETIC).setExactLimit(1))
-            .where('H', Predicates.abilities(PartAbility.MUFFLER))
-        	.build())
-        .workableCasingRenderer(
-            "create:block/brass_casing",
-            "gtceu:block/multiblock/large_miner",
-            false
-        )
     event.create('essence_extractor_1', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
 		.appearanceBlock(() => Block.getBlock('create:copper_casing'))
         .recipeTypes('essence_extractor')
         .pattern(definition => FactoryBlockPattern.start()
@@ -1166,12 +903,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-    event.create('foundry')
-        .category('foundry')
-        .setEUIO('in')
-        .setMaxIOSize(1, 0, 1, 1)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.BATH)
+
     event.create('crop_simulator')
         .category('crop_simulator')
         .setEUIO('in')
@@ -1184,12 +916,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setMaxIOSize(16, 1, 2, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.BATH)
-    event.create('caster')
-        .category('caster')
-        .setEUIO('in')
-        .setMaxIOSize(0, 1, 1, 0)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.BATH)
+
     event.create('altar_research')
         .category('altar')
         .setEUIO('in')
@@ -1271,7 +998,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 		event.create('hostile_containment_unit')
         .category('hostile_containment_unit')
         .setEUIO('in')
-        .setMaxIOSize(2, 4, 1, 1) 
+        .setMaxIOSize(4, 4, 1, 1) 
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
@@ -1289,13 +1016,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
-		event.create('large_mechanical_press')
-        .category('large_mechanical_press')
-        .setEUIO('in')
-        .setMaxIOSize(3, 1, 1, 0) 
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COOLING)
+
 		event.create('temperate_garden')
         .category('temperate_garden')
         .setEUIO('in')
@@ -1310,17 +1031,19 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
-        event.create('andesite_mechanical_drill')
-        .category('andesite_mechanical_drill')
+
+        event.create('mega_mixer')
+        .category('mega_mixer')
         .setEUIO('in')
-        .setMaxIOSize(2, 1, 1, 0) 
+        .setMaxIOSize(8, 3, 1, 1) 
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
-        event.create('brass_mechanical_drill')
-        .category('brass_mechanical_drill')
+
+        event.create('mega_press')
+        .category('mega_press')
         .setEUIO('in')
-        .setMaxIOSize(2, 1, 1, 0) 
+        .setMaxIOSize(6, 1, 2, 0) 
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
