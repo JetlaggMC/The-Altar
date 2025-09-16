@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
 		.itemInputs(Item.of('1x gtceu:ilc_chip'))
 		.itemInputs(Item.of('2x #gtceu:resistors'))
 		.itemInputs(Item.of('2x #gtceu:diodes'))
-		.itemInputs(Item.of('2x gtceu:fine_glowing_wire'))
+		.itemInputs(Item.of('2x gtceu:fine_weak_synthetic_wire'))
 		.itemInputs(Item.of('2x gtceu:natures_alloy_bolt'))
 		.inputFluids(Fluid.of('kubejs:crude_insulator',144))
 		.itemOutputs(Item.of('2x gtceu:basic_integrated_circuit'))
