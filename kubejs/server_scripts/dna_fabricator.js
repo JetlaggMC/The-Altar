@@ -51,7 +51,6 @@ ServerEvents.recipes(event => {
 			'16x minecraft:hay_block',
 			'8x #forge:wool',
 			'4x minecraft:mutton',
-			'1x minecraft:grass_block',
 			'1x kubejs:taiga_dust',
 			'1x kubejs:raw_meat_glob',
 			'1x #gtceu:circuits/mv'
