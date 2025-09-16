@@ -283,7 +283,7 @@ event.recipes.gtceu.dna_fabricator('wither_skeleton_model_1')
 	'1x #gtceu:circuits/hv'
 )
 .inputFluids(Fluid.of('gtceu:blazing', 1000))
-.itemOutputs(Item.of('1x kubejs:whither_skeleton_model_1'))
+.itemOutputs(Item.of('1x kubejs:wither_skeleton_model_1'))
 .duration(12000)
 .EUt(128)
 
