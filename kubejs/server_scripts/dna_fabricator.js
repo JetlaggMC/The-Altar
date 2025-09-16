@@ -110,6 +110,18 @@ ServerEvents.recipes(event => {
 		.itemOutputs(Item.of('1x kubejs:rabbit_model_1'))
 		.duration(12000)
 		.EUt(32)
+	event.recipes.gtceu.dna_fabricator('snow_golem_model_1')
+		.itemInputs(
+			'16x minecraft:snow_block',
+			'8x minecraft:blue_ice',
+			'4x minecraft:carved_pumpkin',
+			'1x kubejs:taiga_dust',
+			'1x kubejs:raw_meat_glob',
+			'1x #gtceu:circuits/mv'
+		)
+		.itemOutputs(Item.of('1x kubejs:snow_golem_model_1'))
+		.duration(12000)
+		.EUt(32)
 
 	event.recipes.gtceu.dna_fabricator('squid_model_1')
 		.itemInputs(
