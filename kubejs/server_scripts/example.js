@@ -146,6 +146,9 @@ event.remove({ output: 'farmersdelight:apple_cider'})
 event.remove({ output: 'veggiesdelight:fermented_garlic_honey'})
 event.remove({ output: 'farmersdelight:melon_juice'})
 event.remove({ output: 'veggiesdelight:dandelion_juice'})
+event.remove({ input: 'gtceu:refined_copper_ore'})
+event.remove({ output: 'gtceu:lv_arc_furnace'})
+event.remove({ output: 'create:crushing_wheel'})
 
 event.remove({ input: 'gtceu:raw_coal', type: 'minecraft:smelting'})
 
@@ -294,7 +297,7 @@ event.recipes.create.pressing('gtceu:copper_plate', '#forge:ingots/copper')
 	event.recipes.create.milling('1x gtceu:quartz_sand_dust', '#forge:sand')
 	event.recipes.create.milling('2x veggiesdelight:garlic_clove', 'veggiesdelight:garlic')
 
-	event.recipes.create.crushing('2x gtceu:crushed_zinc_ore', 'create:raw_zinc')
+	event.recipes.create.crushing('2x create:crushed_raw_zinc', 'create:raw_zinc')
 
 	event.recipes.create.crushing('2x gtceu:crushed_amethyst_ore', 'gtceu:raw_amethyst')
     event.recipes.create.crushing('2x gtceu:crushed_iron_ore', 'minecraft:raw_iron')
@@ -401,7 +404,19 @@ event.recipes.create.filling('veggiesdelight:fermented_garlic_honey', [Fluid.of(
 		event.recipes.createFilling('gtceu:treated_wood_planks', ['gtceu:treated_wood_planks', Fluid.of('kubejs:crude_insulator', 144)])
 	]).transitionalItem('gtceu:treated_wood_planks').loops(2)
 	
- 
+  event.recipes.create.mechanical_crafting('create:crushing_wheel', [
+    ' DDD ',
+    'DDADD',
+    'DABAD',
+    'DDADD',
+    ' DDD '
+  ], {
+    D: 'gtceu:double_andesite_alloy_plate',
+    A: 'create:brass_casing',
+    B: 'allthecompressed:deepslate_2x'
+
+
+  })
 	
    event.recipes.create.sequenced_assembly('create:precision_mechanism','gtceu:brass_plate', [
 		event.recipes.createDeploying('gtceu:brass_plate', ['gtceu:brass_plate', 'create:cogwheel']),
@@ -1131,7 +1146,7 @@ event.shaped('1x create:andesite_funnel', [
     'ABA', 
     'CDC'
   ], {
-    A: 'gtceu:rubber_plate',
+    A: 'kubejs:crude_insulator_sheet',
 	B: 'gtceu:natures_alloy_plate',
 	C: 'gtceu:blazing_single_cable',
 	D: 'gtceu:lv_machine_casing'
@@ -1292,6 +1307,44 @@ event.shaped('1x create:andesite_funnel', [
 	S: 'minecraft:ender_pearl',
 	T: 'minecraft:wither_skeleton_skull'
 	}).id('kubejs:extended/lv_dna_fabricator');
+	
+	event.recipes.extendedcrafting.shaped_table(
+		"gtceu:mega_mixer",
+		['ABCBA', 
+		 'DEFED',
+		 'CFGFC',
+		 'HEFEH',
+		 'AICIA'
+	], {
+	A: 'create:precision_mechanism',
+	B: 'create:mechanical_mixer',
+	C: 'kubejs:mega_cupronickel_casing',
+	D: 'gtceu:mv_electric_motor',
+	E: '#gtceu:circuits/hv',
+	F: 'gtceu:solid_machine_casing',
+	G: 'mbd2:large_mechanical_mixer',
+	H: 'gtceu:mv_electric_pump',
+	I: 'create:basin'
+	}).id('kubejs:extended/mega_mixer');
+	
+	event.recipes.extendedcrafting.shaped_table(
+		"gtceu:mega_press",
+		['ABCBA', 
+		 'DEFED',
+		 'CFGFC',
+		 'HEFEH',
+		 'AICIA'
+	], {
+	A: 'create:precision_mechanism',
+	B: 'create:mechanical_press',
+	C: 'kubejs:mega_andesite_casing',
+	D: 'gtceu:mv_electric_motor',
+	E: '#gtceu:circuits/hv',
+	F: 'gtceu:solid_machine_casing',
+	G: 'mbd2:large_mechanical_press',
+	H: 'gtceu:mv_electric_piston',
+	I: 'create:depot'
+	}).id('kubejs:extended/mega_press');
 
 	event.shaped('1x gtceu:lv_animal_pen', [
     'ABA', 
@@ -1301,7 +1354,7 @@ event.shaped('1x create:andesite_funnel', [
     A: 'gtceu:natures_alloy_screw',
 	B: 'allthecompressed:hay_block_1x',
 	C: '#forge:chests/wooden',
-	D: 'gtceu:lv_machine_casing',
+	D: 'gtceu:lv_machine_hull',
 	E: 'minecraft:carrot',
 	F: 'kubejs:cow_model_1',
 	G: 'minecraft:water_bucket'
@@ -1408,6 +1461,19 @@ event.shaped('1x create:andesite_funnel', [
 	C: '#gtceu:circuits/lv',
 	D: 'gtceu:lv_machine_hull',
 	E: 'gtceu:lv_electric_motor'
+  }
+)
+
+	event.shaped('1x gtceu:lv_arc_furnace', [
+    'BAB', 
+    'CDC',
+	'EEE'
+  ], {
+    A: 'gtceu:graphite_dust',
+	B: 'gtceu:blazing_quadruple_cable',
+	C: '#gtceu:circuits/lv',
+	D: 'gtceu:lv_machine_hull',
+	E: 'gtceu:natures_alloy_plate'
   }
 )
 	event.shaped('1x gtceu:lv_assembler', [
@@ -1669,8 +1735,8 @@ event.shaped('1x gtceu:temperate_garden', [
 ], {
 A: 'gtceu:solid_machine_casing',
 B: 'gtceu:mv_electric_pump',
-C: '#gtceu:circuits/mv',
-D: 'minecraft:moss'
+C: '#gtceu:circuits/hv',
+D: 'allthecompressed:moss_block_2x'
 }
 )
 
@@ -1681,8 +1747,8 @@ event.shaped('1x gtceu:hydroponic_garden', [
 ], {
 A: 'gtceu:solid_machine_casing',
 B: 'gtceu:mv_electric_pump',
-C: '#gtceu:circuits/mv',
-D: 'minecraft:sand'
+C: '#gtceu:circuits/hv',
+D: 'allthecompressed:sand_2x'
 }
 )
 	event.shaped('1x gtceu:steam_machine_casing', [
