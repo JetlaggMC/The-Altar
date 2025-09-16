@@ -45,6 +45,7 @@ StartupEvents.registry('item', e => {
   e.create('brass_research')
   e.create('natural_research')
   e.create('magical_research')
+  e.create('sterile_research')
 
   e.create('unborn_naga_trophy')
   e.create('unborn_lich_trophy')
