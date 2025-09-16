@@ -14,7 +14,7 @@
 		}
 	}
 	id: "3A3F350A5155FE58"
-	order_index: 7
+	order_index: 8
 	quest_links: [
 		{
 			id: "2EF18BC2DF5A0225"
@@ -43,6 +43,7 @@
 		{
 			id: "1CBF233B3DA16D46"
 			linked_quest: "5C003A3265C6291A"
+			shape: "square"
 			x: 18.0d
 			y: 16.5d
 		}
@@ -1133,6 +1134,7 @@
 			dependencies: [
 				"2664786B0F984589"
 				"697B9A4B6216C3B9"
+				"7E2AB85DCF8F3463"
 			]
 			id: "0A49CE88476AD31A"
 			tasks: [{

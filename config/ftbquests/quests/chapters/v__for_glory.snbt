@@ -381,6 +381,16 @@
 			x: 3.0d
 			y: -2.5d
 		}
+		{
+			id: "2A9DD0509751449F"
+			tasks: [{
+				id: "6E38CA6325DB2AE2"
+				item: "gtceu:vacuum_freezer"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 8.0d
+		}
 	]
 	title: "V - For Glory!"
 }

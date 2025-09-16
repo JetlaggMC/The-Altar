@@ -885,9 +885,9 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["3CD3A304326B6BB1"]
+			dependencies: ["23480E5F279493B4"]
 			id: "531AA4E94AAF7DE7"
-			shape: "rsquare"
+			shape: "diamond"
 			tasks: [{
 				id: "2AC2CD7F0A3F4642"
 				item: "gtceu:mv_circuit_assembler"
@@ -1148,10 +1148,13 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["7EDAD51B65C42435"]
+			dependencies: [
+				"7EDAD51B65C42435"
+				"50A6E193A680A6B3"
+			]
 			icon: "kubejs:carrots_1"
 			id: "7098F7DCF75A6A0D"
-			shape: "rsquare"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "33A42A6201FD51B1"
@@ -1210,7 +1213,7 @@
 				}
 			]
 			title: "Plant Models MK1"
-			x: 15.5d
+			x: 16.5d
 			y: 1.0d
 		}
 		{
@@ -1226,24 +1229,28 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["3CD3A304326B6BB1"]
 			id: "06EF031CDE99761D"
+			shape: "diamond"
 			tasks: [{
 				id: "01764CA27EEEF120"
 				item: "gtceu:hydroponic_garden"
 				type: "item"
 			}]
 			x: 17.5d
-			y: 0.5d
+			y: -1.0d
 		}
 		{
+			dependencies: ["3CD3A304326B6BB1"]
 			id: "0AA591507C2017E0"
+			shape: "diamond"
 			tasks: [{
 				id: "5A2BCE6556AC21A8"
 				item: "gtceu:temperate_garden"
 				type: "item"
 			}]
-			x: 17.5d
-			y: 1.5d
+			x: 18.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1303,6 +1310,18 @@
 			}]
 			x: 8.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["3CD3A304326B6BB1"]
+			id: "50A6E193A680A6B3"
+			shape: "diamond"
+			tasks: [{
+				id: "2C46A59AEF31CAEA"
+				item: "gtceu:resource_combinator"
+				type: "item"
+			}]
+			x: 16.5d
+			y: -1.0d
 		}
 	]
 	title: "III - Wizards Only Fools"

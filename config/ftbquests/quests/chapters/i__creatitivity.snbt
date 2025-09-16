@@ -830,6 +830,7 @@
 			dependencies: [
 				"256358FD632BE3DE"
 				"533AA53A4CF175BA"
+				"78CE7FD6C48CB18F"
 			]
 			id: "127462DD1590CFAA"
 			shape: "diamond"
@@ -839,7 +840,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: -5.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -1179,7 +1180,7 @@
 				item: "kubejs:andesite_research"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 11.5d
 			y: -4.0d
 		}
 		{

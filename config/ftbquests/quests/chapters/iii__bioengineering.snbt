@@ -18,15 +18,15 @@
 			id: "1600E34949CB1FEB"
 			linked_quest: "531AA4E94AAF7DE7"
 			shape: "diamond"
-			x: 4.0d
+			x: 5.0d
 			y: 3.0d
 		}
 		{
 			id: "6F02E5A7644403B2"
 			linked_quest: "37FA06CF0CAA5875"
 			shape: "diamond"
-			x: -4.0d
-			y: 5.0d
+			x: -5.0d
+			y: 4.0d
 		}
 	]
 	quests: [
@@ -160,7 +160,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["55AC739F3ACE44ED"]
@@ -190,8 +190,8 @@
 				item: "kubejs:plant_sample_1"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 4.0d
+			x: -4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["37FA06CF0CAA5875"]
@@ -202,8 +202,8 @@
 				item: "kubejs:hostile_sample_1"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 5.0d
+			x: -5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5EE288AA83A38FC4"]
@@ -214,13 +214,14 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 5.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
 				"4C1D87D1F496B4E5"
 				"471E4D5C8574E1AC"
 				"0CCCC556F659BA44"
+				"611C84E9CA36917A"
 			]
 			id: "55AC739F3ACE44ED"
 			tasks: [{
@@ -240,8 +241,8 @@
 				item: "gtceu:hostile_containment_unit"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 6.0d
+			x: -5.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["3D173F08517FC798"]
@@ -268,11 +269,12 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 6.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["22904E25A5CC77C5"]
 			id: "7CEFE6F059E984E7"
+			shape: "diamond"
 			tasks: [{
 				id: "555C37FFADCB8B65"
 				item: "gtceu:hv_machine_casing"
@@ -342,22 +344,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: [
-				"3C40246A56BAE2E6"
-				"531AA4E94AAF7DE7"
-			]
-			id: "706253975A5E11EC"
-			shape: "diamond"
-			tasks: [{
-				id: "38B7F07671AB567C"
-				item: "gtceu:microchip_processor"
-				type: "item"
-			}]
-			title: "Third LV Circuit"
-			x: 4.0d
-			y: 4.0d
-		}
-		{
 			dependencies: ["2867F6EE521068A0"]
 			id: "7D2313DC96A19C9E"
 			tasks: [{
@@ -406,7 +392,10 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["706253975A5E11EC"]
+			dependencies: [
+				"531AA4E94AAF7DE7"
+				"3C40246A56BAE2E6"
+			]
 			id: "1D53E3B45C66703C"
 			shape: "diamond"
 			tasks: [{
@@ -691,14 +680,15 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["323D338A77D77AAD"]
 			id: "631D8DBF85159C6C"
 			tasks: [{
 				id: "2739344AB1B172FB"
 				item: "gtceu:large_chemical_reactor"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 8.5d
+			x: 1.0d
+			y: 7.0d
 		}
 	]
 	title: "IV - Bio-Engineering"
