@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
 		.duration(400)
 		.EUt(30)
 	event.recipes.gtceu.assembler('diode_2')
-		.itemInputs(Item.of('2x gtceu:fine_weak_synthetic_wire'))
+		.itemInputs(Item.of('2x gtceu:fine_glowing_wire'))
 		.itemInputs(Item.of('1x gtceu:small_arcane_gold_dust'))
 		.inputFluids(Fluid.of('kubejs:floraethylene',144))
 		.itemOutputs(Item.of('2x gtceu:diode'))
