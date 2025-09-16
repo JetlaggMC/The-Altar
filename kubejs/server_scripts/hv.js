@@ -338,6 +338,6 @@ event.recipes.gtceu.assembler('hv_machine_hull')
 		.inputFluids(Fluid.of('kubejs:manafloraethylene',144))
 		.itemOutputs(Item.of('1x gtceu:nichrome_coil_block'))
 		.duration(300)
-		.EUt(120)
+		.EUt(480)
 
 	})
