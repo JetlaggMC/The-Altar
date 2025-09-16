@@ -157,6 +157,7 @@ ServerEvents.recipes(event => {
 			'8x minecraft:glow_berries',
 			'4x minecraft:sculk',
 			'1x kubejs:earth_dust',
+			'1x kubejs:raw_meat_glob',
 			'1x #gtceu:circuits/mv'
 		)
 		.inputFluids(Fluid.of('minecraft:water', 1000))
