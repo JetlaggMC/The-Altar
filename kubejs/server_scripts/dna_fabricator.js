@@ -396,7 +396,7 @@ event.recipes.gtceu.dna_fabricator('ghast_model_1')
 	'16x minecraft:soul_soil',
 	'8x minecraft:fire_charge',
 	'4x minecraft:feather',
-	'1x create:ghast_tear',
+	'1x minecraft:ghast_tear',
 	'1x #gtceu:circuits/hv'
 )
 .inputFluids(Fluid.of('gtceu:blazing', 1000))
