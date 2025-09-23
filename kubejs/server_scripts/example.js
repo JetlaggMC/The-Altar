@@ -28,6 +28,8 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'thermal:dynamo_lapidary' })
   event.remove({ output: 'thermal:dynamo_disenchantment' })
   event.remove({ output: 'thermal:dynamo_gourmand' })
+	
+event.remove({ output: 'gtceu:lv_super_chest' })
 
 event.remove({ output: 'gtceu:ulv_machine_casing' })
 event.remove({ output: 'gtceu:ulv_machine_hull' })
@@ -49,6 +51,7 @@ event.remove({ output: 'create:large_water_wheel' })
 event.remove({ output: 'gtceu:andesite_alloy_ring' })
 event.remove({ output: 'gtceu:iron_ring' })
 event.remove({ output: 'minecraft:cobblestone', type: 'create:milling' })
+event.remove({ output: 'create:steam_engine' })
 
 event.remove({ input: '#forge:tools/mortars' })
 event.remove({ output: 'gtceu:cupronickel_coil_block' })
@@ -162,6 +165,7 @@ event.remove({ input: 'gtceu:awakened_echo_dust'})
 event.remove({ output: 'gtceu:frostproof_machine_casing'})
 event.remove({ output: 'gtceu:heatproof_machine_casing'})
 event.remove({ output: 'gtceu:cupronickel_large_item_pipe'})
+event.remove({ output: 'gtceu:cleanroom'})
 
 event.remove({ output: 'gtceu:silicon'})
 
@@ -965,22 +969,6 @@ event.shaped('1x create:andesite_funnel', [
   }
 ).damageIngredient('#forge:tools/wrenches').damageIngredient('#forge:tools/screwdrivers')
 
-	event.shaped('1x kubejs:natural_star', [
-    'ABC', 
-    'DEF',
-	'GHI'
-  ], {
-    A: 'kubejs:taiga_shard',
-	B: 'kubejs:nether_shard',
-    C: 'kubejs:earth_shard',
-    D: 'kubejs:ender_shard',
-	E: 'kubejs:star_casing_02',
-	F: 'kubejs:desert_shard',
-	G: 'kubejs:ocean_shard',
-	H: 'kubejs:sky_shard',
-	I: 'kubejs:jungle_shard'
-  }
-)
 		event.shaped('1x gtceu:wood_crate', [
     'ABA', 
     'BCB',
@@ -1055,6 +1043,19 @@ event.shaped('1x create:andesite_funnel', [
 	D: 'gtceu:brass_gear',
 	E: 'create:mechanical_crafter',
 	F: 'create:mechanical_press'
+  }
+)
+		event.shaped('1x mbd2:large_mechanical_mixer', [
+    'ABA', 
+    'CEC',
+	'DFD'
+  ], {
+    A: 'gtceu:brass_screw',
+	B: 'create:precision_mechanism',
+    C: 'create:electron_tube',
+	D: 'gtceu:brass_gear',
+	E: 'kubejs:mega_cupronickel_casing',
+	F: 'create:mechanical_mixer'
   }
 )
 		event.shaped('1x mbd2:kinetic_foundry', [
@@ -1360,6 +1361,30 @@ event.shaped('1x create:andesite_funnel', [
 	G: 'minecraft:water_bucket'
 	}
 )
+	event.shaped('1x gtceu:mv_animal_pen', [
+    'ABA', 
+    'CDC',
+	'EFG'
+  ], {
+    A: 'gtceu:magical_alloy_screw',
+	B: 'allthecompressed:hay_block_2x',
+	C: 'gtceu:lv_super_chest',
+	D: 'gtceu:lv_machine_hull',
+	E: 'kubejs:carrots_1',
+	F: 'kubejs:cow_model_2',
+	G: 'minecraft:water_bucket'
+	}
+)
+	event.shaped('1x gtceu:steel_crate', [
+    'ABA', 
+    'BCB',
+	'ABA'
+  ], {
+    A: 'gtceu:long_natures_alloy_rod',
+	B: 'gtceu:natures_alloy_plate',
+	C: '#forge:tools/hammers'
+	}
+)
 	event.shaped('1x gtceu:resin_printed_circuit_board', [
     'AAA', 
     'ABA',
@@ -1437,6 +1462,19 @@ event.shaped('1x create:andesite_funnel', [
 	D: '#forge:tools/wrenches'
   }
 ).damageIngredient('#forge:tools/screwdrivers')
+	event.shaped('1x create:steam_engine', [
+    'ABA', 
+    'CDC',
+	'EFE'
+  ], {
+    A: 'gtceu:small_gold_spring',
+	B: 'gtceu:double_gold_plate',
+	C: 'gtceu:small_andesite_alloy_gear',
+	D: 'create:shaft',
+	E: 'gtceu:cupronickel_screw',
+	F: 'create:copper_casing'
+  }
+)
 	event.shaped('1x create:empty_blaze_burner', [
     'AFA', 
     'BCB',
@@ -1666,13 +1704,13 @@ event.shaped('1x gtceu:hostile_containment_unit', [
   'DED',
   'FGF'
 ], {
-A: 'gtceu:hv_robot_arm',
+A: 'gtceu:mv_robot_arm',
 B: 'gtceu:awakened_echo_rotor',
-C: 'gtceu:hv_electric_piston',
-D: '#gtceu:circuits/ev',
+C: 'gtceu:mv_electric_piston',
+D: '#gtceu:circuits/hv',
 E: 'deeperdarker:gloomy_sculk',
 F: 'minecraft:diamond_sword',
-G: 'gtceu:soc'
+G: 'gtceu:simple_soc'
 
 }
 )
@@ -1749,6 +1787,18 @@ A: 'gtceu:solid_machine_casing',
 B: 'gtceu:mv_electric_pump',
 C: '#gtceu:circuits/hv',
 D: 'allthecompressed:sand_2x'
+}
+)
+	event.shaped('1x gtceu:cleanroom', [
+  'AAA', 
+  'BCB',
+  'DED'
+], {
+A: 'gtceu:item_filter',
+B: 'gtceu:sterile_bio_alloy_rotor',
+C: 'gtceu:hv_machine_hull',
+D: 'gtceu:hv_electric_motor',
+E: '#gtceu:circuits/hv'
 }
 )
 	event.shaped('1x gtceu:steam_machine_casing', [
