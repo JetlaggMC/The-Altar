@@ -5,6 +5,14 @@
 	group: ""
 	icon: "kubejs:magical_star"
 	id: "4A4C9EE82113EA5E"
+	images: [{
+		height: 20.0d
+		image: "kubejs:icons/altar_2"
+		rotation: 0.0d
+		width: 20.0d
+		x: 9.0d
+		y: -10.0d
+	}]
 	order_index: 3
 	quest_links: [ ]
 	quests: [
@@ -17,8 +25,8 @@
 				item: "botania:mana_powder"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -1.0d
+			x: 16.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["10979873E424D428"]
@@ -30,8 +38,8 @@
 				item: "gtceu:arcane_gold_dust"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 2.0d
+			x: 12.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["5784C4CFD4400A8C"]
@@ -42,8 +50,8 @@
 				item: "kubejs:terrasteel_dust"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -0.5d
+			x: 16.0d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -57,8 +65,8 @@
 				item: "kubejs:infused_source_bucket"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 0.0d
+			x: 11.0d
+			y: -16.0d
 		}
 		{
 			dependencies: [
@@ -72,10 +80,14 @@
 				item: "kubejs:raw_source_bucket"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 0.0d
+			x: 10.0d
+			y: -16.0d
 		}
 		{
+			dependencies: [
+				"6F3B77D50A8BDF02"
+				"58D2E626B6BA6A0B"
+			]
 			id: "6469CEB22C564A0E"
 			shape: "diamond"
 			tasks: [{
@@ -83,8 +95,8 @@
 				item: "ars_nouveau:sourceberry_bush"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 0.0d
+			x: 9.0d
+			y: -16.0d
 		}
 		{
 			dependencies: [
@@ -99,8 +111,8 @@
 				item: "ars_nouveau:source_gem"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 1.0d
+			x: 11.0d
+			y: -15.0d
 		}
 		{
 			dependencies: ["6B14BEDFEAFEE7B3"]
@@ -118,8 +130,8 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
-			y: 1.0d
+			x: 12.0d
+			y: -15.0d
 		}
 		{
 			dependencies: ["0D37AC7A8382B63B"]
@@ -131,8 +143,8 @@
 				item: "gtceu:arcane_gold_ingot"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 1.0d
+			x: 11.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["50D7D53E1EB12C4D"]
@@ -143,8 +155,8 @@
 				item: "ars_nouveau:imbuement_chamber"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 0.0d
+			x: 9.0d
+			y: -14.0d
 		}
 		{
 			dependencies: [
@@ -159,8 +171,8 @@
 				item: "ars_nouveau:enchanting_apparatus"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 0.0d
+			x: 10.0d
+			y: -13.0d
 		}
 		{
 			dependencies: ["50D7D53E1EB12C4D"]
@@ -171,8 +183,8 @@
 				item: "ars_nouveau:arcane_core"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 1.0d
+			x: 11.0d
+			y: -13.0d
 		}
 		{
 			dependencies: [
@@ -186,8 +198,8 @@
 				item: "ars_nouveau:arcane_pedestal"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 2.0d
+			x: 10.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["49F99471B212281D"]
@@ -209,11 +221,14 @@
 				type: "checkmark"
 			}]
 			title: "Botania Time!"
-			x: 2.5d
-			y: -5.0d
+			x: 12.0d
+			y: -12.0d
 		}
 		{
-			dependencies: ["27ABF847308C8123"]
+			dependencies: [
+				"27ABF847308C8123"
+				"74953D548DAD30EB"
+			]
 			id: "01012ABC1D13515F"
 			shape: "diamond"
 			tasks: [{
@@ -221,11 +236,14 @@
 				item: "botania:endoflame"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -5.5d
+			x: 12.0d
+			y: -11.0d
 		}
 		{
-			dependencies: ["27ABF847308C8123"]
+			dependencies: [
+				"27ABF847308C8123"
+				"74953D548DAD30EB"
+			]
 			id: "24DAD55C70A58044"
 			shape: "diamond"
 			tasks: [{
@@ -233,8 +251,8 @@
 				item: "botania:hydroangeas"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -5.5d
+			x: 11.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["41BF7094697E2A42"]
@@ -245,13 +263,14 @@
 				item: "botania:mana_pool"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -2.0d
+			x: 15.0d
+			y: -10.0d
 		}
 		{
 			dependencies: [
 				"27ABF847308C8123"
 				"16A125700C0321D7"
+				"74953D548DAD30EB"
 			]
 			id: "67033F16B6A1175B"
 			shape: "diamond"
@@ -260,8 +279,8 @@
 				item: "botania:pure_daisy"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -4.0d
+			x: 13.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["67033F16B6A1175B"]
@@ -272,8 +291,8 @@
 				item: "botania:livingrock"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -3.0d
+			x: 15.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["67033F16B6A1175B"]
@@ -284,14 +303,15 @@
 				item: "botania:livingwood_log"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -3.5d
+			x: 14.0d
+			y: -11.0d
 		}
 		{
 			dependencies: [
 				"5D45C629F1B25906"
 				"4969229DCDC618C0"
 				"7385341D276EA8EB"
+				"57E6BD0DF5C2D903"
 			]
 			id: "1B5993F4BD99BDD3"
 			shape: "diamond"
@@ -300,8 +320,8 @@
 				item: "gtceu:magical_alloy_dust"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 0.0d
+			x: 12.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["65F0E03867645647"]
@@ -312,20 +332,23 @@
 				item: "botania:elementium_ingot"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -2.0d
+			x: 13.0d
+			y: -8.0d
 		}
 		{
-			dependencies: ["7D7C4A4AECCC000E"]
+			dependencies: [
+				"7D7C4A4AECCC000E"
+				"4E29F8222B992AB5"
+			]
 			id: "7B714E4C469C4AB4"
-			shape: "rsquare"
+			shape: "diamond"
 			tasks: [{
 				id: "2381BAAB7DAC2F54"
 				item: "gtceu:dream_room_amplifier"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 0.0d
+			x: 11.0d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -339,8 +362,8 @@
 				item: "botania:alfheim_portal"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -3.0d
+			x: 14.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["1A900F43B05A4F7F"]
@@ -351,8 +374,8 @@
 				item: "botania:terrasteel_ingot"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -1.0d
+			x: 15.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["20D2786094B85C99"]
@@ -363,11 +386,14 @@
 				item: "botania:terra_plate"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -1.5d
+			x: 16.0d
+			y: -9.0d
 		}
 		{
-			dependencies: ["269BBAAEC95D6743"]
+			dependencies: [
+				"269BBAAEC95D6743"
+				"5948B76A9C3AEB46"
+			]
 			id: "20D2786094B85C99"
 			shape: "diamond"
 			tasks: [{
@@ -375,8 +401,8 @@
 				item: "botania:runic_altar"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -2.0d
+			x: 15.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["306836430D65B1F6"]
@@ -387,8 +413,8 @@
 				item: "botania:rainbow_rod"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -1.0d
+			x: 12.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["306836430D65B1F6"]
@@ -399,8 +425,8 @@
 				item: "botania:gaia_pylon"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -2.0d
+			x: 13.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -414,8 +440,8 @@
 				item: "kubejs:arcane_infused_growth_medium_bucket"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 0.0d
+			x: 11.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["7E773D910BA25CBC"]
@@ -426,8 +452,8 @@
 				item: "botania:life_essence"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 0.0d
+			x: 12.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["6D361F5FD4C624BD"]
@@ -438,8 +464,8 @@
 				item: "kubejs:growth_medium_bucket"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 0.0d
+			x: 11.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -448,14 +474,14 @@
 			]
 			id: "35956C8118B06DC5"
 			shape: "diamond"
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				id: "11344234B4A32AC0"
 				item: "gtceu:magical_alloy_ingot"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 1.0d
+			x: 11.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["5206A5A9A8179BFF"]
@@ -466,11 +492,14 @@
 				item: "ars_nouveau:sourcestone"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 2.0d
+			x: 10.0d
+			y: -15.0d
 		}
 		{
-			dependencies: ["50D7D53E1EB12C4D"]
+			dependencies: [
+				"50D7D53E1EB12C4D"
+				"0CB5E4D911B0D77D"
+			]
 			icon: "gtceu:electric_blast_furnace"
 			id: "18DF975EA8122557"
 			shape: "diamond"
@@ -528,11 +557,14 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: 1.0d
+			x: 11.0d
+			y: -12.0d
 		}
 		{
-			dependencies: ["18DF975EA8122557"]
+			dependencies: [
+				"18DF975EA8122557"
+				"5E484CE2DD9DD07D"
+			]
 			id: "1F560E42B77D83A7"
 			shape: "diamond"
 			tasks: [{
@@ -540,11 +572,14 @@
 				item: "extendedcrafting:black_iron_ingot"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.0d
+			x: 10.0d
+			y: -11.0d
 		}
 		{
-			dependencies: ["7FFC1B38C9D996FF"]
+			dependencies: [
+				"7FFC1B38C9D996FF"
+				"5E484CE2DD9DD07D"
+			]
 			id: "61FFB322F5712D5B"
 			shape: "diamond"
 			tasks: [{
@@ -552,13 +587,14 @@
 				item: "extendedcrafting:advanced_table"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 4.0d
+			x: 9.0d
+			y: -13.0d
 		}
 		{
 			dependencies: [
 				"0A12313E02DA047A"
 				"1F560E42B77D83A7"
+				"5E484CE2DD9DD07D"
 			]
 			id: "7FFC1B38C9D996FF"
 			shape: "diamond"
@@ -567,11 +603,14 @@
 				item: "extendedcrafting:basic_table"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 3.0d
+			x: 9.0d
+			y: -12.0d
 		}
 		{
-			dependencies: ["32D2E63CCB6DA9F1"]
+			dependencies: [
+				"32D2E63CCB6DA9F1"
+				"5E484CE2DD9DD07D"
+			]
 			id: "0A12313E02DA047A"
 			shape: "diamond"
 			tasks: [{
@@ -579,13 +618,14 @@
 				item: "extendedcrafting:luminessence"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 3.0d
+			x: 10.0d
+			y: -12.0d
 		}
 		{
 			dependencies: [
 				"7E4AC52F60747514"
 				"3615B4C43AA07AEE"
+				"05FA348DF56DEC4E"
 			]
 			hide_dependent_lines: true
 			id: "3CD777CF7ED7A1BA"
@@ -596,13 +636,14 @@
 				type: "item"
 			}]
 			title: "First MV Circuit"
-			x: 6.5d
-			y: -4.0d
+			x: 12.0d
+			y: -9.0d
 		}
 		{
 			dependencies: [
 				"7A59CB342FA97AF3"
 				"306836430D65B1F6"
+				"05FA348DF56DEC4E"
 			]
 			id: "7E4AC52F60747514"
 			shape: "diamond"
@@ -611,13 +652,14 @@
 				item: "gtceu:phenolic_printed_circuit_board"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -3.0d
+			x: 14.0d
+			y: -9.0d
 		}
 		{
 			dependencies: [
 				"269BBAAEC95D6743"
 				"41BEEAD2BD6507B4"
+				"05FA348DF56DEC4E"
 			]
 			hide_dependency_lines: true
 			id: "7A59CB342FA97AF3"
@@ -627,8 +669,8 @@
 				item: "gtceu:phenolic_circuit_board"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -3.0d
+			x: 14.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["11EC5B0A9F49CCA4"]
@@ -639,8 +681,8 @@
 				item: "gtceu:mv_machine_casing"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 1.0d
+			x: 10.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["27ABF847308C8123"]
@@ -651,11 +693,14 @@
 				item: "botania:white_petal"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -5.0d
+			x: 13.0d
+			y: -11.0d
 		}
 		{
-			dependencies: ["1E4FFCB940E01486"]
+			dependencies: [
+				"1E4FFCB940E01486"
+				"05FA348DF56DEC4E"
+			]
 			id: "3615B4C43AA07AEE"
 			shape: "diamond"
 			tasks: [{
@@ -663,8 +708,8 @@
 				item: "gtceu:diode"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -4.0d
+			x: 13.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["18DF975EA8122557"]
@@ -676,8 +721,8 @@
 				item: "gtceu:silicon_boule"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -1.0d
+			x: 11.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -691,8 +736,8 @@
 				item: "gtceu:silicon_wafer"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 0.0d
+			x: 10.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -700,6 +745,7 @@
 				"7B714E4C469C4AB4"
 				"531E17B405C41383"
 			]
+			hide_dependency_lines: true
 			id: "79EA907BF110B544"
 			shape: "diamond"
 			tasks: [{
@@ -707,8 +753,8 @@
 				item: "gtceu:weak_synthetic_dust"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 0.0d
+			x: 11.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["69F96077759B921D"]
@@ -719,11 +765,12 @@
 				item: "gtceu:fermented_biomass_bucket"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -1.0d
+			x: 10.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["30C3D61CC0F20B98"]
+			hide_dependency_lines: true
 			id: "69F96077759B921D"
 			shape: "diamond"
 			tasks: [{
@@ -731,8 +778,8 @@
 				item: "gtceu:biomass_bucket"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -2.0d
+			x: 12.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["79EA907BF110B544"]
@@ -743,8 +790,8 @@
 				item: "gtceu:weak_synthetic_ingot"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 0.0d
+			x: 12.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -758,11 +805,14 @@
 				item: "gtceu:mv_machine_hull"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 1.0d
+			x: 11.0d
+			y: -5.0d
 		}
 		{
-			dependencies: ["7C308501E6639286"]
+			dependencies: [
+				"7C308501E6639286"
+				"4353C92548065191"
+			]
 			id: "428FE24CAB43893D"
 			shape: "diamond"
 			tasks: [{
@@ -770,8 +820,8 @@
 				item: "gtceu:mv_energy_input_hatch"
 				type: "item"
 			}]
-			x: 13.5d
-			y: 2.0d
+			x: 8.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -785,8 +835,8 @@
 				item: "gtceu:mv_steam_turbine"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 2.0d
+			x: 12.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -800,8 +850,8 @@
 				item: "gtceu:mv_cutter"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 1.0d
+			x: 11.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -815,8 +865,8 @@
 				item: "gtceu:mv_laser_engraver"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 1.0d
+			x: 9.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -830,8 +880,8 @@
 				item: "gtceu:mv_assembler"
 				type: "item"
 			}]
-			x: 13.5d
-			y: 1.0d
+			x: 8.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3CD777CF7ED7A1BA"]
@@ -842,8 +892,8 @@
 				item: "gtceu:lv_circuit_assembler"
 				type: "item"
 			}]
-			x: 14.5d
-			y: -4.0d
+			x: 5.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["0BD5DFFBB1084373"]
@@ -855,8 +905,8 @@
 				type: "item"
 			}]
 			title: "Second LV Circuit"
-			x: 14.5d
-			y: -3.0d
+			x: 5.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["7E19DC8EE4A5BC87"]
@@ -868,8 +918,8 @@
 				type: "item"
 			}]
 			title: "Second MV Circuit"
-			x: 14.5d
-			y: -2.0d
+			x: 6.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["23480E5F279493B4"]
@@ -881,8 +931,8 @@
 				type: "item"
 			}]
 			title: "First HV Circuit"
-			x: 14.5d
-			y: -1.0d
+			x: 6.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["23480E5F279493B4"]
@@ -893,8 +943,8 @@
 				item: "gtceu:mv_circuit_assembler"
 				type: "item"
 			}]
-			x: 15.5d
-			y: -1.0d
+			x: 6.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -908,8 +958,8 @@
 				item: "gtceu:mv_dna_fabricator"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 1.0d
+			x: 7.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["7EDAD51B65C42435"]
@@ -964,8 +1014,8 @@
 				}
 			]
 			title: "Animal Models 2"
-			x: 15.5d
-			y: 0.0d
+			x: 7.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["16A125700C0321D7"]
@@ -976,8 +1026,8 @@
 				item: "kubejs:floraethylene_bucket"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -5.0d
+			x: 13.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["7EDAD51B65C42435"]
@@ -1046,11 +1096,14 @@
 				}
 			]
 			title: "Hostile Models 1"
-			x: 15.5d
-			y: 2.0d
+			x: 8.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["61FFB322F5712D5B"]
+			dependencies: [
+				"61FFB322F5712D5B"
+				"37AF206FE66462CC"
+			]
 			id: "49F99471B212281D"
 			shape: "diamond"
 			tasks: [{
@@ -1058,8 +1111,8 @@
 				item: "gtceu:lv_dna_fabricator"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -3.0d
+			x: 12.0d
+			y: -13.0d
 		}
 		{
 			dependencies: ["35D3CEBAC7896043"]
@@ -1070,13 +1123,14 @@
 				item: "gtceu:lv_animal_pen"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -2.0d
+			x: 14.0d
+			y: -12.0d
 		}
 		{
 			dependencies: [
 				"49F99471B212281D"
 				"5460FDB495A6F19D"
+				"2DCF8B5235A3679A"
 			]
 			icon: "kubejs:cow_model_1"
 			id: "35D3CEBAC7896043"
@@ -1129,13 +1183,14 @@
 				}
 			]
 			title: "Animal Models MK01"
-			x: 2.5d
-			y: -2.0d
+			x: 14.0d
+			y: -13.0d
 		}
 		{
 			dependencies: [
 				"35D3CEBAC7896043"
 				"32D2E63CCB6DA9F1"
+				"2DCF8B5235A3679A"
 			]
 			id: "4969229DCDC618C0"
 			shape: "diamond"
@@ -1144,8 +1199,8 @@
 				item: "kubejs:life_sample_1"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 0.0d
+			x: 15.0d
+			y: -13.0d
 		}
 		{
 			dependencies: [
@@ -1213,8 +1268,8 @@
 				}
 			]
 			title: "Plant Models MK1"
-			x: 16.5d
-			y: 1.0d
+			x: 7.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["7C308501E6639286"]
@@ -1225,8 +1280,8 @@
 				item: "gtceu:kanthal_coil_block"
 				type: "item"
 			}]
-			x: 13.5d
-			y: 0.0d
+			x: 7.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3CD3A304326B6BB1"]
@@ -1237,8 +1292,8 @@
 				item: "gtceu:hydroponic_garden"
 				type: "item"
 			}]
-			x: 17.5d
-			y: -1.0d
+			x: 6.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["3CD3A304326B6BB1"]
@@ -1249,8 +1304,8 @@
 				item: "gtceu:temperate_garden"
 				type: "item"
 			}]
-			x: 18.5d
-			y: -1.0d
+			x: 6.0d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -1266,14 +1321,15 @@
 				item: "kubejs:raw_meat_glob"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -3.0d
+			x: 13.0d
+			y: -13.0d
 		}
 		{
 			dependencies: [
 				"126AD44A29E49574"
 				"7C0E437363F47CD7"
 				"35956C8118B06DC5"
+				"46AB9F5B622FBBE2"
 			]
 			id: "11EC5B0A9F49CCA4"
 			tasks: [{
@@ -1281,8 +1337,8 @@
 				item: "kubejs:magical_research"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 1.0d
+			x: 10.0d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -1297,8 +1353,8 @@
 				item: "kubejs:magical_meat_glob"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 0.0d
+			x: 10.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["7B714E4C469C4AB4"]
@@ -1308,8 +1364,8 @@
 				item: "kubejs:magical_plant_glob"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 2.0d
+			x: 10.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["3CD3A304326B6BB1"]
@@ -1320,8 +1376,51 @@
 				item: "gtceu:resource_combinator"
 				type: "item"
 			}]
-			x: 16.5d
-			y: -1.0d
+			x: 7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"3A084181E974464C"
+				"7098F7DCF75A6A0D"
+			]
+			id: "358E02C26A0FB756"
+			shape: "diamond"
+			tasks: [{
+				id: "500610C2FBDBB83C"
+				item: "gtceu:mv_animal_pen"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["50A6E193A680A6B3"]
+			hide_dependency_lines: true
+			id: "63BA9829B3B62BE0"
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "0AE3CEE7A4946C2A"
+				item: "kubejs:magical_star"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"213308CE77B4EB2E"
+				"1CDC90B7190E3194"
+			]
+			id: "4353C92548065191"
+			tasks: [{
+				id: "0769D228B6AB9BE2"
+				item: "gtceu:ulpic_wafer"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.0d
 		}
 	]
 	title: "III - Wizards Only Fools"

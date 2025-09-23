@@ -35,73 +35,9 @@
 			y: -1.5d
 		}
 		{
-			id: "28A29F6847F8AE8D"
-			linked_quest: "1EE592CCEBDD19F4"
-			x: 18.0d
-			y: 15.5d
-		}
-		{
-			id: "1CBF233B3DA16D46"
-			linked_quest: "5C003A3265C6291A"
-			shape: "square"
-			x: 18.0d
-			y: 16.5d
-		}
-		{
-			id: "4B23669EFE86825E"
-			linked_quest: "2E1348862E7C7D4A"
-			x: 19.0d
-			y: 15.5d
-		}
-		{
 			id: "613E32C04CC59BC7"
 			linked_quest: "391CCD76057F848E"
-			x: 19.0d
-			y: 16.5d
-		}
-		{
-			id: "66070FEE08648DB9"
-			linked_quest: "2C45BA6DB939FA34"
-			x: 17.0d
-			y: 15.5d
-		}
-		{
-			id: "075C6B2584E514D1"
-			linked_quest: "78513CFE449AA3E6"
-			shape: "square"
-			x: 17.0d
-			y: 16.5d
-		}
-		{
-			id: "522967FA17CF3373"
-			linked_quest: "3DD56A853D117419"
-			shape: "square"
-			x: 16.0d
-			y: 15.5d
-		}
-		{
-			id: "02CC99C84A1BFDCB"
-			linked_quest: "228552E97C93D5BD"
-			x: 13.0d
-			y: 15.5d
-		}
-		{
-			id: "68EAF56BB9958F1D"
-			linked_quest: "7685F6E5B53BC39D"
-			x: 14.0d
-			y: 15.5d
-		}
-		{
-			id: "022C3DEF4247419A"
-			linked_quest: "6220976AB0C5C918"
-			x: 15.0d
-			y: 15.5d
-		}
-		{
-			id: "52B47224BA4AE4F2"
-			linked_quest: "2B7C9F4C45AF07A0"
-			shape: "square"
-			x: 13.0d
+			x: 9.0d
 			y: 16.5d
 		}
 	]
@@ -3585,6 +3521,3199 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["05FA348DF56DEC4E"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/medium_voltage_machinery"
+				}
+			}
+			icon_scale: 1.5d
+			id: "214B22FFAB3FFF25"
+			shape: "square"
+			tasks: [
+				{
+					count: 6L
+					id: "08B5BDB8C172FD05"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "68843C18F9DF0F78"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "652C829099603055"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "476BD57927EF926D"
+					item: "kubejs:natural_research"
+					type: "item"
+				}
+				{
+					id: "57B65BCC1C9003B6"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+			]
+			title: "Medium Voltage Machinery"
+			x: 11.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["214B22FFAB3FFF25"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/advanced_electronics_1"
+				}
+			}
+			icon_scale: 1.5d
+			id: "0E1C90A30A11F409"
+			rewards: [
+				{
+					auto: "no_toast"
+					command: "/say Hi, @p!"
+					elevate_perms: true
+					icon: "gtceu:lv_circuit_assembler"
+					id: "68F0C0A860CC2E28"
+					silent: true
+					title: "Unlock Basic Circuit Assembler"
+					type: "command"
+				}
+				{
+					icon: "gtceu:basic_integrated_circuit"
+					id: "719E486FC3A88F81"
+					title: "Unlock Basic Integrated Circuit"
+					type: "custom"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					count: 12L
+					id: "7C5D01AA15E8D196"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "4355B8D86A7493BB"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "0995624C2A127FEC"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "417A3A88961FAE24"
+					item: "kubejs:natural_research"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "558C2A1CE0EEBCDB"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+			]
+			title: "Advanced Electronics I"
+			x: 12.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["7331575EB9A94099"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/biology_2"
+				}
+			}
+			icon_scale: 1.5d
+			id: "53FCA7A7F39A2365"
+			shape: "square"
+			tasks: [
+				{
+					count: 30L
+					id: "41214BCB6D1C5053"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "051B18B2E73AD001"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "09BEAF1671AD7C7C"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "00CA6453A0DE29F0"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "41F68F82B64F1F3F"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+			]
+			title: "Biology II"
+			x: 15.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["53FCA7A7F39A2365"]
+			icon: "kubejs:cow_model_2"
+			icon_scale: 1.5d
+			id: "38572B698C2D7375"
+			shape: "square"
+			tasks: [
+				{
+					count: 36L
+					id: "50C42CF3F6FA31EB"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 30L
+					id: "103B6EFA1112AF33"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "4A540260E59DC277"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "321F9F081C1B2DDA"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "0233026A8F738066"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+			]
+			title: "Farm Animals II"
+			x: 16.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["53FCA7A7F39A2365"]
+			icon: "kubejs:fish_model_2"
+			icon_scale: 1.5d
+			id: "42623CC6B69A0C1F"
+			shape: "square"
+			tasks: [
+				{
+					count: 36L
+					id: "1C6E013166B987B8"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 30L
+					id: "14BB9DDF9A66474E"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "489FDD94504A3A13"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "0F9F9725843BCCF3"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "26CC4F628C692A44"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+			]
+			title: "Aquatic Animals II"
+			x: 16.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["53FCA7A7F39A2365"]
+			icon: "kubejs:zombie_model_1"
+			icon_scale: 1.5d
+			id: "0AE61CD4E2EA9244"
+			shape: "square"
+			tasks: [
+				{
+					count: 36L
+					id: "7D4BEFF886E28455"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 30L
+					id: "6D3220C022DD9824"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "40D007730DE1768E"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "55E3E9D33CFFC73E"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "49DEC0B3EF231391"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+			]
+			title: "Overworld Hostility I"
+			x: 16.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["53FCA7A7F39A2365"]
+			icon: "kubejs:blaze_model_1"
+			icon_scale: 1.5d
+			id: "7CFD2531A0E8B443"
+			shape: "square"
+			tasks: [
+				{
+					count: 36L
+					id: "5E11B9846F664805"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 30L
+					id: "42F8C4081942DC96"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "2ABA57F03240B850"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "5E05482333BAD452"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "6ACB19D7F54A6A23"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+			]
+			title: "Nether Hostility I"
+			x: 16.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["53FCA7A7F39A2365"]
+			icon: "kubejs:enderman_model_1"
+			icon_scale: 1.5d
+			id: "573ACB6503202BDC"
+			shape: "square"
+			tasks: [
+				{
+					count: 36L
+					id: "41550198B378CB2F"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 30L
+					id: "5371672E8771EFAA"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "6B6A2415337CFE0D"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "530770FBDA3C541E"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "28E5621E8FE6D91B"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+			]
+			title: "Ender Hostility I"
+			x: 16.5d
+			y: 19.5d
+		}
+		{
+			dependencies: ["53FCA7A7F39A2365"]
+			icon: "kubejs:wheat_1"
+			icon_scale: 1.5d
+			id: "0E2292DBB05B35E3"
+			shape: "square"
+			tasks: [
+				{
+					count: 36L
+					id: "716F21016B787FF6"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 30L
+					id: "69C23361BE55346D"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "6846857DE3C2B1EF"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "33CD8EF044CE2CD5"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "73845E311CF63CD2"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+			]
+			title: "Fauna II"
+			x: 17.5d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"38572B698C2D7375"
+				"25EC4FCA697481B5"
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/sterilization"
+				}
+			}
+			icon_scale: 1.5d
+			id: "1C7773A48A4D33EE"
+			rewards: [{
+				command: "/say Hi, @p!"
+				icon: "gtceu:meat_freezer"
+				id: "7B7BBFF33B983C07"
+				title: "Unlock The Meat Freezer"
+				type: "command"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					count: 42L
+					id: "5F4C0EED06C8744C"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 35L
+					id: "64B84DE34036BC83"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 28L
+					id: "45C3642B761CE3E3"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "7B7A39975903DCB1"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+				{
+					count: 7L
+					id: "7E8580C104F478D7"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+			]
+			title: "Sterilization"
+			x: 17.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["1C7773A48A4D33EE"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/sterile_research_1"
+				}
+			}
+			icon_scale: 1.5d
+			id: "5AE5E1A84131B2EB"
+			shape: "square"
+			tasks: [
+				{
+					count: 54L
+					id: "3BEB5E9E98C8E960"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 45L
+					id: "599B976338608B62"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "680440EDA5B81DC6"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "1DC4B1180D969B1E"
+					item: "kubejs:natural_research"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "611AE55B463BFF20"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+			]
+			title: "Sterile Research"
+			x: 19.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["68213481A4A0666C"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/micro_electronics_1"
+				}
+			}
+			icon_scale: 1.5d
+			id: "66838B17D5D50BEB"
+			rewards: [{
+				auto: "no_toast"
+				command: "/say Hi, @p!"
+				elevate_perms: true
+				icon: "gtceu:micro_processor"
+				id: "318CDAA2ACCAEABD"
+				silent: true
+				title: "Unlock Microprocessor"
+				type: "command"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					count: 16L
+					id: "156C490D62FAC985"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "0770F5ABD825F748"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "0A5B793F00CEADED"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "29BEA95B15D950C4"
+					item: "kubejs:natural_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4CE7E05BAF93891F"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "00F5138F3C0F438A"
+					item: "kubejs:sterile_research"
+					type: "item"
+				}
+			]
+			title: "Micro Electronics I"
+			x: 21.5d
+			y: 14.5d
+		}
+		{
+			dependencies: [
+				"66838B17D5D50BEB"
+				"1B186AF3AA8B47D2"
+			]
+			icon: "gtceu:hv_dna_fabricator"
+			id: "70E068013746FD12"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "6C29BAB54E984CD8"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "0E44D07325CD6C8C"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "572F267E61427182"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "447599FC52D93BE2"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Biology III"
+			x: 24.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["70E068013746FD12"]
+			icon: "kubejs:cow_model_3"
+			icon_scale: 1.5d
+			id: "5E3A015786C08C5E"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "6216FCDBD4531514"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "05AE0F5DF3C94633"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "4E5EB41C522EA163"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "17AB2AC037D0F4E0"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Farm Animals III"
+			x: 25.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["70E068013746FD12"]
+			icon: "kubejs:fish_model_3"
+			icon_scale: 1.5d
+			id: "4A6B7E51B4B92864"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "15423AE6A05B6028"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "670CC36822A8ED16"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "2B1340F39961CBD9"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "38E05CD4ABBBD2FB"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Aquatic Animals III"
+			x: 25.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["70E068013746FD12"]
+			icon: "kubejs:wheat_2"
+			icon_scale: 1.5d
+			id: "3B213E6DDDD40D1D"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "1DA0A54643EF7111"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "61222568DBCA51A8"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "1ED6391B89F50F22"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "62F7941006CB2E41"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Fauna III"
+			x: 25.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["70E068013746FD12"]
+			icon: "kubejs:enderman_model_2"
+			icon_scale: 1.5d
+			id: "0538CFFC9DF0AF83"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "3CD061191847A8DE"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "7451C190823339EC"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "79B7FD1F27B53748"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "36C1EB4EC2F50E19"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Ender Hostility II"
+			x: 25.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["70E068013746FD12"]
+			icon: "kubejs:blaze_model_2"
+			icon_scale: 1.5d
+			id: "18D77C809592D984"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "537E6E49E904212D"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "3A47744D5F74A14F"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "3A61A74204E6954B"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "53DD66A0A3D729D2"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Nether Hostility II"
+			x: 25.5d
+			y: 19.5d
+		}
+		{
+			dependencies: ["70E068013746FD12"]
+			icon: "kubejs:zombie_model_2"
+			icon_scale: 1.5d
+			id: "39A145A8767C71AC"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "4A816491CB2A04E9"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "3ADDCC483E7B93B8"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "6EC1417F092030B9"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2252819EACF0B8BE"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Overworld Hostility II"
+			x: 25.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["70E068013746FD12"]
+			icon: "kubejs:gaia_model_1"
+			icon_scale: 1.5d
+			id: "1D6FE44726FBA825"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "2C0FD4C96C42A19B"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "49FAC15C7A7847A5"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "24290DE753B20984"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "380B5DD6A9F382BA"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Boss Simulation I"
+			x: 25.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["5AE5E1A84131B2EB"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/high_voltage_machinery"
+				}
+			}
+			icon_scale: 1.5d
+			id: "68213481A4A0666C"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "36E78B9C994D708D"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "6E1D36C79B7253D2"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "27D613FDAFAD3DF9"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "709E966A2E3073B4"
+					item: "kubejs:natural_research"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "51FF1676CDC1F15B"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+				{
+					id: "6DAEAF035536B509"
+					item: "kubejs:sterile_research"
+					type: "item"
+				}
+			]
+			title: "High Voltage Machinery"
+			x: 20.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["66838B17D5D50BEB"]
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			id: "7F03B184EDBD8EA4"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "42A24F41E7DF206F"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "65FCD3391AE8A408"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "5680C68E0E4703F1"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3D5AB25469328D85"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Twilight Forest Exploration"
+			x: 26.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["7F03B184EDBD8EA4"]
+			icon: "gtceu:twilight_awakening_chamber_mk1"
+			id: "32B10320C81335B0"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "108EECDD0A601483"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "05091AD63B7CC325"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0B50FC405CCA8B05"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "705BB51D63C36F4C"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Awakening I"
+			x: 27.5d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"7F03B184EDBD8EA4"
+				"18D77C809592D984"
+				"0538CFFC9DF0AF83"
+				"39A145A8767C71AC"
+			]
+			icon: "gtceu:twilight_awakening_chamber_mk1"
+			id: "7FBDC339B93BB32C"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "71ED14C2922E2CBB"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "75C3DD5C3E11A764"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "75F44BC53D41F0EE"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0026637256E6977D"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Awakening II"
+			x: 28.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["7FBDC339B93BB32C"]
+			icon: "kubejs:gilded_research"
+			id: "2E546449AA1B369D"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "55F73B01FEBE7249"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "52E3C93A602F9C5E"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "57F21E5F62510B5D"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "703994AEF7385932"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Gilded Research"
+			x: 32.5d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"2DCF8B5235A3679A"
+				"7331575EB9A94099"
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/large_machinery_2"
+				}
+			}
+			icon_scale: 1.5d
+			id: "4A09681BAB024059"
+			rewards: [
+				{
+					auto: "no_toast"
+					command: "/say Hi, @p!"
+					elevate_perms: true
+					icon: "gtceu:mega_press"
+					id: "3B68BC8B3B3D3DD1"
+					silent: true
+					title: "Unlock Mega Press"
+					type: "command"
+				}
+				{
+					icon: "gtceu:mega_mixer"
+					id: "46649D3DC62C53EA"
+					title: "Unlock Mega Mixer"
+					type: "custom"
+				}
+				{
+					icon: "kubejs:mega_lv_machine_casing"
+					id: "5F533876D9EFD4CC"
+					title: "Unlock Mega LV Machine Casing"
+					type: "custom"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					count: 200L
+					id: "242EE29CFC054094"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 160L
+					id: "6A960FBBEFBB294B"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 120L
+					id: "2882DB3C1FC08255"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 80L
+					id: "6429748362048175"
+					item: "kubejs:natural_research"
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "4F026E8FBC313F6F"
+					item: { Count: 40, id: "kubejs:magical_research" }
+					type: "item"
+				}
+			]
+			title: "Large Machinery II"
+			x: 15.5d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"4E29F8222B992AB5"
+				"2E1348862E7C7D4A"
+				"4A09681BAB024059"
+			]
+			description: ["{image:kubejs:icons/natures_alloy_2_page width:176 height:105 align:center}"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/natures_alloy_2"
+				}
+			}
+			icon_scale: 1.5d
+			id: "391CCD76057F848E"
+			rewards: [{
+				icon: "gtceu:natures_alloy_ingot"
+				id: "00C15CDBE118477E"
+				title: "Unlock Natures Alloy II"
+				type: "custom"
+			}]
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "4F34A71A75F08279"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Natures Alloy II"
+			x: 16.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["214B22FFAB3FFF25"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/high_temperature_smelting_3"
+				}
+			}
+			icon_scale: 1.5d
+			id: "7A18E30D3E2C9C26"
+			rewards: [{
+				auto: "no_toast"
+				command: "/say Hi, @p!"
+				elevate_perms: true
+				icon: "gtceu:kanthal_coil_block"
+				id: "76941714CE4792B2"
+				silent: true
+				title: "Unlock Elementium Coil"
+				type: "command"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					count: 12L
+					id: "24D4A8A330817F36"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "7DC0723538A6EA2D"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "12E4F67B294AD583"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2BEBD9A54891156D"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0F34CC646CD79133"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+			]
+			title: "Advanced Smelting III"
+			x: 12.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["0E1C90A30A11F409"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/advanced_electronics_2"
+				}
+			}
+			icon_scale: 1.5d
+			id: "3356C66F76C8D84E"
+			rewards: [{
+				auto: "no_toast"
+				command: "/say Hi, @p!"
+				elevate_perms: true
+				icon: "gtceu:good_integrated_circuit"
+				id: "0D33D9DDE05180BD"
+				silent: true
+				title: "Unlock Good Integrated Circuit"
+				type: "command"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					count: 18L
+					id: "4F6E0CBC1CB03602"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "18C479FBA9D9A0FA"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "1AD59523B91B49B4"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "3D37CC7478D9C121"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "7D9D69DADCE6B1D4"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+			]
+			title: "Advanced Electronics II"
+			x: 13.5d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"3356C66F76C8D84E"
+				"25EC4FCA697481B5"
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/advanced_electronics_3"
+				}
+			}
+			icon_scale: 1.5d
+			id: "7331575EB9A94099"
+			rewards: [{
+				auto: "no_toast"
+				command: "/say Hi, @p!"
+				elevate_perms: true
+				icon: "gtceu:good_integrated_circuit"
+				id: "1A57BE814CAA62A4"
+				silent: true
+				title: "Unlock Advanced Integrated Circuit"
+				type: "command"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					count: 24L
+					id: "7FE9B3E8DB31275B"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "3D7220052DC6A8B1"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "2448A6B11FE19510"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "0B7A8B42789EBA57"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6FA6A252F93A7979"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+			]
+			title: "Advanced Electronics III"
+			x: 14.5d
+			y: 13.5d
+		}
+		{
+			icon: "extendedcrafting:elite_table"
+			id: "1B186AF3AA8B47D2"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "6C95A04966D9749E"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "6C4B84DE1468BE30"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "4BF49A4EF12F7D4B"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6B05C90C13FFD69A"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Advanced Crafting II"
+			x: 23.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["1C7773A48A4D33EE"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/sterile_bio_alloy_1"
+				}
+			}
+			icon_scale: 1.5d
+			id: "1D0152697B9E8ADC"
+			shape: "square"
+			tasks: [
+				{
+					count: 48L
+					id: "66F5810E96D5F953"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "1E0D6FF5728BDC2A"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "33EC2EE66098CE98"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "0FF269FA592805D9"
+					item: "kubejs:natural_research"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "77ADD48BC403935E"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+			]
+			title: "Sterile Bio Alloy I"
+			x: 18.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["2E546449AA1B369D"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/extreme_voltage_machinery"
+				}
+			}
+			icon_scale: 1.5d
+			id: "1E384093180BA4F2"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "1E612A064B57E273"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "51C60D8CB3B784E7"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "485D36DFEE26E515"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "44E79DC6D03306ED"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "High Voltage Machinery"
+			x: 33.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["7A18E30D3E2C9C26"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/awakened_echo_1"
+				}
+			}
+			icon_scale: 1.5d
+			id: "25EC4FCA697481B5"
+			rewards: [{
+				command: "/say Hi, @p!"
+				icon: "gtceu:awakened_echo_ingot"
+				id: "27D1279D28856F6F"
+				title: "Unlock Awakened Echo"
+				type: "command"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					count: 18L
+					id: "66A5C5F06C1C7268"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "3452F088D5809E3D"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "61DC9C028094ED73"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "2AD8BE9C74FB0B11"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "4BB51C281EB80965"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+			]
+			title: "Awakened Echo I"
+			x: 13.5d
+			y: 14.5d
+		}
+		{
+			icon: "gtceu:sterile_bio_alloy_ingot"
+			id: "493F12BE5AB65B40"
+			shape: "square"
+			tasks: [
+				{
+					count: 42L
+					id: "5086A781A1663D3E"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 35L
+					id: "2297EEFC3A42CF94"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 28L
+					id: "58596C54EB011903"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "56646C083FD44138"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+				{
+					count: 7L
+					id: "13EB70C71DB82F0B"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+			]
+			title: "Cooking II"
+			x: 18.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["66838B17D5D50BEB"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/micro_electronics_2"
+				}
+			}
+			icon_scale: 1.5d
+			id: "08C06FED7C5EAEA9"
+			rewards: [{
+				auto: "no_toast"
+				command: "/say Hi, @p!"
+				elevate_perms: true
+				icon: "gtceu:micro_processor_assembly"
+				id: "1872045D02AD1EFE"
+				silent: true
+				title: "Unlock Microprocessor Assembly"
+				type: "command"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					count: 24L
+					id: "7F518F3E02499D7A"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "41C31324231AF965"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "49A0B94EB712E3E8"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "157309F007379EF1"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "3DB18986D49DD344"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "6E30BA96E61547D8"
+					item: "kubejs:sterile_research"
+					type: "item"
+				}
+			]
+			title: "Micro Electronics II"
+			x: 22.5d
+			y: 14.5d
+		}
+		{
+			dependencies: [
+				"08C06FED7C5EAEA9"
+				"24F3BAC2B47E1AEA"
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/micro_electronics_3"
+				}
+			}
+			icon_scale: 1.5d
+			id: "55AC84298F263386"
+			rewards: [{
+				auto: "no_toast"
+				command: "/say Hi, @p!"
+				elevate_perms: true
+				icon: "gtceu:micro_processor_computer"
+				id: "4999F36C334F8F5A"
+				silent: true
+				title: "Unlock Microprocessor Supercomputer"
+				type: "command"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					count: 32L
+					id: "1F0BE8BCBC83D348"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "7DECC94F72CA8504"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "0B69102D8F9F91C2"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "6512A40DAC289B28"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6FFE4398F76817E8"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7164CF0BB890D628"
+					item: "kubejs:sterile_research"
+					type: "item"
+				}
+			]
+			title: "Micro Electronics III"
+			x: 23.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["55AC84298F263386"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/micro_electronics_4"
+				}
+			}
+			icon_scale: 1.5d
+			id: "3A44E3E7DCEAF2B6"
+			rewards: [{
+				auto: "no_toast"
+				command: "/say Hi, @p!"
+				elevate_perms: true
+				icon: "gtceu:micro_processor_mainframe"
+				id: "463BE3853769568C"
+				silent: true
+				title: "Unlock Microprocessor Mainframe"
+				type: "command"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					count: 40L
+					id: "3C9DD56C9BDCCB67"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 30L
+					id: "2595B0E9130C42A6"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "476F351C42EBD4AA"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "4503F34347B813E5"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "3BB9EE7FF4275C76"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "5B560E674334ED57"
+					item: "kubejs:sterile_research"
+					type: "item"
+				}
+			]
+			title: "Micro Electronics IV"
+			x: 24.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["68213481A4A0666C"]
+			icon: "gtceu:cleanroom"
+			icon_scale: 1.5d
+			id: "24F3BAC2B47E1AEA"
+			rewards: [{
+				auto: "no_toast"
+				command: "/say Hi, @p!"
+				elevate_perms: true
+				icon: "gtceu:cleanroom"
+				id: "47FA14A7E8805F5D"
+				silent: true
+				title: "Unlock Cleanroom"
+				type: "command"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					count: 24L
+					id: "3E4F58FCE2476AEC"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "743DF330777FD2F0"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "3D38474325C792BF"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "2C26284D8F6E79ED"
+					item: "kubejs:natural_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "5A2FAFEE14B65FB1"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "570EEC379FD34614"
+					item: "kubejs:sterile_research"
+					type: "item"
+				}
+			]
+			title: "Cleanroom"
+			x: 22.5d
+			y: 15.5d
+		}
+		{
+			icon: "gtceu:champions_alloy_ingot"
+			id: "7F4D17C3B567FB43"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "5C8059BC81EB9506"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "263E3B9C19022A50"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "56843276CC3B4554"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "176B792C9621CBCC"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Champion's Alloy I"
+			x: 31.5d
+			y: 16.5d
+		}
+		{
+			icon: "gtceu:withered_ingot"
+			id: "66B3CF8F41376FAA"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "481442FDF6B70BAC"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "42DD1DB5FC1AF24D"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "35989DD3556A65A9"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "484BB4A9634D868D"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Withered Alloy I"
+			x: 30.5d
+			y: 18.5d
+		}
+		{
+			icon: "gtceu:vacuum_freezer"
+			id: "05F4EFA27965828F"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "1A289ABA549FE290"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "5F70EF9FE80A3223"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "7C6A55530350C274"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "52B8CF450ECC26CB"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Vacuum Freezer"
+			x: 30.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["5AE5E1A84131B2EB"]
+			icon: "gtceu:nichrome_coil_block"
+			icon_scale: 1.5d
+			id: "77C14B1EF4B17BD8"
+			rewards: [{
+				auto: "no_toast"
+				command: "/say Hi, @p!"
+				elevate_perms: true
+				icon: "gtceu:nichrome_coil_block"
+				id: "1E510F087A9382B2"
+				silent: true
+				title: "Unlock Synthetic Neuron Coil"
+				type: "command"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					count: 16L
+					id: "0D9D62850B14A364"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "6A8B95341F3BE715"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "653FBB2F4682B34C"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "16E90886605B28D6"
+					item: "kubejs:natural_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "732467F798E32E38"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "17A52229C5D1638D"
+					item: "kubejs:sterile_research"
+					type: "item"
+				}
+			]
+			title: "Advanced Smelting IV"
+			x: 21.5d
+			y: 15.5d
+		}
+		{
+			icon: "gtceu:large_chemical_reactor"
+			icon_scale: 1.5d
+			id: "2120FF4E67BD2BD8"
+			rewards: [{
+				auto: "no_toast"
+				command: "/say Hi, @p!"
+				elevate_perms: true
+				icon: "gtceu:large_chemical_reactor"
+				id: "1B3349DB3C1B26CA"
+				silent: true
+				title: "Unlock Large Chemical Reactor"
+				type: "command"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					count: 16L
+					id: "1CCC89A05D65BEA4"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "77D3211B851818ED"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "2D8817C0A9FAA2A6"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6F14277997CA6654"
+					item: "kubejs:natural_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4A8AAD8456850B30"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "529DD961DD5C6C89"
+					item: "kubejs:sterile_research"
+					type: "item"
+				}
+			]
+			title: "Large Chemical Reactor"
+			x: 21.5d
+			y: 16.5d
+		}
+		{
+			icon: "gtceu:twilight_awakening_chamber_mk1"
+			id: "47B70DE3B37F77A6"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "0A986EDDF30E957E"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "7BD005A2F8E705B2"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "7D5E1B475C1B2FEE"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "679C96A738B0031C"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Awakening III"
+			x: 29.5d
+			y: 16.5d
+		}
+		{
+			icon: "gtceu:twilight_awakening_chamber_mk1"
+			id: "47E815900608BB28"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "0690C2889D72AC72"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "70B3BB2FD2DEA56C"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "3353050AF1EE9FA0"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "033CA780B7DE4983"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Awakening IV"
+			x: 30.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["4FDA62AAB0ACDE91"]
+			icon: "gtceu:iv_machine_hull"
+			icon_scale: 1.5d
+			id: "788EAB743C007BCA"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "55D1827EBCB30553"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "4F4D643E050FBF01"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0CBF45ECFF3CFF00"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6B4EABF7C0F4822F"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Insane Voltage Machinery"
+			x: 38.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["1E384093180BA4F2"]
+			icon: "gtceu:nano_processor"
+			icon_scale: 1.5d
+			id: "4406C9A1AF85DB5D"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "0780FAD3A638549A"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "5757F4BA983E85E7"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "785F850057A3CB15"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "582F7A590B1740B1"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Nano Electronics I"
+			x: 34.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["4406C9A1AF85DB5D"]
+			icon: "gtceu:nano_processor_assembly"
+			icon_scale: 1.5d
+			id: "7DA1DB3A41A9AA18"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "696777674E7FA49C"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "63C44A65D64E0980"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "6B0DED853D249CC6"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "39098DAE1873C5D7"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Nano Electronics II"
+			x: 35.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["7DA1DB3A41A9AA18"]
+			icon: "gtceu:nano_processor_computer"
+			icon_scale: 1.5d
+			id: "17C30DF46B15FCC0"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "742BC2A0FD65175F"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "0C98494F7194D503"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "4F1BF7BFE9D589C4"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "260D0DDC0AAFCEDD"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Nano Electronics III"
+			x: 36.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["17C30DF46B15FCC0"]
+			icon: "gtceu:nano_processor_mainframe"
+			icon_scale: 1.5d
+			id: "2E389BFE44186554"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "7DC365A1DD269744"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "6A65D5CA4F3E7959"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "33358F2B032C194D"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6E04E0B08F9AD7A2"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Nano Electronics IV"
+			x: 37.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["1E384093180BA4F2"]
+			icon: "gtceu:dimensional_reactor"
+			icon_scale: 1.5d
+			id: "6E15C0ABE2AD745C"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "4DB4A246077ABCA2"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "7CC027228F8344F9"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "26388E3EBBFB53C2"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "780B7C9ED8183573"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Dimensional Reactor"
+			x: 34.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["6E15C0ABE2AD745C"]
+			icon: "gtceu:uranium_235_ingot"
+			icon_scale: 1.5d
+			id: "63D155160CFF7BE4"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "00D9D4EEC4DF11EC"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "11CF3F2C044431F6"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "7D236A0879C87FEF"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7B81A9FC9534808E"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Nuclear I"
+			x: 35.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["63D155160CFF7BE4"]
+			icon: "gtceu:plutonium_241_ingot"
+			icon_scale: 1.5d
+			id: "2D38FB7C8E0FE1C2"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "38512592C72D406F"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "66F9C46C42C78D95"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0C4818BF9BA96F05"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "02632B0A1181CD26"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Nuclear II"
+			x: 36.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["63D155160CFF7BE4"]
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_1_rocket"
+				tag: { }
+			}
+			icon_scale: 1.5d
+			id: "1CE49A97B3549B73"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "16320D03DF17A747"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "3220F3A9ACF2BB5C"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "5BA13373D38B439B"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "735A1280EE997B60"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Space Exploration I"
+			x: 36.5d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"1CE49A97B3549B73"
+				"2D38FB7C8E0FE1C2"
+			]
+			icon: "ad_astra:desh_ingot"
+			icon_scale: 1.5d
+			id: "4FDA62AAB0ACDE91"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "79804E46F9489D20"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "5A6223AC24F38BDD"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "6F857BCB9FCAC69D"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0B7D05BFB312AE27"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Space Metals I"
+			x: 37.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["4FDA62AAB0ACDE91"]
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_2_rocket"
+				tag: { }
+			}
+			icon_scale: 1.5d
+			id: "7FA8FAFEAE5286BE"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "75670017A4F472FB"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "1308743C3D7AE67E"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "6573E4478C3EB2F6"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "04AF13AE3030B297"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Space Exploration II"
+			x: 38.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["2D38FB7C8E0FE1C2"]
+			icon: "gtceu:americium_ingot"
+			icon_scale: 1.5d
+			id: "654B9F1BB1EB964C"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "16C1C71DFD38E26D"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "28476F717C673090"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "31AE1DEFE6DE6005"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "25B86C95DB2FA0F7"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Nuclear III"
+			x: 38.5d
+			y: 17.5d
+		}
+		{
+			dependencies: [
+				"7FA8FAFEAE5286BE"
+				"654B9F1BB1EB964C"
+			]
+			icon: "ad_astra:ostrum_ingot"
+			icon_scale: 1.5d
+			id: "7010679C81C4627E"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "67A5ABAB00D0477A"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "466E960ED35F87E3"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "3946E29E9DC04693"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1F99EFC23E37670F"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Space Metals II"
+			x: 39.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["7010679C81C4627E"]
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_3_rocket"
+				tag: { }
+			}
+			icon_scale: 1.5d
+			id: "389879F10C12FAEB"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "63ECC0ACF79F2436"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "4C19AD2C559CE114"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "15BE52631C7ADBB3"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3B7F7882E8FE8FF0"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Space Exploration III"
+			x: 40.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["654B9F1BB1EB964C"]
+			icon: "gtceu:americium_ingot"
+			icon_scale: 1.5d
+			id: "2B66DB8B688E6146"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "212FD1BCFD710904"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "75E7EA34CD1D1225"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "5BF0A35084D651D5"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "068C4063B5E7BF52"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Nuclear IV"
+			x: 40.5d
+			y: 17.5d
+		}
+		{
+			dependencies: [
+				"389879F10C12FAEB"
+				"2B66DB8B688E6146"
+			]
+			icon: "ad_astra:calorite_ingot"
+			icon_scale: 1.5d
+			id: "39D7D47A9A284AF3"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "4A3077F210AD06D1"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "6B85BD56D5ED1811"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "25FA909083006404"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2865E146ADF83573"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Space Metals III"
+			x: 41.5d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"39D7D47A9A284AF3"
+				"2280346454D46CAD"
+			]
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_4_rocket"
+				tag: { }
+			}
+			icon_scale: 1.5d
+			id: "798983DD70AAC861"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "750017D1C223F606"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "64F3737BFC89240D"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "06D4350FF097C017"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "618939DA87154CC7"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Space Exploration IV"
+			x: 42.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["788EAB743C007BCA"]
+			icon: "gtceu:quantum_processor"
+			icon_scale: 1.5d
+			id: "4AA534549AEEA18B"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "3723A4B0F09773E0"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "26DE35B614DCF00E"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "481DBD64B00B4F6F"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0B28A15C9D564170"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Quantum Electronics I"
+			x: 39.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["4AA534549AEEA18B"]
+			icon: "gtceu:quantum_processor_assembly"
+			icon_scale: 1.5d
+			id: "3577421CD753D37B"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "0469C8A6393B7A98"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "0994993498917CF4"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "21EBCFEC95E4169A"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "59FF344A217323A3"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Quantum Electronics II"
+			x: 40.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["3577421CD753D37B"]
+			icon: "gtceu:quantum_processor_computer"
+			icon_scale: 1.5d
+			id: "4AC78A95B9AFE6C7"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "17C919720BB5C13F"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "3EA948AB71BA2320"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "35BCA0036614E1F4"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4579B2A27A8BBFCB"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Quantum Electronics III"
+			x: 41.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["4AC78A95B9AFE6C7"]
+			icon: "gtceu:quantum_processor_mainframe"
+			icon_scale: 1.5d
+			id: "2280346454D46CAD"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "6FAFCAE8FFE767F1"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "7213B48D20EA71C3"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0BCDF151413031A6"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "748F85E6B05BFBC1"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Quantum Electronics IV"
+			x: 42.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["798983DD70AAC861"]
+			icon: "ad_astra:ice_shard"
+			icon_scale: 1.5d
+			id: "64D2E1B184D5BE49"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "6F7136B33793828B"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "5E43229350C59FD4"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "03BB2D34141E1053"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "492FBFBEE1AB9E21"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Space Metals IV"
+			x: 43.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["64D2E1B184D5BE49"]
+			icon: "gtceu:interstellar_alloy_ingot"
+			icon_scale: 1.5d
+			id: "01A2F209D677BDFD"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "79C33086A06E0042"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "42C361DD7A257F98"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "7DE0463C81A30620"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "237DA7716140B965"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Interstellar Alloy I"
+			x: 44.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["01A2F209D677BDFD"]
+			icon: "gtceu:luv_machine_hull"
+			icon_scale: 1.5d
+			id: "32242FDC9E78AB98"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "7634849C2403B4EE"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "687567F41E70E7BC"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "4F51006DC16F2EB4"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "247AF19C0A7ED547"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Ludicrous Voltage Machinery"
+			x: 45.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["32242FDC9E78AB98"]
+			icon: "gtceu:luv_fusion_reactor"
+			icon_scale: 1.5d
+			id: "5E3A6CBA13B2EC98"
+			rewards: [{
+				command: "/say Hi, @p!"
+				icon: "gtceu:europium_ingot"
+				id: "194F4266A813BD2D"
+				type: "command"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "608C8AD991DDA104"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "67B276611326A163"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "72CA7515EF0348E7"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "621888F601A02557"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Fusion I"
+			x: 46.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["788EAB743C007BCA"]
+			icon: "gtceu:assembly_line"
+			icon_scale: 1.5d
+			id: "129846365153ADEF"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "778E19AFED3BFF46"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "6425E3D1769B144D"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "6908A39C04CF1A10"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "03AEAFB34CCE9DB6"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Assembly Line"
+			x: 39.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["5E3A6CBA13B2EC98"]
+			icon: "gtceu:planetary_simulation_chamber"
+			icon_scale: 1.5d
+			id: "0E8ADC0E1BB64038"
+			rewards: [{
+				command: "/say Hi, @p!"
+				icon: "gtceu:europium_ingot"
+				id: "51536A16C65C53D1"
+				type: "command"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "23466405E8AD40E4"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "6F55B71A2FAF2C95"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "446C1358F47A4FEE"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6130072F3E317048"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Planetary Simulation"
+			x: 47.5d
+			y: 16.5d
+		}
+		{
+			icon: "gtceu:resource_combinator"
+			icon_scale: 1.5d
+			id: "258E933399B50B74"
+			rewards: [
+				{
+					command: "/say Hi, @p!"
+					icon: "gtceu:resource_combinator"
+					id: "22ACCD084391FFCF"
+					title: "Unlock Resource Combinator"
+					type: "command"
+				}
+				{
+					icon: "gtceu:temperate_garden"
+					id: "11CEAE7CDA1BEB1E"
+					title: "Unlock Temperate Garden"
+					type: "custom"
+				}
+				{
+					icon: "gtceu:hydroponic_garden"
+					id: "50E326D24BEE103E"
+					title: "Unlock Hydroponic Garden"
+					type: "custom"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					count: 36L
+					id: "79EA678F08BFDCCD"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 30L
+					id: "04FBB9B9191A3789"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "074B6730D51D2476"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "6AC448711D192482"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "19A2766F34434996"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+			]
+			title: "Farming Machines"
+			x: 16.5d
+			y: 16.5d
+		}
+		{
 			dependencies: ["1EE592CCEBDD19F4"]
 			icon_scale: 1.5d
 			id: "02181021D586E7B9"
@@ -3601,7 +6730,7 @@
 				title: "Andesite Alloy III"
 				type: "custom"
 			}]
-			x: 18.0d
+			x: 8.0d
 			y: 17.5d
 		}
 		{
@@ -3629,7 +6758,7 @@
 				type: "custom"
 			}]
 			title: "Andesite Alloy IV"
-			x: 18.0d
+			x: 8.0d
 			y: 18.5d
 		}
 		{
@@ -3657,7 +6786,7 @@
 				type: "custom"
 			}]
 			title: "Andesite Alloy V"
-			x: 18.0d
+			x: 8.0d
 			y: 19.5d
 		}
 		{
@@ -3685,7 +6814,7 @@
 				type: "custom"
 			}]
 			title: "Universal Andesite Alloy"
-			x: 18.0d
+			x: 8.0d
 			y: 20.5d
 		}
 		{
@@ -3714,7 +6843,7 @@
 				type: "custom"
 			}]
 			title: "Natures Alloy III"
-			x: 19.0d
+			x: 9.0d
 			y: 17.5d
 		}
 		{
@@ -3742,7 +6871,7 @@
 				type: "custom"
 			}]
 			title: "Natures Alloy IV"
-			x: 19.0d
+			x: 9.0d
 			y: 18.5d
 		}
 		{
@@ -3770,7 +6899,7 @@
 				type: "custom"
 			}]
 			title: "Natures Alloy V"
-			x: 19.0d
+			x: 9.0d
 			y: 19.5d
 		}
 		{
@@ -3798,7 +6927,7 @@
 				type: "custom"
 			}]
 			title: "Universal Natures Alloy"
-			x: 19.0d
+			x: 9.0d
 			y: 20.5d
 		}
 		{
@@ -3826,7 +6955,7 @@
 				type: "custom"
 			}]
 			title: "Coal III"
-			x: 17.0d
+			x: 7.0d
 			y: 17.5d
 		}
 		{
@@ -3854,7 +6983,7 @@
 				type: "custom"
 			}]
 			title: "Coal IV"
-			x: 17.0d
+			x: 7.0d
 			y: 18.5d
 		}
 		{
@@ -3882,7 +7011,7 @@
 				type: "custom"
 			}]
 			title: "Coal V"
-			x: 17.0d
+			x: 7.0d
 			y: 19.5d
 		}
 		{
@@ -3910,7 +7039,7 @@
 				type: "custom"
 			}]
 			title: "Universal Coal"
-			x: 17.0d
+			x: 7.0d
 			y: 20.5d
 		}
 		{
@@ -3946,7 +7075,7 @@
 				}
 			]
 			title: "Zinc II"
-			x: 16.0d
+			x: 6.0d
 			y: 16.5d
 		}
 		{
@@ -3982,7 +7111,7 @@
 				}
 			]
 			title: "Zinc III"
-			x: 16.0d
+			x: 6.0d
 			y: 17.5d
 		}
 		{
@@ -4018,7 +7147,7 @@
 				}
 			]
 			title: "Zinc IV"
-			x: 16.0d
+			x: 6.0d
 			y: 18.5d
 		}
 		{
@@ -4054,7 +7183,7 @@
 				}
 			]
 			title: "Zinc V"
-			x: 16.0d
+			x: 6.0d
 			y: 19.5d
 		}
 		{
@@ -4090,7 +7219,7 @@
 				}
 			]
 			title: "Universal Zinc"
-			x: 16.0d
+			x: 6.0d
 			y: 20.5d
 		}
 		{
@@ -4118,7 +7247,7 @@
 				type: "custom"
 			}]
 			title: "Copper II"
-			x: 15.0d
+			x: 5.0d
 			y: 16.5d
 		}
 		{
@@ -4146,7 +7275,7 @@
 				type: "custom"
 			}]
 			title: "Copper III"
-			x: 15.0d
+			x: 5.0d
 			y: 17.5d
 		}
 		{
@@ -4174,7 +7303,7 @@
 				type: "custom"
 			}]
 			title: "Copper IV"
-			x: 15.0d
+			x: 5.0d
 			y: 18.5d
 		}
 		{
@@ -4202,7 +7331,7 @@
 				type: "custom"
 			}]
 			title: "Copper V"
-			x: 15.0d
+			x: 5.0d
 			y: 19.5d
 		}
 		{
@@ -4230,7 +7359,7 @@
 				type: "custom"
 			}]
 			title: "Universal Copper"
-			x: 15.0d
+			x: 5.0d
 			y: 20.5d
 		}
 		{
@@ -4258,7 +7387,7 @@
 				type: "custom"
 			}]
 			title: "Iron II"
-			x: 14.0d
+			x: 4.0d
 			y: 16.5d
 		}
 		{
@@ -4286,7 +7415,7 @@
 				type: "custom"
 			}]
 			title: "Iron III"
-			x: 14.0d
+			x: 4.0d
 			y: 17.5d
 		}
 		{
@@ -4314,7 +7443,7 @@
 				type: "custom"
 			}]
 			title: "Iron IV"
-			x: 14.0d
+			x: 4.0d
 			y: 18.5d
 		}
 		{
@@ -4342,7 +7471,7 @@
 				type: "custom"
 			}]
 			title: "Iron V"
-			x: 14.0d
+			x: 4.0d
 			y: 19.5d
 		}
 		{
@@ -4370,7 +7499,7 @@
 				type: "custom"
 			}]
 			title: "Universal Iron"
-			x: 14.0d
+			x: 4.0d
 			y: 20.5d
 		}
 		{
@@ -4400,7 +7529,7 @@
 				}
 			]
 			title: "Amethyst III"
-			x: 13.0d
+			x: 3.0d
 			y: 17.5d
 		}
 		{
@@ -4430,7 +7559,7 @@
 				}
 			]
 			title: "Amethyst IV"
-			x: 13.0d
+			x: 3.0d
 			y: 18.5d
 		}
 		{
@@ -4460,7 +7589,7 @@
 				}
 			]
 			title: "Amethyst V"
-			x: 13.0d
+			x: 3.0d
 			y: 19.5d
 		}
 		{
@@ -4490,7 +7619,7 @@
 				}
 			]
 			title: "Universal Amethyst"
-			x: 13.0d
+			x: 3.0d
 			y: 20.5d
 		}
 	]

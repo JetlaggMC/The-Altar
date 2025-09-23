@@ -3,17 +3,23 @@
 	default_quest_shape: ""
 	filename: "i__creatitivity"
 	group: ""
+	hide_quest_until_deps_complete: true
 	hide_quest_until_deps_visible: true
 	icon: "kubejs:creative_star"
 	id: "3D5F717908F64A39"
+	images: [{
+		height: 20.0d
+		image: "kubejs:icons/altar"
+		rotation: 0.0d
+		width: 20.0d
+		x: 0.0d
+		y: 0.0d
+	}]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"591B1A5AA4F697B6"
-				"1EE592CCEBDD19F4"
-			]
+			dependencies: ["1EE592CCEBDD19F4"]
 			id: "198D06EA799DC550"
 			shape: "diamond"
 			size: 2.0d
@@ -22,7 +28,7 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.0d
 			y: -4.0d
 		}
 		{
@@ -159,8 +165,8 @@
 				}
 			]
 			title: "Andesite Alloy Tools"
-			x: 2.5d
-			y: -4.5d
+			x: 0.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["275B875F1165AD08"]
@@ -265,8 +271,8 @@
 				}
 			]
 			title: "Gregtech Mining Tools"
-			x: 2.5d
-			y: -3.5d
+			x: -1.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -289,8 +295,8 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
-			y: -4.0d
+			x: 1.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5FD6BEFC70CC297A"]
@@ -301,8 +307,8 @@
 				item: "gtceu:creosote_bucket"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -5.0d
+			x: 2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4CF57BD5C7E17D6D"]
@@ -313,8 +319,8 @@
 				item: "gtceu:treated_wood_planks"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -4.0d
+			x: 3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -334,8 +340,8 @@
 				item: "create:andesite_casing"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -4.0d
+			x: 4.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -350,8 +356,8 @@
 				item: "create:mechanical_press"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -4.0d
+			x: 4.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["45587882DD96192C"]
@@ -362,8 +368,8 @@
 				item: "gtceu:andesite_alloy_ring"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -4.0d
+			x: 5.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["11EEEC8EC4EFBC99"]
@@ -374,8 +380,8 @@
 				item: "gtceu:andesite_alloy_rotor"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -4.0d
+			x: 5.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["1931A5627B5D3E6E"]
@@ -386,13 +392,14 @@
 				id: "0E62212221831BE6"
 				type: "dimension"
 			}]
-			x: 5.5d
-			y: -3.0d
+			x: -3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
 				"05E6730095A0C5C5"
 				"256358FD632BE3DE"
+				"34F8DFF6DDBAEC63"
 			]
 			id: "78CE7FD6C48CB18F"
 			shape: "diamond"
@@ -401,8 +408,8 @@
 				item: "create:blaze_burner"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -3.0d
+			x: -3.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["30BB0E5F34F229E1"]
@@ -413,8 +420,8 @@
 				item: "minecraft:obsidian"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -3.0d
+			x: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["1D4D4FFD665C42C2"]
@@ -431,12 +438,11 @@
 				}
 				type: "item"
 			}]
-			x: 3.5d
-			y: -3.0d
+			x: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
-				"78CE7FD6C48CB18F"
 				"691E4266326D73D0"
 				"1CEF6A5EEC67CE55"
 				"0E5120F857255B90"
@@ -484,8 +490,8 @@
 					type: "item"
 				}
 			]
-			x: 10.5d
-			y: -3.0d
+			x: -3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -548,8 +554,8 @@
 					type: "item"
 				}
 			]
-			x: 11.5d
-			y: -3.0d
+			x: -3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["477575BE4F0DC583"]
@@ -568,8 +574,8 @@
 					type: "item"
 				}
 			]
-			x: 9.5d
-			y: -4.0d
+			x: -2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -603,8 +609,8 @@
 				}
 			]
 			title: "Andesite Alloy II"
-			x: 11.5d
-			y: -1.0d
+			x: -3.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["7468FC23297E765B"]
@@ -615,8 +621,8 @@
 				item: "gtceu:brass_ingot"
 				type: "item"
 			}]
-			x: 12.5d
-			y: -3.0d
+			x: -3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -630,8 +636,8 @@
 				item: "create:brass_casing"
 				type: "item"
 			}]
-			x: 13.5d
-			y: -4.0d
+			x: -1.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -645,8 +651,8 @@
 				item: "create:mechanical_crafter"
 				type: "item"
 			}]
-			x: 15.5d
-			y: -4.0d
+			x: -1.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -660,8 +666,8 @@
 				item: "create:electron_tube"
 				type: "item"
 			}]
-			x: 12.5d
-			y: -4.0d
+			x: -3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -675,8 +681,8 @@
 				item: "create:deployer"
 				type: "item"
 			}]
-			x: 14.5d
-			y: -4.0d
+			x: -2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -690,8 +696,8 @@
 				item: "create:brass_hand"
 				type: "item"
 			}]
-			x: 13.5d
-			y: -3.0d
+			x: -2.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -707,8 +713,8 @@
 				item: "kubejs:creative_star"
 				type: "item"
 			}]
-			x: 19.0d
-			y: -4.0d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -723,8 +729,8 @@
 				item: "create:precision_mechanism"
 				type: "item"
 			}]
-			x: 14.5d
-			y: -6.0d
+			x: 1.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -747,8 +753,8 @@
 					type: "item"
 				}
 			]
-			x: 8.5d
-			y: -2.0d
+			x: -4.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5FD6BEFC70CC297A"]
@@ -759,8 +765,8 @@
 				item: "gtceu:coke_gem"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -5.0d
+			x: 2.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["0BC2D4ACF6D90A46"]
@@ -771,26 +777,14 @@
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			x: 15.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["31009874062A2C1D"]
-			id: "274900C493F5DBC6"
-			shape: "diamond"
-			tasks: [{
-				id: "0A24D1F9A526C621"
-				item: "gtceu:crushed_iron_ore"
-				type: "item"
-			}]
-			title: "Ore Doubling I"
-			x: 14.5d
-			y: -1.0d
+			x: -1.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
 				"0BC2D4ACF6D90A46"
 				"2986C18126186298"
+				"00ED5B81E223A318"
 			]
 			id: "60B83DD731DECF58"
 			shape: "diamond"
@@ -799,8 +793,8 @@
 				item: "mbd2:large_mechanical_press"
 				type: "item"
 			}]
-			x: 16.5d
-			y: -4.0d
+			x: 0.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["60B83DD731DECF58"]
@@ -811,8 +805,8 @@
 				item: "kubejs:mega_brass_casing"
 				type: "item"
 			}]
-			x: 17.5d
-			y: -3.0d
+			x: -1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["60B83DD731DECF58"]
@@ -823,13 +817,12 @@
 				item: "kubejs:mega_andesite_casing"
 				type: "item"
 			}]
-			x: 17.5d
-			y: -5.0d
+			x: 1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
 				"256358FD632BE3DE"
-				"533AA53A4CF175BA"
 				"78CE7FD6C48CB18F"
 			]
 			id: "127462DD1590CFAA"
@@ -839,8 +832,8 @@
 				item: "gtceu:cupronickel_dust"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -4.0d
+			x: -4.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -854,8 +847,8 @@
 				item: "create:fluid_pipe"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -6.0d
+			x: -5.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -870,8 +863,8 @@
 				item: "create:mechanical_pump"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -7.0d
+			x: -5.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -885,8 +878,8 @@
 				item: "create:spout"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -9.0d
+			x: -6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -901,8 +894,8 @@
 				item: "create:fluid_tank"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -8.0d
+			x: -6.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["60B83DD731DECF58"]
@@ -913,8 +906,8 @@
 				item: "kubejs:mega_cupronickel_casing"
 				type: "item"
 			}]
-			x: 17.5d
-			y: -4.0d
+			x: 0.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -929,8 +922,8 @@
 				item: "kubejs:crude_insulator_bucket"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -6.0d
+			x: 1.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["256358FD632BE3DE"]
@@ -942,15 +935,15 @@
 				item: "create:honey_bucket"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -7.0d
+			x: 4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
 				"18177A01E335621A"
 				"256358FD632BE3DE"
 			]
-			hide_dependency_lines: false
+			hide_dependency_lines: true
 			id: "332845EB43340DF4"
 			shape: "diamond"
 			tasks: [{
@@ -958,8 +951,8 @@
 				item: "gtceu:rubber_bucket"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -5.0d
+			x: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["05E6730095A0C5C5"]
@@ -971,8 +964,8 @@
 				item: "gtceu:sulfur_dust"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -7.0d
+			x: 5.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["7A04468403235DC1"]
@@ -984,8 +977,8 @@
 				item: "create:cinder_flour"
 				type: "item"
 			}]
-			x: 16.5d
-			y: -1.0d
+			x: 2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7B86B6F4DA9EAD0E"]
@@ -996,14 +989,15 @@
 				item: "create:blaze_cake_base"
 				type: "item"
 			}]
-			x: 16.5d
-			y: -2.0d
+			x: 2.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
 				"60B83DD731DECF58"
 				"1B3FF6FCAD5398B3"
 				"4F37A58187A4211B"
+				"36CA61EFE978BCF8"
 			]
 			hide_dependency_lines: true
 			id: "1DA1ACD5D8972CB9"
@@ -1013,8 +1007,8 @@
 				item: "create:blaze_cake"
 				type: "item"
 			}]
-			x: 16.5d
-			y: -3.0d
+			x: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["072FA5DBAB44ADFB"]
@@ -1025,8 +1019,8 @@
 				item: "gtceu:cupronickel_coil_block"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -2.0d
+			x: -2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["78CE7FD6C48CB18F"]
@@ -1038,30 +1032,8 @@
 				item: "gtceu:glowing_ingot"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["1EE592CCEBDD19F4"]
-			id: "591B1A5AA4F697B6"
-			rewards: [{
-				id: "687ACAD543B1990D"
-				item: {
-					Count: 1
-					id: "gtceu:prospector.hv"
-					tag: {
-						Charge: 1600000L
-					}
-				}
-				type: "item"
-			}]
-			shape: "diamond"
-			tasks: [{
-				id: "5837B82116CC6412"
-				type: "checkmark"
-			}]
-			x: -0.5d
-			y: -4.0d
+			x: -3.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -1075,8 +1047,8 @@
 				item: "create:hand_crank"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -5.0d
+			x: 3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["532A4F710807A930"]
@@ -1111,8 +1083,8 @@
 				}
 			]
 			title: "Glass"
-			x: 8.5d
-			y: -6.0d
+			x: 5.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["477575BE4F0DC583"]
@@ -1123,22 +1095,23 @@
 				item: "create:millstone"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -5.0d
+			x: 5.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
-				"2986C18126186298"
-				"60B83DD731DECF58"
+				"7BD9852E6EC580DE"
+				"66EA672AC1B0E3C1"
 			]
 			id: "4A14915E4E192E78"
+			shape: "diamond"
 			tasks: [{
 				id: "2E2E5272EDF09D96"
 				item: "mbd2:andesite_mechanical_drill"
 				type: "item"
 			}]
-			x: 16.5d
-			y: -6.0d
+			x: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1168,8 +1141,8 @@
 				}
 			]
 			title: "Amethyst Processing I"
-			x: 12.5d
-			y: -1.0d
+			x: -3.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["256358FD632BE3DE"]
@@ -1180,8 +1153,8 @@
 				item: "kubejs:andesite_research"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -4.0d
+			x: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["4260CFE179EBE367"]
@@ -1192,14 +1165,15 @@
 				item: "kubejs:brass_research"
 				type: "item"
 			}]
-			x: 14.5d
-			y: -3.0d
+			x: -2.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
 				"0395EF2A542C1A32"
-				"274900C493F5DBC6"
 				"10488FB6581A666D"
+				"31009874062A2C1D"
+				"61C2C89FE356D037"
 			]
 			id: "3148B2F54204E01A"
 			shape: "diamond"
@@ -1210,18 +1184,94 @@
 				type: "item"
 			}]
 			title: "Primitive Research II"
-			x: 13.5d
-			y: -1.0d
+			x: -2.0d
+			y: 6.5d
 		}
 		{
+			dependencies: [
+				"14C692C911E1B2B7"
+				"00ED5B81E223A318"
+			]
 			id: "312C1CB439CF0C7B"
+			shape: "diamond"
 			tasks: [{
 				id: "04CB940240E33C80"
 				item: "mbd2:large_mechanical_mixer"
 				type: "item"
 			}]
-			x: 16.5d
-			y: -7.5d
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"240B4B445DD3C59C"
+				"6A9EE1C6F81ACAC2"
+			]
+			id: "313BD20093744B40"
+			shape: "diamond"
+			tasks: [{
+				id: "6D2CD40EF2B338AA"
+				item: "mbd2:brass_mechanical_drill"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1C95286A6C6B49AA"]
+			disable_toast: true
+			id: "19FB12F52303BAA9"
+			rewards: [
+				{
+					auto: "invisible"
+					command: "/title @p title [\"Chapter 1\"]"
+					elevate_perms: true
+					id: "571546960CADFB70"
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "invisible"
+					command: "/title @p subtitle [{\"text\":\"complete!\",\"color\":\"green\"}]"
+					elevate_perms: true
+					id: "54B9AF9586BF693B"
+					silent: true
+					type: "command"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				disable_toast: true
+				icon: "kubejs:creative_star_block"
+				id: "11AD77A27F6B774F"
+				observe_type: 0
+				timer: 0L
+				title: "Add The Star To The Altar!"
+				to_observe: "kubejs:creative_star_block"
+				type: "observation"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			id: "64C430FA96654DDE"
+			rewards: [{
+				id: "650CAB00A70753DC"
+				item: {
+					Count: 1
+					id: "gtceu:prospector.hv"
+					tag: {
+						Charge: 1600000L
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "11E0477BE0D15862"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -5.5d
 		}
 	]
 	title: "I - Getting Creative"
