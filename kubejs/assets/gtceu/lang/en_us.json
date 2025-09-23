@@ -11,6 +11,7 @@
    "block.gtceu.hv_dna_fabricator": "Advanced DNA Fabricator II",
    "block.gtceu.ev_dna_fabricator": "Advanced DNA Fabricator III",
    "gtceu.dna_fabricator": "DNA Fabricator",
+   "gtceu.animal_pen": "Animal Pen",
 
 
    "block.gtceu.lv_crop_simulator": "Basic Crop Simulator",
@@ -67,6 +68,7 @@
      "block.gtceu.heatproof_machine_casing": "Heat Proof Arcane Gold Machine Casing",
      "block.gtceu.frostproof_machine_casing": "Frost Proof Awakened Echo Machine Casing",
      "block.gtceu.clean_machine_casing": "Clean Bio Alloy Machine Casing",
+     "block.gtceu.steel_crate": "Nature's Alloy Crate",
 
      "block.gtceu.bronze_firebox_casing": "Blazing Firebox Casing",
      "block.gtceu.bronze_large_boiler": "Large Blazing Boiler",
