@@ -65,4 +65,17 @@ ServerEvents.recipes(event => {
 
   }
 )
+	
+//superchest
+	event.shaped('1x gtceu:lv_super_chest', [
+    'ABA', 
+    'BCB',
+	'ABA'
+  ], {
+	A: '#gtceu:circuits/lv',
+	B: 'gtceu:natures_alloy_plate',
+	C: 'gtceu:steel_crate'
+
+  }
+)
 	})

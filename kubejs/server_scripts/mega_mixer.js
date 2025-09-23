@@ -1,4 +1,19 @@
 ServerEvents.recipes(event => {
+
+	event.recipes.gtceu.mega_mixer('natural_star')
+		.itemInputs(Item.of('16x kubejs:mega_lv_machine_casing'))
+		.itemInputs(Item.of('1x gtceu:lv_machine_hull'))
+		.itemInputs(Item.of('1x allthecompressed:moss_block_3x'))
+		.itemInputs(Item.of('16x #minecraft:leaves'))
+		.itemInputs(Item.of('16x kubejs:plant_glob'))
+		.itemInputs(Item.of('16x kubejs:crude_insulator_sheet'))
+		.itemInputs(Item.of('1x kubejs:creative_star'))
+
+		.inputFluids(Fluid.of('kubejs:polyethylene',1000))
+		.inputFluids(Fluid.of('kubejs:fermented_garlic_honey',16000))
+		.itemInputs(Item.of('1x kubejs:natural_star'))
+		.duration(4800)
+		.EUt(480)	
 	event.recipes.gtceu.mega_mixer('desert_essence')
 		.itemInputs(Item.of('64x minecraft:cactus'))
 		.itemInputs(Item.of('32x allthecompressed:sand_1x'))
@@ -6,7 +21,7 @@ ServerEvents.recipes(event => {
 		.itemInputs(Item.of('1x kubejs:rabbit_model_1'))
 		.inputFluids(Fluid.of('gtceu:biomass',1000))
 		.outputFluids(Fluid.of('kubejs:desert_essence',8000))
-		.duration(600)
+		.duration(1200)
 		.EUt(120)
 
 	event.recipes.gtceu.mega_mixer('desert_essence_2')
@@ -16,7 +31,7 @@ ServerEvents.recipes(event => {
 		.itemInputs(Item.of('1x kubejs:rabbit_model_2'))
 		.inputFluids(Fluid.of('kubejs:living_matter',1000))
 		.outputFluids(Fluid.of('kubejs:desert_essence',16000))
-		.duration(1200)
+		.duration(2400)
 		.EUt(480)	
 	
 })

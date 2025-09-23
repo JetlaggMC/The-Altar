@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
 		.outputFluids(Fluid.of('minecraft:milk', 8000))
 		.outputFluids(Fluid.of('gtceu:biomass',100))
 
-		.duration(1200)
+		.duration(2400)
 		.EUt(92)
 	event.recipes.gtceu.animal_pen('squid_1')
 		.notConsumable(Item.of('1x kubejs:squid_model_1'))
@@ -29,16 +29,32 @@ ServerEvents.recipes(event => {
 
 		.duration(1200)
 		.EUt(24)	
+	event.recipes.gtceu.animal_pen('squid_2')
+		.notConsumable(Item.of('1x kubejs:squid_model_2'))
+		.itemInputs(Item.of('64x #minecraft:fishes'))
+		.itemOutputs(Item.of('16x minecraft:glow_ink_sac'))
+		.itemOutputs(Item.of('16x minecraft:ink_sac'))
+		.outputFluids(Fluid.of('gtceu:biomass',100))
 
+		.duration(1200)
+		.EUt(92)
 	event.recipes.gtceu.animal_pen('sheep_1')
 		.notConsumable(Item.of('1x kubejs:sheep_model_1'))
 		.itemInputs(Item.of('8x minecraft:wheat'))
-		.itemOutputs(Item.of('2x minecraft:wool'))
+		.itemOutputs(Item.of('2x minecraft:white_wool'))
 		.itemOutputs(Item.of('1x minecraft:mutton'))
 		.outputFluids(Fluid.of('gtceu:biomass',10))
-
 		.duration(1200)
 		.EUt(24)
+	
+		event.recipes.gtceu.animal_pen('sheep_2')
+		.notConsumable(Item.of('1x kubejs:sheep_model_2'))
+		.itemInputs(Item.of('64x minecraft:wheat'))
+		.itemOutputs(Item.of('16x minecraft:white_wool'))
+		.itemOutputs(Item.of('16x minecraft:mutton'))
+		.outputFluids(Fluid.of('gtceu:biomass',100))
+		.duration(2400)
+		.EUt(92)
 	
 	event.recipes.gtceu.animal_pen('pig_1')
 		.notConsumable(Item.of('1x kubejs:pig_model_1'))
@@ -48,7 +64,14 @@ ServerEvents.recipes(event => {
 
 		.duration(1200)
 		.EUt(24)
-	
+		event.recipes.gtceu.animal_pen('pig_2')
+		.notConsumable(Item.of('1x kubejs:pig_model_2'))
+		.itemInputs(Item.of('64x minecraft:carrot'))
+		.itemOutputs(Item.of('16x minecraft:porkchop'))
+		.outputFluids(Fluid.of('gtceu:biomass',100))
+
+		.duration(2400)
+		.EUt(92)
 	event.recipes.gtceu.animal_pen('chicken_1')
 		.notConsumable(Item.of('1x kubejs:chicken_model_1'))
 		.itemInputs(Item.of('8x #forge:seeds'))
@@ -60,6 +83,16 @@ ServerEvents.recipes(event => {
 		.duration(1200)
 		.EUt(24)
 	
+		event.recipes.gtceu.animal_pen('chicken_2')
+		.notConsumable(Item.of('1x kubejs:chicken_model_2'))
+		.itemInputs(Item.of('64x #forge:seeds'))
+		.itemOutputs(Item.of('16x minecraft:chicken'))
+		.itemOutputs(Item.of('16x minecraft:feather'))
+		.itemOutputs(Item.of('16x minecraft:egg'))
+		.outputFluids(Fluid.of('gtceu:biomass',100))
+
+		.duration(2400)
+		.EUt(92)
 	event.recipes.gtceu.animal_pen('bee_1')
 		.notConsumable(Item.of('1x kubejs:bee_model_1'))
 		.itemInputs(Item.of('8x #minecraft:flowers'))
@@ -69,6 +102,15 @@ ServerEvents.recipes(event => {
 
 		.duration(1200)
 		.EUt(24)	
+	event.recipes.gtceu.animal_pen('bee_2')
+		.notConsumable(Item.of('1x kubejs:bee_model_2'))
+		.itemInputs(Item.of('64x #minecraft:flowers'))
+		.itemOutputs(Item.of('16x minecraft:honeycomb'))
+		.outputFluids(Fluid.of('create:honey', 8000))
+		.outputFluids(Fluid.of('gtceu:biomass',100))
+
+		.duration(2400)
+		.EUt(92)	
 	event.recipes.gtceu.animal_pen('rabbit_1')
 		.notConsumable(Item.of('1x kubejs:rabbit_model_1'))
 		.itemInputs(Item.of('8x minecraft:carrot'))
@@ -79,6 +121,16 @@ ServerEvents.recipes(event => {
 
 		.duration(1200)
 		.EUt(24)
+	event.recipes.gtceu.animal_pen('rabbit_2')
+		.notConsumable(Item.of('1x kubejs:rabbit_model_2'))
+		.itemInputs(Item.of('64x minecraft:carrot'))
+		.itemOutputs(Item.of('16x minecraft:rabbit'))
+		.itemOutputs(Item.of('16x minecraft:rabbit_hide'))
+		.itemOutputs(Item.of('8x minecraft:rabbit_foot'))
+		.outputFluids(Fluid.of('gtceu:biomass',100))
+
+		.duration(2400)
+		.EUt(92)
 	event.recipes.gtceu.animal_pen('fish_1')
 		.notConsumable(Item.of('1x kubejs:fish_model_1'))
 		.itemInputs(Item.of('8x #forge:seeds'))
@@ -88,4 +140,13 @@ ServerEvents.recipes(event => {
 
 		.duration(1200)
 		.EUt(24)
+	event.recipes.gtceu.animal_pen('fish_2')
+		.notConsumable(Item.of('1x kubejs:fish_model_2'))
+		.itemInputs(Item.of('64x #forge:seeds'))
+		.itemOutputs(Item.of('16x minecraft:salmon'))
+		.itemOutputs(Item.of('8x minecraft:bone'))
+		.outputFluids(Fluid.of('gtceu:biomass',100))
+
+		.duration(2400)
+		.EUt(92)
 })
