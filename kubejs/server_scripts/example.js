@@ -1899,7 +1899,7 @@ event.recipes.ars_nouveau.enchanting_apparatus(
     B: 'kubejs:mega_andesite_casing',
     C: 'create:electron_tube',
     D: 'create:precision_mechanism',
-    E: 'kubejs:mega_copper_casing',
+    E: 'kubejs:mega_cupronickel_casing',
     F: 'create:mechanical_crafter'
   })
 })
