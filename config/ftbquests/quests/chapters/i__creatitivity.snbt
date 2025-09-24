@@ -19,7 +19,10 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["1EE592CCEBDD19F4"]
+			dependencies: [
+				"1EE592CCEBDD19F4"
+				"64C430FA96654DDE"
+			]
 			id: "198D06EA799DC550"
 			shape: "diamond"
 			size: 2.0d
