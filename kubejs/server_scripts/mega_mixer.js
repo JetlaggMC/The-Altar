@@ -8,10 +8,9 @@ ServerEvents.recipes(event => {
 		.itemInputs(Item.of('16x kubejs:plant_glob'))
 		.itemInputs(Item.of('16x kubejs:crude_insulator_sheet'))
 		.itemInputs(Item.of('1x kubejs:creative_star'))
-
 		.inputFluids(Fluid.of('kubejs:polyethylene',1000))
 		.inputFluids(Fluid.of('kubejs:fermented_garlic_honey',16000))
-		.itemInputs(Item.of('1x kubejs:natural_star'))
+		.itemOutputs(Item.of('1x kubejs:natural_star'))
 		.duration(4800)
 		.EUt(480)	
 	event.recipes.gtceu.mega_mixer('desert_essence')
