@@ -1,0 +1,5 @@
+{
+  "ldlib": {
+    "connection": "create:block/brass_casing_connected"
+  }
+}

@@ -1,0 +1,28 @@
+
+{
+    "block.mbd2.andesite_output_bus": "Andesite Output Bus",
+    "block.mbd2.andesite_input_bus": "Andesite Input Bus",
+    "block.mbd2.brass_output_bus": "Brass Output Bus",
+    "block.mbd2.brass_input_bus": "Brass Input Bus",
+    "block.mbd2.cupronickel_output_hatch": "Cupronickel Output Hatch",
+    "block.mbd2.cupronickel_input_hatch": "Cupronickel Input Hatch",
+    "block.mbd2.large_mechanical_press": "Large Mechanical Press",
+    "mbd2.large_mechanical_press": "Large Mechanical Press",
+
+    "block.mbd2.kinetic_stress_input": "Kinetic Stress Input",
+    "block.mbd2.kinetic_foundry": "Kinetic Foundry",
+    "mbd2.kinetic_foundry": "Kinetic Foundry",
+
+    "block.mbd2.casting_tower": "Casting Tower",
+    "mbd2.casting_tower": "Casting Tower",
+
+    "block.mbd2.andesite_mechanical_drill": "Andesite Mechanical Drill",
+    "mbd2.andesite_mechanical_drill": "Andesite Mechanical Drill",
+    "block.mbd2.brass_mechanical_drill": "Brass Mechanical Drill",
+    "mbd2.brass_mechanical_drill": "Brass Mechanical Drill",
+
+    "block.mbd2.large_mechanical_mixer": "Large Mechanical Mixer",
+    "mbd2.large_mechanical_mixer": "Large Mechanical Mixer"
+
+
+}
