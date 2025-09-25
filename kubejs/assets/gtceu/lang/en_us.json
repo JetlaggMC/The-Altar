@@ -12,6 +12,8 @@
    "block.gtceu.ev_dna_fabricator": "Advanced DNA Fabricator III",
    "gtceu.dna_fabricator": "DNA Fabricator",
    "gtceu.animal_pen": "Animal Pen",
+   "gtceu.breeding_chamber": "Breeding Chamber",
+   "block.gtceu.breeding_chamber": "Breeding Chamber",
 
 
    "block.gtceu.lv_crop_simulator": "Basic Crop Simulator",
