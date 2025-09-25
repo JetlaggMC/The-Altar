@@ -186,7 +186,12 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("mineable/pickaxe") //can be mined faster with an axe
   	.textureAll("kubejs:block/mega_lv_machine_casing")
 	.model('kubejs:block/mega_lv_machine_casing')
-
+			event.create("mega_mv_machine_casing") // Create a new block
+    .displayName("Mega MV Machine Casing") // Set a custom name
+    .material("metal") // Set a material (affects the sounds and some properties)
+    .tagBlock("mineable/pickaxe") //can be mined faster with an axe
+  	.textureAll("kubejs:block/mega_mv_machine_casing")
+	.model('kubejs:block/mega_mv_machine_casing')
 })
 
 StartupEvents.registry("fluid", (event) => {
