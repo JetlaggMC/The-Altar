@@ -703,7 +703,31 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             "gtceu:block/machines/extractor",
             false
         )
-	
+	 event.create('breeding_chamber', 'multiblock')
+		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_frost_proof'))
+        .recipeTypes('breeding_chamber')
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle(' CCC ', ' CGC ', ' CGC ', ' CGC ',' CCC ',' B B ',' CCC ')
+            .aisle('CAAAC', 'C   C', 'C   C', 'C   C','C   C','BEEEB','CCCCC')
+            .aisle('CAAAC', 'G   G', 'G   G', 'G   G','C   C',' ELE ','CCHCC')
+            .aisle('CAAAC', 'C   C', 'C   C', 'C   C','C   C','BEEEB','CCCCC')
+            .aisle(' CMC ', ' CGC ', ' CGC ', ' CGC ',' CXC ',' B B ',' CCC ')
+			.where('M', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('C', Predicates.blocks('gtceu:frostproof_machine_casing')
+  				.or(Predicates.autoAbilities(definition.getRecipeTypes())))
+            .where('G', Predicates.blocks('gtceu:tempered_glass'))
+            .where('A', Predicates.blocks('allthecompressed:moss_block_2x'))
+            .where('L', Predicates.blocks('gtceu:white_lamp', '{bloom:1b,inverted:1b,lit:1b}'))
+            .where('B', Predicates.blocks('gtceu:blazing_frame'))
+            .where('E', Predicates.blocks('gtceu:kanthal_coil_block'))
+            .where('H', Predicates.abilities(PartAbility.MUFFLER))
+            .where('X', Predicates.abilities(PartAbility.MAINTENANCE))
+        	.build())
+        .workableCasingRenderer(
+            "gtceu:block/casings/solid/machine_casing_frost_proof",
+            "gtceu:block/machines/fermenter",
+            false
+        )	
 	 event.create('hostile_containment_unit', 'multiblock')
 		.appearanceBlock(() => Block.getBlock('deeperdarker:gloomy_sculk'))
         .recipeTypes('hostile_containment_unit')
