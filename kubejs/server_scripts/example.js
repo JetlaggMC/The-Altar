@@ -152,6 +152,8 @@ event.remove({ output: 'veggiesdelight:dandelion_juice'})
 event.remove({ input: 'gtceu:refined_copper_ore'})
 event.remove({ output: 'gtceu:lv_arc_furnace'})
 event.remove({ output: 'create:crushing_wheel'})
+event.remove({ output: 'create:stock_link'})
+event.remove({ output: 'create:packager'})
 
 event.remove({ input: 'gtceu:raw_coal', type: 'minecraft:smelting'})
 
@@ -1699,6 +1701,21 @@ C: 'gtceu:natures_alloy_plate'
 
   }
 )
+	event.shaped('1x gtceu:breeding_chamber', [
+    'ABC', 
+    'DED',
+	'FGF'
+  ], {
+    A: 'kubejs:wheat_1',
+	B: 'gtceu:mv_sensor',
+	C: 'kubejs:carrots_1',
+	D: '#gtceu:circuits/hv',
+	E: 'allthecompressed:moss_block_2x',
+	F: 'gtceu:mv_machine_casing',
+	G: 'gtceu:frostproof_machine_casing'
+
+  }
+)
 event.shaped('1x gtceu:hostile_containment_unit', [
   'ABC', 
   'DED',
@@ -1813,7 +1830,30 @@ E: '#gtceu:circuits/hv'
   }
 ).damageIngredient('#forge:tools/wrenches').damageIngredient('#forge:tools/hammers')
 
-	
+	event.shaped('1x create:packager', [
+  ' A ', 
+  'ABA',
+  'CAC'
+], {
+A: 'gtceu:double_andesite_alloy_plate',
+C: 'gtceu:single_blazing_cable',
+B: '#gtceu:circuits/mv'
+}
+)
+	event.shaped('1x create:packager', [
+  'A'
+], {
+A: 'create:repackager'
+}
+)
+	event.shaped('1x create:stock_link', [
+  'A', 
+  'B'
+], {
+A: 'gtceu:lv_emitter',
+C: 'create:item_vault'
+}
+)
 	event.recipes.ars_nouveau.enchanting_apparatus(
         [
             "kubejs:cow_model_1",
