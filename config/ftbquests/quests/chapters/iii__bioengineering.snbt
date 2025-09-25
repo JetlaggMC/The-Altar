@@ -15,40 +15,61 @@
 		y: 0.0d
 	}]
 	order_index: 4
-	quest_links: [
-		{
-			id: "5CD2E67D69078A9A"
-			linked_quest: "7385341D276EA8EB"
-			shape: "diamond"
-			x: -10.0d
-			y: -2.0d
-		}
-		{
-			id: "1600E34949CB1FEB"
-			linked_quest: "531AA4E94AAF7DE7"
-			shape: "diamond"
-			x: -10.0d
-			y: -1.0d
-		}
-		{
-			id: "6F02E5A7644403B2"
-			linked_quest: "37FA06CF0CAA5875"
-			shape: "diamond"
-			x: -14.0d
-			y: -6.0d
-		}
-	]
+	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["7385341D276EA8EB"]
 			hide_until_deps_visible: false
+			icon: "kubejs:cow_model_2"
 			id: "0CCCC556F659BA44"
 			shape: "diamond"
-			tasks: [{
-				id: "39FCDB0A409EFFF9"
-				item: "kubejs:cow_model_2"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "39FCDB0A409EFFF9"
+					item: "kubejs:cow_model_2"
+					type: "item"
+				}
+				{
+					id: "3F4C4CAF63715C75"
+					item: "kubejs:sheep_model_2"
+					type: "item"
+				}
+				{
+					id: "2752E63833497DE1"
+					item: "kubejs:pig_model_2"
+					type: "item"
+				}
+				{
+					id: "693F29F63A03EA13"
+					item: "kubejs:bee_model_2"
+					type: "item"
+				}
+				{
+					id: "20371C55DDAC2EFE"
+					item: "kubejs:squid_model_2"
+					type: "item"
+				}
+				{
+					id: "0D4D5CE8A47E537E"
+					item: "kubejs:axolotl_model_2"
+					type: "item"
+				}
+				{
+					id: "41AF08A263A4EB97"
+					item: "kubejs:fish_model_2"
+					type: "item"
+				}
+				{
+					id: "74C48B00F313AF8B"
+					item: "kubejs:chicken_model_2"
+					type: "item"
+				}
+				{
+					id: "6CED99BFEC67B5A5"
+					item: "kubejs:rabbit_model_2"
+					type: "item"
+				}
+			]
 			title: "Animal Models 2"
 			x: -11.0d
 			y: -2.0d
@@ -101,7 +122,10 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["72715145956CDF3F"]
+			dependencies: [
+				"72715145956CDF3F"
+				"1C7773A48A4D33EE"
+			]
 			id: "4C1D87D1F496B4E5"
 			shape: "diamond"
 			tasks: [{
@@ -117,6 +141,7 @@
 				"14B28D8649F0C786"
 				"7DAC4F681BDC1715"
 				"1997FA09B4AF479C"
+				"25EC4FCA697481B5"
 			]
 			id: "3B7FB9A3A8FE6B8C"
 			shape: "diamond"
@@ -183,6 +208,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["0CCCC556F659BA44"]
 			id: "766CC873B63B8026"
 			tasks: [{
 				id: "0D4B99193BBE4C1A"
@@ -193,6 +219,7 @@
 			y: -6.0d
 		}
 		{
+			dependencies: ["7098F7DCF75A6A0D"]
 			id: "0669D294D5B1F3C2"
 			tasks: [{
 				id: "1B8A6603B9C7D0A6"
@@ -250,11 +277,14 @@
 				item: "gtceu:hostile_containment_unit"
 				type: "item"
 			}]
-			x: -15.0d
-			y: -6.0d
+			x: -13.0d
+			y: -5.0d
 		}
 		{
-			dependencies: ["3D173F08517FC798"]
+			dependencies: [
+				"3D173F08517FC798"
+				"5CCE8EAECFD87478"
+			]
 			id: "7B36BBEBBB7F2BA5"
 			shape: "diamond"
 			tasks: [{
@@ -446,6 +476,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["323D338A77D77AAD"]
 			id: "6CDE4959CE3417EF"
 			tasks: [{
 				id: "3E74738A7672BBE7"
@@ -456,6 +487,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["5CCE8EAECFD87478"]
 			id: "2485B4D2C67778EB"
 			shape: "diamond"
 			tasks: [{
@@ -688,6 +720,16 @@
 			}]
 			x: -13.0d
 			y: 0.0d
+		}
+		{
+			id: "3883E0A46B686718"
+			tasks: [{
+				id: "276CA1371BF262EB"
+				item: "kubejs:sterile_research"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
 		}
 	]
 	title: "IV - Bio-Engineering"

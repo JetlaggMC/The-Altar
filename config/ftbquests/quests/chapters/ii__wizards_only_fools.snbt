@@ -1030,7 +1030,12 @@
 			y: -10.0d
 		}
 		{
-			dependencies: ["7EDAD51B65C42435"]
+			dependencies: [
+				"7EDAD51B65C42435"
+				"0AE61CD4E2EA9244"
+				"573ACB6503202BDC"
+				"7CFD2531A0E8B443"
+			]
 			icon: "kubejs:blaze_model_1"
 			id: "37FA06CF0CAA5875"
 			tasks: [
@@ -1395,7 +1400,10 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["50A6E193A680A6B3"]
+			dependencies: [
+				"50A6E193A680A6B3"
+				"4D5FE644473BFE52"
+			]
 			hide_dependency_lines: true
 			id: "63BA9829B3B62BE0"
 			shape: "diamond"
@@ -1421,6 +1429,17 @@
 			}]
 			x: 9.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["3E7E5589BA329116"]
+			id: "4D5FE644473BFE52"
+			tasks: [{
+				id: "4E1954BD6657E230"
+				item: "kubejs:mega_mv_machine_casing"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -11.0d
 		}
 	]
 	title: "III - Wizards Only Fools"

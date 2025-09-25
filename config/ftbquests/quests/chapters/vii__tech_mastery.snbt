@@ -368,6 +368,76 @@
 			x: 4.0d
 			y: 2.0d
 		}
+		{
+			id: "03D5176A9D8FB59E"
+			tasks: [{
+				id: "321E2E8B2EB4D596"
+				item: "gtceu:luv_circuit_assembler"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			id: "75EBE28975F64FF5"
+			tasks: [{
+				id: "5F716A546B63DD9C"
+				item: "gtceu:wetware_processor"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			id: "6C6FAC420D1B4D5C"
+			tasks: [{
+				id: "010465809C09BD3F"
+				item: "gtceu:zpm_circuit_assembler"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			id: "21B26CCD0FE89DF8"
+			tasks: [{
+				id: "3BE11C6121194AED"
+				item: "gtceu:wetware_processor_assembly"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			id: "5041BF41248D0ABB"
+			tasks: [{
+				id: "4718AB25D6927AB7"
+				item: "gtceu:wetware_processor_computer"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			id: "0DFB24F55189A228"
+			tasks: [{
+				id: "4F57E94F9B891B5B"
+				item: "gtceu:wetware_processor_mainframe"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 11.0d
+		}
+		{
+			id: "4EE5F349391CABBC"
+			tasks: [{
+				id: "254F198A2E48F24A"
+				item: "gtceu:uv_circuit_assembler"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.0d
+		}
 	]
 	title: "VII - Tech Mastery"
 }
