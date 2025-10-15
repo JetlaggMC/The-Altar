@@ -28,7 +28,14 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'thermal:dynamo_lapidary' })
   event.remove({ output: 'thermal:dynamo_disenchantment' })
   event.remove({ output: 'thermal:dynamo_gourmand' })
-	
+	  event.remove({ output: 'thermal:dynamo_gourmand' })
+  event.remove({ output: 'farmersdelight:fruit_salad' })
+  event.remove({ output: 'farmersdelight:veggie_salad' })
+  event.remove({ output: 'gtceu:steel_firebox_casing' })
+  event.remove({ output: 'gtceu:steel_large_boiler' })
+  event.remove({ input: 'gtceu:crushed_amethyst_ore' })
+  event.remove({ input: 'create:brass_sheet' })
+
 event.remove({ output: 'gtceu:lv_super_chest' })
 
 event.remove({ output: 'gtceu:ulv_machine_casing' })
@@ -52,6 +59,7 @@ event.remove({ output: 'gtceu:andesite_alloy_ring' })
 event.remove({ output: 'gtceu:iron_ring' })
 event.remove({ output: 'minecraft:cobblestone', type: 'create:milling' })
 event.remove({ output: 'create:steam_engine' })
+event.remove({ output: 'twilightforest:hollow_spruce_log' })
 
 event.remove({ input: '#forge:tools/mortars' })
 event.remove({ output: 'gtceu:cupronickel_coil_block' })
@@ -78,6 +86,7 @@ event.remove({ output: 'create:spout'})
 event.remove({ output: 'create:empty_blaze_burner'})
 event.remove({ output: 'create:belt_connector'})
 event.remove({ output: 'create:andesite_funnel'})
+event.remove({ output: 'minecraft:hopper'})
 
 event.remove({type: 'gtceu:primitive_blast_furnace'}) // Remove all campfire cooking recipes
 event.remove({ output: 'gtceu:good_electronic_circuit' })
@@ -154,11 +163,23 @@ event.remove({ output: 'gtceu:lv_arc_furnace'})
 event.remove({ output: 'create:crushing_wheel'})
 event.remove({ output: 'create:stock_link'})
 event.remove({ output: 'create:packager'})
+event.remove({ output: 'create:mechanical_saw'})
+event.remove({ output: 'gtceu:andesite_alloy_drill_head'})
+	event.remove({ output: 'create:andesite_table_cloth'})
+	event.remove({ output: 'create:andesite_scaffolding'})
+	event.remove({ output: 'create:andesite_ladder'})
+	event.remove({ output: 'create:andesite_bars' })
+	event.remove({ output: 'create:brass_table_cloth'})
+	event.remove({ output: 'create:brass_scaffolding'})
+	event.remove({ output: 'create:brass_ladder'})
+	event.remove({ output: 'create:brass_bars' })
+event.remove({ output: 'create:brass_sheet'})
 
 event.remove({ input: 'gtceu:raw_coal', type: 'minecraft:smelting'})
 
 event.remove({ output: 'thermal:constantan_dust'})
 event.remove({ id: 'gtceu:shapeless/glass_dust_flint'})
+event.remove({ id: 'gtceu:shapeless/glass_full_dust_flint'})
 
 event.remove({ input: 'gtceu:elementium_dust'})
 event.remove({ input: 'gtceu:arcane_gold_dust'})
@@ -195,11 +216,17 @@ event.replaceInput(
     'thermal:niter',
     'gtceu:niter_gem'
 )
+
 event.replaceInput(
     { input: 'thermal:niter_dust' },
     'thermal:niter_dust',
     'gtceu:niter_dust'
 )
+    event.replaceOutput(
+        { output: 'thermal:niter' },
+        'thermal:niter',
+        'gtceu:niter_gem'
+    )
     event.replaceOutput(
         { output: 'thermal:niter' },
         'thermal:niter',
@@ -263,6 +290,7 @@ event.shapeless('1x minecraft:flint_and_steel', [ // arg 1: output
 	event.recipes.create.filling('kubejs:sky_shard', [Fluid.of('kubejs:sky_essence',1000), 'kubejs:blank_shard'])
 	event.recipes.create.filling('kubejs:jungle_shard', [Fluid.of('kubejs:jungle_essence',1000), 'kubejs:blank_shard'])
 
+	event.recipes.create.pressing('gtceu:brass_plate', 'gtceu:brass_ingot')
 	event.recipes.create.pressing('gtceu:andesite_alloy_plate', 'create:andesite_alloy')
 	event.recipes.create.pressing('gtceu:andesite_alloy_ring', 'gtceu:andesite_alloy_bolt')
 	event.recipes.create.pressing('gtceu:iron_ring', 'gtceu:iron_bolt')
@@ -327,12 +355,25 @@ event.recipes.create.pressing('gtceu:copper_plate', '#forge:ingots/copper')
 	event.recipes.create.crushing('1x gtceu:blazing_dust', 'gtceu:blazing_ingot')
 	event.recipes.create.crushing('3x veggiesdelight:garlic_clove', 'veggiesdelight:garlic')
 
-  event.recipes.create.cutting('gtceu:andesite_alloy_rod', 'create:andesite_alloy')
-  event.recipes.create.cutting('gtceu:cupronickel_rod', 'gtceu:cupronickel_ingot')
-  event.recipes.create.cutting('gtceu:brass_rod', 'gtceu:brass_ingot')
-  event.recipes.create.cutting('gtceu:andesite_alloy_bolt', 'gtceu:andesite_alloy_rod')
-  event.recipes.create.cutting('gtceu:cupronickel_bolt', 'gtceu:cupronickel_rod')
-  event.recipes.create.cutting('gtceu:brass_bolt', 'gtceu:brass_rod')
+  event.recipes.create.cutting('2x gtceu:andesite_alloy_rod', 'create:andesite_alloy')
+  event.recipes.create.cutting('2x gtceu:andesite_alloy_bolt', 'gtceu:andesite_alloy_rod')
+  event.recipes.create.cutting('gtceu:andesite_alloy_screw', 'gtceu:andesite_alloy_bolt')
+  event.recipes.create.deploying('gtceu:long_andesite_alloy_rod', ['gtceu:andesite_alloy_rod','gtceu:andesite_alloy_rod'])
+
+  event.recipes.create.cutting('2x gtceu:cupronickel_rod', 'gtceu:cupronickel_ingot')
+  event.recipes.create.cutting('2x gtceu:cupronickel_bolt', 'gtceu:cupronickel_rod')
+  event.recipes.create.cutting('gtceu:cupronickel_screw', 'gtceu:cupronickel_bolt')
+  event.recipes.create.deploying('gtceu:long_cupronickel_rod', ['gtceu:cupronickel_rod','gtceu:cupronickel_rod'])
+
+  event.recipes.create.cutting('2x gtceu:brass_rod', 'gtceu:brass_ingot')
+  event.recipes.create.cutting('2x gtceu:brass_bolt', 'gtceu:brass_rod')
+  event.recipes.create.cutting('gtceu:brass_screw', 'gtceu:brass_bolt')
+  event.recipes.create.deploying('gtceu:long_brass_rod', ['gtceu:brass_rod','gtceu:brass_rod'])
+
+  event.recipes.create.cutting('2x gtceu:natures_alloy_rod', 'gtceu:natures_alloy_ingot')
+  event.recipes.create.cutting('2x gtceu:natures_alloy_bolt', 'gtceu:natures_alloy_rod')
+  event.recipes.create.cutting('gtceu:natures_alloy_screw', 'gtceu:natures_alloy_bolt')
+  event.recipes.create.deploying('gtceu:long_natures_alloy_rod', ['gtceu:natures_alloy_rod','gtceu:natures_alloy_rod'])
 
 	event.smelting('1x minecraft:coal', 'gtceu:crushed_coal_ore')
 	event.smelting('1x minecraft:iron_ingot', 'gtceu:crushed_iron_ore')
@@ -386,11 +427,12 @@ event.recipes.create.filling('veggiesdelight:fermented_garlic_honey', [Fluid.of(
   event.recipes.create.mixing(Fluid.of('gtceu:rubber',1000),	['1x gtceu:sticky_resin', Fluid.of('kubejs:glass_residue',100)])
   event.recipes.create.mixing(Fluid.of('create:honey',1000),	'1x minecraft:honey_block')
   event.recipes.create.mixing(Fluid.of('create:honey',144),	'1x minecraft:honeycomb')
+  event.recipes.create.mixing('minecraft:glowstone_dust',	['1x minecraft:glow_berries','1x gtceu:nettherack_dust'])
 
  	event.recipes.create.mixing(Fluid.of('kubejs:crude_insulator', 288),[Fluid.of('create:honey',144),Fluid.of('gtceu:rubber',144), '1x gtceu:sulfur_dust'])
 	event.recipes.create.mixing('2x gtceu:fireclay_dust',	['1x gtceu:clay_dust', '1x gtceu:brick_dust']).heated()
 	event.recipes.create.mixing('1x kubejs:blank_shard',	['1x create:andesite_alloy', '1x #forge:glass']).heated()
- 	event.recipes.create.mixing(Fluid.of('gtceu:glowing', 2304),[Fluid.of('gtceu:iron',2304), '1x minecraft:glow_ink_sac']).heated()
+ 	event.recipes.create.mixing(Fluid.of('gtceu:glowing', 2304),[Fluid.of('gtceu:iron',1000), '1x minecraft:glow_ink_sac']).heated()
  	event.recipes.create.mixing(Fluid.of('gtceu:red_alloy', 288),[Fluid.of('gtceu:iron',144), '1x minecraft:redstone']).heated()
  	event.recipes.create.mixing(Fluid.of('gtceu:blazing', 1296),['8x minecraft:blaze_powder', '1x kubejs:nether_dust']).superheated()
    event.recipes.create.mixing('1x gtceu:glass_dust',	['1x gtceu:quartz_sand_dust', '1x gtceu:tiny_flint_dust'])
@@ -475,6 +517,41 @@ event.recipes.create.filling('veggiesdelight:fermented_garlic_honey', [Fluid.of(
     'A'  
   ], {
     A: 'create:gearbox'
+
+  }
+)
+	event.shaped('1x gtceu:andesite_alloy_drum', [
+    'A'  
+  ], {
+    A: 'create:andesite_alloy_drum'
+
+  }
+)
+	event.shaped('1x minecraft:glass_bottle', [
+    'A A',
+	' A '
+  ], {
+    A: '#forge:glass'
+
+  }
+)
+	event.shaped('1x create:smart_fluid_pipe', [
+    'C',
+	'A',
+	'B'
+  ], {
+    A: 'create:fluid_pipe',
+	B: 'create:electron_tube',
+	C: 'gtceu:brass_plate'
+
+  }
+)
+	event.shaped('4x minecraft:torch', [
+    'C',
+	'A'
+  ], {
+    A: 'minecraft:stick',
+	C: 'gtceu:sticky_resin'
 
   }
 )
@@ -627,6 +704,19 @@ C: 'create:shaft',
 W: '#forge:tools/wrenches',
 S: '#forge:tools/screwdrivers'
 }).damageIngredient('#forge:tools/wrenches').damageIngredient('#forge:tools/screwdrivers')
+	
+
+event.shaped('1x minecraft:hopper', [
+  'ASA',
+  'AGA',
+  'HAB'
+], {
+A: 'gtceu:andesite_alloy_plate',
+B: '#forge:tools/hammers',
+G: 'gtceu:small_andesite_alloy_gear',
+H: '#forge:tools/screwdrivers',
+S: '#forge:chests'
+}).damageIngredient('#forge:tools/wrenches').damageIngredient('#forge:tools/screwdrivers')
 event.shaped('1x create:basin', [
   '   ',
   'AHA',
@@ -678,12 +768,32 @@ event.shaped('1x create:mechanical_drill', [
     'BCH',
     ' SD'
 ], {
-    D: '#forge:double_plates/iron',
+    D: 'gtceu:double_andesite_alloy_plate',
     W: '#forge:tools/wrenches',
     S: '#forge:tools/screwdrivers',
-    C: 'create:andesite_casing',
+    C: 'create:brass_casing',
     B: 'create:shaft',
-    H: 'gtceu:iron_drill_head'
+    H: 'gtceu:andesite_alloy_drill_head'
+}).damageIngredient('#forge:tools/wrenches').damageIngredient('#forge:tools/screwdrivers')
+	
+event.shaped('1x gtceu:andesite_alloy_drill_head', [
+    ' A ',
+    ' A ',
+    'AWA'
+], {
+    A: 'gtceu:andesite_alloy_plate',
+    W: '#forge:tools/hammers'
+}).damageIngredient('#forge:tools/wrenches')
+
+	event.shaped('1x create:mechanical_saw', [
+    'WAS',
+    'BCB'
+], {
+    A: 'gtceu:andesite_alloy_buzz_saw_blade',
+    W: '#forge:tools/wrenches',
+    S: '#forge:tools/screwdrivers',
+    C: 'create:brass_casing',
+    B: 'gtceu:double_andesite_alloy_plate'
 }).damageIngredient('#forge:tools/wrenches').damageIngredient('#forge:tools/screwdrivers')
 
 	event.shaped('1x create:mechanical_press', [
@@ -820,7 +930,7 @@ event.shaped('1x gtceu:glass_tube', [
 	' BF'
   ], {
     A: '#forge:tools/hammers', 
-    B: 'gtceu:brass_plate',
+    B: '#forge:plates/brass',
 	C: 'gtceu:brass_rod',
 	E: 'gtceu:treated_wood_planks',
 	F: '#forge:tools/saws'
@@ -1648,7 +1758,7 @@ D: 'botania:rainbow_rod'
 	D: 'gtceu:blazing_single_cable'
   }
 )
-	event.shaped('1x gtceu:bronze_firebox_casing', [
+	event.shaped('2x gtceu:bronze_firebox_casing', [
     'ABA', 
     'BCB',
 	'ABA'
@@ -1658,13 +1768,33 @@ D: 'botania:rainbow_rod'
 	C: 'gtceu:blazing_frame'
   }
 )
+	event.shaped('1x gtceu:steel_large_boiler', [
+    'ABA', 
+    'BCB',
+	'ABA'
+  ], {
+    A: 'gtceu:weak_synthetic_single_cable',
+	B: '#gtceu:circuits/hv',
+	C: 'gtceu:steel_firebox_casing'
+  }
+)
+	event.shaped('2x gtceu:steel_firebox_casing', [
+    'ABA', 
+    'BCB',
+	'ABA'
+  ], {
+    A: 'gtceu:natures_alloy_plate',
+	B: 'gtceu:natures_alloy_rod',
+	C: 'gtceu:natures_alloy_frame'
+  }
+)
 event.shaped('1x gtceu:empty_mold', [
   'AB', 
   'CC'
 ], {
   A: '#forge:tools/wrenches', 
   B: '#forge:tools/files',
-C: 'gtceu:natures_alloy_plate'
+C: 'gtceu:andesite_alloy_plate'
 }
 ).damageIngredient('#forge:tools/wrenches').damageIngredient('#forge:tools/screwdrivers')
 	event.shaped('1x gtceu:bronze_pipe_casing', [

@@ -14,6 +14,7 @@ ServerEvents.recipes(event => {
 	event.remove({ output: 'gtceu:nichrome_coil_block' })
 	event.remove({ output: 'gtceu:hv_machine_casing' })
 	event.remove({ output: 'gtceu:hv_laser_engraver' })
+	event.remove({ output: 'gtceu:hv_steam_turbine' })
 
 	event.recipes.extendedcrafting.shaped_table(
 		"gtceu:hv_dna_fabricator",

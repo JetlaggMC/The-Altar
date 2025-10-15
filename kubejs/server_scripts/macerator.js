@@ -26,5 +26,27 @@ ServerEvents.recipes(event => {
         .chancedOutput('2x kubejs:wheat_seeds_1',5000,500)
 		.duration(40)
 		.EUt(7)
+	
+	
+
+	event.recipes.gtceu.macerator('pumpkin_1')
+        .itemInputs(Item.of('4x kubejs:pumpkin_1'))
+        .itemOutputs('2x kubejs:pumpkin_1')
+        .itemOutputs('2x kubejs:pumpkin_seeds_1')
+        .chancedOutput('2x minecraft:pumpkin',5000,500)
+        .chancedOutput('2x minecraft:pumpkin_seeds',5000,500)
+		.duration(40)
+		.EUt(7)
+
+        event.recipes.gtceu.macerator('pumpkin_2')
+        .itemInputs(Item.of('4x kubejs:pumpkin_2'))
+        .itemOutputs('2x kubejs:pumpkin_2')
+        .itemOutputs('2x kubejs:pumpkin_seeds_2')
+        .chancedOutput('2x kubejs:pumpkin_1',5000,500)
+        .chancedOutput('2x kubejs:pumpkin_seeds_1',5000,500)
+		.duration(40)
+		.EUt(7)
+
+
 
 })

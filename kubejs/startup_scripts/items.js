@@ -35,7 +35,6 @@ StartupEvents.registry('item', e => {
   e.create('terrasteel_dust')
   e.create('elementium_dust')
 	
-  e.create('cooked_sterile_meat_glob')
   e.create('dense_insulator_sheet')
   e.create('crude_insulator_sheet')
   e.create('hyper_insulator_sheet')
@@ -47,6 +46,8 @@ StartupEvents.registry('item', e => {
   e.create('magical_research')
   e.create('sterile_research')
   e.create('gilded_research')
+  e.create('nuclear_research')
+  e.create('interstellar_research')
 
   e.create('unborn_naga_trophy')
   e.create('unborn_lich_trophy')
@@ -57,6 +58,8 @@ StartupEvents.registry('item', e => {
   e.create('plant_glob')
   e.create('magical_plant_glob')
   e.create('magical_meat_glob')
+  e.create('sterile_meat_glob')
+  e.create('sterile_plant_glob')
 
   e.create('processed_iron_ore')
 
@@ -500,6 +503,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 })
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
+	    GTMachineUtils.registerCrate( GTMaterials.get('andesite_alloy'), 36, "Andesite Alloy Crate");
+    GTMachineUtils.registerDrum(GTMaterials.get('andesite_alloy'), 32000, "Andesite Alloy Drum");
+    GTMachineUtils.registerCrate( GTMaterials.get('natures_alloy'), 72, "Nature's Alloy Crate");
+    GTMachineUtils.registerDrum(GTMaterials.get('natures_alloy'), 64000, "Nature's Alloy Drum");
+    GTMachineUtils.registerCrate( GTMaterials.get('magical_alloy'), 90, "Magical Alloy Crate");
+    GTMachineUtils.registerDrum(GTMaterials.get('magical_alloy'), 128000, "Magical Alloy Drum");
 	//kinetic_caster
 	event.create('caster', 'simple')
   .tiers(GTValues.LV,GTValues.MV,GTValues.HV,GTValues.EV,GTValues.IV,GTValues.LuV)

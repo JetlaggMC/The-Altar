@@ -1,0 +1,61 @@
+The Altar 0.1.7 Update
+
+NEW CHAPTER: (IV - Bio Engineering)
+
+MOD CHANGES:
+	swapped storage drawers for functional storage
+	added spice of life
+	added appleskin
+	added shuffle
+	
+QOL CHANGES:
+-fixed some quests not showing rewards
+-added Andesite, Nature's, and Magical crates and drums to match progression
+-changed ingot mold to andesite alloy instead of nature's
+-moved contraptions into kinetic machinery 2
+-changed mechanical saw, deployer, and mechanical drill to match brass materials
+-added bolt and rod recipes to mechanical saw
+-changed hopper recipe [iron -> andesite]
+-added necessary ores and stones to mechanical miner recipes
+-added recipes for create's packaging system [chapter 2 / logistics 3]
+-added breeding recipes for all animals 2 --> 1 [chapter 3 / reproduction]
+-fixed all tier 0 and 1 crop recipes, growing/outputs [chapter 3 / farming machines]
+-Large Steel Boiler [gtceu] --> Large Nature's Alloy Boiler [chapter 3 / steam generation 2]
+-magical meat glob now requires hamburgers and chicken soup to match plant glob cooking requirements
+-magical meat glob recipe buff [meat glob 64 --> 16]
+-magical plant glob recipe buff [plant glob 64 --> 16]
+
+NEW TECHNOLOGIES:
+	Logistics 3
+	Medium Voltage Machinery
+	Advanced Electronics 1-3
+	Awakened Echo 1
+	Advanced Smelting 2
+	Biology 2
+	Farm Animals 2
+	Aquatic Animals 2
+	Fauna 2
+	Overworld Hostility 1
+	Nether Hostility 1
+	Ender Hostility 1
+	Large Machinery 2
+	Sterilization
+	Natures Alloy 2
+	Farming Machines
+	Synthetic Neuron Alloy 1
+	Sterile Bio Alloy 1
+	Cooking 2-3
+	Sterile Research
+
+
+NEW BLOCKS:
+	Mega MV Machine Casing
+
+NEW MULTIBLOCKS:
+	Breeding Chamber
+	Meat Freezer
+	Resource Combinator
+	Mega Press
+	Mega Mixer
+	Hydroponic Garden
+	Temperate Garden

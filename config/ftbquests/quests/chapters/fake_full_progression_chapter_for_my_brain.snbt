@@ -15,13 +15,12 @@
 	}
 	id: "3A3F350A5155FE58"
 	images: [{
-		alpha: 200
-		height: 5.0d
-		image: "kubejs:icons/mv_casing_quest"
+		height: 7.0d
+		image: "kubejs:icons/hv_casing_quest"
 		rotation: 0.0d
-		width: 11.0d
-		x: 13.5d
-		y: 12.0d
+		width: 15.4d
+		x: 24.5d
+		y: 16.0d
 	}]
 	order_index: 8
 	quest_links: [
@@ -5565,27 +5564,56 @@
 			shape: "square"
 			tasks: [
 				{
-					count: 8L
+					count: 20L
 					id: "7634849C2403B4EE"
 					item: "kubejs:primitive_research"
 					type: "item"
 				}
 				{
-					count: 6L
+					count: 15L
 					id: "687567F41E70E7BC"
 					item: "kubejs:andesite_research"
 					type: "item"
 				}
 				{
-					count: 5L
+					count: 10L
 					id: "4F51006DC16F2EB4"
 					item: "kubejs:brass_research"
 					type: "item"
 				}
 				{
-					count: 4L
+					count: 8L
 					id: "247AF19C0A7ED547"
-					item: { Count: 2, id: "kubejs:natural_research" }
+					item: "kubejs:natural_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "04FD56192A8756A5"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "07303E86449813F9"
+					item: "kubejs:sterile_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "27803F4C0895CF90"
+					item: "kubejs:gilded_research"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "526526A77A2A85F7"
+					item: "kubejs:nuclear_research"
+					type: "item"
+				}
+				{
+					id: "6074DEEB190E3862"
+					item: "kubejs:interstellar_research"
 					type: "item"
 				}
 			]
@@ -5712,26 +5740,6 @@
 			title: "Planetary Simulation"
 			x: 47.5d
 			y: 16.5d
-		}
-		{
-			dependencies: ["1EE592CCEBDD19F4"]
-			icon_scale: 1.5d
-			id: "02181021D586E7B9"
-			shape: "square"
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "ftbquests:custom_icon"
-					tag: {
-						Icon: "kubejs:icons/andesite_alloy_3"
-					}
-				}
-				id: "7C25BDE20B802156"
-				title: "Andesite Alloy III"
-				type: "custom"
-			}]
-			x: 8.0d
-			y: 17.5d
 		}
 		{
 			dependencies: ["02181021D586E7B9"]
@@ -5931,34 +5939,6 @@
 			y: 20.5d
 		}
 		{
-			dependencies: ["78513CFE449AA3E6"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/coal_processing_3"
-				}
-			}
-			icon_scale: 1.5d
-			id: "37FF2848E83A3F77"
-			shape: "square"
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "ftbquests:custom_icon"
-					tag: {
-						Icon: "kubejs:icons/andesite_alloy_3"
-					}
-				}
-				id: "200B1FA9A4A12EDD"
-				title: "Andesite Alloy III"
-				type: "custom"
-			}]
-			title: "Coal III"
-			x: 7.0d
-			y: 17.5d
-		}
-		{
 			dependencies: ["37FF2848E83A3F77"]
 			icon: {
 				Count: 1
@@ -6041,42 +6021,6 @@
 			title: "Universal Coal"
 			x: 7.0d
 			y: 20.5d
-		}
-		{
-			dependencies: ["3DD56A853D117419"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/zinc_2"
-				}
-			}
-			icon_scale: 1.5d
-			id: "48DFADCB31556F79"
-			shape: "square"
-			tasks: [
-				{
-					count: 16L
-					id: "058CFE9F57F64A35"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "442A426B0C4D2596"
-					item: { Count: 3, id: "kubejs:andesite_research" }
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "5F996CC63C5FC176"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-			]
-			title: "Zinc II"
-			x: 6.0d
-			y: 16.5d
 		}
 		{
 			dependencies: ["48DFADCB31556F79"]
@@ -6228,34 +6172,6 @@
 				Count: 1
 				id: "ftbquests:custom_icon"
 				tag: {
-					Icon: "kubejs:icons/copper_2"
-				}
-			}
-			icon_scale: 1.5d
-			id: "6468AAAED87CCC8D"
-			shape: "square"
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "ftbquests:custom_icon"
-					tag: {
-						Icon: "kubejs:icons/andesite_alloy_3"
-					}
-				}
-				id: "14D70AF5CE5F7CE4"
-				title: "Andesite Alloy III"
-				type: "custom"
-			}]
-			title: "Copper II"
-			x: 5.0d
-			y: 16.5d
-		}
-		{
-			description: ["{image:kubejs:icons/natures_alloy_3_page width:176 height:105 align:center}"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
 					Icon: "kubejs:icons/copper_3"
 				}
 			}
@@ -6368,34 +6284,6 @@
 				Count: 1
 				id: "ftbquests:custom_icon"
 				tag: {
-					Icon: "kubejs:icons/iron_2"
-				}
-			}
-			icon_scale: 1.5d
-			id: "788EF4C7DD8C8B96"
-			shape: "square"
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "ftbquests:custom_icon"
-					tag: {
-						Icon: "kubejs:icons/andesite_alloy_3"
-					}
-				}
-				id: "27E283EC0DBE95C6"
-				title: "Andesite Alloy III"
-				type: "custom"
-			}]
-			title: "Iron II"
-			x: 4.0d
-			y: 16.5d
-		}
-		{
-			description: ["{image:kubejs:icons/natures_alloy_3_page width:176 height:105 align:center}"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
 					Icon: "kubejs:icons/iron_3"
 				}
 			}
@@ -6501,36 +6389,6 @@
 			title: "Universal Iron"
 			x: 4.0d
 			y: 20.5d
-		}
-		{
-			hide_dependent_lines: true
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/amethyst_processing_3"
-				}
-			}
-			icon_scale: 1.5d
-			id: "3864243923091548"
-			shape: "square"
-			tasks: [
-				{
-					count: 10L
-					id: "13C01CBCE0D3AB53"
-					item: { Count: 6, id: "kubejs:primitive_research" }
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "420E2EA7D2877B79"
-					item: { Count: 3, id: "kubejs:andesite_research" }
-					type: "item"
-				}
-			]
-			title: "Amethyst III"
-			x: 3.0d
-			y: 17.5d
 		}
 		{
 			hide_dependent_lines: true
@@ -6681,785 +6539,184 @@
 			y: 16.5d
 		}
 		{
-			dependencies: ["05FA348DF56DEC4E"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/medium_voltage_machinery"
-				}
-			}
+			icon: "kubejs:mega_mv_machine_casing"
 			icon_scale: 1.5d
-			id: "214B22FFAB3FFF25"
-			shape: "square"
-			tasks: [
-				{
-					count: 6L
-					id: "08B5BDB8C172FD05"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "68843C18F9DF0F78"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "652C829099603055"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "476BD57927EF926D"
-					item: "kubejs:natural_research"
-					type: "item"
-				}
-				{
-					id: "57B65BCC1C9003B6"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-			]
-			title: "Medium Voltage Machinery"
-			x: 10.5d
-			y: 12.0d
-		}
-		{
-			dependencies: ["214B22FFAB3FFF25"]
-			description: ["{image:kubejs:icons/advanced_electronics_1_page width:172 height:179 align:center}"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/advanced_electronics_1"
-				}
-			}
-			icon_scale: 1.5d
-			id: "0E1C90A30A11F409"
+			id: "7B338AF395795B12"
 			rewards: [
 				{
-					auto: "no_toast"
 					command: "/say Hi, @p!"
-					elevate_perms: true
-					icon: "gtceu:lv_circuit_assembler"
-					id: "68F0C0A860CC2E28"
-					silent: true
-					title: "Unlock Basic Circuit Assembler"
+					icon: "gtceu:hv_steam_turbine"
+					id: "23331FD37F7BB69D"
+					title: "Unlock Advanced Steam Turbine"
 					type: "command"
 				}
 				{
-					icon: "gtceu:basic_integrated_circuit"
-					id: "719E486FC3A88F81"
-					title: "Unlock Basic Integrated Circuit"
+					id: "2B14A916FD26F07C"
+					title: "Unlock Large Nature's Alloy Turbine"
 					type: "custom"
 				}
 			]
 			shape: "square"
 			tasks: [
 				{
-					count: 12L
-					id: "7C5D01AA15E8D196"
+					count: 16L
+					id: "730C69D53C3BB128"
 					item: "kubejs:primitive_research"
 					type: "item"
 				}
 				{
-					count: 10L
-					id: "4355B8D86A7493BB"
+					count: 12L
+					id: "4A0221B8EF2E9267"
 					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "1E4A972A5C265B7C"
+					item: "kubejs:brass_research"
 					type: "item"
 				}
 				{
 					count: 8L
-					id: "0995624C2A127FEC"
+					id: "28D36C4EEBD3EB81"
+					item: "kubejs:natural_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "253C6EBE2D97D39C"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3C513F01DBD4E3FB"
+					item: "kubejs:sterile_research"
+					type: "item"
+				}
+			]
+			title: "Steam Power III"
+			x: 19.5d
+			y: 15.5d
+		}
+		{
+			icon: "kubejs:nuclear_research"
+			icon_scale: 1.5d
+			id: "3A7AF650804272DF"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "0068CAB63C7C0ECD"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "6B663B527364A1CB"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "2D14B0AE0751B040"
 					item: "kubejs:brass_research"
 					type: "item"
 				}
 				{
 					count: 4L
-					id: "417A3A88961FAE24"
-					item: "kubejs:natural_research"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "558C2A1CE0EEBCDB"
-					item: "kubejs:magical_research"
+					id: "1239C6CFD18AA719"
+					item: { Count: 2, id: "kubejs:natural_research" }
 					type: "item"
 				}
 			]
-			title: "Advanced Electronics I"
-			x: 10.5d
-			y: 11.0d
+			title: "Nuclear Research"
+			x: 38.5d
+			y: 14.5d
 		}
 		{
-			dependencies: ["7331575EB9A94099"]
-			description: ["{image:kubejs:icons/biology_2_page width:167 height:101 align:center}"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/biology_2"
-				}
-			}
+			dependencies: ["01A2F209D677BDFD"]
+			icon: "kubejs:interstellar_research"
 			icon_scale: 1.5d
-			id: "53FCA7A7F39A2365"
-			rewards: [{
-				auto: "no_toast"
-				command: "/say Hi, @p!"
-				elevate_perms: true
-				icon: "gtceu:mv_dna_fabricator"
-				id: "402FB797DAEEEE25"
-				silent: true
-				title: "Unlock MV DNA Fabricator"
-				type: "command"
-			}]
+			id: "3837FDDB2FCC5EE5"
 			shape: "square"
 			tasks: [
 				{
-					count: 30L
-					id: "41214BCB6D1C5053"
+					count: 8L
+					id: "2F871A761DB400A3"
 					item: "kubejs:primitive_research"
 					type: "item"
 				}
 				{
-					count: 25L
-					id: "051B18B2E73AD001"
+					count: 6L
+					id: "319C4FC6997D98C3"
 					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 20L
-					id: "09BEAF1671AD7C7C"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 10L
-					id: "00CA6453A0DE29F0"
-					item: { Count: 2, id: "kubejs:natural_research" }
 					type: "item"
 				}
 				{
 					count: 5L
-					id: "41F68F82B64F1F3F"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-			]
-			title: "Biology II"
-			x: 13.5d
-			y: 12.0d
-		}
-		{
-			dependencies: ["53FCA7A7F39A2365"]
-			icon: "kubejs:cow_model_2"
-			icon_scale: 1.5d
-			id: "38572B698C2D7375"
-			rewards: [
-				{
-					auto: "no_toast"
-					command: "/say Hi, @p!"
-					elevate_perms: true
-					icon: "kubejs:cow_model_2"
-					id: "2241BFEAAC9E6F02"
-					silent: true
-					title: "Unlock Cow Model 2"
-					type: "command"
-				}
-				{
-					icon: "kubejs:sheep_model_2"
-					id: "74E6E9DA0D751929"
-					title: "Unlock Sheep Model 2"
-					type: "custom"
-				}
-				{
-					icon: "kubejs:chicken_model_2"
-					id: "76E9FCC65E3F29E0"
-					title: "Unlock Chicken Model 2"
-					type: "custom"
-				}
-				{
-					icon: "kubejs:rabbit_model_2"
-					id: "0CEE82AB27FA59E8"
-					title: "Unlock Rabbit Model 2"
-					type: "custom"
-				}
-				{
-					icon: "kubejs:pig_model_2"
-					id: "482BCCECEFF2DB74"
-					title: "Unlock Pig Model 2"
-					type: "custom"
-				}
-				{
-					icon: "kubejs:bee_model_2"
-					id: "069A1F284966C719"
-					title: "Unlock Bee Model 2"
-					type: "custom"
-				}
-				{
-					icon: "kubejs:snow_golem_model_2"
-					id: "32117F438FABFDB1"
-					title: "Unlock Snow Golem Model 2"
-					type: "custom"
-				}
-			]
-			shape: "square"
-			tasks: [
-				{
-					count: 36L
-					id: "50C42CF3F6FA31EB"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 30L
-					id: "103B6EFA1112AF33"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 24L
-					id: "4A540260E59DC277"
+					id: "176024BD86A28D82"
 					item: "kubejs:brass_research"
 					type: "item"
 				}
 				{
-					count: 12L
-					id: "321F9F081C1B2DDA"
+					count: 4L
+					id: "49A5C61FCB33C858"
 					item: { Count: 2, id: "kubejs:natural_research" }
 					type: "item"
 				}
-				{
-					count: 6L
-					id: "0233026A8F738066"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
 			]
-			title: "Farm Animals II"
-			x: 10.5d
-			y: 13.0d
+			title: "Interstellar Research"
+			x: 45.5d
+			y: 15.5d
 		}
 		{
-			dependencies: ["53FCA7A7F39A2365"]
-			icon: "kubejs:fish_model_2"
-			icon_scale: 1.5d
-			id: "42623CC6B69A0C1F"
-			rewards: [
-				{
-					auto: "invisible"
-					command: "/say Hi, @p!"
-					elevate_perms: true
-					icon: "kubejs:fish_model_2"
-					id: "7F080371A31EFA2B"
-					silent: true
-					title: "Unlock Fish Model 2"
-					type: "command"
-				}
-				{
-					icon: "kubejs:squid_model_2"
-					id: "16D6ECEE30CFBBB3"
-					title: "Unlock Squid Model 2"
-					type: "custom"
-				}
-				{
-					icon: "kubejs:axolotl_model_2"
-					id: "07CDB2D8DC51E944"
-					title: "Unlock Axolotl Model 2"
-					type: "custom"
-				}
-			]
-			shape: "square"
-			tasks: [
-				{
-					count: 36L
-					id: "1C6E013166B987B8"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 30L
-					id: "14BB9DDF9A66474E"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 24L
-					id: "489FDD94504A3A13"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "0F9F9725843BCCF3"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "26CC4F628C692A44"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-			]
-			title: "Aquatic Animals II"
-			x: 11.5d
-			y: 13.0d
-		}
-		{
-			dependencies: ["53FCA7A7F39A2365"]
-			icon: "kubejs:zombie_model_1"
-			icon_scale: 1.5d
-			id: "0AE61CD4E2EA9244"
-			shape: "square"
-			tasks: [
-				{
-					count: 36L
-					id: "7D4BEFF886E28455"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 30L
-					id: "6D3220C022DD9824"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 24L
-					id: "40D007730DE1768E"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "55E3E9D33CFFC73E"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "49DEC0B3EF231391"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-			]
-			title: "Overworld Hostility I"
-			x: 13.5d
-			y: 13.0d
-		}
-		{
-			dependencies: ["53FCA7A7F39A2365"]
-			icon: "kubejs:blaze_model_1"
-			icon_scale: 1.5d
-			id: "7CFD2531A0E8B443"
-			shape: "square"
-			tasks: [
-				{
-					count: 36L
-					id: "5E11B9846F664805"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 30L
-					id: "42F8C4081942DC96"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 24L
-					id: "2ABA57F03240B850"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "5E05482333BAD452"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "6ACB19D7F54A6A23"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-			]
-			title: "Nether Hostility I"
-			x: 15.5d
-			y: 13.0d
-		}
-		{
-			dependencies: ["53FCA7A7F39A2365"]
-			icon: "kubejs:enderman_model_1"
-			icon_scale: 1.5d
-			id: "573ACB6503202BDC"
-			shape: "square"
-			tasks: [
-				{
-					count: 36L
-					id: "41550198B378CB2F"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 30L
-					id: "5371672E8771EFAA"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 24L
-					id: "6B6A2415337CFE0D"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "530770FBDA3C541E"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "28E5621E8FE6D91B"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-			]
-			title: "Ender Hostility I"
-			x: 14.5d
-			y: 13.0d
-		}
-		{
-			dependencies: ["53FCA7A7F39A2365"]
-			icon: "kubejs:wheat_1"
-			icon_scale: 1.5d
-			id: "0E2292DBB05B35E3"
-			rewards: [
-				{
-					auto: "no_toast"
-					command: "/say Hi, @p!"
-					elevate_perms: true
-					icon: "kubejs:carrots_1"
-					id: "48F500C5A34470AB"
-					silent: true
-					title: "Unlock Carrots 1"
-					type: "command"
-				}
-				{
-					icon: "kubejs:wheat_1"
-					id: "10CF9F8B78D16DDE"
-					title: "Unlock Wheat 1"
-					type: "custom"
-				}
-				{
-					icon: "kubejs:potatoes_1"
-					id: "72CC5C685A853F81"
-					title: "Unlock Potatoes 1"
-					type: "custom"
-				}
-				{
-					icon: "kubejs:pumpkin_1"
-					id: "5019EDFC623583A2"
-					title: "Unlock Pumpkin 1"
-					type: "custom"
-				}
-				{
-					icon: "kubejs:kelp_1"
-					id: "66AFEE7066E57C31"
-					title: "Unlock Kelp 1"
-					type: "custom"
-				}
-				{
-					icon: "kubejs:moss_1"
-					id: "681E5EDEDCD3C4B8"
-					title: "Unlock Moss 1"
-					type: "custom"
-				}
-				{
-					icon: "kubejs:chorus_fruit_1"
-					id: "3D9D521F796B4764"
-					title: "Unlock Chorus Fruit 1"
-					type: "custom"
-				}
-				{
-					icon: "kubejs:glowberries_1"
-					id: "36335E7DF8ED8E69"
-					title: "Unlock Glowberries 1"
-					type: "custom"
-				}
-				{
-					icon: "kubejs:sourceberries_1"
-					id: "1F1E2F953BD70885"
-					title: "Unlock Sourceberries 1"
-					type: "custom"
-				}
-				{
-					icon: "kubejs:trees_1"
-					id: "775DEC900EE0A8C6"
-					title: "Unlock Trees 1"
-					type: "custom"
-				}
-				{
-					icon: "kubejs:mystical_flowers_1"
-					id: "1D5A5F138B5B6570"
-					title: "Unlock Mystical Flowers 1"
-					type: "custom"
-				}
-			]
-			shape: "square"
-			tasks: [
-				{
-					count: 36L
-					id: "716F21016B787FF6"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 30L
-					id: "69C23361BE55346D"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 24L
-					id: "6846857DE3C2B1EF"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "33CD8EF044CE2CD5"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "73845E311CF63CD2"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-			]
-			title: "Fauna II"
-			x: 12.5d
-			y: 13.0d
-		}
-		{
-			dependencies: [
-				"38572B698C2D7375"
-				"25EC4FCA697481B5"
-			]
+			dependencies: ["3DD56A853D117419"]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
 				tag: {
-					Icon: "kubejs:icons/sterilization"
+					Icon: "kubejs:icons/zinc_2"
 				}
 			}
 			icon_scale: 1.5d
-			id: "1C7773A48A4D33EE"
-			rewards: [
-				{
-					command: "/say Hi, @p!"
-					icon: "gtceu:meat_freezer"
-					id: "7B7BBFF33B983C07"
-					title: "Unlock The Meat Freezer"
-					type: "command"
-				}
-				{
-					icon: "gtceu:synthetic_neuron_ingot"
-					id: "272E20ABB0485EC9"
-					title: "Unlock Synthetic Neuron"
-					type: "custom"
-				}
-			]
+			id: "48DFADCB31556F79"
 			shape: "square"
 			tasks: [
-				{
-					count: 42L
-					id: "5F4C0EED06C8744C"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 35L
-					id: "64B84DE34036BC83"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 28L
-					id: "45C3642B761CE3E3"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
 				{
 					count: 16L
-					id: "7B7A39975903DCB1"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-				{
-					count: 7L
-					id: "7E8580C104F478D7"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-			]
-			title: "Sterilization"
-			x: 14.5d
-			y: 12.0d
-		}
-		{
-			dependencies: ["1C7773A48A4D33EE"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/sterile_research_1"
-				}
-			}
-			icon_scale: 1.5d
-			id: "5AE5E1A84131B2EB"
-			shape: "square"
-			tasks: [
-				{
-					count: 54L
-					id: "3BEB5E9E98C8E960"
+					id: "058CFE9F57F64A35"
 					item: "kubejs:primitive_research"
 					type: "item"
 				}
 				{
-					count: 45L
-					id: "599B976338608B62"
-					item: "kubejs:andesite_research"
+					count: 8L
+					id: "442A426B0C4D2596"
+					item: { Count: 3, id: "kubejs:andesite_research" }
 					type: "item"
 				}
 				{
-					count: 36L
-					id: "680440EDA5B81DC6"
+					count: 4L
+					id: "5F996CC63C5FC176"
 					item: "kubejs:brass_research"
 					type: "item"
 				}
-				{
-					count: 20L
-					id: "1DC4B1180D969B1E"
-					item: "kubejs:natural_research"
-					type: "item"
-				}
-				{
-					count: 9L
-					id: "611AE55B463BFF20"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
 			]
-			title: "Sterile Research"
-			x: 16.5d
-			y: 12.0d
+			title: "Zinc II"
+			x: 6.0d
+			y: 16.5d
 		}
 		{
-			dependencies: [
-				"2DCF8B5235A3679A"
-				"7331575EB9A94099"
-			]
+			description: ["{image:kubejs:icons/natures_alloy_3_page width:176 height:105 align:center}"]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
 				tag: {
-					Icon: "kubejs:icons/large_machinery_2"
+					Icon: "kubejs:icons/copper_2"
 				}
 			}
 			icon_scale: 1.5d
-			id: "4A09681BAB024059"
-			rewards: [
-				{
-					auto: "no_toast"
-					command: "/say Hi, @p!"
-					elevate_perms: true
-					icon: "gtceu:mega_press"
-					id: "3B68BC8B3B3D3DD1"
-					silent: true
-					title: "Unlock Mega Press"
-					type: "command"
-				}
-				{
-					icon: "gtceu:mega_mixer"
-					id: "46649D3DC62C53EA"
-					title: "Unlock Mega Mixer"
-					type: "custom"
-				}
-				{
-					icon: "kubejs:mega_lv_machine_casing"
-					id: "5F533876D9EFD4CC"
-					title: "Unlock Mega LV Machine Casing"
-					type: "custom"
-				}
-			]
-			shape: "square"
-			tasks: [
-				{
-					count: 200L
-					id: "242EE29CFC054094"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 160L
-					id: "6A960FBBEFBB294B"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 120L
-					id: "2882DB3C1FC08255"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 80L
-					id: "6429748362048175"
-					item: "kubejs:natural_research"
-					type: "item"
-				}
-				{
-					count: 40L
-					id: "4F026E8FBC313F6F"
-					item: { Count: 40, id: "kubejs:magical_research" }
-					type: "item"
-				}
-			]
-			title: "Large Machinery II"
-			x: 12.5d
-			y: 12.0d
-		}
-		{
-			dependencies: [
-				"4E29F8222B992AB5"
-				"2E1348862E7C7D4A"
-				"4A09681BAB024059"
-			]
-			description: ["{image:kubejs:icons/natures_alloy_2_page width:176 height:105 align:center}"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/natures_alloy_2"
-				}
-			}
-			icon_scale: 1.5d
-			id: "391CCD76057F848E"
-			rewards: [{
-				icon: "gtceu:natures_alloy_ingot"
-				id: "00C15CDBE118477E"
-				title: "Unlock Natures Alloy II"
-				type: "custom"
-			}]
+			id: "6468AAAED87CCC8D"
 			shape: "square"
 			tasks: [{
 				icon: {
@@ -7469,530 +6726,118 @@
 						Icon: "kubejs:icons/andesite_alloy_3"
 					}
 				}
-				id: "4F34A71A75F08279"
+				id: "14D70AF5CE5F7CE4"
 				title: "Andesite Alloy III"
 				type: "custom"
 			}]
-			title: "Natures Alloy II"
-			x: 14.5d
-			y: 11.0d
+			title: "Copper II"
+			x: 5.0d
+			y: 16.5d
 		}
 		{
-			dependencies: ["214B22FFAB3FFF25"]
-			description: ["{image:kubejs:icons/advanced_smelting_3 width:167 height:111 align:center}"]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
 				tag: {
-					Icon: "kubejs:icons/high_temperature_smelting_3"
+					Icon: "kubejs:icons/iron_2"
 				}
 			}
 			icon_scale: 1.5d
-			id: "7A18E30D3E2C9C26"
-			rewards: [{
-				auto: "no_toast"
-				command: "/say Hi, @p!"
-				elevate_perms: true
-				icon: "gtceu:kanthal_coil_block"
-				id: "76941714CE4792B2"
-				silent: true
-				title: "Unlock Elementium Coil"
-				type: "command"
+			id: "788EF4C7DD8C8B96"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "27E283EC0DBE95C6"
+				title: "Andesite Alloy III"
+				type: "custom"
 			}]
+			title: "Iron II"
+			x: 4.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["1EE592CCEBDD19F4"]
+			icon_scale: 1.5d
+			id: "02181021D586E7B9"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "7C25BDE20B802156"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			x: 8.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["78513CFE449AA3E6"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/coal_processing_3"
+				}
+			}
+			icon_scale: 1.5d
+			id: "37FF2848E83A3F77"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "200B1FA9A4A12EDD"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Coal III"
+			x: 7.0d
+			y: 17.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/amethyst_processing_3"
+				}
+			}
+			icon_scale: 1.5d
+			id: "3864243923091548"
 			shape: "square"
 			tasks: [
-				{
-					count: 12L
-					id: "24D4A8A330817F36"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
 				{
 					count: 10L
-					id: "7DC0723538A6EA2D"
-					item: "kubejs:andesite_research"
+					id: "13C01CBCE0D3AB53"
+					item: { Count: 6, id: "kubejs:primitive_research" }
 					type: "item"
 				}
 				{
-					count: 8L
-					id: "12E4F67B294AD583"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "2BEBD9A54891156D"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "0F34CC646CD79133"
-					item: "kubejs:magical_research"
+					count: 5L
+					id: "420E2EA7D2877B79"
+					item: { Count: 3, id: "kubejs:andesite_research" }
 					type: "item"
 				}
 			]
-			title: "Advanced Smelting III"
-			x: 11.5d
-			y: 12.0d
-		}
-		{
-			dependencies: ["0E1C90A30A11F409"]
-			description: ["{image:kubejs:icons/advanced_electronics_2_page width:172 height:107 align:center}"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/advanced_electronics_2"
-				}
-			}
-			icon_scale: 1.5d
-			id: "3356C66F76C8D84E"
-			rewards: [{
-				auto: "no_toast"
-				command: "/say Hi, @p!"
-				elevate_perms: true
-				icon: "gtceu:good_integrated_circuit"
-				id: "0D33D9DDE05180BD"
-				silent: true
-				title: "Unlock Good Integrated Circuit"
-				type: "command"
-			}]
-			shape: "square"
-			tasks: [
-				{
-					count: 18L
-					id: "4F6E0CBC1CB03602"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 15L
-					id: "18C479FBA9D9A0FA"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "1AD59523B91B49B4"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "3D37CC7478D9C121"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "7D9D69DADCE6B1D4"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-			]
-			title: "Advanced Electronics II"
-			x: 11.5d
-			y: 11.0d
-		}
-		{
-			dependencies: [
-				"3356C66F76C8D84E"
-				"25EC4FCA697481B5"
-			]
-			description: ["{image:kubejs:icons/advanced_electronics_3_page width:172 height:107 align:center}"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/advanced_electronics_3"
-				}
-			}
-			icon_scale: 1.5d
-			id: "7331575EB9A94099"
-			rewards: [{
-				auto: "no_toast"
-				command: "/say Hi, @p!"
-				elevate_perms: true
-				icon: "gtceu:good_integrated_circuit"
-				id: "1A57BE814CAA62A4"
-				silent: true
-				title: "Unlock Advanced Integrated Circuit"
-				type: "command"
-			}]
-			shape: "square"
-			tasks: [
-				{
-					count: 24L
-					id: "7FE9B3E8DB31275B"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 20L
-					id: "3D7220052DC6A8B1"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "2448A6B11FE19510"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "0B7A8B42789EBA57"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "6FA6A252F93A7979"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-			]
-			title: "Advanced Electronics III"
-			x: 12.5d
-			y: 11.0d
-		}
-		{
-			dependencies: ["1C7773A48A4D33EE"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/sterile_bio_alloy_1"
-				}
-			}
-			icon_scale: 1.5d
-			id: "1D0152697B9E8ADC"
-			shape: "square"
-			tasks: [
-				{
-					count: 48L
-					id: "66F5810E96D5F953"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 40L
-					id: "1E0D6FF5728BDC2A"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 32L
-					id: "33EC2EE66098CE98"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 18L
-					id: "0FF269FA592805D9"
-					item: "kubejs:natural_research"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "77ADD48BC403935E"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-			]
-			title: "Sterile Bio Alloy I"
-			x: 16.5d
-			y: 13.0d
-		}
-		{
-			dependencies: ["7A18E30D3E2C9C26"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/awakened_echo_1"
-				}
-			}
-			icon_scale: 1.5d
-			id: "25EC4FCA697481B5"
-			rewards: [{
-				command: "/say Hi, @p!"
-				icon: "gtceu:awakened_echo_ingot"
-				id: "27D1279D28856F6F"
-				title: "Unlock Awakened Echo"
-				type: "command"
-			}]
-			shape: "square"
-			tasks: [
-				{
-					count: 18L
-					id: "66A5C5F06C1C7268"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 15L
-					id: "3452F088D5809E3D"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "61DC9C028094ED73"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "2AD8BE9C74FB0B11"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "4BB51C281EB80965"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-			]
-			title: "Awakened Echo I"
-			x: 13.5d
-			y: 11.0d
-		}
-		{
-			icon: "gtceu:sterile_bio_alloy_ingot"
-			id: "493F12BE5AB65B40"
-			rewards: [
-				{
-					command: "/say Hi, @p!"
-					icon: "farmersdelight:fruit_salad"
-					id: "0EE749E6983E9D74"
-					title: "Unlock Fruit Salad"
-					type: "command"
-				}
-				{
-					icon: "farmersdelight:vegetable_soup"
-					id: "440710BB734A0089"
-					title: "Unlock Vegetable Soup"
-					type: "custom"
-				}
-			]
-			shape: "square"
-			tasks: [
-				{
-					count: 42L
-					id: "5086A781A1663D3E"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 35L
-					id: "2297EEFC3A42CF94"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 28L
-					id: "58596C54EB011903"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "56646C083FD44138"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-				{
-					count: 7L
-					id: "13EB70C71DB82F0B"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-			]
-			title: "Cooking II"
-			x: 16.5d
-			y: 11.0d
-		}
-		{
-			dependencies: ["7331575EB9A94099"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/farming_machines"
-				}
-			}
-			icon_scale: 1.5d
-			id: "258E933399B50B74"
-			rewards: [
-				{
-					command: "/say Hi, @p!"
-					icon: "gtceu:resource_combinator"
-					id: "22ACCD084391FFCF"
-					title: "Unlock Resource Combinator"
-					type: "command"
-				}
-				{
-					icon: "gtceu:temperate_garden"
-					id: "11CEAE7CDA1BEB1E"
-					title: "Unlock Temperate Garden"
-					type: "custom"
-				}
-				{
-					icon: "gtceu:hydroponic_garden"
-					id: "50E326D24BEE103E"
-					title: "Unlock Hydroponic Garden"
-					type: "custom"
-				}
-			]
-			shape: "square"
-			tasks: [
-				{
-					count: 36L
-					id: "79EA678F08BFDCCD"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 30L
-					id: "04FBB9B9191A3789"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 24L
-					id: "074B6730D51D2476"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "6AC448711D192482"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "19A2766F34434996"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-			]
-			title: "Farming Machines"
-			x: 15.5d
-			y: 12.0d
-		}
-		{
-			dependencies: ["7331575EB9A94099"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/reproduction"
-				}
-			}
-			icon_scale: 1.5d
-			id: "6583A57EFA89AEB9"
-			rewards: [{
-				auto: "no_toast"
-				command: "/say Hi, @p!"
-				elevate_perms: true
-				icon: "gtceu:breeding_chamber"
-				id: "4E2333F161212E15"
-				silent: true
-				title: "Unlock Breeding Chamber"
-				type: "command"
-			}]
-			shape: "square"
-			tasks: [
-				{
-					count: 36L
-					id: "7BC545C799CF7FE3"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 30L
-					id: "569D61CE22C14623"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 24L
-					id: "70EDAA1D07560399"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "4C7F61A22424EB0A"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "525F40A1530BD5A1"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-			]
-			title: "Reproduction"
-			x: 15.5d
-			y: 11.0d
-		}
-		{
-			description: ["{image:kubejs:icons/advanced_smelting_3 width:167 height:111 align:center}"]
-			icon: "gtceu:mv_steam_turbine"
-			icon_scale: 1.5d
-			id: "28A011C6A24214B8"
-			rewards: [{
-				auto: "no_toast"
-				command: "/say Hi, @p!"
-				elevate_perms: true
-				icon: "gtceu:mv_steam_turbine"
-				id: "0877E40BE508CD0A"
-				silent: true
-				title: "Unlock Advanced Steam Turbine Generator"
-				type: "command"
-			}]
-			shape: "square"
-			tasks: [
-				{
-					count: 12L
-					id: "25B59F2B278A7330"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 10L
-					id: "5D7D8156E0D2E162"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "3847533CF09FF87F"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "3D995A09A001751D"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "00AF42534B683E5A"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-			]
-			title: "Steam Power II"
-			x: 9.5d
-			y: 12.0d
+			title: "Amethyst III"
+			x: 3.0d
+			y: 17.5d
 		}
 	]
 	title: "fake full progression chapter for my brain"

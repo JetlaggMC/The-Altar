@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "ii__all_natural"
 	group: ""
-	hide_quest_until_deps_complete: true
+	hide_quest_until_deps_visible: true
 	icon: "kubejs:natural_star"
 	id: "1E081181A45A012C"
 	images: [{
@@ -23,6 +23,11 @@
 				"2E1348862E7C7D4A"
 			]
 			id: "2AA3D0955FB6D9BA"
+			rewards: [{
+				id: "268B499F20F0BBA9"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "15D298C349DCFB02"
@@ -38,6 +43,11 @@
 				"2E1348862E7C7D4A"
 			]
 			id: "5FBA3FCA1E0D8C61"
+			rewards: [{
+				id: "0EFE2B25019FAA21"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "1BEC7A1D0BB10DE5"
@@ -53,6 +63,11 @@
 				"2E1348862E7C7D4A"
 			]
 			id: "17309E9A72D0E7B3"
+			rewards: [{
+				id: "28EB72A04631DE25"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "226E380C168DC36C"
@@ -68,6 +83,11 @@
 				"2E1348862E7C7D4A"
 			]
 			id: "6A8C0584FEBABFA2"
+			rewards: [{
+				id: "4C03A6C41E032B70"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "47F8C35108563717"
@@ -83,6 +103,11 @@
 				"2E1348862E7C7D4A"
 			]
 			id: "4F3D7CCBAADE084C"
+			rewards: [{
+				id: "1D9EE00660052693"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "5B72EF32D87D8D9A"
@@ -98,6 +123,11 @@
 				"2E1348862E7C7D4A"
 			]
 			id: "17EBCC720077E7AB"
+			rewards: [{
+				id: "1414AB311222408F"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "4D18622ADA0797D9"
@@ -113,6 +143,11 @@
 				"2E1348862E7C7D4A"
 			]
 			id: "6F426ECBC3264C97"
+			rewards: [{
+				id: "144F764411F8DFE6"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "1EBEEA49EF2A18B9"
@@ -135,6 +170,11 @@
 				"2E1348862E7C7D4A"
 			]
 			id: "29205A2A38E6964F"
+			rewards: [{
+				id: "146937BF6240CCEB"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "2629B0A1B08ACFFF"
@@ -150,6 +190,11 @@
 				"2E1348862E7C7D4A"
 			]
 			id: "3809BDE5709AC22C"
+			rewards: [{
+				id: "729D07AF85BCAAD2"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "48CD7A78C2F552CA"
@@ -165,6 +210,11 @@
 				"2E1348862E7C7D4A"
 			]
 			id: "694B928832BA5D4F"
+			rewards: [{
+				id: "32D84883B718560F"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "2AF7B77FC62EDA87"
@@ -180,6 +230,11 @@
 				"2E1348862E7C7D4A"
 			]
 			id: "0C97899C883282D3"
+			rewards: [{
+				id: "6C8FEBF13461391A"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "3FA63A8DFF92075D"
@@ -196,6 +251,11 @@
 			]
 			hide_until_deps_complete: true
 			id: "682CC3F306100735"
+			rewards: [{
+				id: "3090EB2EFD18D26A"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "656D3B1CC6013159"
@@ -211,6 +271,11 @@
 				"2E1348862E7C7D4A"
 			]
 			id: "356A25C860147670"
+			rewards: [{
+				id: "1CEDDA49D8B500E5"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "2A3BFFD3F89035BE"
@@ -226,6 +291,11 @@
 				"2E1348862E7C7D4A"
 			]
 			id: "1029D262A9A888F1"
+			rewards: [{
+				id: "4ACDDD5046901C50"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "3AF9D2D94CCB8088"
@@ -241,6 +311,11 @@
 				"2E1348862E7C7D4A"
 			]
 			id: "173C54E0EFF637AB"
+			rewards: [{
+				id: "36CDF17D53F1254F"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "5621639A94341D8F"
@@ -256,6 +331,11 @@
 				"2E1348862E7C7D4A"
 			]
 			id: "01546FCFAAA6497D"
+			rewards: [{
+				id: "0B58B9CC917E659F"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "21C890B05AE0E317"
@@ -271,6 +351,11 @@
 				"2E1348862E7C7D4A"
 			]
 			id: "7A04468403235DC1"
+			rewards: [{
+				id: "7737046120F2B0D4"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "12948B0A20E854A7"
@@ -299,6 +384,11 @@
 				"501855B25D61A2C9"
 			]
 			id: "38B6117F642F1DC1"
+			rewards: [{
+				id: "34074BB300354823"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "67069E4FE6E3E451"
@@ -316,6 +406,11 @@
 			]
 			hide_dependent_lines: true
 			id: "1AD8A4D87418047C"
+			rewards: [{
+				id: "50D9D2963A515D40"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "6307FFC4AA992495"
@@ -331,6 +426,11 @@
 				"6116C62DCE177E8C"
 			]
 			id: "675CA22CDC42414F"
+			rewards: [{
+				id: "23CB231511A3E9E1"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "1DDC455A4353126B"
@@ -566,6 +666,11 @@
 				"6116C62DCE177E8C"
 			]
 			id: "588B011D340B0700"
+			rewards: [{
+				id: "67432317ED2C53A9"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "62E1A1390A47691D"
@@ -631,6 +736,11 @@
 				"6116C62DCE177E8C"
 			]
 			id: "778B231AD068639C"
+			rewards: [{
+				id: "43F62B3D8190DFBE"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "1322FBDA8911261A"
@@ -696,6 +806,11 @@
 			hide_until_deps_complete: false
 			hide_until_deps_visible: true
 			id: "1CEF6A5EEC67CE55"
+			rewards: [{
+				id: "061E4C956B1B3FC4"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			size: 2.0d
 			tasks: [{

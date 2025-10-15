@@ -3,7 +3,6 @@
 	default_quest_shape: ""
 	filename: "i__creatitivity"
 	group: ""
-	hide_quest_until_deps_complete: true
 	hide_quest_until_deps_visible: true
 	icon: "kubejs:creative_star"
 	id: "3D5F717908F64A39"
@@ -22,8 +21,14 @@
 			dependencies: [
 				"1EE592CCEBDD19F4"
 				"64C430FA96654DDE"
+				"7E13B0A94C01328E"
 			]
 			id: "198D06EA799DC550"
+			rewards: [{
+				id: "58621C4F39C989B7"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			size: 2.0d
 			tasks: [{
@@ -52,6 +57,11 @@
 				}
 			}
 			id: "275B875F1165AD08"
+			rewards: [{
+				id: "311E101300EC1FE6"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [
 				{
@@ -196,6 +206,11 @@
 				}
 			}
 			id: "1D4D4FFD665C42C2"
+			rewards: [{
+				id: "582D44A8F31A6BD8"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [
 				{
@@ -284,6 +299,11 @@
 			]
 			icon: "gtceu:coke_oven"
 			id: "5FD6BEFC70CC297A"
+			rewards: [{
+				id: "5281EDC5B17FE385"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [
 				{
@@ -304,6 +324,11 @@
 		{
 			dependencies: ["5FD6BEFC70CC297A"]
 			id: "4CF57BD5C7E17D6D"
+			rewards: [{
+				id: "271BA0F3C7464E54"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "733829B2565699B0"
@@ -316,6 +341,11 @@
 		{
 			dependencies: ["4CF57BD5C7E17D6D"]
 			id: "3AD198CE2A2785B9"
+			rewards: [{
+				id: "3886BC5750C65BD3"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "1636582BE3AA3FA9"
@@ -332,11 +362,18 @@
 			]
 			hide_until_deps_visible: false
 			id: "3D622E7ABF912E2E"
-			rewards: [{
-				id: "597522FAE4A02418"
-				item: "create:wrench"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "597522FAE4A02418"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					id: "30900108E9153871"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			shape: "diamond"
 			tasks: [{
 				id: "2F985DC574688FA8"
@@ -353,6 +390,11 @@
 			]
 			description: ["Allows for 1:1 plate making!"]
 			id: "45587882DD96192C"
+			rewards: [{
+				id: "700E5A8FE33F51E2"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "25A1C034C45F41A3"
@@ -365,6 +407,11 @@
 		{
 			dependencies: ["45587882DD96192C"]
 			id: "11EEEC8EC4EFBC99"
+			rewards: [{
+				id: "1948BB4E8900D4A2"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "3F41A6233B0AAB34"
@@ -377,6 +424,11 @@
 		{
 			dependencies: ["11EEEC8EC4EFBC99"]
 			id: "477575BE4F0DC583"
+			rewards: [{
+				id: "2B6C295ADC1F15DB"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "2797877786BBBDBB"
@@ -389,6 +441,11 @@
 		{
 			dependencies: ["1931A5627B5D3E6E"]
 			id: "05E6730095A0C5C5"
+			rewards: [{
+				id: "2AD63BCD89CA245B"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				dimension: "minecraft:the_nether"
@@ -405,6 +462,11 @@
 				"34F8DFF6DDBAEC63"
 			]
 			id: "78CE7FD6C48CB18F"
+			rewards: [{
+				id: "398990D4D2A88ED8"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "213C4766242762C8"
@@ -417,6 +479,11 @@
 		{
 			dependencies: ["30BB0E5F34F229E1"]
 			id: "1931A5627B5D3E6E"
+			rewards: [{
+				id: "2638A2612C475106"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "5896955487968394"
@@ -429,6 +496,11 @@
 		{
 			dependencies: ["1D4D4FFD665C42C2"]
 			id: "30BB0E5F34F229E1"
+			rewards: [{
+				id: "4002A9E427EBBDEA"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "0ED4229A8B2A5EBC"
@@ -453,6 +525,11 @@
 			description: ["Used to melt down metals into fluid form"]
 			icon: "mbd2:kinetic_foundry"
 			id: "632A62D558C6F37E"
+			rewards: [{
+				id: "0AF8BF1E2FDD21DF"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [
 				{
@@ -501,12 +578,14 @@
 				"632A62D558C6F37E"
 				"0E5120F857255B90"
 			]
-			description: [
-				"Used to cast liquids into solid form."
-				"{image: width:100 height:100 align:center}"
-			]
+			description: ["Used to cast liquids into solid form."]
 			icon: "mbd2:casting_tower"
 			id: "7468FC23297E765B"
+			rewards: [{
+				id: "768DD90E590C9EB8"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [
 				{
@@ -564,6 +643,11 @@
 			dependencies: ["477575BE4F0DC583"]
 			icon: "create:mechanical_mixer"
 			id: "256358FD632BE3DE"
+			rewards: [{
+				id: "7E0A0505A7FB150A"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [
 				{
@@ -588,6 +672,11 @@
 			description: ["1 iron ingot -> 9 andesite alloy"]
 			icon: "create:andesite_alloy"
 			id: "10488FB6581A666D"
+			rewards: [{
+				id: "06ECDDBB78AFD104"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [
 				{
@@ -618,6 +707,11 @@
 		{
 			dependencies: ["7468FC23297E765B"]
 			id: "04C58079B7470336"
+			rewards: [{
+				id: "415D77B6F6F249D3"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "6447F746A2993211"
@@ -633,6 +727,11 @@
 				"174126B645CF359B"
 			]
 			id: "294A034B0F6698FF"
+			rewards: [{
+				id: "31FE2DDF59FF63B5"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "3AF92FDF7B91D801"
@@ -648,6 +747,11 @@
 				"09E0DB945F8CF866"
 			]
 			id: "0BC2D4ACF6D90A46"
+			rewards: [{
+				id: "27ACE128496000AA"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "3D80666CDEEE38C6"
@@ -658,11 +762,13 @@
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"7468FC23297E765B"
-				"0DA754C0C31982D8"
-			]
+			dependencies: ["7468FC23297E765B"]
 			id: "09E0DB945F8CF866"
+			rewards: [{
+				id: "08616A155F438FE2"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "4157A7E712D9FED6"
@@ -678,6 +784,11 @@
 				"294A034B0F6698FF"
 			]
 			id: "4260CFE179EBE367"
+			rewards: [{
+				id: "54C9FA7E7103D4DC"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "3BCF55D14892151F"
@@ -688,11 +799,13 @@
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"04C58079B7470336"
-				"0DA754C0C31982D8"
-			]
+			dependencies: ["04C58079B7470336"]
 			id: "41FAFDEC686F1D80"
+			rewards: [{
+				id: "1538A7AF8F610DBE"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "01F225936587E889"
@@ -709,6 +822,11 @@
 				"14C692C911E1B2B7"
 			]
 			id: "1C95286A6C6B49AA"
+			rewards: [{
+				id: "5166E39FE88B2F8C"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			shape: "diamond"
 			size: 2.0d
 			tasks: [{
@@ -726,6 +844,11 @@
 				"22C6A0D434951EA7"
 			]
 			id: "2986C18126186298"
+			rewards: [{
+				id: "2C0E3FFD6B29B085"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "5BA99436C6C19E1C"
@@ -742,6 +865,11 @@
 			]
 			icon: "gtceu:primitive_blast_furnace"
 			id: "2EC4DCFDCAE8527B"
+			rewards: [{
+				id: "589A592E162E9ACA"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [
 				{
@@ -762,6 +890,11 @@
 		{
 			dependencies: ["5FD6BEFC70CC297A"]
 			id: "36E36A264439EE73"
+			rewards: [{
+				id: "7B1721F6A6EFF480"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "2C37D0A270967488"
@@ -774,6 +907,11 @@
 		{
 			dependencies: ["0BC2D4ACF6D90A46"]
 			id: "31009874062A2C1D"
+			rewards: [{
+				id: "38AD750B960D47E2"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "425F9B8F51B7FFB5"
@@ -790,6 +928,11 @@
 				"00ED5B81E223A318"
 			]
 			id: "60B83DD731DECF58"
+			rewards: [{
+				id: "311CEEDAA756EA59"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "372C2B7CD4D5E45D"
@@ -802,6 +945,11 @@
 		{
 			dependencies: ["60B83DD731DECF58"]
 			id: "240B4B445DD3C59C"
+			rewards: [{
+				id: "75B30FF39A1D4481"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "3F136630B5A83483"
@@ -814,6 +962,11 @@
 		{
 			dependencies: ["60B83DD731DECF58"]
 			id: "7BD9852E6EC580DE"
+			rewards: [{
+				id: "608DE69D9515E577"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "524EA4FE38B4E423"
@@ -829,6 +982,11 @@
 				"78CE7FD6C48CB18F"
 			]
 			id: "127462DD1590CFAA"
+			rewards: [{
+				id: "0FC8CFBE5B12F171"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "4DF0A9F5AECDEAAC"
@@ -844,6 +1002,11 @@
 				"533AA53A4CF175BA"
 			]
 			id: "06A2805723D9C27F"
+			rewards: [{
+				id: "5DC767E2973D1969"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "4EDF73DBC1B2CA68"
@@ -860,6 +1023,11 @@
 			]
 			description: ["Use mechanical pumps connected to rotational power to move your fluids through pipes!"]
 			id: "58F47BE825CFCCA6"
+			rewards: [{
+				id: "479B5F2B81AB645E"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "0BC7DEB3DA0A9811"
@@ -875,6 +1043,11 @@
 				"533AA53A4CF175BA"
 			]
 			id: "5403B1E29129A8B2"
+			rewards: [{
+				id: "697D624FA5DD6EF1"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "079BB57E6AB1ABDD"
@@ -891,6 +1064,11 @@
 			]
 			description: ["Use tanks to store your fluids!"]
 			id: "7380F02CC413E392"
+			rewards: [{
+				id: "7FB805028AFF20F0"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "2C16AF7400B6DA6C"
@@ -903,6 +1081,11 @@
 		{
 			dependencies: ["60B83DD731DECF58"]
 			id: "14C692C911E1B2B7"
+			rewards: [{
+				id: "35AB81907928DEC6"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "4F33B33F22A7FC00"
@@ -919,6 +1102,11 @@
 				"6EB7ED7883C25877"
 			]
 			id: "22C6A0D434951EA7"
+			rewards: [{
+				id: "41A8DE266CF6D257"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "2F77ACFC588BD0B2"
@@ -932,6 +1120,11 @@
 			dependencies: ["256358FD632BE3DE"]
 			hide_dependency_lines: true
 			id: "6EB7ED7883C25877"
+			rewards: [{
+				id: "53121C6C754E4E28"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "02687ED8A53F9965"
@@ -948,6 +1141,11 @@
 			]
 			hide_dependency_lines: true
 			id: "332845EB43340DF4"
+			rewards: [{
+				id: "68B967B3F221C136"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "447B99EE1BE0D9F6"
@@ -960,7 +1158,13 @@
 		{
 			dependencies: ["05E6730095A0C5C5"]
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "1B3FF6FCAD5398B3"
+			rewards: [{
+				id: "31FBABD5DCDB0CFA"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "3CB4559817A2C9A9"
@@ -974,6 +1178,11 @@
 			dependencies: ["7A04468403235DC1"]
 			hide_dependency_lines: true
 			id: "7B86B6F4DA9EAD0E"
+			rewards: [{
+				id: "1E7642218A5C4393"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "2B2D11D5C292CC0D"
@@ -986,6 +1195,11 @@
 		{
 			dependencies: ["7B86B6F4DA9EAD0E"]
 			id: "4F37A58187A4211B"
+			rewards: [{
+				id: "0CD44E062A929C3E"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "3B763E5F91723113"
@@ -1004,6 +1218,11 @@
 			]
 			hide_dependency_lines: true
 			id: "1DA1ACD5D8972CB9"
+			rewards: [{
+				id: "7DA4D974214022C8"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "66F4F49B9257406D"
@@ -1016,6 +1235,11 @@
 		{
 			dependencies: ["072FA5DBAB44ADFB"]
 			id: "691E4266326D73D0"
+			rewards: [{
+				id: "5FCDB2FFB812B95E"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "75C3600FD3D49926"
@@ -1028,6 +1252,11 @@
 		{
 			dependencies: ["78CE7FD6C48CB18F"]
 			id: "072FA5DBAB44ADFB"
+			rewards: [{
+				id: "5D49C7637441F7C9"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				count: 64L
@@ -1044,6 +1273,11 @@
 				"62E4B4414CE3725E"
 			]
 			id: "5BBC05724262FC25"
+			rewards: [{
+				id: "123739DFB8A010C8"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "58DEF9EB0D45A760"
@@ -1057,6 +1291,11 @@
 			dependencies: ["532A4F710807A930"]
 			icon: "minecraft:glass"
 			id: "18177A01E335621A"
+			rewards: [{
+				id: "73A633A5D4A1B11A"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [
 				{
@@ -1092,6 +1331,11 @@
 		{
 			dependencies: ["477575BE4F0DC583"]
 			id: "532A4F710807A930"
+			rewards: [{
+				id: "581FBEC2C68F45CF"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "241121CB2332DC00"
@@ -1107,6 +1351,11 @@
 				"66EA672AC1B0E3C1"
 			]
 			id: "4A14915E4E192E78"
+			rewards: [{
+				id: "7C7F095EBCB8B81F"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "2E2E5272EDF09D96"
@@ -1124,6 +1373,11 @@
 			description: ["1 amethyst ore -> 2 amethyst shard"]
 			icon: "minecraft:amethyst_shard"
 			id: "0395EF2A542C1A32"
+			rewards: [{
+				id: "6531B04B1EC1C553"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [
 				{
@@ -1148,8 +1402,16 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["256358FD632BE3DE"]
+			dependencies: [
+				"256358FD632BE3DE"
+				"0219A089794A18CD"
+			]
 			id: "62B302897DD8D029"
+			rewards: [{
+				id: "1CF14CE3AF50610D"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "7233D0FF7DD543C5"
@@ -1162,6 +1424,11 @@
 		{
 			dependencies: ["4260CFE179EBE367"]
 			id: "6CBB1C7254AF624D"
+			rewards: [{
+				id: "3E3CC46CE1578D1A"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "60B23A0CAD964B95"
@@ -1179,6 +1446,11 @@
 				"61C2C89FE356D037"
 			]
 			id: "3148B2F54204E01A"
+			rewards: [{
+				id: "67BC1C00CD36AC2A"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				count: 4L
@@ -1195,7 +1467,13 @@
 				"14C692C911E1B2B7"
 				"00ED5B81E223A318"
 			]
+			hide_until_deps_visible: true
 			id: "312C1CB439CF0C7B"
+			rewards: [{
+				id: "11EB7FB671070116"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "04CB940240E33C80"
@@ -1211,6 +1489,11 @@
 				"6A9EE1C6F81ACAC2"
 			]
 			id: "313BD20093744B40"
+			rewards: [{
+				id: "71818F3E1288E24D"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "6D2CD40EF2B338AA"
@@ -1257,6 +1540,17 @@
 			y: -1.5d
 		}
 		{
+			description: [
+				"Welcome to The Altar!"
+				""
+				"The goal of this pack is to progress through different mods, to unlock the 9 stars needed to complete the altar, and discover the secrets of this world. From the start, progression is fully customized with plenty of custom items, recipes, and retexturing of the original mods!"
+				""
+				"THIS PACK IS IN BETA"
+				"there are a lot of things unfinished or maybe broken!"
+				"some things may change in the future too of course!"
+				"feel free to find the discord to give feedback!"
+				"most importantly have fun!"
+			]
 			id: "64C430FA96654DDE"
 			rewards: [{
 				id: "650CAB00A70753DC"
@@ -1273,8 +1567,46 @@
 				id: "11E0477BE0D15862"
 				type: "checkmark"
 			}]
+			title: "Welcome!"
 			x: 0.0d
 			y: -5.5d
+		}
+		{
+			description: ["Quests in this pack are unlocked by completing researches found in the Tech Tree chapter in the quest book, submit the required research packs, and claim the quest reward to unlock both the items and the quests in other chapters."]
+			id: "7E13B0A94C01328E"
+			tasks: [{
+				id: "4B10202D04A095D5"
+				type: "checkmark"
+			}]
+			title: "IMPORTANT!"
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["294A034B0F6698FF"]
+			description: [
+				"Ingot -> 2 rods"
+				"rod -> 2 bolts"
+			]
+			id: "07801643EF41226E"
+			tasks: [{
+				id: "5CEBA5EAD4F7BA72"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["22C6A0D434951EA7"]
+			id: "1694DB6CE018E84A"
+			tasks: [{
+				id: "391FA8BEE19DBE74"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.5d
 		}
 	]
 	title: "I - Getting Creative"

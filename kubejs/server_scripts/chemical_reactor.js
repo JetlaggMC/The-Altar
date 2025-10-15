@@ -87,4 +87,15 @@ ServerEvents.recipes(event => {
 		.itemOutputs(Item.of('1x kubejs:magical_research'))
 		.duration(1000)
 		.EUt(32)
+
+	  event.recipes.gtceu.chemical_reactor('sterile_research')
+		.itemInputs(Item.of('1x kubejs:sterile_meat_glob'))
+		.itemInputs(Item.of('1x kubejs:sterile_plant_glob'))
+		.inputFluids(Fluid.of('gtceu:sterile_bio_alloy', 144))
+		.inputFluids(Fluid.of('gtceu:ammonia', 144))
+		.inputFluids(Fluid.of('kubejs:dense_insulator', 288))
+
+		.itemOutputs(Item.of('1x kubejs:sterile_research'))
+		.duration(1500)
+		.EUt(32)
 })

@@ -45,7 +45,12 @@ JEIEvents.hideItems(event => {
   event.hide('create:brass_ingot' )
   event.hide('create:brass_nugget' )
   event.hide('create:brass_sheet' )
-
+  event.hide('gtceu:bronze_crate' )
+  event.hide('gtceu:steel_crate' )
+  event.hide('gtceu:aluminium_crate' )
+  event.hide('gtceu:bronze_drum' )
+  event.hide('gtceu:steel_drum' )
+  event.hide('gtceu:aluminium_drum' )
 })
 
 ClientEvents.lang('en_us', event => {

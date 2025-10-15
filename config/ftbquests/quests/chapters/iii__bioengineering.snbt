@@ -1,9 +1,9 @@
 {
-	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "iii__bioengineering"
 	group: ""
+	hide_quest_until_deps_visible: true
 	icon: "kubejs:bio_star"
 	id: "5A81F3E815C6CDDF"
 	images: [{
@@ -72,7 +72,7 @@
 			]
 			title: "Animal Models 2"
 			x: -11.0d
-			y: -2.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["2485B4D2C67778EB"]
@@ -87,6 +87,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["306836430D65B1F6"]
 			id: "1997FA09B4AF479C"
 			shape: "diamond"
 			tasks: [{
@@ -311,7 +312,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["22904E25A5CC77C5"]
+			dependencies: [
+				"22904E25A5CC77C5"
+				"3883E0A46B686718"
+			]
 			id: "7CEFE6F059E984E7"
 			shape: "diamond"
 			tasks: [{
@@ -338,6 +342,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["1997FA09B4AF479C"]
 			id: "380B2C28B0E30DE9"
 			shape: "diamond"
 			tasks: [{
@@ -349,6 +354,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["18B846202FD653C4"]
 			id: "49362E8B2AEEE5FB"
 			shape: "diamond"
 			tasks: [{
@@ -528,6 +534,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["61FFB322F5712D5B"]
 			id: "40616B9C25C01C27"
 			tasks: [{
 				id: "6210F5C69469BC14"
@@ -545,6 +552,7 @@
 				item: "kubejs:cow_model_3"
 				type: "item"
 			}]
+			title: "Animal Models 3"
 			x: -11.0d
 			y: 3.0d
 		}
@@ -556,11 +564,13 @@
 				item: "kubejs:enderman_model_2"
 				type: "item"
 			}]
+			title: "Hostile Models 2"
 			x: -11.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["52E50A79A3273564"]
+			icon: "kubejs:gaia_model_1"
 			id: "3DD5412AC01D2E6A"
 			tasks: [
 				{
@@ -574,6 +584,7 @@
 					type: "item"
 				}
 			]
+			title: "Boss Models 1"
 			x: -11.0d
 			y: 6.0d
 		}
@@ -699,17 +710,21 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["323D338A77D77AAD"]
+			dependencies: [
+				"323D338A77D77AAD"
+				"771E3B631C88DA3E"
+			]
 			id: "631D8DBF85159C6C"
 			tasks: [{
 				id: "2739344AB1B172FB"
 				item: "gtceu:large_chemical_reactor"
 				type: "item"
 			}]
-			x: -12.0d
-			y: 1.0d
+			x: -10.0d
+			y: 4.0d
 		}
 		{
+			dependencies: ["5B28785AFEEC5BE1"]
 			id: "08CB786CA19A8BAE"
 			shape: "diamond"
 			size: 2.0d
@@ -722,14 +737,64 @@
 			y: 0.0d
 		}
 		{
+			dependencies: [
+				"70EB9CE5E8D12DAF"
+				"5B670F1248D1601D"
+			]
 			id: "3883E0A46B686718"
 			tasks: [{
 				id: "276CA1371BF262EB"
 				item: "kubejs:sterile_research"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -0.5d
+			x: -10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["323D338A77D77AAD"]
+			id: "771E3B631C88DA3E"
+			tasks: [{
+				id: "7A01DF8C6E597E5B"
+				item: "gtceu:polytetrafluoroethylene_bucket"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["323D338A77D77AAD"]
+			id: "3B036DA67B6BC552"
+			tasks: [{
+				id: "77969A0265F03988"
+				item: "gtceu:hv_steam_turbine"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"55AC739F3ACE44ED"
+				"611C84E9CA36917A"
+			]
+			id: "5B670F1248D1601D"
+			tasks: [{
+				id: "10229C22DBD8AA51"
+				item: "kubejs:sterile_meat_glob"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -2.0d
+		}
+		{
+			id: "70EB9CE5E8D12DAF"
+			tasks: [{
+				id: "6AFD5D06C7125C80"
+				item: "kubejs:sterile_plant_glob"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -2.0d
 		}
 	]
 	title: "IV - Bio-Engineering"

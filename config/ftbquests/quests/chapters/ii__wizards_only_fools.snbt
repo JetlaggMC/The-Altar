@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "ii__wizards_only_fools"
 	group: ""
+	hide_quest_until_deps_visible: true
 	icon: "kubejs:magical_star"
 	id: "4A4C9EE82113EA5E"
 	images: [{
@@ -797,6 +798,7 @@
 			dependencies: [
 				"467A757AA817DFC8"
 				"44DCAB243EF7897D"
+				"214B22FFAB3FFF25"
 			]
 			id: "18B846202FD653C4"
 			shape: "diamond"
@@ -827,6 +829,7 @@
 			dependencies: [
 				"18B846202FD653C4"
 				"3CD777CF7ED7A1BA"
+				"28A011C6A24214B8"
 			]
 			id: "1AC057D2ED2B4C69"
 			shape: "diamond"
@@ -896,7 +899,10 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["0BD5DFFBB1084373"]
+			dependencies: [
+				"0BD5DFFBB1084373"
+				"0E1C90A30A11F409"
+			]
 			id: "7E19DC8EE4A5BC87"
 			shape: "diamond"
 			tasks: [{
@@ -909,7 +915,10 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["7E19DC8EE4A5BC87"]
+			dependencies: [
+				"7E19DC8EE4A5BC87"
+				"3356C66F76C8D84E"
+			]
 			id: "23480E5F279493B4"
 			shape: "diamond"
 			tasks: [{
@@ -922,7 +931,10 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["23480E5F279493B4"]
+			dependencies: [
+				"23480E5F279493B4"
+				"7331575EB9A94099"
+			]
 			id: "3CD3A304326B6BB1"
 			shape: "diamond"
 			tasks: [{
@@ -1277,7 +1289,10 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["7C308501E6639286"]
+			dependencies: [
+				"7C308501E6639286"
+				"7A18E30D3E2C9C26"
+			]
 			id: "677DDEF2FD1B5F57"
 			shape: "diamond"
 			tasks: [{
@@ -1440,6 +1455,34 @@
 			}]
 			x: 8.0d
 			y: -11.0d
+		}
+		{
+			dependencies: [
+				"7098F7DCF75A6A0D"
+				"3A084181E974464C"
+			]
+			id: "367337B7D0ED4B2C"
+			tasks: [{
+				id: "7C4AC6CE597C9C7C"
+				item: "gtceu:breeding_chamber"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"3CD3A304326B6BB1"
+				"70FB3ED0E41920C0"
+			]
+			id: "471356F722811AAA"
+			tasks: [{
+				id: "78551FBB9714E29C"
+				item: "gtceu:steel_large_boiler"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
 		}
 	]
 	title: "III - Wizards Only Fools"
