@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ii__all_natural"
-	group: ""
+	group: "6DCAF797DFD97211"
 	hide_quest_until_deps_visible: true
 	icon: "kubejs:natural_star"
 	id: "1E081181A45A012C"
@@ -14,7 +14,7 @@
 		x: 7.0d
 		y: 6.0d
 	}]
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -369,40 +369,20 @@
 			dependencies: ["07FDEA04B8FA7541"]
 			id: "1D8E6E4BD42A0755"
 			shape: "diamond"
-			size: 2.0d
+			size: 3.0d
 			tasks: [{
 				id: "357BE92BD9DA5CA3"
 				item: "kubejs:natural_star"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 6.0d
+			x: 12.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
-				"1CEF6A5EEC67CE55"
-				"501855B25D61A2C9"
-			]
-			id: "38B6117F642F1DC1"
-			rewards: [{
-				id: "34074BB300354823"
-				type: "xp_levels"
-				xp_levels: 1
-			}]
-			shape: "diamond"
-			tasks: [{
-				id: "67069E4FE6E3E451"
-				item: "gtceu:lv_machine_casing"
-				type: "item"
-			}]
-			x: 10.5d
-			y: 4.0d
-		}
-		{
-			dependencies: [
-				"38B6117F642F1DC1"
 				"0B3B908D294B6F84"
 				"501855B25D61A2C9"
+				"1CEF6A5EEC67CE55"
 			]
 			hide_dependent_lines: true
 			id: "1AD8A4D87418047C"
@@ -417,8 +397,8 @@
 				item: "gtceu:lv_machine_hull"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 4.0d
+			x: 7.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -437,8 +417,8 @@
 				item: "gtceu:lv_bender"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 5.0d
+			x: 11.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["0B3B908D294B6F84"]
@@ -450,7 +430,7 @@
 				item: "gtceu:lv_electric_motor"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 4.5d
 			y: 5.0d
 		}
 		{
@@ -463,8 +443,8 @@
 				item: "gtceu:lv_electric_piston"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 6.0d
+			x: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["301EFA67533B98BD"]
@@ -475,8 +455,8 @@
 				item: "gtceu:blazing_single_cable"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 4.0d
+			x: 4.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["44FA5F068715272C"]
@@ -487,8 +467,8 @@
 				item: "gtceu:blazing_ingot"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 3.0d
+			x: 4.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -503,8 +483,8 @@
 				item: "gtceu:blazing_bucket"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 2.5d
+			x: 3.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["67B0E46D73DC7BCF"]
@@ -515,8 +495,8 @@
 				item: "gtceu:lv_conveyor_module"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 8.0d
+			x: 5.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -530,8 +510,8 @@
 				item: "gtceu:lv_robot_arm"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 9.0d
+			x: 4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["67B0E46D73DC7BCF"]
@@ -544,7 +524,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 7.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -563,7 +543,7 @@
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 3.5d
 			y: 4.0d
 		}
 		{
@@ -579,7 +559,7 @@
 				item: "gtceu:resistor"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 4.0d
 			y: 3.5d
 		}
 		{
@@ -594,8 +574,8 @@
 				item: "gtceu:vacuum_tube"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 4.5d
+			x: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -613,8 +593,8 @@
 				item: "gtceu:glowing_single_wire"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.5d
+			x: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -629,8 +609,8 @@
 				item: "gtceu:resin_printed_circuit_board"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 4.0d
+			x: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -644,8 +624,8 @@
 				item: "gtceu:resin_circuit_board"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 3.5d
+			x: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4B8ED308E0FE7250"]
@@ -657,7 +637,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -710,8 +690,8 @@
 				item: "gtceu:lv_extractor"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 8.0d
+			x: 11.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -727,7 +707,7 @@
 				item: "gtceu:lv_chemical_reactor"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 6.5d
 			y: 9.0d
 		}
 		{
@@ -747,8 +727,8 @@
 				item: "gtceu:lv_autoclave"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 5.0d
+			x: 11.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -781,11 +761,14 @@
 				type: "item"
 			}]
 			title: "Power Gen!"
-			x: 2.5d
-			y: 4.0d
+			x: 4.5d
+			y: 8.5d
 		}
 		{
-			dependencies: ["301EFA67533B98BD"]
+			dependencies: [
+				"301EFA67533B98BD"
+				"6116C62DCE177E8C"
+			]
 			id: "53FC8D30398DF58E"
 			shape: "diamond"
 			tasks: [{
@@ -794,8 +777,8 @@
 				type: "item"
 			}]
 			title: "Generating Steam"
-			x: 2.5d
-			y: 3.0d
+			x: 3.5d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -818,26 +801,27 @@
 				item: "gtceu:natures_alloy_ingot"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 4.0d
+			x: 7.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
-				"5460FDB495A6F19D"
 				"76E865F5FBBF8662"
 				"5AF3BE42B69DC7D9"
 				"521FE32C6FF4C144"
+				"78050A0D855FC296"
 			]
 			hide_dependency_lines: true
 			id: "1E67B1FC5B43437D"
 			shape: "diamond"
+			size: 1.5d
 			tasks: [{
 				id: "4FC2793008368DD1"
 				item: "kubejs:natural_research"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 9.0d
+			x: 7.0d
+			y: 12.25d
 		}
 		{
 			dependencies: [
@@ -853,24 +837,7 @@
 				item: "gtceu:lv_mixer"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 8.0d
-		}
-		{
-			dependencies: [
-				"6116C62DCE177E8C"
-				"1AD8A4D87418047C"
-				"1D0062BB7D6A6B77"
-			]
-			hide_dependent_lines: true
-			id: "1A087FB866DCE5A3"
-			shape: "diamond"
-			tasks: [{
-				id: "498C30A0F46B07C6"
-				item: "gtceu:lv_fermenter"
-				type: "item"
-			}]
-			x: 10.5d
+			x: 7.5d
 			y: 9.0d
 		}
 		{
@@ -900,8 +867,8 @@
 				item: "gtceu:mega_press"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 8.0d
+			x: 10.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -914,8 +881,8 @@
 				item: "gtceu:mega_mixer"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 8.0d
+			x: 11.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -928,11 +895,16 @@
 				item: "kubejs:mega_lv_machine_casing"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 7.5d
+			x: 10.5d
+			y: 3.0d
 		}
 		{
-			dependencies: ["2E6BDB95BFDFC2F1"]
+			dependencies: [
+				"2E6BDB95BFDFC2F1"
+				"31250273CC81D212"
+				"7FE3B041DB34CBFD"
+			]
+			hide_dependency_lines: true
 			id: "5AF3BE42B69DC7D9"
 			shape: "diamond"
 			tasks: [{
@@ -940,20 +912,115 @@
 				item: "kubejs:plant_glob"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 8.0d
+			x: 6.5d
+			y: 11.5d
 		}
 		{
-			dependencies: ["1E67B1FC5B43437D"]
-			description: ["It's going to take more power to create a second star. Let's move on for now..."]
-			id: "58D2E626B6BA6A0B"
+			dependencies: [
+				"1AD8A4D87418047C"
+				"60C8D538AA225EA3"
+				"6116C62DCE177E8C"
+			]
+			id: "3CFA07D35D4BE553"
 			tasks: [{
-				id: "11CBC5C666D0D484"
-				type: "checkmark"
+				id: "0B4854DA9002C878"
+				item: "gtceu:lv_fermenter"
+				type: "item"
 			}]
-			title: "A Natural Time To Move On"
-			x: 8.5d
-			y: 9.0d
+			x: 7.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3CFA07D35D4BE553"]
+			id: "164AA4C870BD994E"
+			tasks: [{
+				id: "7573E84A5E20FBA6"
+				item: "veggiesdelight:fermented_garlic_honey"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["60C8D538AA225EA3"]
+			id: "7FE3B041DB34CBFD"
+			tasks: [{
+				id: "1E40E2920182EBEB"
+				item: "veggiesdelight:dandelion_juice"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["60C8D538AA225EA3"]
+			id: "31250273CC81D212"
+			tasks: [{
+				id: "4BC04DD99B4A6D7A"
+				item: "farmersdelight:melon_juice"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["60C8D538AA225EA3"]
+			id: "797F9FAFAACA222A"
+			tasks: [{
+				id: "238ADEFCFA0D7EF3"
+				item: "veggiesdelight:carrot_juice"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"164AA4C870BD994E"
+				"2E6BDB95BFDFC2F1"
+			]
+			hide_dependency_lines: true
+			id: "2F33BC4E275951AD"
+			tasks: [{
+				id: "073ECF11C583C496"
+				item: "kubejs:raw_meat_glob"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["73DBD54B1D97926B"]
+			id: "78050A0D855FC296"
+			tasks: [{
+				id: "220E489F2E31D89C"
+				item: "gtceu:sulfuric_acid_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["33288BC1FFEC3719"]
+			id: "73DBD54B1D97926B"
+			tasks: [{
+				id: "68942EA0CD2F58DC"
+				item: "gtceu:sulfur_trioxide_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["76E865F5FBBF8662"]
+			id: "33288BC1FFEC3719"
+			tasks: [{
+				id: "7C8B6BDE023B1198"
+				item: "gtceu:sulfur_dioxide_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 10.5d
 		}
 	]
 	title: "II - All Natural"

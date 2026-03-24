@@ -3,61 +3,14 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "vii__tech_mastery"
-	group: ""
+	group: "6DCAF797DFD97211"
 	icon: "kubejs:nano_star"
 	id: "3F6E9AA1C9071F8C"
-	order_index: 7
-	quest_links: [
-		{
-			id: "130BD1551DEE75DC"
-			linked_quest: "3CD777CF7ED7A1BA"
-			shape: "diamond"
-			x: -1.0d
-			y: 4.0d
-		}
-		{
-			id: "445641A022CA8ED6"
-			linked_quest: "6116C62DCE177E8C"
-			shape: "diamond"
-			x: -1.0d
-			y: 3.0d
-		}
-	]
+	order_index: 5
+	quest_links: [ ]
 	quests: [
 		{
-			id: "057919927927391B"
-			shape: "diamond"
-			tasks: [{
-				id: "4D844FEA3AA21277"
-				item: "gtceu:cupronickel_coil_block"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			id: "45E706F4DE719CB0"
-			shape: "diamond"
-			tasks: [{
-				id: "72407692AB33862D"
-				item: "gtceu:kanthal_coil_block"
-				type: "item"
-			}]
-			x: 1.0d
-			y: 0.0d
-		}
-		{
-			id: "05ED70DB604398CB"
-			shape: "diamond"
-			tasks: [{
-				id: "3DB95A974FA2573F"
-				item: "gtceu:nichrome_coil_block"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 0.0d
-		}
-		{
+			dependencies: ["4642F2DABDF3B45E"]
 			id: "037FB3F5C2906707"
 			tasks: [{
 				id: "54381C4EFBB833AE"
@@ -68,6 +21,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["037FB3F5C2906707"]
 			id: "1125A6A0A688C102"
 			tasks: [{
 				id: "260115260C8FFBCC"
@@ -78,6 +32,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["1D4D8DF2ED03BF84"]
 			id: "797D79588704CA55"
 			tasks: [{
 				id: "5BEAA9C9B83D090D"
@@ -88,6 +43,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["1125A6A0A688C102"]
 			id: "1D4D8DF2ED03BF84"
 			tasks: [{
 				id: "1BA6E14193349D2D"
@@ -98,6 +54,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["797D79588704CA55"]
 			id: "1064F4FBDA1B7069"
 			tasks: [{
 				id: "5E219783BB1722FD"
@@ -108,6 +65,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["05FA348DF56DEC4E"]
 			id: "1E31B754A456B4C1"
 			shape: "diamond"
 			tasks: [{
@@ -119,6 +77,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["7331575EB9A94099"]
 			id: "10728BDA9AB006E4"
 			shape: "diamond"
 			tasks: [{
@@ -130,6 +89,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["55AC84298F263386"]
 			id: "35A28865FDFDD252"
 			shape: "diamond"
 			tasks: [{
@@ -141,6 +101,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["1E31B754A456B4C1"]
 			id: "79E37F30FA6638EB"
 			shape: "diamond"
 			tasks: [{
@@ -152,6 +113,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["79E37F30FA6638EB"]
 			id: "6E93124E3F8C36C2"
 			shape: "diamond"
 			tasks: [{
@@ -163,6 +125,7 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["6E93124E3F8C36C2"]
 			id: "5C8CB96CC97920B6"
 			shape: "diamond"
 			tasks: [{
@@ -174,6 +137,7 @@
 			y: 5.0d
 		}
 		{
+			dependencies: ["10728BDA9AB006E4"]
 			id: "7F1DB8846BE861D7"
 			shape: "diamond"
 			tasks: [{
@@ -185,6 +149,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["7F1DB8846BE861D7"]
 			id: "7B005CA3467BA88B"
 			shape: "diamond"
 			tasks: [{
@@ -196,6 +161,7 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["7B005CA3467BA88B"]
 			id: "335928E615F90728"
 			shape: "diamond"
 			tasks: [{
@@ -207,6 +173,7 @@
 			y: 5.0d
 		}
 		{
+			dependencies: ["335928E615F90728"]
 			id: "013DDE55CB493A81"
 			shape: "diamond"
 			tasks: [{
@@ -218,6 +185,7 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["35A28865FDFDD252"]
 			id: "43C150692C5172A4"
 			shape: "diamond"
 			tasks: [{
@@ -229,6 +197,7 @@
 			y: 7.0d
 		}
 		{
+			dependencies: ["6A94584200B929EC"]
 			id: "183DFFAF9CEB219C"
 			tasks: [{
 				id: "5C368911D030140C"
@@ -239,6 +208,7 @@
 			y: 5.0d
 		}
 		{
+			dependencies: ["183DFFAF9CEB219C"]
 			id: "60983A890C61D66D"
 			tasks: [{
 				id: "01D4DD6CDAFE9845"
@@ -249,6 +219,7 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["60983A890C61D66D"]
 			id: "1906EC8520778DC9"
 			tasks: [{
 				id: "2A3B18793BC0ADE0"
@@ -259,6 +230,7 @@
 			y: 7.0d
 		}
 		{
+			dependencies: ["1906EC8520778DC9"]
 			id: "611F61DD57A76971"
 			tasks: [{
 				id: "43B0C945507DC493"
@@ -269,6 +241,7 @@
 			y: 8.0d
 		}
 		{
+			dependencies: ["03D5176A9D8FB59E"]
 			id: "00A959928C219A05"
 			tasks: [{
 				id: "66D561A878C0EB5A"
@@ -279,6 +252,7 @@
 			y: 7.0d
 		}
 		{
+			dependencies: ["149039237AA70338"]
 			id: "54B59EA5AF9A67C6"
 			tasks: [{
 				id: "757300BE41B33446"
@@ -289,6 +263,7 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["54B59EA5AF9A67C6"]
 			id: "5CD4E87422AAE641"
 			tasks: [{
 				id: "7B60B7C7A79F722E"
@@ -299,6 +274,7 @@
 			y: 7.0d
 		}
 		{
+			dependencies: ["5CD4E87422AAE641"]
 			id: "5500CE4595DEDB27"
 			tasks: [{
 				id: "5C7DD7AAB9FB7126"
@@ -309,6 +285,7 @@
 			y: 8.0d
 		}
 		{
+			dependencies: ["5500CE4595DEDB27"]
 			id: "77A2B8C606BFA0FE"
 			tasks: [{
 				id: "49FC8A044EE259D5"
@@ -319,6 +296,7 @@
 			y: 9.0d
 		}
 		{
+			dependencies: ["00A959928C219A05"]
 			id: "68491631DA696D6A"
 			tasks: [{
 				id: "6C5518C202E1B491"
@@ -329,6 +307,7 @@
 			y: 8.0d
 		}
 		{
+			dependencies: ["68491631DA696D6A"]
 			id: "67632937F803756B"
 			tasks: [{
 				id: "7D2166881F327A54"
@@ -339,6 +318,7 @@
 			y: 9.0d
 		}
 		{
+			dependencies: ["67632937F803756B"]
 			id: "1596B797BD5868FD"
 			tasks: [{
 				id: "420B3A4703968F82"
@@ -349,6 +329,7 @@
 			y: 10.0d
 		}
 		{
+			dependencies: ["1E384093180BA4F2"]
 			id: "6A94584200B929EC"
 			tasks: [{
 				id: "04D762A5BFCA9AC9"
@@ -359,6 +340,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["6A94584200B929EC"]
 			id: "149039237AA70338"
 			tasks: [{
 				id: "6D42670BDA8F1D38"
@@ -369,6 +351,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["149039237AA70338"]
 			id: "03D5176A9D8FB59E"
 			tasks: [{
 				id: "321E2E8B2EB4D596"
@@ -379,6 +362,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["6C6FAC420D1B4D5C"]
 			id: "75EBE28975F64FF5"
 			tasks: [{
 				id: "5F716A546B63DD9C"
@@ -389,6 +373,7 @@
 			y: 8.0d
 		}
 		{
+			dependencies: ["03D5176A9D8FB59E"]
 			id: "6C6FAC420D1B4D5C"
 			tasks: [{
 				id: "010465809C09BD3F"
@@ -399,6 +384,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["75EBE28975F64FF5"]
 			id: "21B26CCD0FE89DF8"
 			tasks: [{
 				id: "3BE11C6121194AED"
@@ -409,6 +395,7 @@
 			y: 9.0d
 		}
 		{
+			dependencies: ["21B26CCD0FE89DF8"]
 			id: "5041BF41248D0ABB"
 			tasks: [{
 				id: "4718AB25D6927AB7"
@@ -419,6 +406,7 @@
 			y: 10.0d
 		}
 		{
+			dependencies: ["5041BF41248D0ABB"]
 			id: "0DFB24F55189A228"
 			tasks: [{
 				id: "4F57E94F9B891B5B"
@@ -429,6 +417,7 @@
 			y: 11.0d
 		}
 		{
+			dependencies: ["6C6FAC420D1B4D5C"]
 			id: "4EE5F349391CABBC"
 			tasks: [{
 				id: "254F198A2E48F24A"
@@ -437,6 +426,61 @@
 			}]
 			x: 7.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["072FA5DBAB44ADFB"]
+			id: "48F379D55A72AF63"
+			tasks: [{
+				id: "60583A7E38D96917"
+				item: "kubejs:glowing_coil_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["48F379D55A72AF63"]
+			id: "574DE4857B7717E9"
+			tasks: [{
+				id: "08E7C465902CC987"
+				item: "kubejs:elementium_coil_block"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["574DE4857B7717E9"]
+			id: "4642F2DABDF3B45E"
+			tasks: [{
+				id: "42411F27EDDC95E7"
+				item: "kubejs:synthetic_neuron_coil_block"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["402A119BCFD1FF6B"]
+			id: "5B96CC42823E93F7"
+			tasks: [{
+				id: "5307EF454FBBCAB9"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5B96CC42823E93F7"]
+			id: "67D72410E04E5636"
+			tasks: [{
+				id: "2DAEB5D8D3170DE6"
+				item: "gtceu:good_electronic_circuit"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
 		}
 	]
 	title: "VII - Tech Mastery"

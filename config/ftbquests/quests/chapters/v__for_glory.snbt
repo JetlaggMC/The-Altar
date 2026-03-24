@@ -3,21 +3,33 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "v__for_glory"
-	group: ""
+	group: "6DCAF797DFD97211"
 	icon: "kubejs:champion_star"
 	id: "16653CACDBB86592"
-	order_index: 5
+	images: [{
+		height: 20.0d
+		image: "kubejs:icons/altar4"
+		rotation: 0.0d
+		width: 20.0d
+		x: 3.0d
+		y: 0.5d
+	}]
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: [
+				"2A9DD0509751449F"
+				"36149B7DD270863C"
+			]
 			id: "14306442D401A9D1"
 			tasks: [{
 				id: "37CDC91A4E44EA80"
 				item: "gtceu:champions_alloy_ingot"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 8.0d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
 			id: "5ED722676CB7769B"
@@ -27,8 +39,8 @@
 				title: "Enter The Twilight Forest"
 				type: "dimension"
 			}]
-			x: 0.0d
-			y: -2.5d
+			x: 3.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -41,8 +53,8 @@
 				item: "twilightforest:naga_trophy"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -1.5d
+			x: 2.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -55,8 +67,8 @@
 				item: "twilightforest:lich_trophy"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -0.5d
+			x: 1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5ED722676CB7769B"]
@@ -66,8 +78,8 @@
 				item: "kubejs:unborn_naga_trophy"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -1.5d
+			x: 2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["05E00CF3EA13C157"]
@@ -77,8 +89,8 @@
 				item: "kubejs:unborn_lich_trophy"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -0.5d
+			x: 2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5ED722676CB7769B"]
@@ -88,8 +100,8 @@
 				item: "gtceu:twilight_awakening_chamber_mk1"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -2.5d
+			x: 3.0d
+			y: -4.5d
 		}
 		{
 			id: "598D72F91EB9765B"
@@ -98,8 +110,8 @@
 				item: "kubejs:hostile_sample_2"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 0.5d
+			x: 1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2AA31C43983A521F"]
@@ -109,8 +121,8 @@
 				item: "kubejs:unborn_hydra_trophy"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 0.5d
+			x: 2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["34022F212EDCD232"]
@@ -120,8 +132,8 @@
 				item: "kubejs:unborn_urghast_trophy"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.5d
+			x: 0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -135,7 +147,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -149,8 +161,8 @@
 				item: "twilightforest:ur_ghast_trophy"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 1.5d
+			x: 1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -163,8 +175,8 @@
 				item: "twilightforest:snow_queen_trophy"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.5d
+			x: 1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["34022F212EDCD232"]
@@ -174,8 +186,8 @@
 				item: "gtceu:twilight_awakening_chamber_mk2"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 0.5d
+			x: 1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["73ADBB0235CC4CCC"]
@@ -186,7 +198,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["73ADBB0235CC4CCC"]
@@ -197,7 +209,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 2.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["0A509C1DE6550FB6"]
@@ -207,8 +219,8 @@
 				item: "gtceu:twilight_awakening_chamber_mk4"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 2.5d
+			x: 0.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["73ADBB0235CC4CCC"]
@@ -218,28 +230,8 @@
 				item: "kubejs:twilight_infused_growth_medium_bucket"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 1.5d
-		}
-		{
-			id: "7B72476EAC37CD1F"
-			tasks: [{
-				id: "0A3F562EC952C676"
-				item: "cataclysm:enderite_block"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 2.5d
-		}
-		{
-			id: "630D92AC8420CDC8"
-			tasks: [{
-				id: "6F2DBBFECA8C4A56"
-				item: "cataclysm:ignitium_block"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 3.5d
+			x: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["14306442D401A9D1"]
@@ -249,68 +241,80 @@
 				item: "gtceu:ev_machine_casing"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 9.0d
+			x: 5.5d
+			y: 1.0d
 		}
 		{
+			dependencies: ["42FE8924A6F76C92"]
 			id: "77DB30678027D70E"
 			tasks: [{
 				id: "1EE7730E2A50B776"
 				item: "gtceu:ev_circuit_assembler"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 10.0d
+			x: 5.5d
+			y: 2.0d
 		}
 		{
+			dependencies: ["77DB30678027D70E"]
 			id: "6AD7C38401509882"
 			tasks: [{
 				id: "5F37F170599B167D"
 				item: "gtceu:nano_processor"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 11.0d
+			x: 6.0d
+			y: 2.5d
 		}
 		{
+			dependencies: ["6AD7C38401509882"]
 			id: "6CC5EA754D2C3612"
 			tasks: [{
 				id: "346DCAC62581FBCE"
 				item: "gtceu:nano_processor_assembly"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 12.0d
+			x: 6.5d
+			y: 3.0d
 		}
 		{
+			dependencies: ["6CC5EA754D2C3612"]
 			id: "22433D9DC2DAC142"
 			tasks: [{
 				id: "6383F0404CD45C49"
 				item: "gtceu:nano_processor_computer"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 13.0d
+			x: 7.0d
+			y: 3.5d
 		}
 		{
+			dependencies: ["22433D9DC2DAC142"]
 			id: "696B6718C3FF1C37"
 			tasks: [{
 				id: "366F69E28C252BA2"
 				item: "gtceu:nano_processor_mainframe"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 14.0d
+			x: 7.5d
+			y: 4.0d
 		}
 		{
+			dependencies: [
+				"2A9DD0509751449F"
+				"5A24005C38F62397"
+				"15FB7C0F2B84591A"
+				"2F214DEFC9C77C87"
+				"121B05D0FA1B2EDF"
+			]
 			id: "39209ECC95AFE64F"
 			tasks: [{
 				id: "1885B679031644DF"
 				item: "gtceu:withered_ingot"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 3.5d
+			x: 6.5d
+			y: 1.0d
 		}
 		{
 			id: "67C1FB1EEDBBE5F0"
@@ -319,18 +323,8 @@
 				item: "gtceu:champions_alloy_dust"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 7.0d
-		}
-		{
-			id: "7748D850578B6DFD"
-			tasks: [{
-				id: "029FECED2700D011"
-				item: "twilightforest:naga_scale"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 4.5d
+			x: 6.5d
+			y: 0.0d
 		}
 		{
 			id: "13380E30F1AEE634"
@@ -339,48 +333,30 @@
 				item: "twilightforest:aurora_block"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 4.5d
+			x: 0.5d
+			y: 1.0d
 		}
 		{
+			dependencies: ["73ADBB0235CC4CCC"]
 			id: "45C8D4F23D8A8F80"
 			tasks: [{
 				id: "310A061E84ADFC8B"
 				item: "twilightforest:carminite"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 4.5d
+			x: 2.5d
+			y: -1.0d
 		}
 		{
-			id: "7FB4DBE12B4B277C"
-			tasks: [{
-				id: "790A7B18C8406FFA"
-				item: "gtceu:arcane_gold_dust"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 6.0d
-		}
-		{
+			dependencies: ["34022F212EDCD232"]
 			id: "32C040DC05CB3589"
 			tasks: [{
 				id: "4E264E35F3A0650A"
 				item: "twilightforest:fiery_blood"
 				type: "item"
 			}]
-			x: -11.0d
-			y: 4.5d
-		}
-		{
-			id: "6959E73797C6C807"
-			tasks: [{
-				id: "38F0D9173B09D697"
-				item: "gtceu:distillation_tower"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -2.5d
+			x: 5.5d
+			y: -2.0d
 		}
 		{
 			id: "2A9DD0509751449F"
@@ -389,8 +365,571 @@
 				item: "gtceu:vacuum_freezer"
 				type: "item"
 			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"7B34479DFA7B2D5C"
+				"58D2BC287ED6263A"
+				"3FFA3E724FE3CAAA"
+			]
+			id: "6209A3419F3ABB61"
+			tasks: [{
+				id: "7CC91BF3E066AFA0"
+				item: "terramity:virentium_alloy_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5ED722676CB7769B"]
+			id: "23475DFE2E5A182D"
+			tasks: [{
+				id: "794BA5245E9ECC2B"
+				item: "terramity:daemonium_chunk"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -5.5d
+		}
+		{
+			id: "600C258084C9F120"
+			tasks: [{
+				id: "15F9D46DAC6DEEE2"
+				item: "terramity:daemonium"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -5.0d
+		}
+		{
+			id: "5F0E8C0D3A279FFE"
+			tasks: [{
+				id: "046C3D988583B426"
+				item: {
+					Count: 1
+					id: "terramity:gobs_gilded_hat_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5F0E8C0D3A279FFE"]
+			icon: "terramity:virentium_upgrade_smithing_template"
+			id: "3DC73FD3A76F5448"
+			tasks: [
+				{
+					id: "68769D1CD22CF890"
+					item: "terramity:virentium_upgrade_smithing_template"
+					type: "item"
+				}
+				{
+					id: "365049B09E1CF401"
+					item: "terramity:dimlite_upgrade_smithing_template"
+					type: "item"
+				}
+				{
+					id: "2CE134ED6FA8BA3B"
+					item: "terramity:cosmilite_upgrade_smithing_template"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7B34479DFA7B2D5C"]
+			id: "757F7069AE1C7645"
+			tasks: [{
+				id: "4F7C310B9DF098AC"
+				item: "terramity:dimlite_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6209A3419F3ABB61"]
+			id: "1AE67FFDF25B51BE"
+			tasks: [{
+				id: "1C6465DEBD005AE5"
+				item: {
+					Count: 1
+					id: "terramity:virentium_armor_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7B34479DFA7B2D5C"]
+			id: "5C1BEF3139549E5D"
+			tasks: [{
+				id: "3D4455420BF8CFBD"
+				item: "terramity:cosmilite_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["04C2E72281450958"]
+			id: "58D2BC287ED6263A"
+			tasks: [{
+				id: "477A1DC8CF2F00BE"
+				item: "twilightforest:naga_scale"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			id: "0D44B615CB55A75C"
+			tasks: [{
+				id: "12F80212613F99C2"
+				item: {
+					Count: 1
+					id: "terramity:perish_staff"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"3A3183D7DE555D63"
+				"1921FE5FC1FEBEA1"
+				"32C040DC05CB3589"
+			]
+			id: "08D9098D38F24807"
+			tasks: [{
+				id: "106CD47731068509"
+				item: "terramity:hellspec_alloy"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7DF0FF7499F11D81"]
+			dependency_requirement: "one_completed"
+			id: "1921FE5FC1FEBEA1"
+			tasks: [{
+				id: "4A9C40BF61DE00FF"
+				item: "terramity:iridium"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"6209A3419F3ABB61"
+				"3DC73FD3A76F5448"
+				"5C1BEF3139549E5D"
+				"757F7069AE1C7645"
+			]
+			id: "7DF0FF7499F11D81"
+			tasks: [{
+				id: "2E7CB1E486655D2A"
+				item: {
+					Count: 1
+					id: "terramity:virentium_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7DF0FF7499F11D81"]
+			dependency_requirement: "one_completed"
+			id: "3A3183D7DE555D63"
+			tasks: [{
+				id: "7388F0A756482668"
+				item: "terramity:chthonic_crystal"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			id: "10DBD03C509FC0E1"
+			tasks: [{
+				id: "2F9BA541CF3FB07D"
+				item: "terramity:black_matter"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1921FE5FC1FEBEA1"
+				"10DBD03C509FC0E1"
+			]
+			id: "153351BBBEBD45C5"
+			tasks: [{
+				id: "7F90EDB86ED0C645"
+				item: "terramity:conductite"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1921FE5FC1FEBEA1"
+				"6C96875985830A10"
+				"10DBD03C509FC0E1"
+			]
+			id: "6CFCD51770C5B306"
+			tasks: [{
+				id: "160C96E62DF088A6"
+				item: "terramity:void_alloy"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["56FCE8967647A223"]
+			id: "6C96875985830A10"
+			tasks: [{
+				id: "7E39019A6071E104"
+				item: "terramity:empty_essence"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			id: "56FCE8967647A223"
+			tasks: [{
+				id: "53C86C41000DC81F"
+				item: "terramity:stygian_blood_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0D44B615CB55A75C"]
+			id: "36F41E0E48A54E64"
+			tasks: [{
+				id: "78C8E9CAC12E48F2"
+				item: "terramity:decayed_bedrock_dust"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"3A3183D7DE555D63"
+				"36F41E0E48A54E64"
+			]
+			id: "0DCD14E38279D10F"
+			tasks: [{
+				id: "6A22223DD35D86EF"
+				item: "terramity:stygian_safety_talisman"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"153351BBBEBD45C5"
+				"08D9098D38F24807"
+				"6CFCD51770C5B306"
+				"45C8D4F23D8A8F80"
+			]
+			id: "44C9D45462D8FF34"
+			tasks: [{
+				id: "255B3A86473DC810"
+				item: "terramity:profanum"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"56D1AD2141A9BE80"
+				"258DA6CAB9A9F866"
+			]
+			id: "7F36D0E8F383757C"
+			tasks: [{
+				id: "496A3AA03090BDA0"
+				item: "terramity:nyxium"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"408F3F69D44972A1"
+				"258DA6CAB9A9F866"
+			]
+			id: "6DB82E4EE16287C9"
+			tasks: [{
+				id: "660F0A34D1AD1F57"
+				item: "terramity:exodium_superalloy"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"03F7003739E00FA7"
+				"258DA6CAB9A9F866"
+			]
+			id: "2C8875DE46B65619"
+			tasks: [{
+				id: "458E9D75FBFC1E3D"
+				item: "terramity:reverium"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			id: "7E811B4D92C686E6"
+			tasks: [{
+				id: "20B677D694085585"
+				item: "terramity:moonstone_rock"
+				type: "item"
+			}]
 			x: 1.0d
-			y: 8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7E811B4D92C686E6"]
+			id: "56D1AD2141A9BE80"
+			tasks: [{
+				id: "5B83AD7F17A65515"
+				item: "terramity:opaline_moonstone"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			id: "2BBD45DA33360C44"
+			tasks: [{
+				id: "2623A7A47B94D297"
+				item: "terramity:antiprism"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			id: "7A80650F81FEF829"
+			tasks: [{
+				id: "6BF7EBBADF6BFAE8"
+				item: "terramity:black_hole_bomb"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7A80650F81FEF829"]
+			id: "408F3F69D44972A1"
+			tasks: [{
+				id: "5B20A45F668D806F"
+				item: "terramity:cracked_microcosm"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0341FDABBBB45D12"]
+			id: "03F7003739E00FA7"
+			tasks: [{
+				id: "7DDD68C875CAF7D8"
+				item: "terramity:angel_feather"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			id: "0341FDABBBB45D12"
+			tasks: [{
+				id: "4EB0CDA9E399FD3F"
+				item: {
+					Count: 1
+					id: "terramity:unholy_lance"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"67C1FB1EEDBBE5F0"
+				"44C9D45462D8FF34"
+			]
+			id: "36149B7DD270863C"
+			tasks: [{
+				id: "798B71246E1C3DC7"
+				item: "gtceu:hot_champions_alloy_ingot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["42FE8924A6F76C92"]
+			id: "1635F27DC459BED6"
+			tasks: [{
+				id: "2E357A2E7F218E74"
+				item: "gtceu:ev_dna_fabricator"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			id: "35BB0CB884C542BA"
+			tasks: [{
+				id: "10704C190909B8BA"
+				item: "gtceu:ev_assembler"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			id: "6C88E5D538CDDEA2"
+			tasks: [{
+				id: "48895399C5F00AAD"
+				item: "gtceu:rtm_alloy_coil_block"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5ED722676CB7769B"]
+			id: "3FFA3E724FE3CAAA"
+			tasks: [{
+				id: "3093E1F9BB1574C6"
+				item: "terramity:gaianite_cluster"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1635F27DC459BED6"]
+			id: "5EFB4F361B7F7007"
+			tasks: [{
+				id: "7219334C6C9ED5F8"
+				item: "kubejs:cow_model_4"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			id: "121B05D0FA1B2EDF"
+			tasks: [{
+				id: "4C37506AA8B445E2"
+				item: "cataclysm:ancient_metal_ingot"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			id: "5A24005C38F62397"
+			tasks: [{
+				id: "165FF70961054827"
+				item: "cataclysm:witherite_ingot"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			id: "15FB7C0F2B84591A"
+			tasks: [{
+				id: "3E43A8063DA60423"
+				item: "cataclysm:ignitium_ingot"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			id: "2F214DEFC9C77C87"
+			tasks: [{
+				id: "5168C78CB74EF78F"
+				item: "cataclysm:cursium_ingot"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			id: "3E7D515A869786AA"
+			size: 2.0d
+			tasks: [{
+				id: "3607AE8FD24D473D"
+				item: "kubejs:champion_star"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			id: "258DA6CAB9A9F866"
+			tasks: [{
+				id: "2A57E951FDBF62B7"
+				item: "gtceu:alloy_blast_smelter"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			id: "63B71B88758F54B9"
+			tasks: [{
+				id: "40AA765BCDE8934F"
+				item: "gtceu:tantalum_carbide_ingot"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
 		}
 	]
 	title: "V - For Glory!"

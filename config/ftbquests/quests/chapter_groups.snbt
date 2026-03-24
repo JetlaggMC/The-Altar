@@ -1,3 +1,6 @@
 {
-	chapter_groups: [ ]
+	chapter_groups: [
+		{ id: "6DCAF797DFD97211", title: "Main Story" }
+		{ id: "63B67A7EA4165E2C", title: "Processing" }
+	]
 }

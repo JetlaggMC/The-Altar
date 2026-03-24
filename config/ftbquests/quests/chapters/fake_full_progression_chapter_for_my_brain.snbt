@@ -3,7 +3,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "fake_full_progression_chapter_for_my_brain"
-	group: ""
+	group: "63B67A7EA4165E2C"
 	hide_quest_details_until_startable: true
 	hide_quest_until_deps_visible: true
 	icon: {
@@ -14,15 +14,7 @@
 		}
 	}
 	id: "3A3F350A5155FE58"
-	images: [{
-		height: 7.0d
-		image: "kubejs:icons/hv_casing_quest"
-		rotation: 0.0d
-		width: 15.4d
-		x: 24.5d
-		y: 16.0d
-	}]
-	order_index: 8
+	order_index: 3
 	quest_links: [
 		{
 			id: "2EF18BC2DF5A0225"
@@ -3523,2225 +3515,6 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["68213481A4A0666C"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/micro_electronics_1"
-				}
-			}
-			icon_scale: 1.5d
-			id: "66838B17D5D50BEB"
-			rewards: [{
-				auto: "no_toast"
-				command: "/say Hi, @p!"
-				elevate_perms: true
-				icon: "gtceu:micro_processor"
-				id: "318CDAA2ACCAEABD"
-				silent: true
-				title: "Unlock Microprocessor"
-				type: "command"
-			}]
-			shape: "square"
-			tasks: [
-				{
-					count: 16L
-					id: "156C490D62FAC985"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "0770F5ABD825F748"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 10L
-					id: "0A5B793F00CEADED"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "29BEA95B15D950C4"
-					item: "kubejs:natural_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "4CE7E05BAF93891F"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "00F5138F3C0F438A"
-					item: "kubejs:sterile_research"
-					type: "item"
-				}
-			]
-			title: "Micro Electronics I"
-			x: 21.5d
-			y: 14.5d
-		}
-		{
-			dependencies: [
-				"66838B17D5D50BEB"
-				"1B186AF3AA8B47D2"
-			]
-			icon: "gtceu:hv_dna_fabricator"
-			id: "70E068013746FD12"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "6C29BAB54E984CD8"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "0E44D07325CD6C8C"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "572F267E61427182"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "447599FC52D93BE2"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Biology III"
-			x: 24.5d
-			y: 15.5d
-		}
-		{
-			dependencies: ["70E068013746FD12"]
-			icon: "kubejs:cow_model_3"
-			icon_scale: 1.5d
-			id: "5E3A015786C08C5E"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "6216FCDBD4531514"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "05AE0F5DF3C94633"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "4E5EB41C522EA163"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "17AB2AC037D0F4E0"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Farm Animals III"
-			x: 21.5d
-			y: 16.5d
-		}
-		{
-			dependencies: ["70E068013746FD12"]
-			icon: "kubejs:fish_model_3"
-			icon_scale: 1.5d
-			id: "4A6B7E51B4B92864"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "15423AE6A05B6028"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "670CC36822A8ED16"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "2B1340F39961CBD9"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "38E05CD4ABBBD2FB"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Aquatic Animals III"
-			x: 22.5d
-			y: 16.5d
-		}
-		{
-			dependencies: ["70E068013746FD12"]
-			icon: "kubejs:wheat_2"
-			icon_scale: 1.5d
-			id: "3B213E6DDDD40D1D"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "1DA0A54643EF7111"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "61222568DBCA51A8"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "1ED6391B89F50F22"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "62F7941006CB2E41"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Fauna III"
-			x: 23.5d
-			y: 16.5d
-		}
-		{
-			dependencies: ["70E068013746FD12"]
-			icon: "kubejs:enderman_model_2"
-			icon_scale: 1.5d
-			id: "0538CFFC9DF0AF83"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "3CD061191847A8DE"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "7451C190823339EC"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "79B7FD1F27B53748"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "36C1EB4EC2F50E19"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Ender Hostility II"
-			x: 24.5d
-			y: 16.5d
-		}
-		{
-			dependencies: ["70E068013746FD12"]
-			icon: "kubejs:blaze_model_2"
-			icon_scale: 1.5d
-			id: "18D77C809592D984"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "537E6E49E904212D"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "3A47744D5F74A14F"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "3A61A74204E6954B"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "53DD66A0A3D729D2"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Nether Hostility II"
-			x: 25.5d
-			y: 16.5d
-		}
-		{
-			dependencies: ["70E068013746FD12"]
-			icon: "kubejs:zombie_model_2"
-			icon_scale: 1.5d
-			id: "39A145A8767C71AC"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "4A816491CB2A04E9"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "3ADDCC483E7B93B8"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "6EC1417F092030B9"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "2252819EACF0B8BE"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Overworld Hostility II"
-			x: 26.5d
-			y: 16.5d
-		}
-		{
-			dependencies: ["70E068013746FD12"]
-			icon: "kubejs:gaia_model_1"
-			icon_scale: 1.5d
-			id: "1D6FE44726FBA825"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "2C0FD4C96C42A19B"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "49FAC15C7A7847A5"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "24290DE753B20984"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "380B5DD6A9F382BA"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Boss Simulation I"
-			x: 27.5d
-			y: 16.5d
-		}
-		{
-			dependencies: ["5AE5E1A84131B2EB"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/high_voltage_machinery"
-				}
-			}
-			icon_scale: 1.5d
-			id: "68213481A4A0666C"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "36E78B9C994D708D"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "6E1D36C79B7253D2"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "27D613FDAFAD3DF9"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "709E966A2E3073B4"
-					item: "kubejs:natural_research"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "51FF1676CDC1F15B"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-				{
-					id: "6DAEAF035536B509"
-					item: "kubejs:sterile_research"
-					type: "item"
-				}
-			]
-			title: "High Voltage Machinery"
-			x: 20.5d
-			y: 15.5d
-		}
-		{
-			dependencies: ["66838B17D5D50BEB"]
-			icon: "twilightforest:twilight_portal_miniature_structure"
-			id: "7F03B184EDBD8EA4"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "42A24F41E7DF206F"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "65FCD3391AE8A408"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "5680C68E0E4703F1"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "3D5AB25469328D85"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Twilight Forest Exploration"
-			x: 25.5d
-			y: 15.5d
-		}
-		{
-			dependencies: ["7F03B184EDBD8EA4"]
-			icon: "gtceu:twilight_awakening_chamber_mk1"
-			id: "32B10320C81335B0"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "108EECDD0A601483"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "05091AD63B7CC325"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "0B50FC405CCA8B05"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "705BB51D63C36F4C"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Awakening I"
-			x: 26.5d
-			y: 15.5d
-		}
-		{
-			dependencies: [
-				"7F03B184EDBD8EA4"
-				"18D77C809592D984"
-				"0538CFFC9DF0AF83"
-				"39A145A8767C71AC"
-			]
-			icon: "gtceu:twilight_awakening_chamber_mk1"
-			id: "7FBDC339B93BB32C"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "71ED14C2922E2CBB"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "75C3DD5C3E11A764"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "75F44BC53D41F0EE"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "0026637256E6977D"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Awakening II"
-			x: 27.5d
-			y: 15.5d
-		}
-		{
-			dependencies: ["7FBDC339B93BB32C"]
-			icon: "kubejs:gilded_research"
-			id: "2E546449AA1B369D"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "55F73B01FEBE7249"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "52E3C93A602F9C5E"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "57F21E5F62510B5D"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "703994AEF7385932"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Gilded Research"
-			x: 31.5d
-			y: 15.5d
-		}
-		{
-			icon: "extendedcrafting:elite_table"
-			id: "1B186AF3AA8B47D2"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "6C95A04966D9749E"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "6C4B84DE1468BE30"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "4BF49A4EF12F7D4B"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "6B05C90C13FFD69A"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Advanced Crafting II"
-			x: 23.5d
-			y: 15.5d
-		}
-		{
-			dependencies: ["2E546449AA1B369D"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/extreme_voltage_machinery"
-				}
-			}
-			icon_scale: 1.5d
-			id: "1E384093180BA4F2"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "1E612A064B57E273"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "51C60D8CB3B784E7"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "485D36DFEE26E515"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "44E79DC6D03306ED"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "High Voltage Machinery"
-			x: 33.5d
-			y: 15.5d
-		}
-		{
-			dependencies: ["66838B17D5D50BEB"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/micro_electronics_2"
-				}
-			}
-			icon_scale: 1.5d
-			id: "08C06FED7C5EAEA9"
-			rewards: [{
-				auto: "no_toast"
-				command: "/say Hi, @p!"
-				elevate_perms: true
-				icon: "gtceu:micro_processor_assembly"
-				id: "1872045D02AD1EFE"
-				silent: true
-				title: "Unlock Microprocessor Assembly"
-				type: "command"
-			}]
-			shape: "square"
-			tasks: [
-				{
-					count: 24L
-					id: "7F518F3E02499D7A"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 18L
-					id: "41C31324231AF965"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 15L
-					id: "49A0B94EB712E3E8"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "157309F007379EF1"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "3DB18986D49DD344"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "6E30BA96E61547D8"
-					item: "kubejs:sterile_research"
-					type: "item"
-				}
-			]
-			title: "Micro Electronics II"
-			x: 22.5d
-			y: 14.5d
-		}
-		{
-			dependencies: [
-				"08C06FED7C5EAEA9"
-				"24F3BAC2B47E1AEA"
-			]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/micro_electronics_3"
-				}
-			}
-			icon_scale: 1.5d
-			id: "55AC84298F263386"
-			rewards: [{
-				auto: "no_toast"
-				command: "/say Hi, @p!"
-				elevate_perms: true
-				icon: "gtceu:micro_processor_computer"
-				id: "4999F36C334F8F5A"
-				silent: true
-				title: "Unlock Microprocessor Supercomputer"
-				type: "command"
-			}]
-			shape: "square"
-			tasks: [
-				{
-					count: 32L
-					id: "1F0BE8BCBC83D348"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 24L
-					id: "7DECC94F72CA8504"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 20L
-					id: "0B69102D8F9F91C2"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "6512A40DAC289B28"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "6FFE4398F76817E8"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "7164CF0BB890D628"
-					item: "kubejs:sterile_research"
-					type: "item"
-				}
-			]
-			title: "Micro Electronics III"
-			x: 23.5d
-			y: 14.5d
-		}
-		{
-			dependencies: ["55AC84298F263386"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/micro_electronics_4"
-				}
-			}
-			icon_scale: 1.5d
-			id: "3A44E3E7DCEAF2B6"
-			rewards: [{
-				auto: "no_toast"
-				command: "/say Hi, @p!"
-				elevate_perms: true
-				icon: "gtceu:micro_processor_mainframe"
-				id: "463BE3853769568C"
-				silent: true
-				title: "Unlock Microprocessor Mainframe"
-				type: "command"
-			}]
-			shape: "square"
-			tasks: [
-				{
-					count: 40L
-					id: "3C9DD56C9BDCCB67"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 30L
-					id: "2595B0E9130C42A6"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 25L
-					id: "476F351C42EBD4AA"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 20L
-					id: "4503F34347B813E5"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-				{
-					count: 10L
-					id: "3BB9EE7FF4275C76"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "5B560E674334ED57"
-					item: "kubejs:sterile_research"
-					type: "item"
-				}
-			]
-			title: "Micro Electronics IV"
-			x: 24.5d
-			y: 14.5d
-		}
-		{
-			dependencies: ["68213481A4A0666C"]
-			icon: "gtceu:cleanroom"
-			icon_scale: 1.5d
-			id: "24F3BAC2B47E1AEA"
-			rewards: [{
-				auto: "no_toast"
-				command: "/say Hi, @p!"
-				elevate_perms: true
-				icon: "gtceu:cleanroom"
-				id: "47FA14A7E8805F5D"
-				silent: true
-				title: "Unlock Cleanroom"
-				type: "command"
-			}]
-			shape: "square"
-			tasks: [
-				{
-					count: 24L
-					id: "3E4F58FCE2476AEC"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 18L
-					id: "743DF330777FD2F0"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 15L
-					id: "3D38474325C792BF"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "2C26284D8F6E79ED"
-					item: "kubejs:natural_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "5A2FAFEE14B65FB1"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "570EEC379FD34614"
-					item: "kubejs:sterile_research"
-					type: "item"
-				}
-			]
-			title: "Cleanroom"
-			x: 22.5d
-			y: 15.5d
-		}
-		{
-			icon: "gtceu:champions_alloy_ingot"
-			id: "7F4D17C3B567FB43"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "5C8059BC81EB9506"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "263E3B9C19022A50"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "56843276CC3B4554"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "176B792C9621CBCC"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Champion's Alloy I"
-			x: 30.5d
-			y: 15.5d
-		}
-		{
-			icon: "gtceu:withered_ingot"
-			id: "66B3CF8F41376FAA"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "481442FDF6B70BAC"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "42DD1DB5FC1AF24D"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "35989DD3556A65A9"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "484BB4A9634D868D"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Withered Alloy I"
-			x: 29.5d
-			y: 16.5d
-		}
-		{
-			icon: "gtceu:vacuum_freezer"
-			id: "05F4EFA27965828F"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "1A289ABA549FE290"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "5F70EF9FE80A3223"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "7C6A55530350C274"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "52B8CF450ECC26CB"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Vacuum Freezer"
-			x: 29.5d
-			y: 14.5d
-		}
-		{
-			dependencies: ["5AE5E1A84131B2EB"]
-			icon: "gtceu:nichrome_coil_block"
-			icon_scale: 1.5d
-			id: "77C14B1EF4B17BD8"
-			rewards: [{
-				auto: "no_toast"
-				command: "/say Hi, @p!"
-				elevate_perms: true
-				icon: "gtceu:nichrome_coil_block"
-				id: "1E510F087A9382B2"
-				silent: true
-				title: "Unlock Synthetic Neuron Coil"
-				type: "command"
-			}]
-			shape: "square"
-			tasks: [
-				{
-					count: 16L
-					id: "0D9D62850B14A364"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "6A8B95341F3BE715"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 10L
-					id: "653FBB2F4682B34C"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "16E90886605B28D6"
-					item: "kubejs:natural_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "732467F798E32E38"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "17A52229C5D1638D"
-					item: "kubejs:sterile_research"
-					type: "item"
-				}
-			]
-			title: "Advanced Smelting IV"
-			x: 21.5d
-			y: 15.5d
-		}
-		{
-			icon: "gtceu:large_chemical_reactor"
-			icon_scale: 1.5d
-			id: "2120FF4E67BD2BD8"
-			rewards: [{
-				auto: "no_toast"
-				command: "/say Hi, @p!"
-				elevate_perms: true
-				icon: "gtceu:large_chemical_reactor"
-				id: "1B3349DB3C1B26CA"
-				silent: true
-				title: "Unlock Large Chemical Reactor"
-				type: "command"
-			}]
-			shape: "square"
-			tasks: [
-				{
-					count: 16L
-					id: "1CCC89A05D65BEA4"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "77D3211B851818ED"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 10L
-					id: "2D8817C0A9FAA2A6"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "6F14277997CA6654"
-					item: "kubejs:natural_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "4A8AAD8456850B30"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "529DD961DD5C6C89"
-					item: "kubejs:sterile_research"
-					type: "item"
-				}
-			]
-			title: "Large Chemical Reactor"
-			x: 20.5d
-			y: 14.5d
-		}
-		{
-			icon: "gtceu:twilight_awakening_chamber_mk1"
-			id: "47B70DE3B37F77A6"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "0A986EDDF30E957E"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "7BD005A2F8E705B2"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "7D5E1B475C1B2FEE"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "679C96A738B0031C"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Awakening III"
-			x: 28.5d
-			y: 15.5d
-		}
-		{
-			icon: "gtceu:twilight_awakening_chamber_mk1"
-			id: "47E815900608BB28"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "0690C2889D72AC72"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "70B3BB2FD2DEA56C"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "3353050AF1EE9FA0"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "033CA780B7DE4983"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Awakening IV"
-			x: 29.5d
-			y: 15.5d
-		}
-		{
-			dependencies: ["4FDA62AAB0ACDE91"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/insane_voltage_machinery"
-				}
-			}
-			icon_scale: 1.5d
-			id: "788EAB743C007BCA"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "55D1827EBCB30553"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "4F4D643E050FBF01"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "0CBF45ECFF3CFF00"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "6B4EABF7C0F4822F"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Insane Voltage Machinery"
-			x: 38.5d
-			y: 15.5d
-		}
-		{
-			dependencies: ["1E384093180BA4F2"]
-			icon: "gtceu:nano_processor"
-			icon_scale: 1.5d
-			id: "4406C9A1AF85DB5D"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "0780FAD3A638549A"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "5757F4BA983E85E7"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "785F850057A3CB15"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "582F7A590B1740B1"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Nano Electronics I"
-			x: 34.5d
-			y: 15.5d
-		}
-		{
-			dependencies: ["4406C9A1AF85DB5D"]
-			icon: "gtceu:nano_processor_assembly"
-			icon_scale: 1.5d
-			id: "7DA1DB3A41A9AA18"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "696777674E7FA49C"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "63C44A65D64E0980"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "6B0DED853D249CC6"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "39098DAE1873C5D7"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Nano Electronics II"
-			x: 35.5d
-			y: 15.5d
-		}
-		{
-			dependencies: ["7DA1DB3A41A9AA18"]
-			icon: "gtceu:nano_processor_computer"
-			icon_scale: 1.5d
-			id: "17C30DF46B15FCC0"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "742BC2A0FD65175F"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "0C98494F7194D503"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "4F1BF7BFE9D589C4"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "260D0DDC0AAFCEDD"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Nano Electronics III"
-			x: 36.5d
-			y: 15.5d
-		}
-		{
-			dependencies: ["17C30DF46B15FCC0"]
-			icon: "gtceu:nano_processor_mainframe"
-			icon_scale: 1.5d
-			id: "2E389BFE44186554"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "7DC365A1DD269744"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "6A65D5CA4F3E7959"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "33358F2B032C194D"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "6E04E0B08F9AD7A2"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Nano Electronics IV"
-			x: 37.5d
-			y: 15.5d
-		}
-		{
-			dependencies: ["1E384093180BA4F2"]
-			icon: "gtceu:dimensional_reactor"
-			icon_scale: 1.5d
-			id: "6E15C0ABE2AD745C"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "4DB4A246077ABCA2"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "7CC027228F8344F9"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "26388E3EBBFB53C2"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "780B7C9ED8183573"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Dimensional Reactor"
-			x: 34.5d
-			y: 16.5d
-		}
-		{
-			dependencies: ["6E15C0ABE2AD745C"]
-			icon: "gtceu:uranium_235_ingot"
-			icon_scale: 1.5d
-			id: "63D155160CFF7BE4"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "00D9D4EEC4DF11EC"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "11CF3F2C044431F6"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "7D236A0879C87FEF"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "7B81A9FC9534808E"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Nuclear I"
-			x: 35.5d
-			y: 16.5d
-		}
-		{
-			dependencies: ["63D155160CFF7BE4"]
-			icon: "gtceu:plutonium_241_ingot"
-			icon_scale: 1.5d
-			id: "2D38FB7C8E0FE1C2"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "38512592C72D406F"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "66F9C46C42C78D95"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "0C4818BF9BA96F05"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "02632B0A1181CD26"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Nuclear II"
-			x: 36.5d
-			y: 17.5d
-		}
-		{
-			dependencies: ["63D155160CFF7BE4"]
-			icon: {
-				Count: 1
-				id: "ad_astra:tier_1_rocket"
-				tag: { }
-			}
-			icon_scale: 1.5d
-			id: "1CE49A97B3549B73"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "16320D03DF17A747"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "3220F3A9ACF2BB5C"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "5BA13373D38B439B"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "735A1280EE997B60"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Space Exploration I"
-			x: 36.5d
-			y: 16.5d
-		}
-		{
-			dependencies: [
-				"1CE49A97B3549B73"
-				"2D38FB7C8E0FE1C2"
-			]
-			icon: "ad_astra:desh_ingot"
-			icon_scale: 1.5d
-			id: "4FDA62AAB0ACDE91"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "79804E46F9489D20"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "5A6223AC24F38BDD"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "6F857BCB9FCAC69D"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "0B7D05BFB312AE27"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Space Metals I"
-			x: 37.5d
-			y: 16.5d
-		}
-		{
-			dependencies: ["4FDA62AAB0ACDE91"]
-			icon: {
-				Count: 1
-				id: "ad_astra:tier_2_rocket"
-				tag: { }
-			}
-			icon_scale: 1.5d
-			id: "7FA8FAFEAE5286BE"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "75670017A4F472FB"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "1308743C3D7AE67E"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "6573E4478C3EB2F6"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "04AF13AE3030B297"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Space Exploration II"
-			x: 38.5d
-			y: 16.5d
-		}
-		{
-			dependencies: ["2D38FB7C8E0FE1C2"]
-			icon: "gtceu:americium_ingot"
-			icon_scale: 1.5d
-			id: "654B9F1BB1EB964C"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "16C1C71DFD38E26D"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "28476F717C673090"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "31AE1DEFE6DE6005"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "25B86C95DB2FA0F7"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Nuclear III"
-			x: 38.5d
-			y: 17.5d
-		}
-		{
-			dependencies: [
-				"7FA8FAFEAE5286BE"
-				"654B9F1BB1EB964C"
-			]
-			icon: "ad_astra:ostrum_ingot"
-			icon_scale: 1.5d
-			id: "7010679C81C4627E"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "67A5ABAB00D0477A"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "466E960ED35F87E3"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "3946E29E9DC04693"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "1F99EFC23E37670F"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Space Metals II"
-			x: 39.5d
-			y: 16.5d
-		}
-		{
-			dependencies: ["7010679C81C4627E"]
-			icon: {
-				Count: 1
-				id: "ad_astra:tier_3_rocket"
-				tag: { }
-			}
-			icon_scale: 1.5d
-			id: "389879F10C12FAEB"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "63ECC0ACF79F2436"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "4C19AD2C559CE114"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "15BE52631C7ADBB3"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "3B7F7882E8FE8FF0"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Space Exploration III"
-			x: 40.5d
-			y: 16.5d
-		}
-		{
-			dependencies: ["654B9F1BB1EB964C"]
-			icon: "gtceu:americium_ingot"
-			icon_scale: 1.5d
-			id: "2B66DB8B688E6146"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "212FD1BCFD710904"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "75E7EA34CD1D1225"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "5BF0A35084D651D5"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "068C4063B5E7BF52"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Nuclear IV"
-			x: 40.5d
-			y: 17.5d
-		}
-		{
-			dependencies: [
-				"389879F10C12FAEB"
-				"2B66DB8B688E6146"
-			]
-			icon: "ad_astra:calorite_ingot"
-			icon_scale: 1.5d
-			id: "39D7D47A9A284AF3"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "4A3077F210AD06D1"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "6B85BD56D5ED1811"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "25FA909083006404"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "2865E146ADF83573"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Space Metals III"
-			x: 41.5d
-			y: 16.5d
-		}
-		{
-			dependencies: [
-				"39D7D47A9A284AF3"
-				"2280346454D46CAD"
-			]
-			icon: {
-				Count: 1
-				id: "ad_astra:tier_4_rocket"
-				tag: { }
-			}
-			icon_scale: 1.5d
-			id: "798983DD70AAC861"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "750017D1C223F606"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "64F3737BFC89240D"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "06D4350FF097C017"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "618939DA87154CC7"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Space Exploration IV"
-			x: 42.5d
-			y: 16.5d
-		}
-		{
-			dependencies: ["788EAB743C007BCA"]
-			icon: "gtceu:quantum_processor"
-			icon_scale: 1.5d
-			id: "4AA534549AEEA18B"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "3723A4B0F09773E0"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "26DE35B614DCF00E"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "481DBD64B00B4F6F"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "0B28A15C9D564170"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Quantum Electronics I"
-			x: 39.5d
-			y: 15.5d
-		}
-		{
-			dependencies: ["4AA534549AEEA18B"]
-			icon: "gtceu:quantum_processor_assembly"
-			icon_scale: 1.5d
-			id: "3577421CD753D37B"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "0469C8A6393B7A98"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "0994993498917CF4"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "21EBCFEC95E4169A"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "59FF344A217323A3"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Quantum Electronics II"
-			x: 40.5d
-			y: 15.5d
-		}
-		{
-			dependencies: ["3577421CD753D37B"]
-			icon: "gtceu:quantum_processor_computer"
-			icon_scale: 1.5d
-			id: "4AC78A95B9AFE6C7"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "17C919720BB5C13F"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "3EA948AB71BA2320"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "35BCA0036614E1F4"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "4579B2A27A8BBFCB"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Quantum Electronics III"
-			x: 41.5d
-			y: 15.5d
-		}
-		{
-			dependencies: ["4AC78A95B9AFE6C7"]
-			icon: "gtceu:quantum_processor_mainframe"
-			icon_scale: 1.5d
-			id: "2280346454D46CAD"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "6FAFCAE8FFE767F1"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "7213B48D20EA71C3"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "0BCDF151413031A6"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "748F85E6B05BFBC1"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Quantum Electronics IV"
-			x: 42.5d
-			y: 15.5d
-		}
-		{
-			dependencies: ["798983DD70AAC861"]
-			icon: "ad_astra:ice_shard"
-			icon_scale: 1.5d
-			id: "64D2E1B184D5BE49"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "6F7136B33793828B"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "5E43229350C59FD4"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "03BB2D34141E1053"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "492FBFBEE1AB9E21"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Space Metals IV"
-			x: 43.5d
-			y: 16.5d
-		}
-		{
-			dependencies: ["64D2E1B184D5BE49"]
-			icon: "gtceu:interstellar_alloy_ingot"
-			icon_scale: 1.5d
-			id: "01A2F209D677BDFD"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "79C33086A06E0042"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "42C361DD7A257F98"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "7DE0463C81A30620"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "237DA7716140B965"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Interstellar Alloy I"
-			x: 44.5d
-			y: 16.5d
-		}
-		{
-			dependencies: ["01A2F209D677BDFD"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/ludicrous_voltage_machinery"
-				}
-			}
-			icon_scale: 1.5d
-			id: "32242FDC9E78AB98"
-			shape: "square"
-			tasks: [
-				{
-					count: 20L
-					id: "7634849C2403B4EE"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 15L
-					id: "687567F41E70E7BC"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 10L
-					id: "4F51006DC16F2EB4"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "247AF19C0A7ED547"
-					item: "kubejs:natural_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "04FD56192A8756A5"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "07303E86449813F9"
-					item: "kubejs:sterile_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "27803F4C0895CF90"
-					item: "kubejs:gilded_research"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "526526A77A2A85F7"
-					item: "kubejs:nuclear_research"
-					type: "item"
-				}
-				{
-					id: "6074DEEB190E3862"
-					item: "kubejs:interstellar_research"
-					type: "item"
-				}
-			]
-			title: "Ludicrous Voltage Machinery"
-			x: 45.5d
-			y: 16.5d
-		}
-		{
-			dependencies: ["32242FDC9E78AB98"]
-			icon: "gtceu:luv_fusion_reactor"
-			icon_scale: 1.5d
-			id: "5E3A6CBA13B2EC98"
-			rewards: [{
-				command: "/say Hi, @p!"
-				icon: "gtceu:europium_ingot"
-				id: "194F4266A813BD2D"
-				type: "command"
-			}]
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "608C8AD991DDA104"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "67B276611326A163"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "72CA7515EF0348E7"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "621888F601A02557"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Fusion I"
-			x: 46.5d
-			y: 16.5d
-		}
-		{
-			dependencies: ["788EAB743C007BCA"]
-			icon: "gtceu:assembly_line"
-			icon_scale: 1.5d
-			id: "129846365153ADEF"
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "778E19AFED3BFF46"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "6425E3D1769B144D"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "6908A39C04CF1A10"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "03AEAFB34CCE9DB6"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Assembly Line"
-			x: 39.5d
-			y: 14.5d
-		}
-		{
-			dependencies: ["5E3A6CBA13B2EC98"]
-			icon: "gtceu:planetary_simulation_chamber"
-			icon_scale: 1.5d
-			id: "0E8ADC0E1BB64038"
-			rewards: [{
-				command: "/say Hi, @p!"
-				icon: "gtceu:europium_ingot"
-				id: "51536A16C65C53D1"
-				type: "command"
-			}]
-			shape: "square"
-			tasks: [
-				{
-					count: 8L
-					id: "23466405E8AD40E4"
-					item: "kubejs:primitive_research"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "6F55B71A2FAF2C95"
-					item: "kubejs:andesite_research"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "446C1358F47A4FEE"
-					item: "kubejs:brass_research"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "6130072F3E317048"
-					item: { Count: 2, id: "kubejs:natural_research" }
-					type: "item"
-				}
-			]
-			title: "Planetary Simulation"
-			x: 47.5d
-			y: 16.5d
-		}
-		{
 			dependencies: ["02181021D586E7B9"]
 			icon: {
 				Count: 1
@@ -5939,7 +3712,6 @@
 			y: 20.5d
 		}
 		{
-			dependencies: ["37FF2848E83A3F77"]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -6023,7 +3795,6 @@
 			y: 20.5d
 		}
 		{
-			dependencies: ["48DFADCB31556F79"]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -6481,123 +4252,1156 @@
 			y: 20.5d
 		}
 		{
-			dependencies: ["68213481A4A0666C"]
-			icon: "kubejs:mega_mv_machine_casing"
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/copper_2"
+				}
+			}
 			icon_scale: 1.5d
-			id: "3E7E5589BA329116"
+			id: "6468AAAED87CCC8D"
+			shape: "square"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:icons/andesite_alloy_3"
+					}
+				}
+				id: "14D70AF5CE5F7CE4"
+				title: "Andesite Alloy III"
+				type: "custom"
+			}]
+			title: "Copper II"
+			x: 5.0d
+			y: 16.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/amethyst_processing_3"
+				}
+			}
+			icon_scale: 1.5d
+			id: "3864243923091548"
+			shape: "square"
+			tasks: [
+				{
+					count: 10L
+					id: "13C01CBCE0D3AB53"
+					item: { Count: 6, id: "kubejs:primitive_research" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "420E2EA7D2877B79"
+					item: { Count: 3, id: "kubejs:andesite_research" }
+					type: "item"
+				}
+			]
+			title: "Amethyst III"
+			x: 3.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["2E546449AA1B369D"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/extreme_voltage_machinery"
+				}
+			}
+			icon_scale: 1.5d
+			id: "1E384093180BA4F2"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "1E612A064B57E273"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "51C60D8CB3B784E7"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "485D36DFEE26E515"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "44E79DC6D03306ED"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Extreme Voltage Machinery"
+			x: 23.5d
+			y: 22.0d
+		}
+		{
+			dependencies: ["4FDA62AAB0ACDE91"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/insane_voltage_machinery"
+				}
+			}
+			icon_scale: 1.5d
+			id: "788EAB743C007BCA"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "55D1827EBCB30553"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "4F4D643E050FBF01"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0CBF45ECFF3CFF00"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6B4EABF7C0F4822F"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Insane Voltage Machinery"
+			x: 28.5d
+			y: 22.0d
+		}
+		{
+			dependencies: ["1E384093180BA4F2"]
+			icon: "gtceu:nano_processor"
+			icon_scale: 1.5d
+			id: "4406C9A1AF85DB5D"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "0780FAD3A638549A"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "5757F4BA983E85E7"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "785F850057A3CB15"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "582F7A590B1740B1"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Nano Electronics I"
+			x: 24.5d
+			y: 22.0d
+		}
+		{
+			dependencies: ["4406C9A1AF85DB5D"]
+			icon: "gtceu:nano_processor_assembly"
+			icon_scale: 1.5d
+			id: "7DA1DB3A41A9AA18"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "696777674E7FA49C"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "63C44A65D64E0980"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "6B0DED853D249CC6"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "39098DAE1873C5D7"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Nano Electronics II"
+			x: 25.5d
+			y: 22.0d
+		}
+		{
+			dependencies: ["7DA1DB3A41A9AA18"]
+			icon: "gtceu:nano_processor_computer"
+			icon_scale: 1.5d
+			id: "17C30DF46B15FCC0"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "742BC2A0FD65175F"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "0C98494F7194D503"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "4F1BF7BFE9D589C4"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "260D0DDC0AAFCEDD"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Nano Electronics III"
+			x: 26.5d
+			y: 22.0d
+		}
+		{
+			dependencies: ["17C30DF46B15FCC0"]
+			icon: "gtceu:nano_processor_mainframe"
+			icon_scale: 1.5d
+			id: "2E389BFE44186554"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "7DC365A1DD269744"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "6A65D5CA4F3E7959"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "33358F2B032C194D"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6E04E0B08F9AD7A2"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Nano Electronics IV"
+			x: 27.5d
+			y: 22.0d
+		}
+		{
+			dependencies: ["1E384093180BA4F2"]
+			icon: "gtceu:dimensional_reactor"
+			icon_scale: 1.5d
+			id: "6E15C0ABE2AD745C"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "4DB4A246077ABCA2"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "7CC027228F8344F9"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "26388E3EBBFB53C2"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "780B7C9ED8183573"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Dimensional Reactor"
+			x: 24.5d
+			y: 23.0d
+		}
+		{
+			dependencies: ["6E15C0ABE2AD745C"]
+			icon: "gtceu:uranium_235_ingot"
+			icon_scale: 1.5d
+			id: "63D155160CFF7BE4"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "00D9D4EEC4DF11EC"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "11CF3F2C044431F6"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "7D236A0879C87FEF"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7B81A9FC9534808E"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Nuclear I"
+			x: 25.5d
+			y: 23.0d
+		}
+		{
+			dependencies: ["63D155160CFF7BE4"]
+			icon: "gtceu:plutonium_241_ingot"
+			icon_scale: 1.5d
+			id: "2D38FB7C8E0FE1C2"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "38512592C72D406F"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "66F9C46C42C78D95"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0C4818BF9BA96F05"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "02632B0A1181CD26"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Nuclear II"
+			x: 26.5d
+			y: 24.0d
+		}
+		{
+			dependencies: ["63D155160CFF7BE4"]
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_1_rocket"
+				tag: { }
+			}
+			icon_scale: 1.5d
+			id: "1CE49A97B3549B73"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "16320D03DF17A747"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "3220F3A9ACF2BB5C"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "5BA13373D38B439B"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "735A1280EE997B60"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Space Exploration I"
+			x: 26.5d
+			y: 23.0d
+		}
+		{
+			dependencies: [
+				"1CE49A97B3549B73"
+				"2D38FB7C8E0FE1C2"
+			]
+			icon: "ad_astra:desh_ingot"
+			icon_scale: 1.5d
+			id: "4FDA62AAB0ACDE91"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "79804E46F9489D20"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "5A6223AC24F38BDD"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "6F857BCB9FCAC69D"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0B7D05BFB312AE27"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Space Metals I"
+			x: 27.5d
+			y: 23.0d
+		}
+		{
+			dependencies: ["4FDA62AAB0ACDE91"]
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_2_rocket"
+				tag: { }
+			}
+			icon_scale: 1.5d
+			id: "7FA8FAFEAE5286BE"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "75670017A4F472FB"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "1308743C3D7AE67E"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "6573E4478C3EB2F6"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "04AF13AE3030B297"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Space Exploration II"
+			x: 28.5d
+			y: 23.0d
+		}
+		{
+			dependencies: ["2D38FB7C8E0FE1C2"]
+			icon: "gtceu:americium_ingot"
+			icon_scale: 1.5d
+			id: "654B9F1BB1EB964C"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "16C1C71DFD38E26D"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "28476F717C673090"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "31AE1DEFE6DE6005"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "25B86C95DB2FA0F7"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Nuclear III"
+			x: 28.5d
+			y: 24.0d
+		}
+		{
+			dependencies: [
+				"7FA8FAFEAE5286BE"
+				"654B9F1BB1EB964C"
+			]
+			icon: "ad_astra:ostrum_ingot"
+			icon_scale: 1.5d
+			id: "7010679C81C4627E"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "67A5ABAB00D0477A"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "466E960ED35F87E3"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "3946E29E9DC04693"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1F99EFC23E37670F"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Space Metals II"
+			x: 29.5d
+			y: 25.0d
+		}
+		{
+			dependencies: ["7010679C81C4627E"]
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_3_rocket"
+				tag: { }
+			}
+			icon_scale: 1.5d
+			id: "389879F10C12FAEB"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "63ECC0ACF79F2436"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "4C19AD2C559CE114"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "15BE52631C7ADBB3"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3B7F7882E8FE8FF0"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Space Exploration III"
+			x: 30.5d
+			y: 24.0d
+		}
+		{
+			dependencies: ["654B9F1BB1EB964C"]
+			icon: "gtceu:americium_ingot"
+			icon_scale: 1.5d
+			id: "2B66DB8B688E6146"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "212FD1BCFD710904"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "75E7EA34CD1D1225"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "5BF0A35084D651D5"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "068C4063B5E7BF52"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Nuclear IV"
+			x: 30.5d
+			y: 25.0d
+		}
+		{
+			dependencies: [
+				"389879F10C12FAEB"
+				"2B66DB8B688E6146"
+			]
+			icon: "ad_astra:calorite_ingot"
+			icon_scale: 1.5d
+			id: "39D7D47A9A284AF3"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "4A3077F210AD06D1"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "6B85BD56D5ED1811"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "25FA909083006404"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2865E146ADF83573"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Space Metals III"
+			x: 31.5d
+			y: 24.0d
+		}
+		{
+			dependencies: [
+				"39D7D47A9A284AF3"
+				"2280346454D46CAD"
+			]
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_4_rocket"
+				tag: { }
+			}
+			icon_scale: 1.5d
+			id: "798983DD70AAC861"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "750017D1C223F606"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "64F3737BFC89240D"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "06D4350FF097C017"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "618939DA87154CC7"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Space Exploration IV"
+			x: 32.5d
+			y: 24.0d
+		}
+		{
+			dependencies: ["788EAB743C007BCA"]
+			icon: "gtceu:quantum_processor"
+			icon_scale: 1.5d
+			id: "4AA534549AEEA18B"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "3723A4B0F09773E0"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "26DE35B614DCF00E"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "481DBD64B00B4F6F"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0B28A15C9D564170"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Quantum Electronics I"
+			x: 29.5d
+			y: 24.0d
+		}
+		{
+			dependencies: ["4AA534549AEEA18B"]
+			icon: "gtceu:quantum_processor_assembly"
+			icon_scale: 1.5d
+			id: "3577421CD753D37B"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "0469C8A6393B7A98"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "0994993498917CF4"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "21EBCFEC95E4169A"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "59FF344A217323A3"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Quantum Electronics II"
+			x: 30.5d
+			y: 23.0d
+		}
+		{
+			dependencies: ["3577421CD753D37B"]
+			icon: "gtceu:quantum_processor_computer"
+			icon_scale: 1.5d
+			id: "4AC78A95B9AFE6C7"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "17C919720BB5C13F"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "3EA948AB71BA2320"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "35BCA0036614E1F4"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4579B2A27A8BBFCB"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Quantum Electronics III"
+			x: 31.5d
+			y: 23.0d
+		}
+		{
+			dependencies: ["4AC78A95B9AFE6C7"]
+			icon: "gtceu:quantum_processor_mainframe"
+			icon_scale: 1.5d
+			id: "2280346454D46CAD"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "6FAFCAE8FFE767F1"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "7213B48D20EA71C3"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0BCDF151413031A6"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "748F85E6B05BFBC1"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Quantum Electronics IV"
+			x: 32.5d
+			y: 23.0d
+		}
+		{
+			dependencies: ["798983DD70AAC861"]
+			icon: "ad_astra:ice_shard"
+			icon_scale: 1.5d
+			id: "64D2E1B184D5BE49"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "6F7136B33793828B"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "5E43229350C59FD4"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "03BB2D34141E1053"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "492FBFBEE1AB9E21"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Space Metals IV"
+			x: 33.5d
+			y: 24.0d
+		}
+		{
+			dependencies: ["64D2E1B184D5BE49"]
+			icon: "gtceu:interstellar_alloy_ingot"
+			icon_scale: 1.5d
+			id: "01A2F209D677BDFD"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "79C33086A06E0042"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "42C361DD7A257F98"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "7DE0463C81A30620"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "237DA7716140B965"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Interstellar Alloy I"
+			x: 34.5d
+			y: 24.0d
+		}
+		{
+			dependencies: ["01A2F209D677BDFD"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:icons/ludicrous_voltage_machinery"
+				}
+			}
+			icon_scale: 1.5d
+			id: "32242FDC9E78AB98"
+			shape: "square"
+			tasks: [
+				{
+					count: 20L
+					id: "7634849C2403B4EE"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "687567F41E70E7BC"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "4F51006DC16F2EB4"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "247AF19C0A7ED547"
+					item: "kubejs:natural_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "04FD56192A8756A5"
+					item: "kubejs:magical_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "07303E86449813F9"
+					item: "kubejs:sterile_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "27803F4C0895CF90"
+					item: "kubejs:gilded_research"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "526526A77A2A85F7"
+					item: "kubejs:nuclear_research"
+					type: "item"
+				}
+				{
+					id: "6074DEEB190E3862"
+					item: "kubejs:interstellar_research"
+					type: "item"
+				}
+			]
+			title: "Ludicrous Voltage Machinery"
+			x: 35.5d
+			y: 23.0d
+		}
+		{
+			dependencies: ["32242FDC9E78AB98"]
+			icon: "gtceu:luv_fusion_reactor"
+			icon_scale: 1.5d
+			id: "5E3A6CBA13B2EC98"
 			rewards: [{
-				auto: "no_toast"
 				command: "/say Hi, @p!"
-				elevate_perms: true
-				icon: "kubejs:mega_mv_machine_casing"
-				id: "7EA233F83B1A7870"
-				silent: true
-				title: "Unlock Mega MV Machine Casing"
+				icon: "gtceu:europium_ingot"
+				id: "194F4266A813BD2D"
 				type: "command"
 			}]
 			shape: "square"
 			tasks: [
 				{
-					count: 16L
-					id: "5C68ACD0F6044A28"
+					count: 8L
+					id: "608C8AD991DDA104"
 					item: "kubejs:primitive_research"
 					type: "item"
 				}
 				{
-					count: 12L
-					id: "350E3D406B6B0D38"
+					count: 6L
+					id: "67B276611326A163"
 					item: "kubejs:andesite_research"
 					type: "item"
 				}
 				{
-					count: 10L
-					id: "0D3E04DE942DCF20"
+					count: 5L
+					id: "72CA7515EF0348E7"
 					item: "kubejs:brass_research"
 					type: "item"
 				}
 				{
-					count: 8L
-					id: "4F63828871F1C672"
-					item: "kubejs:natural_research"
-					type: "item"
-				}
-				{
 					count: 4L
-					id: "4F6519B34BB658C6"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "38F40E8BF6F2ED51"
-					item: "kubejs:sterile_research"
+					id: "621888F601A02557"
+					item: { Count: 2, id: "kubejs:natural_research" }
 					type: "item"
 				}
 			]
-			title: "Large Machinery III"
-			x: 20.5d
-			y: 16.5d
+			title: "Fusion I"
+			x: 36.5d
+			y: 23.0d
 		}
 		{
-			icon: "kubejs:mega_mv_machine_casing"
+			dependencies: ["788EAB743C007BCA"]
+			icon: "gtceu:assembly_line"
 			icon_scale: 1.5d
-			id: "7B338AF395795B12"
-			rewards: [
-				{
-					command: "/say Hi, @p!"
-					icon: "gtceu:hv_steam_turbine"
-					id: "23331FD37F7BB69D"
-					title: "Unlock Advanced Steam Turbine"
-					type: "command"
-				}
-				{
-					id: "2B14A916FD26F07C"
-					title: "Unlock Large Nature's Alloy Turbine"
-					type: "custom"
-				}
-			]
+			id: "129846365153ADEF"
 			shape: "square"
 			tasks: [
 				{
-					count: 16L
-					id: "730C69D53C3BB128"
+					count: 8L
+					id: "778E19AFED3BFF46"
 					item: "kubejs:primitive_research"
 					type: "item"
 				}
 				{
-					count: 12L
-					id: "4A0221B8EF2E9267"
+					count: 6L
+					id: "6425E3D1769B144D"
 					item: "kubejs:andesite_research"
 					type: "item"
 				}
 				{
-					count: 10L
-					id: "1E4A972A5C265B7C"
+					count: 5L
+					id: "6908A39C04CF1A10"
 					item: "kubejs:brass_research"
 					type: "item"
 				}
 				{
+					count: 4L
+					id: "03AEAFB34CCE9DB6"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Assembly Line"
+			x: 29.5d
+			y: 22.0d
+		}
+		{
+			dependencies: ["5E3A6CBA13B2EC98"]
+			icon: "gtceu:planetary_simulation_chamber"
+			icon_scale: 1.5d
+			id: "0E8ADC0E1BB64038"
+			rewards: [{
+				command: "/say Hi, @p!"
+				icon: "gtceu:europium_ingot"
+				id: "51536A16C65C53D1"
+				type: "command"
+			}]
+			shape: "square"
+			tasks: [
+				{
 					count: 8L
-					id: "28D36C4EEBD3EB81"
-					item: "kubejs:natural_research"
+					id: "23466405E8AD40E4"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "6F55B71A2FAF2C95"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "446C1358F47A4FEE"
+					item: "kubejs:brass_research"
 					type: "item"
 				}
 				{
 					count: 4L
-					id: "253C6EBE2D97D39C"
-					item: "kubejs:magical_research"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "3C513F01DBD4E3FB"
-					item: "kubejs:sterile_research"
+					id: "6130072F3E317048"
+					item: { Count: 2, id: "kubejs:natural_research" }
 					type: "item"
 				}
 			]
-			title: "Steam Power III"
-			x: 19.5d
-			y: 15.5d
+			title: "Planetary Simulation"
+			x: 37.5d
+			y: 23.0d
 		}
 		{
 			icon: "kubejs:nuclear_research"
@@ -6631,8 +5435,8 @@
 				}
 			]
 			title: "Nuclear Research"
-			x: 38.5d
-			y: 14.5d
+			x: 29.5d
+			y: 21.0d
 		}
 		{
 			dependencies: ["01A2F209D677BDFD"]
@@ -6667,178 +5471,487 @@
 				}
 			]
 			title: "Interstellar Research"
-			x: 45.5d
-			y: 15.5d
+			x: 35.5d
+			y: 22.0d
 		}
 		{
-			dependencies: ["3DD56A853D117419"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/zinc_2"
-				}
-			}
+			description: ["{image:kubejs:icons/andesite_research_2_page width:186 height:113 align:center}"]
+			icon: "kubejs:sterile_research"
 			icon_scale: 1.5d
-			id: "48DFADCB31556F79"
+			id: "082B4A263FFC28AE"
+			rewards: [{
+				icon: "allthecompressed:andesite_1x"
+				id: "31F2E0355D876225"
+				title: "Unlock Andesite 1x"
+				type: "custom"
+			}]
 			shape: "square"
+			size: 1.0d
 			tasks: [
 				{
-					count: 16L
-					id: "058CFE9F57F64A35"
+					count: 100L
+					id: "38D0DCC7EE9A92D0"
 					item: "kubejs:primitive_research"
 					type: "item"
 				}
 				{
-					count: 8L
-					id: "442A426B0C4D2596"
-					item: { Count: 3, id: "kubejs:andesite_research" }
+					count: 50L
+					id: "031E6F8C466F47F5"
+					item: "kubejs:andesite_research"
 					type: "item"
 				}
 				{
-					count: 4L
-					id: "5F996CC63C5FC176"
+					count: 25L
+					id: "6FD35F2A424D8085"
 					item: "kubejs:brass_research"
 					type: "item"
 				}
 			]
-			title: "Zinc II"
-			x: 6.0d
-			y: 16.5d
+			title: "Sterile Research II"
+			x: 21.5d
+			y: 23.0d
 		}
 		{
-			description: ["{image:kubejs:icons/natures_alloy_3_page width:176 height:105 align:center}"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/copper_2"
-				}
-			}
+			description: ["{image:kubejs:icons/andesite_research_2_page width:186 height:113 align:center}"]
+			icon: "kubejs:natural_research"
 			icon_scale: 1.5d
-			id: "6468AAAED87CCC8D"
-			shape: "square"
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "ftbquests:custom_icon"
-					tag: {
-						Icon: "kubejs:icons/andesite_alloy_3"
-					}
-				}
-				id: "14D70AF5CE5F7CE4"
-				title: "Andesite Alloy III"
+			id: "06A88756548F576D"
+			rewards: [{
+				icon: "allthecompressed:andesite_1x"
+				id: "177F1C69E9F98150"
+				title: "Unlock Andesite 1x"
 				type: "custom"
 			}]
-			title: "Copper II"
-			x: 5.0d
-			y: 16.5d
+			shape: "square"
+			size: 1.0d
+			tasks: [
+				{
+					count: 100L
+					id: "2DBEFAA271A9873F"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 50L
+					id: "6284533DD53DE85C"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "0643C17D6F56B002"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+			]
+			title: "Natural Research III"
+			x: 21.5d
+			y: 22.0d
 		}
 		{
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/iron_2"
-				}
-			}
+			description: ["{image:kubejs:icons/andesite_research_2_page width:186 height:113 align:center}"]
+			icon: "kubejs:primitive_research"
 			icon_scale: 1.5d
-			id: "788EF4C7DD8C8B96"
-			shape: "square"
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "ftbquests:custom_icon"
-					tag: {
-						Icon: "kubejs:icons/andesite_alloy_3"
-					}
-				}
-				id: "27E283EC0DBE95C6"
-				title: "Andesite Alloy III"
+			id: "633F429012CEBCFF"
+			rewards: [{
+				icon: "allthecompressed:andesite_1x"
+				id: "74DFB4EEB5D959E9"
+				title: "Unlock Andesite 1x"
 				type: "custom"
 			}]
-			title: "Iron II"
-			x: 4.0d
-			y: 16.5d
+			shape: "square"
+			size: 1.0d
+			tasks: [
+				{
+					count: 100L
+					id: "1A969991F31AECF7"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 50L
+					id: "65D6D89C7255E073"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "48E7B4A15A47DB4A"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+			]
+			title: "Primitive Research IV"
+			x: 20.5d
+			y: 23.0d
 		}
 		{
-			dependencies: ["1EE592CCEBDD19F4"]
+			description: ["{image:kubejs:icons/andesite_research_2_page width:186 height:113 align:center}"]
+			icon: "kubejs:andesite_research"
 			icon_scale: 1.5d
-			id: "02181021D586E7B9"
-			shape: "square"
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "ftbquests:custom_icon"
-					tag: {
-						Icon: "kubejs:icons/andesite_alloy_3"
-					}
-				}
-				id: "7C25BDE20B802156"
-				title: "Andesite Alloy III"
+			id: "45824ECF64157E4D"
+			rewards: [{
+				icon: "allthecompressed:andesite_1x"
+				id: "602188ECCC8B4721"
+				title: "Unlock Andesite 1x"
 				type: "custom"
 			}]
-			x: 8.0d
-			y: 17.5d
+			shape: "square"
+			size: 1.0d
+			tasks: [
+				{
+					count: 100L
+					id: "1C2C38150A306F05"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 50L
+					id: "2B7579FBD46DE8C6"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "20C55D4A7D6A8CFF"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+			]
+			title: "Andesite Research IV"
+			x: 20.5d
+			y: 22.0d
 		}
 		{
-			dependencies: ["78513CFE449AA3E6"]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/coal_processing_3"
-				}
-			}
+			description: ["{image:kubejs:icons/andesite_research_2_page width:186 height:113 align:center}"]
+			icon: "kubejs:magical_research"
 			icon_scale: 1.5d
-			id: "37FF2848E83A3F77"
-			shape: "square"
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "ftbquests:custom_icon"
-					tag: {
-						Icon: "kubejs:icons/andesite_alloy_3"
-					}
-				}
-				id: "200B1FA9A4A12EDD"
-				title: "Andesite Alloy III"
+			id: "5F49A20635823042"
+			rewards: [{
+				icon: "allthecompressed:andesite_1x"
+				id: "2F4604FD9B7A9831"
+				title: "Unlock Andesite 1x"
 				type: "custom"
 			}]
-			title: "Coal III"
-			x: 7.0d
-			y: 17.5d
+			shape: "square"
+			size: 1.0d
+			tasks: [
+				{
+					count: 100L
+					id: "6EC619C3D68CC9E1"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 50L
+					id: "255503690295C16A"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "25DBD9F7CBB9DB5C"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+			]
+			title: "Magical Research III"
+			x: 21.5d
+			y: 27.0d
 		}
 		{
-			hide_dependent_lines: true
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:icons/amethyst_processing_3"
-				}
-			}
+			description: ["{image:kubejs:icons/andesite_research_2_page width:186 height:113 align:center}"]
+			hide_dependency_lines: false
+			icon: "kubejs:brass_research"
 			icon_scale: 1.5d
-			id: "3864243923091548"
+			id: "1991BD3408B5EE5D"
+			rewards: [{
+				icon: "allthecompressed:andesite_1x"
+				id: "4A365DFEB7049D0B"
+				title: "Unlock Andesite 1x"
+				type: "custom"
+			}]
+			shape: "square"
+			size: 1.0d
+			tasks: [
+				{
+					count: 100L
+					id: "7AE6BDF612BBDCC9"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 50L
+					id: "499EC2A05D6C7983"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "736B213E81D637F5"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+			]
+			title: "Brass Research IV"
+			x: 20.5d
+			y: 27.0d
+		}
+		{
+			description: ["{image:kubejs:icons/andesite_research_2_page width:186 height:113 align:center}"]
+			hide_dependency_lines: false
+			icon: "kubejs:gilded_research"
+			icon_scale: 1.5d
+			id: "6A8561E0CCF9DFAB"
+			rewards: [{
+				icon: "allthecompressed:andesite_1x"
+				id: "644686DD1FADD015"
+				title: "Unlock Andesite 1x"
+				type: "custom"
+			}]
+			shape: "square"
+			size: 1.0d
+			tasks: [
+				{
+					count: 100L
+					id: "6FA060791CBF2A15"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 50L
+					id: "777FCE8DD6318AD5"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "2EEC8DB5CD2BA29E"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+			]
+			title: "Gilded Research II"
+			x: 19.5d
+			y: 27.0d
+		}
+		{
+			description: ["{image:kubejs:icons/andesite_research_2_page width:186 height:113 align:center}"]
+			icon: "kubejs:andesite_research"
+			icon_scale: 1.5d
+			id: "07F28504D2BA93B7"
+			rewards: [{
+				icon: "allthecompressed:andesite_1x"
+				id: "5CBBB781E9453653"
+				title: "Unlock Andesite 1x"
+				type: "custom"
+			}]
+			shape: "square"
+			size: 1.0d
+			tasks: [
+				{
+					count: 100L
+					id: "3B5D37622413BD1E"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 50L
+					id: "33F006C7AFCBD188"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "71EE9BDFE8BE7401"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+			]
+			title: "Andesite Research V"
+			x: 20.5d
+			y: 30.5d
+		}
+		{
+			description: ["{image:kubejs:icons/andesite_research_2_page width:186 height:113 align:center}"]
+			icon: "kubejs:natural_research"
+			icon_scale: 1.5d
+			id: "6994C656498BF8B2"
+			rewards: [{
+				icon: "allthecompressed:andesite_1x"
+				id: "60F7E59BC5A00E7E"
+				title: "Unlock Andesite 1x"
+				type: "custom"
+			}]
+			shape: "square"
+			size: 1.0d
+			tasks: [
+				{
+					count: 100L
+					id: "4C68A04A3333A750"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 50L
+					id: "5D530BA7202FDBD9"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "550B2C0EBC498301"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+			]
+			title: "Natural Research IV"
+			x: 21.5d
+			y: 30.5d
+		}
+		{
+			description: ["{image:kubejs:icons/andesite_research_2_page width:186 height:113 align:center}"]
+			icon: "kubejs:primitive_research"
+			icon_scale: 1.5d
+			id: "5C7A7EF7D1DA68E2"
+			rewards: [{
+				icon: "allthecompressed:andesite_1x"
+				id: "4F1B4B6D67ADEA86"
+				title: "Unlock Andesite 1x"
+				type: "custom"
+			}]
+			shape: "square"
+			size: 1.0d
+			tasks: [
+				{
+					count: 100L
+					id: "5E2C712F1BCEBD00"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 50L
+					id: "73ED6284CB1A7D35"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "0DF8F2F9C6CD9AB5"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+			]
+			title: "Primitive Research V"
+			x: 20.5d
+			y: 31.5d
+		}
+		{
+			description: ["{image:kubejs:icons/andesite_research_2_page width:186 height:113 align:center}"]
+			icon: "kubejs:sterile_research"
+			icon_scale: 1.5d
+			id: "274ADC3D49FC9C49"
+			rewards: [{
+				icon: "allthecompressed:andesite_1x"
+				id: "775E25D6B8E6C87E"
+				title: "Unlock Andesite 1x"
+				type: "custom"
+			}]
+			shape: "square"
+			size: 1.0d
+			tasks: [
+				{
+					count: 100L
+					id: "4D02712D7B23EE63"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 50L
+					id: "0429CE984C0CC968"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "5DFE40CEF64A1A59"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+			]
+			title: "Sterile Research III"
+			x: 21.5d
+			y: 31.5d
+		}
+		{
+			icon: "kubejs:nuclear_research"
+			icon_scale: 1.5d
+			id: "5A10A331FDCAFD16"
 			shape: "square"
 			tasks: [
 				{
-					count: 10L
-					id: "13C01CBCE0D3AB53"
-					item: { Count: 6, id: "kubejs:primitive_research" }
+					count: 8L
+					id: "66B5E11AA3FCB119"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "55A8835F8FEE0513"
+					item: "kubejs:andesite_research"
 					type: "item"
 				}
 				{
 					count: 5L
-					id: "420E2EA7D2877B79"
-					item: { Count: 3, id: "kubejs:andesite_research" }
+					id: "1A3BAB36A14DDB26"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "44674EDA6FB2C495"
+					item: { Count: 2, id: "kubejs:natural_research" }
 					type: "item"
 				}
 			]
-			title: "Amethyst III"
-			x: 3.0d
-			y: 17.5d
+			title: "Nuclear Research II"
+			x: 19.5d
+			y: 30.5d
+		}
+		{
+			icon: "kubejs:interstellar_research"
+			icon_scale: 1.5d
+			id: "1B33707D2EE0EB34"
+			shape: "square"
+			tasks: [
+				{
+					count: 8L
+					id: "316AD5AC87D2785D"
+					item: "kubejs:primitive_research"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "7FEFEDDDA19A3C71"
+					item: "kubejs:andesite_research"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "3A77768525FCFA6D"
+					item: "kubejs:brass_research"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1CBDC9911D6C5A7E"
+					item: { Count: 2, id: "kubejs:natural_research" }
+					type: "item"
+				}
+			]
+			title: "Interstellar Research II"
+			x: 19.5d
+			y: 31.5d
 		}
 	]
-	title: "fake full progression chapter for my brain"
 }

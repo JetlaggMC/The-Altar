@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ii__wizards_only_fools"
-	group: ""
+	group: "6DCAF797DFD97211"
 	hide_quest_until_deps_visible: true
 	icon: "kubejs:magical_star"
 	id: "4A4C9EE82113EA5E"
@@ -14,7 +14,7 @@
 		x: 9.0d
 		y: -10.0d
 	}]
-	order_index: 3
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -26,7 +26,7 @@
 				item: "botania:mana_powder"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 10.0d
 			y: -10.0d
 		}
 		{
@@ -51,8 +51,8 @@
 				item: "kubejs:terrasteel_dust"
 				type: "item"
 			}]
-			x: 16.0d
-			y: -8.0d
+			x: 15.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -85,10 +85,7 @@
 			y: -16.0d
 		}
 		{
-			dependencies: [
-				"6F3B77D50A8BDF02"
-				"58D2E626B6BA6A0B"
-			]
+			dependencies: ["6F3B77D50A8BDF02"]
 			id: "6469CEB22C564A0E"
 			shape: "diamond"
 			tasks: [{
@@ -281,7 +278,7 @@
 				type: "item"
 			}]
 			x: 13.0d
-			y: -12.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["67033F16B6A1175B"]
@@ -293,7 +290,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: -12.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["67033F16B6A1175B"]
@@ -375,8 +372,8 @@
 				item: "botania:terrasteel_ingot"
 				type: "item"
 			}]
-			x: 15.0d
-			y: -8.0d
+			x: 14.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["20D2786094B85C99"]
@@ -387,8 +384,8 @@
 				item: "botania:terra_plate"
 				type: "item"
 			}]
-			x: 16.0d
-			y: -9.0d
+			x: 15.0d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -695,7 +692,7 @@
 				type: "item"
 			}]
 			x: 13.0d
-			y: -11.0d
+			y: -12.0d
 		}
 		{
 			dependencies: [
@@ -1146,7 +1143,6 @@
 		{
 			dependencies: [
 				"49F99471B212281D"
-				"5460FDB495A6F19D"
 				"2DCF8B5235A3679A"
 			]
 			icon: "kubejs:cow_model_1"
@@ -1289,21 +1285,6 @@
 			y: -7.0d
 		}
 		{
-			dependencies: [
-				"7C308501E6639286"
-				"7A18E30D3E2C9C26"
-			]
-			id: "677DDEF2FD1B5F57"
-			shape: "diamond"
-			tasks: [{
-				id: "583F941F194AD7EE"
-				item: "gtceu:kanthal_coil_block"
-				type: "item"
-			}]
-			x: 7.0d
-			y: -4.0d
-		}
-		{
 			dependencies: ["3CD3A304326B6BB1"]
 			id: "06EF031CDE99761D"
 			shape: "diamond"
@@ -1329,23 +1310,6 @@
 		}
 		{
 			dependencies: [
-				"44FA5F068715272C"
-				"2E6BDB95BFDFC2F1"
-			]
-			hide_dependency_lines: true
-			id: "5460FDB495A6F19D"
-			shape: "diamond"
-			subtitle: "Gross dude."
-			tasks: [{
-				id: "240777780420EFC3"
-				item: "kubejs:raw_meat_glob"
-				type: "item"
-			}]
-			x: 13.0d
-			y: -13.0d
-		}
-		{
-			dependencies: [
 				"126AD44A29E49574"
 				"7C0E437363F47CD7"
 				"35956C8118B06DC5"
@@ -1364,6 +1328,8 @@
 			dependencies: [
 				"7B714E4C469C4AB4"
 				"531E17B405C41383"
+				"45EB35B9AC71F5A8"
+				"1432848CE00BB26A"
 			]
 			id: "7C0E437363F47CD7"
 			shape: "diamond"
@@ -1377,7 +1343,11 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["7B714E4C469C4AB4"]
+			dependencies: [
+				"7B714E4C469C4AB4"
+				"00D2167FB1C2D869"
+				"2E0FBEDD78CF905E"
+			]
 			id: "126AD44A29E49574"
 			tasks: [{
 				id: "673A6F509686D18E"
@@ -1411,8 +1381,8 @@
 				item: "gtceu:mv_animal_pen"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -7.0d
+			x: 7.0d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -1422,13 +1392,13 @@
 			hide_dependency_lines: true
 			id: "63BA9829B3B62BE0"
 			shape: "diamond"
-			size: 2.0d
+			size: 3.0d
 			tasks: [{
 				id: "0AE3CEE7A4946C2A"
 				item: "kubejs:magical_star"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 16.5d
 			y: -10.0d
 		}
 		{
@@ -1453,22 +1423,27 @@
 				item: "kubejs:mega_mv_machine_casing"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -11.0d
+			x: 6.0d
+			y: -10.0d
 		}
 		{
 			dependencies: [
 				"7098F7DCF75A6A0D"
 				"3A084181E974464C"
 			]
+			description: [
+				"The Breeding Chamber Multiblock allows for the reproduction of animal and hostile mob modles, once you create 2 higher tier modles, you can recreate older modles for free!"
+				"{image:kubejs:icons/reproduction_page_2 width:80 height:113 align:center}"
+			]
 			id: "367337B7D0ED4B2C"
+			subtitle: "put two and two together..."
 			tasks: [{
 				id: "7C4AC6CE597C9C7C"
 				item: "gtceu:breeding_chamber"
 				type: "item"
 			}]
 			x: 7.0d
-			y: -9.0d
+			y: -10.0d
 		}
 		{
 			dependencies: [
@@ -1482,6 +1457,61 @@
 				type: "item"
 			}]
 			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["493F12BE5AB65B40"]
+			id: "2E0FBEDD78CF905E"
+			tasks: [{
+				id: "1434F75267C674AE"
+				item: "farmersdelight:fruit_salad"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["493F12BE5AB65B40"]
+			id: "00D2167FB1C2D869"
+			tasks: [{
+				id: "4F52EE7DE52D1FFC"
+				item: "farmersdelight:vegetable_soup"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["493F12BE5AB65B40"]
+			id: "45EB35B9AC71F5A8"
+			tasks: [{
+				id: "66B4680FAF3FEFDC"
+				item: "farmersdelight:hamburger"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["493F12BE5AB65B40"]
+			id: "1432848CE00BB26A"
+			tasks: [{
+				id: "6BAC2A00CA325B1C"
+				item: "farmersdelight:chicken_soup"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["7C308501E6639286"]
+			id: "76F82D4C1AB3BA0A"
+			tasks: [{
+				id: "26C1E756FEDFA42F"
+				item: "kubejs:elementium_coil_block"
+				type: "item"
+			}]
+			x: 7.0d
 			y: -4.0d
 		}
 	]
