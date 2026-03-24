@@ -20,6 +20,17 @@ ServerEvents.recipes(event => {
 
 		.duration(2400)
 		.EUt(92)
+	
+	event.recipes.gtceu.animal_pen('cow_3')
+		.notConsumable(Item.of('1x kubejs:cow_model_3'))
+		.itemInputs(Item.of('8x kubejs:wheat_1'))
+		.itemOutputs(Item.of('64x minecraft:leather'))
+		.itemOutputs(Item.of('64x minecraft:beef'))
+		.outputFluids(Fluid.of('minecraft:milk', 32000))
+		.outputFluids(Fluid.of('gtceu:biomass',1000))
+		.duration(3600)
+		.EUt(320)
+
 	event.recipes.gtceu.animal_pen('squid_1')
 		.notConsumable(Item.of('1x kubejs:squid_model_1'))
 		.itemInputs(Item.of('8x #minecraft:fishes'))

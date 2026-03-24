@@ -1,0 +1,5 @@
+{
+  "ldlib": {
+    "connection": "kubejs:block/coil/elementium/machine_coil_elementium_ctm"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "ldlib": {
+    "connection": "kubejs:block/coil/synthetic_neuron/machine_coil_synthetic_neuron_ctm"
+  }
+}

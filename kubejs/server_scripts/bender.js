@@ -1,0 +1,15 @@
+ServerEvents.recipes(event => {
+	event.recipes.gtceu.bender('andesite_alloy_plate')
+		.circuit(1)
+		.itemInputs(Item.of('1x create:andesite_alloy'))
+		.itemOutputs(Item.of('1x gtceu:andesite_alloy_plate'))
+		.duration(56)
+		.EUt(24)
+	event.recipes.gtceu.bender('natures_alloy_plate')
+		.circuit(1)
+		.itemInputs(Item.of('1x gtceu:natures_alloy_ingot'))
+		.itemOutputs(Item.of('1x gtceu:natures_alloy_plate'))
+		.duration(56)
+		.EUt(24)
+	
+})

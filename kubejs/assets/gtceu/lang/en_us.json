@@ -17,7 +17,11 @@
    "block.gtceu.temperate_garden": "Temperate Garden",
    "gtceu.temperate_garden": "Temperate Garden",
    "gtceu.meat_freezer": "Meat Freezer",
-
+	
+   "gtceu.cleanroom": "Fleshroom",
+   "block.gtceu.plascrete": "Fleshcrete",
+   "block.gtceu.cleanroom": "Fleshroom",
+   "block.gtceu.cleanroom_glass": "Fleshroom Glass",
 
    "block.gtceu.lv_crop_simulator": "Basic Crop Simulator",
    "block.gtceu.mv_crop_simulator": "Advanced Crop Simulator",
@@ -43,6 +47,7 @@
 
    "material.gtceu.synthetic_neuron": "Synthetic Neuron",
    "material.gtceu.elementium": "Elementium",
+   "material.gtceu.virentium_alloy": "Virentium Alloy",
 
    "gtceu.essence_refinery": "Essence Refinery",
    "block.gtceu.andesite_mechanical_drill": "Andesite Mechanical Drill",
@@ -58,6 +63,8 @@
    "block.gtceu.mega_press": "Mega Press",
    "gtceu.mega_press": "Mega Press",
    "gtceu.mega_mixer": "Mega Mixer",
+   "gtceu.laboratory": "Laboratory",
+   "block.gtceu.laboratory": "Laboratory",
 
    "block.gtceu.meat_freezer": "Meat Freezer",
    "block.gtceu.twilight_awakening_chamber_mk1": "Twilight Awakening Chamber MK1",
@@ -65,9 +72,6 @@
    "block.gtceu.twilight_awakening_chamber_mk3": "Twilight Awakening Chamber MK3",
    "block.gtceu.twilight_awakening_chamber_mk4": "Twilight Awakening Chamber MK4",
    "block.gtceu.large_mechanical_press": "Large Mechanical Press",
-   "block.gtceu.cupronickel_coil_block": "Glowing Coil Block",
-   "block.gtceu.kanthal_coil_block": "Elementium Coil Block",
-   "block.gtceu.nichrome_coil_block": "Synthetic Neuron Coil Block",
 
      "block.gtceu.heatproof_machine_casing": "Heat Proof Arcane Gold Machine Casing",
      "block.gtceu.frostproof_machine_casing": "Frost Proof Awakened Echo Machine Casing",

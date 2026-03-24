@@ -1,0 +1,7 @@
+{
+  "parent": "gtceu:block/cube_2_layer/all",
+  "textures": {
+    "bot_all": "kubejs:block/coil/synthetic_neuron/machine_coil_synthetic_neuron",
+    "top_all": "kubejs:block/coil/synthetic_neuron/machine_coil_synthetic_neuron_bloom"
+  }
+}

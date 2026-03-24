@@ -63,4 +63,12 @@ ServerEvents.recipes(event => {
 		.itemOutputs(Item.of('1x kubejs:bee_model_1'))
 		.duration(2400)
 		.EUt(480)
+	
+	event.recipes.gtceu.breeding_chamber('cow_2')
+		.notConsumable(Item.of('2x kubejs:cow_model_3'))
+		.itemInputs(Item.of('2x kubejs:wheat_2'))
+		.inputFluids(Fluid.of('kubejs:taiga_essence',1000))
+		.itemOutputs(Item.of('1x kubejs:cow_model_2'))
+		.duration(2400)
+		.EUt(1280)
 })

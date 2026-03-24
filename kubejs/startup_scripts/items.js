@@ -1,18 +1,35 @@
+const CoilWorkableElectricMultiblockMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.multiblock.CoilWorkableElectricMultiblockMachine")
 
 StartupEvents.registry('item', e => {
   // The texture for this item has to be placed in kubejs/assets/kubejs/textures/item/test_item.png
   // If you want a custom item model, you can create one in Blockbench and put it in kubejs/assets/kubejs/models/item/test_item.json
   e.create('primitive_star')
-  e.create('creative_star')
-  e.create('natural_star')
-  e.create('magical_star')
-  e.create('nano_star')
-  e.create('bio_star')
-  e.create('champion_star')
-  e.create('galactic_star')
-  e.create('draconic_star')
+  e.create('creative_star').glow(true)
+  e.create('natural_star').glow(true)
+  e.create('magical_star').glow(true)
+  e.create('nano_star').glow(true)
+  e.create('bio_star').glow(true)
+  e.create('champion_star').glow(true)
+  e.create('galactic_star').glow(true)
+  e.create('draconic_star').glow(true)
   e.create('infinity_star').glow(true)
 
+  e.create('creative_star_shard_alpha').glow(true)
+  e.create('creative_star_shard_beta').glow(true)
+  e.create('creative_star_shard_gamma').glow(true)
+	
+  e.create('natural_star_shard_delta').glow(true)
+  e.create('natural_star_shard_epsilon').glow(true)
+  e.create('natural_star_shard_zeta').glow(true)
+
+  e.create('magical_star_shard_eta').glow(true)
+  e.create('magical_star_shard_theta').glow(true)
+  e.create('magical_star_shard_iota').glow(true)
+	
+  e.create('bio_star_shard_kappa').glow(true)
+  e.create('bio_star_shard_lambda').glow(true)
+  e.create('bio_star_shard_mu').glow(true)
+	
   e.create('desert_shard')
   e.create('sky_shard')
   e.create('ocean_shard')
@@ -21,7 +38,7 @@ StartupEvents.registry('item', e => {
   e.create('nether_shard')
   e.create('ender_shard')
   e.create('taiga_shard')
-	
+  
   e.create('desert_dust')
   e.create('sky_dust')
   e.create('ocean_dust')
@@ -31,6 +48,10 @@ StartupEvents.registry('item', e => {
   e.create('ender_dust')
   e.create('taiga_dust')
   e.create('source_gem_dust')
+  e.create('gaianite_dust')
+  e.create('netherite_scrap_dust')
+  e.create('sparkling_andesite_dust')
+  e.create('blooming_coke')
 
   e.create('terrasteel_dust')
   e.create('elementium_dust')
@@ -62,6 +83,7 @@ StartupEvents.registry('item', e => {
   e.create('sterile_plant_glob')
 
   e.create('processed_iron_ore')
+  e.create('artisan_ink')
 
 
 	
@@ -94,6 +116,7 @@ StartupEvents.registry("block", (event) => {
   	.textureAll("kubejs:block/creative_star_block")
 	.model('kubejs:block/creative_star_block')
 	
+
 	event.create("natural_star_block") // Create a new block
     .displayName("Natural Star Block") // Set a custom name
     .material("stone") // Set a material (affects the sounds and some properties)
@@ -195,6 +218,64 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("mineable/pickaxe") //can be mined faster with an axe
   	.textureAll("kubejs:block/mega_mv_machine_casing")
 	.model('kubejs:block/mega_mv_machine_casing')
+			event.create("mega_hv_machine_casing") // Create a new block
+    .displayName("Mega HV Machine Casing") // Set a custom name
+    .material("metal") // Set a material (affects the sounds and some properties)
+    .tagBlock("mineable/pickaxe") //can be mined faster with an axe
+  	.textureAll("kubejs:block/mega_hv_machine_casing")
+	.model('kubejs:block/mega_hv_machine_casing')
+			event.create("mega_ev_machine_casing") // Create a new block
+    .displayName("Mega EV Machine Casing") // Set a custom name
+    .material("metal") // Set a material (affects the sounds and some properties)
+    .tagBlock("mineable/pickaxe") //can be mined faster with an axe
+  	.textureAll("kubejs:block/mega_ev_machine_casing")
+	.model('kubejs:block/mega_ev_machine_casing')
+	
+	event.create("clean_lab_machine_casing") // Create a new block
+    .displayName("Clean L.A.B. Machine Casing") // Set a custom name
+    .material("metal") // Set a material (affects the sounds and some properties)
+    .tagBlock("mineable/pickaxe") //can be mined faster with an axe
+  	.textureAll("kubejs:block/clean_lab_machine_casing")
+	.model('kubejs:block/clean_lab_machine_casing')
+	
+	event.create('glowing_coil_block', 'gtceu:coil')
+		.temperature(1800)
+		.level(1)
+		.energyDiscount(1)
+		.tier(1)
+        .coilMaterial(() => GTMaterials.get("glowing"))
+		.textureAll('kubejs:block/coil/glowing')
+		.hardness(5)
+		.requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .soundType("metal")
+	
+	event.create('elementium_coil_block', 'gtceu:coil')
+		.temperature(2700)
+		.level(2)
+		.energyDiscount(1)
+		.tier(2)
+        .coilMaterial(() => GTMaterials.get("elementium"))
+		.textureAll('kubejs:block/coil/elementium')
+		.hardness(5)
+		.requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .soundType("metal")
+	
+	event.create('synthetic_neuron_coil_block', 'gtceu:coil')
+		.temperature(3600)
+		.level(2)
+		.energyDiscount(2)
+		.tier(2)
+        .coilMaterial(() => GTMaterials.get("synthetic_neuron"))
+		.textureAll('kubejs:block/coil/synthetic_neuron')
+		.hardness(5)
+		.requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .soundType("metal")
 })
 
 StartupEvents.registry("fluid", (event) => {
@@ -320,9 +401,30 @@ StartupEvents.registry("fluid", (event) => {
     .thinTexture(0xFFCD4A)
     .bucketColor(0xFFCD4A)
     .displayName('Fermented Garlic Honey')
+   event.create('dirty_iron_slurry')
+    .thinTexture(0x647572)
+    .bucketColor(0x647572)
+    .displayName('Dirty Iron Slurry')
+   event.create('milky_iron_slurry')
+    .thinTexture(0xD8EBE8)
+    .bucketColor(0xD8EBE8)
+    .displayName('Milky Iron Slurry')
+   event.create('milky_andesite_alloy_slurry')
+    .thinTexture(0xacbfbf)
+    .bucketColor(0xacbfbf)
+    .displayName('Milky Andesite Alloy Slurry')
+   event.create('zinc_chloride')
+    .thinTexture(0x294f4f)
+    .bucketColor(0x294f4f)
+    .displayName('Zinc Chloride')
+   event.create('life_activated_bioplastic')
+    .thinTexture(0xFAFFFE)
+    .bucketColor(0xFAFFFE)
+    .displayName('Life Activated Bioplastic Fluid (LAB fluid)')
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
+
     event.create('andesite_alloy')
         .ingot()
 		.liquid()
@@ -377,7 +479,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
 		.liquid()
 		.color(0xdfb01a).iconSet(GTMaterialIconSet.METALLIC)
-        .flags(GTMaterialFlags.IS_MAGNETIC,GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING,GTMaterialFlags.GENERATE_FRAME)
+        .flags(GTMaterialFlags.IS_MAGNETIC,GTMaterialFlags.GENERATE_PLATE,GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING,GTMaterialFlags.GENERATE_FRAME)
 
 
 	   event.create('natures_alloy')
@@ -411,11 +513,17 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xe2230d).iconSet(GTMaterialIconSet.METALLIC)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING,GTMaterialFlags.GENERATE_FOIL,GTMaterialFlags.GENERATE_FRAME,GTMaterialFlags.GENERATE_FINE_WIRE)
         .toolStats(new ToolProperty(5.0, 5.0, 1024, 5, [GTToolType.SWORD, GTToolType.PICKAXE, GTToolType.SHOVEL, GTToolType.AXE, GTToolType.HOE, GTToolType.MINING_HAMMER, GTToolType.SPADE, GTToolType.SAW, GTToolType.HARD_HAMMER, GTToolType.WRENCH, GTToolType.FILE, GTToolType.CROWBAR, GTToolType.SCREWDRIVER, GTToolType.WIRE_CUTTER, GTToolType.SCYTHE, GTToolType.KNIFE, GTToolType.BUTCHERY_KNIFE, GTToolType.DRILL_LV, GTToolType.DRILL_MV, GTToolType.DRILL_HV, GTToolType.DRILL_EV, GTToolType.DRILL_IV, GTToolType.CHAINSAW_LV, GTToolType.WRENCH_LV, GTToolType.WRENCH_HV, GTToolType.WRENCH_IV, GTToolType.BUZZSAW, GTToolType.SCREWDRIVER_LV, GTToolType.WIRE_CUTTER_LV, GTToolType.WIRE_CUTTER_HV,  GTToolType.WIRE_CUTTER_IV]))
-
+   event.create('virentium_alloy')
+		.ingot()
+		.liquid()
+        .color(0x5FFF3D).iconSet((GTMaterialIconSet.getByName('virentium')))
+	    .blastTemp(3600)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING)
     event.create('champions_alloy')
 		.ingot()
 		.liquid()
         .color(0xebc113).iconSet(GTMaterialIconSet.METALLIC)
+	    .blastTemp(3600)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_ROTOR,GTMaterialFlags.GENERATE_LONG_ROD,GTMaterialFlags.NO_SMASHING,GTMaterialFlags.NO_SMELTING)
         .toolStats(new ToolProperty(6.0, 6.0, 2048, 6, [GTToolType.SWORD, GTToolType.PICKAXE, GTToolType.SHOVEL, GTToolType.AXE, GTToolType.HOE, GTToolType.MINING_HAMMER, GTToolType.SPADE, GTToolType.SAW, GTToolType.HARD_HAMMER, GTToolType.WRENCH, GTToolType.FILE, GTToolType.CROWBAR, GTToolType.SCREWDRIVER, GTToolType.WIRE_CUTTER, GTToolType.SCYTHE, GTToolType.KNIFE, GTToolType.BUTCHERY_KNIFE, GTToolType.DRILL_LV, GTToolType.DRILL_MV, GTToolType.DRILL_HV, GTToolType.DRILL_EV, GTToolType.DRILL_IV, GTToolType.CHAINSAW_LV, GTToolType.WRENCH_LV, GTToolType.WRENCH_HV, GTToolType.WRENCH_IV, GTToolType.BUZZSAW, GTToolType.SCREWDRIVER_LV, GTToolType.WIRE_CUTTER_LV, GTToolType.WIRE_CUTTER_HV,  GTToolType.WIRE_CUTTER_IV]))
     event.create('alfdesh')
@@ -549,6 +657,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     )
 //large mixer
 	 event.create('mega_mixer', 'multiblock')
+		.machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
 		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_solid_steel'))
         .recipeTypes('mega_mixer')
         .pattern(definition => FactoryBlockPattern.start()
@@ -563,7 +672,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('B', Predicates.blocks('kubejs:mega_cupronickel_casing'))
             .where('V', Predicates.blocks('gtceu:heat_vent'))
             .where('X', Predicates.blocks('create:mechanical_mixer'))
-            .where('L', Predicates.blocks('gtceu:cupronickel_coil_block'))
+            .where('L', Predicates.heatingCoils())
             .where('P', Predicates.blocks('gtceu:bronze_pipe_casing'))
 
             .where('A', Predicates.abilities(PartAbility.MUFFLER))
@@ -576,6 +685,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         )
 //large press
 	 event.create('mega_press', 'multiblock')
+		.machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
 		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_solid_steel'))
         .recipeTypes('mega_press')
         .pattern(definition => FactoryBlockPattern.start()
@@ -590,7 +700,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('B', Predicates.blocks('kubejs:mega_andesite_casing'))
             .where('V', Predicates.blocks('gtceu:heat_vent'))
             .where('X', Predicates.blocks('create:mechanical_press'))
-            .where('L', Predicates.blocks('gtceu:cupronickel_coil_block'))
+            .where('L', Predicates.heatingCoils())
             .where('P', Predicates.blocks('gtceu:bronze_pipe_casing'))
 
             .where('A', Predicates.abilities(PartAbility.MUFFLER))
@@ -626,6 +736,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             false
 		)
 	 event.create('resource_combinator', 'multiblock')
+		.machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
 		.appearanceBlock(() => Block.getBlock('create:andesite_casing'))
         .recipeTypes('resource_combinator')
         .pattern(definition => FactoryBlockPattern.start()
@@ -637,7 +748,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('G', Predicates.blocks('botania:mana_glass'))
             .where('C', Predicates.blocks('gtceu:heatproof_machine_casing')
                 .or(Predicates.autoAbilities(definition.getRecipeTypes())))
-            .where('E', Predicates.blocks('gtceu:kanthal_coil_block'))
+            .where('E', Predicates.heatingCoils())
             .where('H',	Predicates.abilities(PartAbility.MUFFLER))
 			.where('B', Predicates.blocks('gtceu:bronze_firebox_casing'))
         	.build())
@@ -698,6 +809,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         )
 	
 	 event.create('meat_freezer', 'multiblock')
+		.machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
 		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_frost_proof'))
         .recipeTypes('meat_freezer')
         .pattern(definition => FactoryBlockPattern.start()
@@ -708,7 +820,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.blocks('gtceu:frostproof_machine_casing')
   				.or(Predicates.autoAbilities(definition.getRecipeTypes())))
             .where('G', Predicates.blocks('gtceu:tempered_glass'))
-            .where('E', Predicates.blocks('gtceu:kanthal_coil_block'))
+            .where('E', Predicates.heatingCoils())
             .where('H', Predicates.abilities(PartAbility.MUFFLER))
             .where('A', Predicates.abilities(PartAbility.MAINTENANCE))
         	.build())
@@ -718,6 +830,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             false
         )
 	 event.create('breeding_chamber', 'multiblock')
+	    .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
 		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_frost_proof'))
         .recipeTypes('breeding_chamber')
         .pattern(definition => FactoryBlockPattern.start()
@@ -733,7 +846,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('A', Predicates.blocks('allthecompressed:moss_block_2x'))
             .where('L', Predicates.blocks('gtceu:white_lamp', '{bloom:1b,inverted:1b,lit:1b}'))
             .where('B', Predicates.blocks('gtceu:blazing_frame'))
-            .where('E', Predicates.blocks('gtceu:kanthal_coil_block'))
+            .where('E', Predicates.heatingCoils())
             .where('H', Predicates.abilities(PartAbility.MUFFLER))
             .where('X', Predicates.abilities(PartAbility.MAINTENANCE))
         	.build())
@@ -766,6 +879,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 	
 //twilight_awakening_chamber
 		 event.create('twilight_awakening_chamber_mk1', 'multiblock')
+		.machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
 		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_clean_stainless_steel'))
         .recipeTypes('twilight_awakening_chamber_mk1')
         .pattern(definition => FactoryBlockPattern.start()
@@ -779,7 +893,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.blocks('gtceu:clean_machine_casing')
   				.or(Predicates.autoAbilities(definition.getRecipeTypes())))
             .where('B', Predicates.blocks('twilightforest:ironwood_block'))
-            .where('N', Predicates.blocks('gtceu:nichrome_coil_block'))
+            .where('N', Predicates.heatingCoils())
         	.build())
         .workableCasingRenderer(
             "gtceu:block/casings/solid/machine_casing_clean_stainless_steel",
@@ -787,6 +901,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             false
 		)
 			 event.create('twilight_awakening_chamber_mk2', 'multiblock')
+        .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
 		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_clean_stainless_steel'))
         .recipeTypes('twilight_awakening_chamber_mk2')
         .pattern(definition => FactoryBlockPattern.start()
@@ -800,7 +915,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.blocks('gtceu:clean_machine_casing')
   				.or(Predicates.autoAbilities(definition.getRecipeTypes())))
             .where('B', Predicates.blocks('twilightforest:fiery_block'))
-            .where('N', Predicates.blocks('gtceu:nichrome_coil_block'))
+            .where('N', Predicates.heatingCoils())
         	.build())
         .workableCasingRenderer(
             "gtceu:block/casings/solid/machine_casing_clean_stainless_steel",
@@ -808,6 +923,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             false
 		)
 			 event.create('twilight_awakening_chamber_mk3', 'multiblock')
+        .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
 		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_clean_stainless_steel'))
         .recipeTypes('twilight_awakening_chamber_mk3')
         .pattern(definition => FactoryBlockPattern.start()
@@ -821,7 +937,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.blocks('gtceu:clean_machine_casing')
   				.or(Predicates.autoAbilities(definition.getRecipeTypes())))
             .where('B', Predicates.blocks('twilightforest:knightmetal_block'))
-            .where('N', Predicates.blocks('gtceu:nichrome_coil_block'))
+            .where('N', Predicates.heatingCoils())
         	.build())
         .workableCasingRenderer(
             "gtceu:block/casings/solid/machine_casing_clean_stainless_steel",
@@ -829,6 +945,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             false
 		)
 			 event.create('twilight_awakening_chamber_mk4', 'multiblock')
+        .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
 		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_clean_stainless_steel'))
         .recipeTypes('twilight_awakening_chamber_mk4')
         .pattern(definition => FactoryBlockPattern.start()
@@ -842,7 +959,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.blocks('gtceu:clean_machine_casing')
   				.or(Predicates.autoAbilities(definition.getRecipeTypes())))
             .where('B', Predicates.blocks('twilightforest:carminite_block'))
-            .where('N', Predicates.blocks('gtceu:nichrome_coil_block'))
+            .where('N', Predicates.heatingCoils())
         	.build())
         .workableCasingRenderer(
             "gtceu:block/casings/solid/machine_casing_clean_stainless_steel",
@@ -850,6 +967,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             false
 		)
 			 event.create('dimensional_reactor', 'multiblock')
+        .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
 		.appearanceBlock(() => Block.getBlock('gtceu:machine_casing_stable_titanium'))
         .recipeTypes('dimensional_reactor')
         .pattern(definition => FactoryBlockPattern.start()
@@ -865,7 +983,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.blocks('gtceu:stable_machine_casing')
   				.or(Predicates.autoAbilities(definition.getRecipeTypes())))
             .where('G', Predicates.blocks('twilightforest:auroralized_glass'))
-            .where('R', Predicates.blocks('gtceu:rtm_alloy_coil_block'))
+            .where('R', Predicates.heatingCoils())
             .where('L', Predicates.blocks('cataclysm:ignitium_block'))
             .where('E', Predicates.blocks('cataclysm:enderite_block'))
 
@@ -913,31 +1031,28 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             false
 		)
 
-
-    event.create('essence_extractor_1', 'multiblock')
-		.appearanceBlock(() => Block.getBlock('create:copper_casing'))
-        .recipeTypes('essence_extractor')
+    event.create('laboratory', 'multiblock')
+        .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
+		.appearanceBlock(() => Block.getBlock('kubejs:clean_lab_machine_casing'))
+        .recipeTypes('laboratory')
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle('S   S', 'S   S', 'S   S','CCECC', 'CGGGC','CGGGC','CGGGC','CGGGC','CCCCC')
-            .aisle('     ', '     ', '     ','CCCCC', 'GTTTG','GTTTG','GTTTG','GTTTG','CCCCC')
-            .aisle('     ', ' D D ', 'PPPPP','ICCCO', 'GTTTG','GTTTG','GTTTG','GTTTG','CCCCC')
-            .aisle('     ', '     ', '     ','CCCCC', 'GTTTG','GTTTG','GTTTG','GTTTG','CCCCC')
-            .aisle('S   S', 'S   S', 'S   S','CCMCC', 'CGGGC','CGGGC','CGGGC','CGGGC','CCCCC')
+            .aisle('CCCCC', 'CGGGC', 'CGGGC','CGGGC', 'CCCCC')
+            .aisle('CCCCC', 'G E G', 'GEEEG','G E G', 'CCCCC')
+            .aisle('CCCCC', 'GEEEG', 'GEEEG','GEEEG', 'CCCCC')
+            .aisle('CCCCC', 'G E G', 'GEEEG','G E G', 'CCCCC')
+            .aisle('CCMCC', 'CGGGC', 'CGGGC','CGGGC', 'CCCCC')
+
 
 			.where('M', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('C', Predicates.blocks('create:copper_casing'))
-            .where('T', Predicates.blocks('create:fluid_tank'))
-            .where('G', Predicates.blocks('create:framed_glass'))
-            .where('S', Predicates.blocks('create:copper_scaffolding'))
-            .where('P', Predicates.blocks('create:fluid_pipe'))
-            .where('D', Predicates.blocks('create:spout'))
-            .where('O', Predicates.blocks('gtceu:lv_output_hatch'))
-            .where('I', Predicates.blocks('gtceu:lv_input_hatch'))
-            .where('E', Predicates.blocks('gtceu:lv_energy_input_hatch'))
+            .where('C', Predicates.blocks('kubejs:clean_lab_machine_casing')
+  				.or(Predicates.autoAbilities(definition.getRecipeTypes())))
+            .where('G', Predicates.blocks('gtceu:tempered_glass'))
+            .where('E', Predicates.heatingCoils())
+
         	.build())
         .workableCasingRenderer(
-            "create:block/copper_casing",
-            "gtceu:block/multiblock/distillation_tower",
+            "kubejs:block/clean_lab_machine_casing",
+            "gtceu:block/machines/laser_engraver",
             false
         )
 })
@@ -954,7 +1069,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('resource_combinator')
         .category('resource_combinator')
         .setEUIO('in')
-        .setMaxIOSize(16, 1, 2, 0)
+        .setMaxIOSize(9, 1, 2, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.BATH)
 
@@ -1093,6 +1208,15 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('breeding_chamber')
         .setEUIO('in')
         .setMaxIOSize(4, 1, 1, 0) 
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.COOLING)
+
+
+        event.create('laboratory')
+        .category('laboratory')
+        .setEUIO('in')
+        .setMaxIOSize(8, 2, 1, 0) 
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)

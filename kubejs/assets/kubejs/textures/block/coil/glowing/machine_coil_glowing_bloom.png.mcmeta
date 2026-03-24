@@ -1,0 +1,9 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/coil/glowing/machine_coil_glowing_bloom_ctm",
+        "emissive": true
+    },
+	"shimmer": {
+        "bloom": true
+    }
+}

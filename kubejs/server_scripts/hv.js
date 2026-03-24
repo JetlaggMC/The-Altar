@@ -333,11 +333,11 @@ event.recipes.gtceu.assembler('hv_machine_hull')
 		.duration(50)
 		.EUt(30)
 //coil
-	event.recipes.gtceu.assembler('nichrome_coil_block')
+	event.recipes.gtceu.assembler('synthetic_neuron_coil_block')
 		.itemInputs(Item.of('8x gtceu:synthetic_neuron_double_wire'))
 		.itemInputs(Item.of('8x gtceu:sterile_bio_alloy_foil'))
 		.inputFluids(Fluid.of('kubejs:manafloraethylene',144))
-		.itemOutputs(Item.of('1x gtceu:nichrome_coil_block'))
+		.itemOutputs(Item.of('1x kubejs:synthetic_neuron_coil_block'))
 		.duration(300)
 		.EUt(480)
 

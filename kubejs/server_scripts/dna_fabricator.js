@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
 			'1x #forge:seeds'
 		)
 		.inputFluids(Fluid.of('minecraft:water', 1000))
-		.itemOutputs(Item.of('1x botania:hydroangea'))
+		.itemOutputs(Item.of('1x botania:hydroangeas'))
 		.duration(1200)
 		.EUt(32)	
 
@@ -170,6 +170,7 @@ ServerEvents.recipes(event => {
 			'1x botania:rune_summer',
 			'1x botania:rune_sloth',
 			'1x kubejs:cow_model_1',
+			'1x kubejs:magical_meat_glob',
 			'1x #gtceu:circuits/hv'
 		)
 		.inputFluids(Fluid.of('kubejs:arcane_infused_growth_medium', 1000))
@@ -182,6 +183,7 @@ ServerEvents.recipes(event => {
 			'1x botania:rune_spring',
 			'1x botania:rune_pride',
 			'1x kubejs:chicken_model_1',
+			'1x kubejs:magical_meat_glob',
 			'1x #gtceu:circuits/hv'
 		)
 		.inputFluids(Fluid.of('kubejs:arcane_infused_growth_medium', 1000))
@@ -194,6 +196,7 @@ ServerEvents.recipes(event => {
 			'1x botania:rune_winter',
 			'1x botania:rune_gluttony',
 			'1x kubejs:sheep_model_1',
+			'1x kubejs:magical_meat_glob',
 			'1x #gtceu:circuits/hv'
 		)
 		.inputFluids(Fluid.of('kubejs:arcane_infused_growth_medium', 1000))
@@ -206,6 +209,7 @@ ServerEvents.recipes(event => {
 			'1x botania:rune_spring',
 			'1x botania:rune_wrath',
 			'1x kubejs:rabbit_model_1',
+			'1x kubejs:magical_meat_glob',
 			'1x #gtceu:circuits/hv'
 		)
 		.inputFluids(Fluid.of('kubejs:arcane_infused_growth_medium', 1000))
@@ -218,6 +222,7 @@ ServerEvents.recipes(event => {
 			'1x botania:rune_winter',
 			'1x botania:rune_envy',
 			'1x kubejs:fish_model_1',
+			'1x kubejs:magical_meat_glob',
 			'1x #gtceu:circuits/hv'
 		)
 		.inputFluids(Fluid.of('kubejs:arcane_infused_growth_medium', 1000))
@@ -230,6 +235,7 @@ ServerEvents.recipes(event => {
 			'1x botania:rune_autumn',
 			'1x botania:rune_lust',
 			'1x kubejs:axolotl_model_1',
+			'1x kubejs:magical_meat_glob',
 			'1x #gtceu:circuits/hv'
 		)
 		.inputFluids(Fluid.of('kubejs:arcane_infused_growth_medium', 1000))
@@ -242,6 +248,7 @@ ServerEvents.recipes(event => {
 			'1x botania:rune_summer',
 			'1x botania:rune_wrath',
 			'1x kubejs:bee_model_1',
+			'1x kubejs:magical_meat_glob',
 			'1x #gtceu:circuits/hv'
 		)
 		.inputFluids(Fluid.of('kubejs:arcane_infused_growth_medium', 1000))
@@ -254,6 +261,7 @@ ServerEvents.recipes(event => {
 			'1x botania:rune_autumn',
 			'1x botania:rune_greed',
 			'1x kubejs:pig_model_1',
+			'1x kubejs:magical_meat_glob',
 			'1x #gtceu:circuits/hv'
 		)
 		.inputFluids(Fluid.of('kubejs:arcane_infused_growth_medium', 1000))
@@ -266,12 +274,40 @@ ServerEvents.recipes(event => {
 			'1x botania:rune_summer',
 			'1x botania:rune_envy',
 			'1x kubejs:squid_model_1',
+			'1x kubejs:magical_meat_glob',
 			'1x #gtceu:circuits/hv'
 		)
 		.inputFluids(Fluid.of('kubejs:arcane_infused_growth_medium', 1000))
 		.itemOutputs(Item.of('1x kubejs:squid_model_2'))
 		.duration(12000)
 		.EUt(128)
+	event.recipes.gtceu.dna_fabricator('snow_golem_model_2')
+		.itemInputs(
+			'1x botania:rune_earth',
+			'1x botania:rune_winter',
+			'1x botania:rune_sloth',
+			'1x kubejs:snow_golem_model_1',
+			'1x kubejs:magical_meat_glob',
+			'1x #gtceu:circuits/hv'
+		)
+		.inputFluids(Fluid.of('kubejs:arcane_infused_growth_medium', 1000))
+		.itemOutputs(Item.of('1x kubejs:snow_golem_model_2'))
+		.duration(12000)
+		.EUt(128)
+	
+	event.recipes.gtceu.dna_fabricator('cow_model_3')
+		.itemInputs(
+			'16x gtceu:activated_carbon_dust',
+			'4x kubejs:sterile_meat_glob',
+			'4x kubejs:dense_insulator_sheet',
+			'64x kubejs:taiga_dust',
+			'1x kubejs:cow_model_2',
+			'1x #gtceu:circuits/ev'
+		)
+		.inputFluids(Fluid.of('gtceu:hydrochloric_acid', 1000))
+		.itemOutputs(Item.of('1x kubejs:cow_model_3'))
+		.duration(12000)
+		.EUt(480)
 
 //hostile models
 event.recipes.gtceu.dna_fabricator('wither_skeleton_model_1')
@@ -292,7 +328,7 @@ event.recipes.gtceu.dna_fabricator('shulker_model_1')
 	'16x minecraft:purpur_block',
 	'8x minecraft:shulker_shell',
 	'4x minecraft:chorus_flower',
-	Item.of('minecraft:potion','{Potion:"minecraft:long_slow_falling"}'),
+    Item.of('minecraft:potion', '{Potion:"minecraft:slow_falling"}').weakNBT(),
 	'1x #gtceu:circuits/hv'
 )
 .inputFluids(Fluid.of('gtceu:blazing', 1000))
@@ -344,7 +380,7 @@ event.recipes.gtceu.dna_fabricator('spider_model_1')
 	'16x minecraft:string',
 	'8x minecraft:cobweb',
 	'4x minecraft:spider_eye',
-	Item.of('minecraft:potion', '{Potion:"minecraft:poison"}'),
+    Item.of('minecraft:potion', '{Potion:"minecraft:poison"}').weakNBT(),
 	'1x #gtceu:circuits/hv'
 )
 .inputFluids(Fluid.of('gtceu:blazing', 1000))

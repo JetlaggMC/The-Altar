@@ -41,6 +41,10 @@
          "type": "match_block",
          "block": "kubejs:draconic_star_block"
       },
+                  {
+         "type": "match_block",
+         "block": "kubejs:bio_star_block"
+      },
                {
          "type": "match_block",
          "block": "kubejs:infinity_star_block"

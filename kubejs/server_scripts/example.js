@@ -34,9 +34,14 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'gtceu:steel_firebox_casing' })
   event.remove({ output: 'gtceu:steel_large_boiler' })
   event.remove({ input: 'gtceu:crushed_amethyst_ore' })
-  event.remove({ input: 'create:brass_sheet' })
+  //event.remove({ input: 'create:brass_sheet' })
+  event.remove({ output: 'terramity:virentium_alloy_ingot' })
+  event.remove({ output: 'botania:hydroangeas' })
 
 event.remove({ output: 'gtceu:lv_super_chest' })
+event.remove({ output: 'gtceu:filter_casing' })
+event.remove({ output: 'gtceu:plascrete' })
+event.remove({ output: 'gtceu:cleanroom_glass' })
 
 event.remove({ output: 'gtceu:ulv_machine_casing' })
 event.remove({ output: 'gtceu:ulv_machine_hull' })
@@ -60,6 +65,10 @@ event.remove({ output: 'gtceu:iron_ring' })
 event.remove({ output: 'minecraft:cobblestone', type: 'create:milling' })
 event.remove({ output: 'create:steam_engine' })
 event.remove({ output: 'twilightforest:hollow_spruce_log' })
+event.remove({ id: 'farmersdelight:steak_and_potatoes'})
+event.remove({ id: 'farmersdelight:bacon_and_eggs' })
+event.remove({ id: 'farmersdelight:cooking/mushroom_rice' })
+event.remove({ id: 'farmersdelight:cooking/vegetable_noodles' })
 
 event.remove({ input: '#forge:tools/mortars' })
 event.remove({ output: 'gtceu:cupronickel_coil_block' })
@@ -87,6 +96,9 @@ event.remove({ output: 'create:empty_blaze_burner'})
 event.remove({ output: 'create:belt_connector'})
 event.remove({ output: 'create:andesite_funnel'})
 event.remove({ output: 'minecraft:hopper'})
+event.remove({ output: 'farmersdelight:hamburger'})
+event.remove({ output: 'farmersdelight:vegetable_soup'})
+event.remove({ output: 'farmersdelight:chicken_soup'})
 
 event.remove({type: 'gtceu:primitive_blast_furnace'}) // Remove all campfire cooking recipes
 event.remove({ output: 'gtceu:good_electronic_circuit' })
@@ -120,6 +132,7 @@ event.remove({ output: 'create:blaze_cake'})
 event.remove({ output: 'create:copper_sheet'})
 event.remove({ output: 'gtceu:lv_electric_pump'})
 event.remove({ output: 'gtceu:lv_conveyor_module'})
+event.remove({ output: 'gtceu:lv_ore_washer'})
 event.remove({ output: 'gtceu:lv_wiremill'})
 event.remove({ output: 'gtceu:lv_assembler'})
 event.remove({ output: 'gtceu:lv_macerator'})
@@ -174,12 +187,25 @@ event.remove({ output: 'gtceu:andesite_alloy_drill_head'})
 	event.remove({ output: 'create:brass_ladder'})
 	event.remove({ output: 'create:brass_bars' })
 event.remove({ output: 'create:brass_sheet'})
+event.remove({ output: 'create:item_vault'})
+event.remove({ input: 'gtceu:crushed_iron_ore', type: 'minecraft:smelting'})
+event.remove({ input: 'gtceu:crushed_iron_ore', type: 'minecraft:blasting'})
+event.remove({ input: 'gtceu:crushed_iron_ore', type: 'gtceu:thermal_centrifuge'})
+event.remove({ input: 'gtceu:crushed_iron_ore', type: 'gtceu:ore_washer'})
+event.remove({ input: 'gtceu:crushed_iron_ore', type: 'gtceu:chemical_bath'})
+event.remove({ input: 'gtceu:purified_iron_ore'})
+event.remove({ input: 'gtceu:impure_iron_dust'})
+event.remove({ output: 'gtceu:purified_copper_ore'})
+event.remove({ input: 'gtceu:purified_copper_ore'})
+event.remove({ output: 'gtceu:firebrick'})
+event.remove({ output: 'gtceu:lv_electric_motor'})
 
 event.remove({ input: 'gtceu:raw_coal', type: 'minecraft:smelting'})
 
 event.remove({ output: 'thermal:constantan_dust'})
 event.remove({ id: 'gtceu:shapeless/glass_dust_flint'})
 event.remove({ id: 'gtceu:shapeless/glass_full_dust_flint'})
+event.remove({ id: 'gtceu:sifter/sift_amethyst_purified_ore_to_gems'})
 
 event.remove({ input: 'gtceu:elementium_dust'})
 event.remove({ input: 'gtceu:arcane_gold_dust'})
@@ -189,10 +215,21 @@ event.remove({ output: 'gtceu:frostproof_machine_casing'})
 event.remove({ output: 'gtceu:heatproof_machine_casing'})
 event.remove({ output: 'gtceu:cupronickel_large_item_pipe'})
 event.remove({ output: 'gtceu:cleanroom'})
+event.remove({ output: 'gtceu:item_filter'})
+event.remove({ output: 'allthecompressed:deepslate_1x'})
+event.remove({ output: 'allthecompressed:deepslate_2x'})
+event.remove({ output: 'allthecompressed:dirt_1x'})
+event.remove({ output: 'allthecompressed:dirt_2x'})
+
+event.remove({ output: 'allthecompressed:andesite_1x'})
+event.remove({ output: 'allthecompressed:andesite_2x'})
+event.remove({ output: 'allthecompressed:moss_block_1x'})
+event.remove({ output: 'allthecompressed:moss_block_2x'})
 
 event.remove({ output: 'gtceu:silicon'})
 
 event.remove({ output: 'gtceu:diode'})
+event.remove({ input: 'gtceu:virentium_alloy_dust', type: 'gtceu:extruding'})
 
 event.remove({ output: 'gtceu:mv_machine_hull'})
 event.remove({ output: 'gtceu:mv_steam_turbine'})
@@ -209,6 +246,18 @@ event.replaceInput(
   { input: 'gtceu:andesite_alloy_ingot' }, // Arg 1: the filter
   'gtceu:andesite_alloy_ingot',            // Arg 2: the item to replace
   'create:andesite_alloy'         // Arg 3: the item to replace it with
+  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
+)
+event.replaceInput(
+  { input: 'gtceu:virentium_alloy_ingot' }, // Arg 1: the filter
+  'gtceu:virentium_alloy_ingot',            // Arg 2: the item to replace
+  'terramity:virentium_alloy_ingot'         // Arg 3: the item to replace it with
+  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
+)
+event.replaceInput(
+  { input: 'gtceu:virentium_alloy_block' }, // Arg 1: the filter
+  'gtceu:virentium_alloy_block',            // Arg 2: the item to replace
+  'terramity:virentium_alloy_block'         // Arg 3: the item to replace it with
   // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
 )
 event.replaceInput(
@@ -303,6 +352,7 @@ event.recipes.create.pressing('gtceu:copper_plate', '#forge:ingots/copper')
 	event.recipes.create.pressing('create:polished_rose_quartz', 'create:rose_quartz')
 	event.recipes.create.pressing('gtceu:rubber_plate', 'gtceu:rubber_ingot')
 	event.recipes.create.pressing('gtceu:compressed_fireclay', 'gtceu:fireclay_dust')
+	event.recipes.create.pressing('gtceu:blazing_plate', 'gtceu:blazing_ingot')
 
 	event.recipes.create.pressing('gtceu:natures_alloy_plate', 'gtceu:natures_alloy_ingot')
 	event.recipes.create.pressing('gtceu:natures_alloy_ring', 'gtceu:natures_alloy_bolt')
@@ -312,6 +362,10 @@ event.recipes.create.pressing('gtceu:copper_plate', '#forge:ingots/copper')
 
 	event.recipes.create.compacting('1x gtceu:firebricks', '4x gtceu:compressed_fireclay')
 	event.recipes.create.compacting('1x kubejs:crude_insulator_sheet', Fluid.of('kubejs:crude_insulator',144))
+	event.recipes.create.compacting('1x allthecompressed:deepslate_1x', '9x minecraft:deepslate')
+	event.recipes.create.compacting('1x allthecompressed:dirt_1x', '9x minecraft:dirt')
+	event.recipes.create.compacting('1x allthecompressed:andesite_1x', '9x minecraft:andesite')
+	event.recipes.create.compacting('1x allthecompressed:moss_block_1x', '9x minecraft:moss_block')
 
     event.recipes.create.milling('2x gtceu:andesite_dust', 'minecraft:andesite')
     event.recipes.create.milling('1x gtceu:copper_dust', '#forge:ingots/copper')
@@ -374,23 +428,6 @@ event.recipes.create.pressing('gtceu:copper_plate', '#forge:ingots/copper')
   event.recipes.create.cutting('2x gtceu:natures_alloy_bolt', 'gtceu:natures_alloy_rod')
   event.recipes.create.cutting('gtceu:natures_alloy_screw', 'gtceu:natures_alloy_bolt')
   event.recipes.create.deploying('gtceu:long_natures_alloy_rod', ['gtceu:natures_alloy_rod','gtceu:natures_alloy_rod'])
-
-	event.smelting('1x minecraft:coal', 'gtceu:crushed_coal_ore')
-	event.smelting('1x minecraft:iron_ingot', 'gtceu:crushed_iron_ore')
-	event.smelting('1x minecraft:copper_ingot', 'gtceu:crushed_copper_ore')
-	event.smelting('1x minecraft:gold_ingot', 'gtceu:crushed_gold_ore')
-	event.smelting('1x minecraft:diamond', 'gtceu:crushed_diamond_ore')
-	event.smelting('1x minecraft:emerald', 'gtceu:crushed_emerald_ore')
-	event.smelting('1x minecraft:redstone', 'gtceu:crushed_redstone_ore')
-	event.smelting('1x gtceu:arcane_gold_ingot', 'gtceu:arcane_gold_dust')
-
-	event.smelting('1x minecraft:coal', 'gtceu:purified_coal_ore')
-	event.smelting('1x minecraft:iron_ingot', 'gtceu:purified_iron_ore')
-	event.smelting('1x minecraft:copper_ingot', 'gtceu:purified_copper_ore')
-	event.smelting('1x minecraft:gold_ingot', 'gtceu:purified_gold_ore')
-	event.smelting('1x minecraft:diamond', 'gtceu:purified_diamond_ore')
-	event.smelting('1x minecraft:emerald', 'gtceu:purified_emerald_ore')
-	event.smelting('1x minecraft:redstone', 'gtceu:purified_redstone_ore')
 	
 	
 	event.blasting('1x gtceu:cupronickel_dust', 'gtceu:cupronickel_ingot')
@@ -424,31 +461,31 @@ event.recipes.create.filling('veggiesdelight:fermented_garlic_honey', [Fluid.of(
 	event.recipes.create.mixing(Fluid.of('gtceu:andesite_alloy', 144),		[Fluid.of('gtceu:iron',18),'1x gtceu:andesite_dust']).heated()
  	event.recipes.create.mixing('1x gtceu:treated_wood_planks',	['1x #minecraft:planks', Fluid.of('gtceu:creosote',100)])
 	event.recipes.create.mixing('2x gtceu:cupronickel_dust',	['1x gtceu:copper_dust', '1x gtceu:nickel_dust']).heated()
-  event.recipes.create.mixing(Fluid.of('gtceu:rubber',1000),	['1x gtceu:sticky_resin', Fluid.of('kubejs:glass_residue',100)])
+  event.recipes.create.mixing(Fluid.of('gtceu:rubber',288),	['1x gtceu:sticky_resin', Fluid.of('kubejs:glass_residue',144)])
   event.recipes.create.mixing(Fluid.of('create:honey',1000),	'1x minecraft:honey_block')
   event.recipes.create.mixing(Fluid.of('create:honey',144),	'1x minecraft:honeycomb')
-  event.recipes.create.mixing('minecraft:glowstone_dust',	['1x minecraft:glow_berries','1x gtceu:nettherack_dust'])
+  event.recipes.create.mixing('minecraft:glowstone_dust',	['1x minecraft:glow_berries','1x gtceu:netherrack_dust'])
 
  	event.recipes.create.mixing(Fluid.of('kubejs:crude_insulator', 288),[Fluid.of('create:honey',144),Fluid.of('gtceu:rubber',144), '1x gtceu:sulfur_dust'])
 	event.recipes.create.mixing('2x gtceu:fireclay_dust',	['1x gtceu:clay_dust', '1x gtceu:brick_dust']).heated()
 	event.recipes.create.mixing('1x kubejs:blank_shard',	['1x create:andesite_alloy', '1x #forge:glass']).heated()
  	event.recipes.create.mixing(Fluid.of('gtceu:glowing', 2304),[Fluid.of('gtceu:iron',1000), '1x minecraft:glow_ink_sac']).heated()
  	event.recipes.create.mixing(Fluid.of('gtceu:red_alloy', 288),[Fluid.of('gtceu:iron',144), '1x minecraft:redstone']).heated()
- 	event.recipes.create.mixing(Fluid.of('gtceu:blazing', 1296),['8x minecraft:blaze_powder', '1x kubejs:nether_dust']).superheated()
+ 	event.recipes.create.mixing(Fluid.of('gtceu:blazing', 1296),['4x minecraft:blaze_powder', '1x kubejs:nether_dust', '1x gtceu:iron_dust']).superheated()
    event.recipes.create.mixing('1x gtceu:glass_dust',	['1x gtceu:quartz_sand_dust', '1x gtceu:tiny_flint_dust'])
  	event.recipes.create.mixing(Fluid.of('kubejs:carrot_juice', 1000),['8x minecraft:carrot', '1x veggiesdelight:roasted_garlic_clove', '1x minecraft:apple',Fluid.of('create:honey',144)])
 	 event.recipes.create.mixing(Fluid.of('kubejs:apple_cider', 1000),['8x minecraft:apple', '1x veggiesdelight:zucchini', '1x minecraft:sugar',Fluid.of('create:honey',144)])
 	 event.recipes.create.mixing(Fluid.of('kubejs:dandelion_juice', 1000),['8x veggiesdelight:dandelion_leaf', '1x veggiesdelight:cauliflower_floret', '1x minecraft:sugar',Fluid.of('minecraft:water',144)])
 	 event.recipes.create.mixing(Fluid.of('kubejs:melon_juice', 1000),['8x minecraft:melon_slice', '1x minecraft:sweet_berries', '1x minecraft:sugar',Fluid.of('minecraft:water',144)])
+	event.recipes.create.mixing('1x gtceu:vacuum_tube',	['1x gtceu:glass_tube', '2x gtceu:natures_alloy_bolt', '3x gtceu:glowing_single_wire'])
 
  	event.recipes.create.mixing('4x kubejs:primitive_research',['1x gtceu:andesite_dust', '1x gtceu:crushed_iron_ore', Fluid.of('kubejs:molten_amethyst',144),Fluid.of('kubejs:carrot_juice',144)])
  	event.recipes.create.mixing('2x minecraft:amethyst_shard',[Fluid.of('kubejs:molten_amethyst',144),Fluid.of('kubejs:glass_residue',18)])
-
   event.recipes.create.mixing('1x kubejs:andesite_research',	['1x gtceu:andesite_alloy_rod', '1x create:cogwheel','1x gtceu:coke_gem','1x #forge:nuggets/zinc',Fluid.of('gtceu:creosote',144)])
 
     event.recipes.create.sequenced_assembly('gtceu:resin_circuit_board','gtceu:treated_wood_planks', [
-		event.recipes.createPressing('gtceu:treated_wood_planks','gtceu:treated_wood_planks'),
 		event.recipes.createDeploying('gtceu:treated_wood_planks',['gtceu:treated_wood_planks', 'create:wheat_flour']),
+		event.recipes.createPressing('gtceu:treated_wood_planks','gtceu:treated_wood_planks'),
 		event.recipes.createFilling('gtceu:treated_wood_planks', ['gtceu:treated_wood_planks', Fluid.of('kubejs:crude_insulator', 144)])
 	]).transitionalItem('gtceu:treated_wood_planks').loops(2)
 	
@@ -465,6 +502,23 @@ event.recipes.create.filling('veggiesdelight:fermented_garlic_honey', [Fluid.of(
 
 
   })
+  event.recipes.create.mechanical_crafting('kubejs:creative_star_shard_gamma', [
+    '  A  ',
+    '  A  ',
+    ' ABA ',
+    ' ACA ',
+    'ADEDA',
+	' AFA ',
+	'  A  '
+  ], {
+    A: 'kubejs:brass_research',
+    B: 'create:deployer',
+	C: 'create:mechanical_crafter',
+	D: 'create:precision_mechanism',
+	E: 'kubejs:mega_brass_casing',
+	F: 'kubejs:crude_insulator_sheet'
+  })
+	
 	
    event.recipes.create.sequenced_assembly('create:precision_mechanism','gtceu:brass_plate', [
 		event.recipes.createDeploying('gtceu:brass_plate', ['gtceu:brass_plate', 'create:cogwheel']),
@@ -482,6 +536,35 @@ event.recipes.create.filling('veggiesdelight:fermented_garlic_honey', [Fluid.of(
 	]).transitionalItem('minecraft:glass_bottle').loops(1)
 	
 	
+   event.recipes.create.sequenced_assembly('gtceu:resin_printed_circuit_board','gtceu:resin_circuit_board', [
+		event.recipes.createDeploying('gtceu:resin_circuit_board', ['gtceu:resin_circuit_board', 'gtceu:glowing_single_wire']),
+		event.recipes.createPressing('gtceu:resin_circuit_board', 'gtceu:resin_circuit_board'),
+		event.recipes.createFilling('gtceu:resin_circuit_board', ['gtceu:resin_circuit_board', Fluid.of('kubejs:crude_insulator', 16)])
+	]).transitionalItem('gtceu:resin_circuit_board').loops(8)
+	
+   event.recipes.create.sequenced_assembly('gtceu:resistor','minecraft:slime_ball', [
+		event.recipes.createDeploying('minecraft:slime_ball', ['minecraft:slime_ball', 'minecraft:string']),
+		event.recipes.createDeploying('minecraft:slime_ball', ['minecraft:slime_ball', 'gtceu:blazing_dust']),
+		event.recipes.createDeploying('minecraft:slime_ball', ['minecraft:slime_ball', 'minecraft:leather']),
+		event.recipes.createDeploying('minecraft:slime_ball', ['minecraft:slime_ball', 'gtceu:fine_copper_wire'])
+	]).transitionalItem('minecraft:slime_ball').loops(2)
+	
+   event.recipes.create.sequenced_assembly('gtceu:basic_electronic_circuit','gtceu:resin_printed_circuit_board', [
+		event.recipes.createDeploying('gtceu:resin_printed_circuit_board', ['gtceu:resin_printed_circuit_board', 'gtceu:resistor']),
+		event.recipes.createDeploying('gtceu:resin_printed_circuit_board', ['gtceu:resin_printed_circuit_board', 'gtceu:vacuum_tube']),
+		event.recipes.createDeploying('gtceu:resin_printed_circuit_board', ['gtceu:resin_printed_circuit_board', 'gtceu:blazing_single_cable']),
+		event.recipes.createDeploying('gtceu:resin_printed_circuit_board', ['gtceu:resin_printed_circuit_board', 'gtceu:natures_alloy_plate'])
+	]).transitionalItem('gtceu:resin_printed_circuit_board').loops(2)
+						
+   event.recipes.create.sequenced_assembly('kubejs:creative_star_shard_alpha','allthecompressed:andesite_2x', [
+		event.recipes.createDeploying('allthecompressed:andesite_2x', ['allthecompressed:andesite_2x', 'create:mechanical_press']),
+		event.recipes.createDeploying('allthecompressed:andesite_2x', ['allthecompressed:andesite_2x', 'kubejs:crude_insulator_sheet']),
+		event.recipes.createDeploying('allthecompressed:andesite_2x', ['allthecompressed:andesite_2x', 'kubejs:andesite_research']),
+		event.recipes.createDeploying('allthecompressed:andesite_2x', ['allthecompressed:andesite_2x', 'create:crushing_wheel']),
+		event.recipes.createDeploying('allthecompressed:andesite_2x', ['allthecompressed:andesite_2x', 'kubejs:mega_andesite_casing'])
+
+	]).transitionalItem('allthecompressed:andesite_2x').loops(4)
+		
 		event.recipes.gtceu.primitive_blast_furnace('natures_alloy')
 		.itemInputs(
 				'1x gtceu:natures_alloy_dust',
@@ -532,6 +615,16 @@ event.recipes.create.filling('veggiesdelight:fermented_garlic_honey', [Fluid.of(
 	' A '
   ], {
     A: '#forge:glass'
+
+  }
+)
+	event.shaped('1x create:item_vault', [
+    'A',
+	'B',
+	'A'
+  ], {
+    A: 'gtceu:andesite_alloy_plate',
+	B: 'minecraft:barrel'
 
   }
 )
@@ -649,6 +742,29 @@ event.shaped('1x kubejs:primitive_research', [
     C: 'kubejs:star_casing_01',
     D: 'kubejs:hostile_bio_sample',
     E: 'kubejs:nether_sample'
+
+  }
+)
+	event.shaped('1x gtceu:item_filter', [
+    'AAA', 
+    'ABA',
+    'AAA'  
+  ], {
+    A: 'gtceu:zinc_foil', 
+    B: 'gtceu:andesite_alloy_plate'
+
+  }
+)
+	event.shaped('1x gtceu:filter_casing', [
+    'AAA', 
+    'BBB',
+    'CDE'  
+  ], {
+    A: 'gtceu:dense_insulator', 
+    B: 'gtceu:item_filter',
+	C: 'gtceu:hv_electric_motor',
+	D: 'gtceu:sterile_bio_alloy_frame',
+	E: 'gtceu:sterile_bio_alloy_rotor'
 
   }
 )
@@ -835,6 +951,15 @@ event.shaped('1x gtceu:andesite_alloy_drill_head', [
 	F: 'gtceu:andesite_alloy_rotor'
   }
 ).damageIngredient('#forge:tools/wrenches').damageIngredient('#forge:tools/screwdrivers')
+	event.shaped('6x create:andesite_scaffolding', [
+    'ABA', 
+    'A A',
+	'A A'
+  ], {
+    A: 'gtceu:andesite_alloy_rod', 
+    B: 'gtceu:andesite_alloy_plate'
+  }
+)
 	event.shaped('1x kubejs:star_casing_02', [
     'ADA', 
     'CBC',
@@ -997,7 +1122,7 @@ event.shaped('1x gtceu:glass_tube', [
 	F: 'gtceu:treated_wood_planks'
   }
 ).damageIngredient('#forge:tools/wrenches').damageIngredient('#forge:tools/screwdrivers')
-	event.shaped('1x gtceu:cupronickel_coil_block', [
+	event.shaped('1x kubejs:glowing_coil_block', [
     'AAA', 
     'ABA',
 	'AAA'
@@ -1121,7 +1246,7 @@ event.shaped('1x create:andesite_funnel', [
     C: 'create:andesite_casing'
   }
 ).damageIngredient('#forge:tools/wrenches')
-	event.shaped('2x create:fluid_tank', [
+	event.shaped('4x create:fluid_tank', [
     'ABA', 
     'CDC',
 	'ABA'
@@ -1255,16 +1380,6 @@ event.shaped('1x create:andesite_funnel', [
   }
 ).damageIngredient('#forge:tools/wrenches')
 	
-	event.shaped('1x gtceu:lv_machine_hull', [
-    'ABA', 
-    'CDC'
-  ], {
-    A: 'kubejs:crude_insulator_sheet',
-	B: 'gtceu:natures_alloy_plate',
-	C: 'gtceu:blazing_single_cable',
-	D: 'gtceu:lv_machine_casing'
-  }
-)
 
 	event.shaped('1x gtceu:lv_electric_motor', [
     'ABC', 
@@ -1306,7 +1421,7 @@ event.shaped('1x create:andesite_funnel', [
     'BCB',
 	'AAA'
   ], {
-    A: 'gtceu:rubber_plate',
+    A: 'kubejs:crude_insulator_sheet',
 	B: 'gtceu:lv_electric_motor',
 	C: 'gtceu:blazing_single_cable'
   }
@@ -1337,15 +1452,6 @@ event.shaped('1x create:andesite_funnel', [
 	D: '#forge:tools/screwdrivers'
   }
 ).damageIngredient('#forge:tools/wrenches').damageIngredient('#forge:tools/hammers')
-	event.shaped('1x gtceu:vacuum_tube', [
-    'ABA', 
-    'CCC'
-  ], {
-    A: 'gtceu:natures_alloy_bolt',
-	B: 'gtceu:glass_tube',
-	C: 'gtceu:glowing_single_wire'
-  }
-)
 	event.shaped('1x ars_nouveau:imbuement_chamber', [
     'DBD', 
     'ACA',
@@ -1481,7 +1587,7 @@ event.shaped('1x create:andesite_funnel', [
     A: 'gtceu:magical_alloy_screw',
 	B: 'allthecompressed:hay_block_2x',
 	C: 'gtceu:lv_super_chest',
-	D: 'gtceu:lv_machine_hull',
+	D: 'gtceu:mv_machine_hull',
 	E: 'kubejs:carrots_1',
 	F: 'kubejs:cow_model_2',
 	G: 'minecraft:water_bucket'
@@ -1497,15 +1603,6 @@ event.shaped('1x create:andesite_funnel', [
 	C: '#forge:tools/hammers'
 	}
 )
-	event.shaped('1x gtceu:resin_printed_circuit_board', [
-    'AAA', 
-    'ABA',
-	'AAA'
-  ], {
-    A: 'gtceu:glowing_single_wire',
-	B: 'gtceu:resin_circuit_board'
-  }
-)
 	event.shaped('1x gtceu:phenolic_printed_circuit_board', [
     'AAA', 
     'ABA',
@@ -1513,30 +1610,6 @@ event.shaped('1x create:andesite_funnel', [
   ], {
     A: 'gtceu:elementium_single_wire',
 	B: 'gtceu:phenolic_circuit_board'
-  }
-)
-	
-	event.shaped('1x gtceu:resistor', [
-    'ABA', 
-    'CDC',
-	'ABA'
-  ], {
-    A: 'gtceu:fine_copper_wire',
-	B: 'gtceu:blazing_dust',
-	C: 'minecraft:string',
-	D: 'minecraft:slime_ball'
-  }
-)
-	event.shaped('1x gtceu:basic_electronic_circuit', [
-    'ABA', 
-    'CDC',
-	'EEE'
-  ], {
-    A: 'gtceu:resistor',
-	B: 'gtceu:natures_alloy_plate',
-	C: 'gtceu:vacuum_tube',
-	D: 'gtceu:resin_printed_circuit_board',
-	E: 'gtceu:blazing_single_cable'
   }
 )
 	event.shaped('1x gtceu:good_electronic_circuit', [
@@ -1709,6 +1782,34 @@ event.shaped('1x create:andesite_funnel', [
 	B: 'gtceu:glowing_quadruple_wire',
 	C: 'gtceu:lv_machine_hull',
 	D: 'gtceu:blazing_single_cable'
+  }
+)
+	event.shaped('1x gtceu:laboratory', [
+    'ABA', 
+    'DCD',
+	'EFE'
+  ], {
+    A: '#gtceu:circuits/hv',
+	B: 'gtceu:flawless_amethyst_gem',
+	C: 'gtceu:mv_robot_arm',
+	D: 'kubejs:clean_lab_machine_casing',
+	E: 'gtceu:synthetic_neuron_quadruple_wire',
+	F: 'gtceu:mv_machine_hull'
+
+  }
+)
+	event.shaped('1x gtceu:lv_ore_washer', [
+    'ABA', 
+    'CDC',
+	'EFE'
+  ], {
+    A: 'gtceu:andesite_alloy_rotor',
+	B: '#forge:glass',
+	C: '#gtceu:circuits/lv',
+	D: 'gtceu:lv_electric_motor',
+	E: 'gtceu:blazing_single_cable',
+	F: 'gtceu:lv_machine_hull'
+
   }
 )
 	event.shaped('1x gtceu:lv_steam_turbine', [
@@ -1948,6 +2049,16 @@ D: 'gtceu:hv_electric_motor',
 E: '#gtceu:circuits/hv'
 }
 )
+	event.shaped('1x terramity:moondrill_cannon', [
+  'ABA', 
+  'BCB',
+  'ABA'
+], {
+A: 'terramity:conductite',
+B: '#gtceu:circuits/hv',
+C: 'terramity:profanum'
+}
+)
 	event.shaped('1x gtceu:steam_machine_casing', [
     'ABA', 
     'ACA',
@@ -1960,16 +2071,6 @@ E: '#gtceu:circuits/hv'
   }
 ).damageIngredient('#forge:tools/wrenches').damageIngredient('#forge:tools/hammers')
 
-	event.shaped('1x create:packager', [
-  ' A ', 
-  'ABA',
-  'CAC'
-], {
-A: 'gtceu:double_andesite_alloy_plate',
-C: 'gtceu:single_blazing_cable',
-B: '#gtceu:circuits/mv'
-}
-)
 	event.shaped('1x create:packager', [
   'A'
 ], {
@@ -2055,21 +2156,5 @@ event.recipes.ars_nouveau.enchanting_apparatus(
 	    "8x extendedcrafting:luminessence", // output
 	    1000, // source cost
 	    // true // keep nbt of reagent, think like a smithing recipe
-	);
-  event.recipes.create.mechanical_crafting('kubejs:creative_star', [
-    'ACACACA',
-    'CBDBDBC',
-    'ADEFEDA',
-    'CBFFFBC',
-    'ADEFEDA',
-	'CBDBDBC',
-	'ACACACA'
-  ], {
-    A: 'kubejs:mega_brass_casing',
-    B: 'kubejs:mega_andesite_casing',
-    C: 'create:electron_tube',
-    D: 'create:precision_mechanism',
-    E: 'kubejs:mega_cupronickel_casing',
-    F: 'create:mechanical_crafter'
-  })
+	)
 })

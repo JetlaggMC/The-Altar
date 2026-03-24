@@ -299,11 +299,11 @@ ServerEvents.recipes(event => {
 		.duration(50)
 		.EUt(30)
 //coil
-	event.recipes.gtceu.assembler('kanthal_coil_block')
+	event.recipes.gtceu.assembler('elementium_coil_block')
 		.itemInputs(Item.of('8x gtceu:elementium_double_wire'))
 		.itemInputs(Item.of('8x gtceu:magical_alloy_foil'))
 		.inputFluids(Fluid.of('kubejs:infused_source',144))
-		.itemOutputs(Item.of('1x gtceu:kanthal_coil_block'))
+		.itemOutputs(Item.of('1x kubejs:elementium_coil_block'))
 		.duration(300)
 		.EUt(120)
 

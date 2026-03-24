@@ -1,0 +1,12 @@
+ServerEvents.recipes(event => {
+	event.recipes.gtceu.vacuum_freezer('champions_alloy')
+		.itemInputs(Item.of('1x gtceu:hot_champions_alloy_ingot'))
+		.itemOutputs(Item.of('1x gtceu:champions_alloy'))
+		.duration(480)
+		.EUt(1024)	
+	event.recipes.gtceu.vacuum_freezer('virentium_alloy')
+		.itemInputs(Item.of('1x gtceu:hot_virentium_alloy_ingot'))
+		.itemOutputs(Item.of('1x terramity:virentium_alloy_ingot'))
+		.duration(240)
+		.EUt(480)	
+})

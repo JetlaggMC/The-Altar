@@ -1,0 +1,5 @@
+{
+  "ldlib": {
+    "connection": "kubejs:block/coil/glowing/machine_coil_glowing_ctm"
+  }
+}

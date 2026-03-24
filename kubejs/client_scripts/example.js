@@ -3,6 +3,11 @@ JEIEvents.hideItems(event => {
   event.hide('ad_astra:hammer')
   event.hide('ad_astra:compressor')
   event.hide('ad_astra:coal_generator')
+  event.hide('gtceu:virentium_alloy_ingot')
+  event.hide('gtceu:virentium_alloy_block')
+  event.hide('gtceu:cupronickel_coil_block')
+  event.hide('gtceu:kanthal_coil_block')
+  event.hide('gtceu:nichrome_coil_block')
 
   event.hide('gtceu:ulv_dna_fabricator')
   event.hide('mekanism:block_charcoal')
@@ -51,9 +56,23 @@ JEIEvents.hideItems(event => {
   event.hide('gtceu:bronze_drum' )
   event.hide('gtceu:steel_drum' )
   event.hide('gtceu:aluminium_drum' )
+  event.hide('gtceu:firebrick' )
+
 })
 
 ClientEvents.lang('en_us', event => {
   event.renameBlock('create:copper_casing', 'Cupronickel Casing')
   event.renameBlock('create:copper_valve_handle', 'Cupronickel Valve Handle')
 })
+
+ItemEvents.tooltip(event => {
+	event.add('kubejs:creative_star', Text.of('2x').green(), Text.of('recipe parallel boost as module').gray())
+	event.add('kubejs:creative_star_shard_alpha', Text.of('5').green(), Text.of('% ').white(), Text.of('machine speed boost as module').gray())
+	event.add('kubejs:creative_star_shard_beta', Text.of('5').green(), Text.of('% ').white(), Text.of('input consumption reduction as module').gray())
+	event.add('kubejs:creative_star_shard_gamma', Text.of('5').green(), Text.of('% ').white(), Text.of('energy consumption reduction as module').gray())
+
+})
+
+REIEvents.removeCategories(e => {
+    e.remove('gtceu:ore_processing_diagram');
+});
