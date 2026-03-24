@@ -1,61 +1,80 @@
-The Altar 0.1.7 Update
+The Altar 0.8 EXPERIMENTAL Update
 
-NEW CHAPTER: (IV - Bio Engineering)
+	this update mostly consists of polish updates to the first 3 chapters and expansion of some systems. updating from 0.7 will likely include game breaking changes so BACKUP your world if you have one to be safe.
+	will update and polish for a full release based on player feedback and bugs.
+	the changelog is mostly,,, acurate... maybe i forgot some things...
 
 MOD CHANGES:
-	swapped storage drawers for functional storage
-	added spice of life
-	added appleskin
-	added shuffle
-	
+	Added Fast Leaf Decay
+	Added Terramity
+
 QOL CHANGES:
--fixed some quests not showing rewards
--added Andesite, Nature's, and Magical crates and drums to match progression
--changed ingot mold to andesite alloy instead of nature's
--moved contraptions into kinetic machinery 2
--changed mechanical saw, deployer, and mechanical drill to match brass materials
--added bolt and rod recipes to mechanical saw
--changed hopper recipe [iron -> andesite]
--added necessary ores and stones to mechanical miner recipes
--added recipes for create's packaging system [chapter 2 / logistics 3]
--added breeding recipes for all animals 2 --> 1 [chapter 3 / reproduction]
--fixed all tier 0 and 1 crop recipes, growing/outputs [chapter 3 / farming machines]
--Large Steel Boiler [gtceu] --> Large Nature's Alloy Boiler [chapter 3 / steam generation 2]
--magical meat glob now requires hamburgers and chicken soup to match plant glob cooking requirements
--magical meat glob recipe buff [meat glob 64 --> 16]
--magical plant glob recipe buff [plant glob 64 --> 16]
+	[Large Steel Boiler] -> [Large Nature's Alloy Boiler]
+	Added Mechanical Press recipe for Blazing Plate
+	Replaced Rubber plate for Crude insulator plate in lv conveyor recipe
+	[Cleanroom] -> [Fleshroom] | recipes changed to match
+	Create Fluid Tank Craft Buff [2 -> 4]
+	updated create fluid tank texture to match cupronickel material
+	changed base kinetic foundry melting recipes [nether essence -> lava] [10mb -> 1mb]
+	fixed mv dna fabricator recipe
+	nerfed rubber mixer recipe 
+	added crude insulator and rubber bulk recipes to large mechanical mixer
+	buffed blazing alloy mixer recipe
+	replaced shaped recipes for [vacuum tube, resistor, basic electronic circuit, resin printed circuit board, lv machine hull] with create machine versions to better integrate with progression
+	Buffed Cupronickel Hatches [1B -> 16B]
+	Added New Processing Lines and Tech For Iron, Copper, Zinc, Andesite Alloy, Amethyst
+	Removed Black Dye Recipe Outputs From Coal (ink sacs and wither roses are the only options now)
+	Balanced Cooking Recipes
+	New Recipes for compressed blocks 1x and 2x (only those used in prog right now)
+	Filled in a bunch of recipes that should have existed for machines and fixed recipes for some machines:
+		Bender:
+			-andesite alloy plate
+			-nature's alloy plate
+		Assembler:
+			-blazing wire coating
+			-lv motor
+			-lv piston
+			-fixed lv machine hull
+			-fixed mv machine hull
 
 NEW TECHNOLOGIES:
+
+	Fauna 1 [old fauna 1 is now Magical Botany 1]
 	Logistics 3
+	Ore Processing 2
+	Iron 2
+	Copper 2
+	Nature's Alloy 2
 	Medium Voltage Machinery
+	Steam Power 2
+	Farming Machines
 	Advanced Electronics 1-3
 	Awakened Echo 1
-	Advanced Smelting 2
-	Biology 2
+	Advanced Smelting 3
+	Steam Generation 2
 	Farm Animals 2
 	Aquatic Animals 2
-	Fauna 2
 	Overworld Hostility 1
 	Nether Hostility 1
 	Ender Hostility 1
-	Large Machinery 2
-	Sterilization
-	Natures Alloy 2
-	Farming Machines
-	Synthetic Neuron Alloy 1
-	Sterile Bio Alloy 1
 	Cooking 2-3
-	Sterile Research
+	Sterilization
+	Primitive Research 3
+	Andesite Research 3
+	Natural Research 2
+	Sterile Research 1
+	Sterile Bio Alloy 1
+	Amethyst 3
+	Andesite Alloy 3
+	Zinc 2
+	Reproduction
+	Biology 2
 
-
-NEW BLOCKS:
+Added:
+	Artisan Ink
 	Mega MV Machine Casing
-
-NEW MULTIBLOCKS:
-	Breeding Chamber
-	Meat Freezer
-	Resource Combinator
-	Mega Press
-	Mega Mixer
-	Hydroponic Garden
-	Temperate Garden
+	Laboratory
+	LAB Fluid
+	Zinc Chloride
+	Milky Andesite Alloy Slurry
+	Milky Iron Slurry
