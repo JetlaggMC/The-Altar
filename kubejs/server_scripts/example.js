@@ -199,6 +199,7 @@ event.remove({ output: 'gtceu:purified_copper_ore'})
 event.remove({ input: 'gtceu:purified_copper_ore'})
 event.remove({ output: 'gtceu:firebrick'})
 event.remove({ output: 'gtceu:lv_electric_motor'})
+event.remove({ output: 'gtceu:cracker'})
 
 event.remove({ input: 'gtceu:raw_coal', type: 'minecraft:smelting'})
 
@@ -603,6 +604,22 @@ event.recipes.create.filling('veggiesdelight:fermented_garlic_honey', [Fluid.of(
 
   }
 )
+	
+	event.shaped('1x functionalstorage:pusher_upgrade', [
+    'A'  
+  ], {
+    A: 'functionalstorage:puller_upgrade'
+
+  }
+)
+	event.shaped('1x functionalstorage:puller_upgrade', [
+    'A'  
+  ], {
+    A: 'functionalstorage:pusher_upgrade'
+
+  }
+)
+	
 	event.shaped('1x gtceu:andesite_alloy_drum', [
     'A'  
   ], {
@@ -662,6 +679,18 @@ event.recipes.create.filling('veggiesdelight:fermented_garlic_honey', [Fluid.of(
     G: 'allthecompressed:spruce_log_1x',
     H: 'allthecompressed:moss_block_1x',
     I: 'minecraft:sculk',
+
+  }
+)
+	event.shaped('1x gtceu:cracker', [
+    'ABA', 
+    'CDC',
+    'ABA'  
+  ], {
+    A: 'kubejs:glowing_coil_block', 
+    B: 'gtceu:hv_electric_pump',
+    C: '#gtceu:circuits/hv',
+    D: 'gtceu:hv_machine_hull'
 
   }
 )
@@ -808,7 +837,13 @@ event.shaped('1x gtceu:andesite_alloy_rod', [
 A: '#forge:tools/files',
 B: 'create:andesite_alloy'
 }).damageIngredient('#forge:tools/files')
-
+	
+event.shaped('1x minecraft:quartz_block', [
+  'AA',
+  'AA'
+], {
+A: 'minecraft:quartz'
+})
 event.shaped('1x create:hand_crank', [
   'AS ',
   'BBB',
