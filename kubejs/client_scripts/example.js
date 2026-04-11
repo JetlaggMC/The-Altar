@@ -57,6 +57,7 @@ JEIEvents.hideItems(event => {
   event.hide('gtceu:steel_drum' )
   event.hide('gtceu:aluminium_drum' )
   event.hide('gtceu:firebrick' )
+  event.hide('twilightforest:uncrafting_table' )
 
 })
 
