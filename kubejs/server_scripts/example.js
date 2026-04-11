@@ -1212,6 +1212,18 @@ event.shaped('1x create:brass_funnel', [
 ], {
   A: 'create:brass_tunnel'
 })
+	
+event.shaped('1x create:andesite_tunnel', [
+  'A'
+], {
+  A: 'create:andesite_funnel'
+})
+event.shaped('1x create:andesite_funnel', [
+  'A'
+], {
+  A: 'create:andesite_tunnel'
+})
+
 	event.shaped('1x create:brass_hand', [
     'FAE', 
     'BAB',
