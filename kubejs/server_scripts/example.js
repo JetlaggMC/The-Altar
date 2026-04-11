@@ -99,6 +99,7 @@ event.remove({ output: 'minecraft:hopper'})
 event.remove({ output: 'farmersdelight:hamburger'})
 event.remove({ output: 'farmersdelight:vegetable_soup'})
 event.remove({ output: 'farmersdelight:chicken_soup'})
+event.remove({type: 'twilightforest:uncrafting_table'}) // Remove all campfire cooking recipes
 
 event.remove({type: 'gtceu:primitive_blast_furnace'}) // Remove all campfire cooking recipes
 event.remove({ output: 'gtceu:good_electronic_circuit' })
