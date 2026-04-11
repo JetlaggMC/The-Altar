@@ -9,7 +9,7 @@ recipes:
   disableManualCompression: true
 
   # Change the recipe of Rods in the Lathe to 1 Rod and 2 Small Piles of Dust, instead of 2 Rods.
-  # Default: true
+  # Default: false
   harderRods: false
 
   # Whether to make crafting recipes for Bricks, Firebricks, Nether Bricks, and Coke Bricks harder.
@@ -50,7 +50,7 @@ recipes:
   nerfPaperCrafting: true
 
   # Recipes for items like Iron Doors, Trapdoors, Anvil require Iron Plates, Rods, and more.
-  # Default: true
+  # Default: false
   hardAdvancedIronRecipes: false
 
   # Whether to make coloring blocks like Concrete or Glass harder.
@@ -86,37 +86,17 @@ recipes:
   hardMultiRecipes: false
 
   # Whether tools should have enchants or not. Like the flint sword getting fire aspect.
-  # Default: false
+  # Default: true
   enchantedTools: true
-
-  # Whether to enable macerator decomposition recycling
-  # Default: true
-  enableMaceratorRecycling: true
-
-  # Percentage yield of macerator decomposition recycling outputs, 1.0 means 100%
-  # Default: 1.0f
-  maceratorRecyclingYield: 1.0
-
-  # Whether to enable arc furnace decomposition recycling
-  # Default: true
-  enableArcRecycling: true
-
-  # Percentage yield of arc furnace decomposition recycling outputs, 1.0 means 100%
-  # Default: 1.0f
-  arcRecyclingYield: 1.0
-
-  # Whether to enable extractor decomposition recycling
-  # Default: true
-  enableExtractorRecycling: true
-
-  # Percentage yield of extractor decomposition recycling outputs, 1.0 means 100%
-  # Default: 1.0f
-  extractorRecyclingYield: 1.0
 
 worldgen:
   # Rubber Tree spawn chance (decimal % per chunk)
   # Default: 0.5
   rubberTreeSpawnChance: 0.5
+
+  # Should all Stone Types drop unique Ore Item Blocks?
+  # Default: false (meaning only Stone, Netherrack, and Endstone)
+  allUniqueStoneTypes: false
 
   # Should Sand-like ores fall?
   # This includes gravel, sand, and red sand ores.
@@ -173,8 +153,14 @@ worldgen:
     oreIndicatorChunkCacheSize: 2048
 
 machines:
+  # Whether insufficient energy supply should reset Machine recipe progress to zero.
+  # If true, progress will reset.
+  # If false, progress will decrease to zero with 2x speed
+  # Default: false
+  recipeProgressLowEnergy: false
+
   # Whether to require a Wrench, Wirecutter, or other GregTech tools to break machines, casings, wires, and more.
-  # Default: true
+  # Default: false
   requireGTToolsForBlocks: false
 
   # Whether machines explode in rainy weather or when placed next to certain terrain, such as fire or lava
@@ -202,10 +188,6 @@ machines:
   # Default: true
   machineSounds: true
 
-  # Duration in ticks that batching will try to reach.
-  # Default: 100
-  batchDuration: 100
-
   # Whether Steam Multiblocks should use Steel instead of Bronze.
   # Default: false
   steelSteamMultiblocks: false
@@ -219,10 +201,6 @@ machines:
   # Default: false
   cleanMultiblocks: false
 
-  # Whether the miner should attempt to replace the block mined with a cobbled version of the ore
-  # Default: true
-  replaceWithCobbleVersion: true
-
   # Block to replace mined ores with in the miner and multiblock miner.
   # Default: minecraft:cobblestone
   replaceMinedBlocksWith: minecraft:cobblestone
@@ -234,11 +212,6 @@ machines:
   # Whether to enable the Maintenance Hatch, required for Multiblocks.
   # Default: true
   enableMaintenance: true
-
-  # How often to check for maintenance, rolling a 1/6000 chance every X ticks (before secondary effects like Configurable Maintenance Hatch).
-  # In default settings, this equates to a 5% chance every hour of a machine running.
-  # Default: 1000 (ticks)
-  maintenanceCheckRate: 1000
 
   # Whether to enable World Accelerators, which accelerate ticks for surrounding Tile Entities, Crops, etc.
   # Default: true
@@ -306,15 +279,12 @@ machines:
 
   # Whether the Assembly Line should require the fluid inputs to be in order.
   # (Requires Ordered Assembly Line Item Inputs to be enabled.)
-  # Default: true
+  # Default: false
   orderedAssemblyLineFluids: false
 
   # Default maximum parallel of steam multiblocks
   # Default: 8
   steamMultiParallelAmount: 8
-
-  # Whether the Drums can input fluids from the output side (bottom).
-  allowDrumsInputFluidsFromOutputSide: false
 
   # Small Steam Boiler Options
   smallBoilers:
@@ -381,17 +351,9 @@ machines:
     tungstensteelBoilerHeatSpeed: 2
 
 client:
-  # Whether or not to display all temperatures in Celsius instead of Kelvin
-  temperaturesInCelsius: false
-
   # Whether or not to enable Emissive Textures for GregTech Machines.
   # Default: true
   machinesEmissiveTextures: true
-
-  # Whether most machines will have block entity renderers, mainly used for rendering certain covers. (Restart required)
-  # Disable if experiencing performance issues.
-  # Default: true
-  machinesHaveBERsByDefault: true
 
   # Whether or not sounds should be played when using tools outside of crafting.
   # Default: true
@@ -407,8 +369,8 @@ client:
   defaultPaintingColor: #FFFFFF
 
   # The default color to overlay onto Machine (and other) UIs.
-  # #FFFFFF is no coloring (like GTCE) (default).
-  # #D2DCFF is the classic blue from GT5.
+  # 16777215 (#FFFFFF) is no coloring (like GTCE) (default).
+  # 13819135 (#D2DCFF in decimal) is the classic blue from GT5.
   defaultUIColor: #FFFFFF
 
   # Use VBO cache for multiblock preview.
@@ -445,29 +407,6 @@ client:
     # Render fluids in multiblocks that support them?
     # Default: true
     renderFluids: true
-
-    # Render growing plants in multiblocks that support them?
-    # Default: true
-    renderGrowingPlants: true
-
-    # Whether or not to color material/ore block highlights in the material color
-    # Default: true
-    coloredMaterialBlockOutline: true
-
-    # Whether or not to color tiered machine highlights in the tier color
-    # Default: true
-    coloredTieredMachineOutline: true
-
-    # Whether or not to color wire/cable highlights based on voltage tier or material color
-    # Default: true
-    coloredWireOutline: true
-
-  tankItemFluidPreview:
-    # Set true to render the including fluid icons to GT Drums
-    drum: false
-
-    # Set true to render the including fluid icons to Super (Quantum) Tanks
-    quantumTank: false
 
 # Config options for Tools and Armor
 tools:
@@ -516,7 +455,7 @@ tools:
   voltageTierQuarkTech: 5
 
   # Advanced QuarkTech Suit Chestplate Voltage Tier.
-  # Default: 6 (LuV)
+  # Default: 5 (LuV)
   voltageTierAdvQuarkTech: 6
 
   # Electric Impeller Jetpack Voltage Tier.
@@ -539,19 +478,12 @@ gameplay:
   universalHazards: true
 
   # Whether environmental hazards like pollution or radiation are active
-  # Default: false
+  # Default: true
   environmentalHazards: false
 
   # How much environmental hazards decay per chunk, per tick.
   # Default: 0.001
   environmentalHazardDecayRate: 0.001
-
-  # List of domains that are allowed in the image module
-  allowedImageDomains:
-    - imgur.com
-    - discord.com
-    - github.com
-    - raw.githubusercontent.com
 
 # Config options for Mod Compatibility
 compat:
@@ -584,7 +516,7 @@ compat:
     updateIntervals: 40
 
     # The energy consumption of ME Hatch/Bus.
-    # Default: 4.0AE/t
+    # Default: 1.0AE/t
     meHatchEnergyUsage: 1.0
 
   # Config options regarding GTCEu compatibility with minimap mods
@@ -628,7 +560,7 @@ compat:
     buttonAnchor: BOTTOM_LEFT
 
     # Which direction the buttons will go
-    # Default: "VERTICAL"
+    # Default: "HORIZONTAL"
     direction: HORIZONTAL
 
     # How horizontally far away from the anchor to place the buttons
@@ -638,6 +570,10 @@ compat:
     # How vertically far away from the anchor to place the buttons
     # Default: 0
     yOffset: 0
+
+    # Whether to put buttons on a separate toolbar on the right instead of the map type toolbar in JourneyMap.
+    # Default: true
+    rightToolbar: true
 
   # Whether to hide facades of all blocks in JEI and creative search menu.
   # Default: true
@@ -659,10 +595,6 @@ compat:
   # Default: false
   showDimensionTier: false
 
-  # Whether Create compatibility will be available.
-  # Default: true
-  createCompat: true
-
 dev:
   # Debug general events? (will print recipe conficts etc. to server's debug.log)
   # Default: false
@@ -683,9 +615,4 @@ dev:
   # Dump all registered GT models/blockstates/etc?
   # Default: false
   dumpAssets: false
-
-  # Executes ./gradlew :processResources when F3+T is pressed
-  # Only works in a development environment
-  # Default: false
-  autoRebuildResources: false
 
