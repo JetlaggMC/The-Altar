@@ -1188,6 +1188,19 @@ event.shaped('1x create:andesite_funnel', [
 
 }
 ).damageIngredient('#forge:tools/hammers').damageIngredient('#forge:tools/screwdrivers')
+	
+event.shaped('1x create:brass_funnel', [
+  'AA', 
+  'BB',
+  'CS'
+], {
+  B: 'kubejs:crude_insulator_sheet', 
+  A: 'gtceu:brass_plate',
+  C: '#forge:tools/hammers',
+  S: '#forge:tools/screwdrivers'
+
+}
+).damageIngredient('#forge:tools/hammers').damageIngredient('#forge:tools/screwdrivers')
 	event.shaped('1x create:brass_hand', [
     'FAE', 
     'BAB',
