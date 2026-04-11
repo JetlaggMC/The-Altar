@@ -23,4 +23,6 @@ ServerEvents.tags('block', event => {
 	event.add('create:wrench_pickup', 'mbd2:large_mechanical_mixer')
 	event.add('create:wrench_pickup', 'mbd2:andesite_mechanical_drill')
 	event.add('create:wrench_pickup', 'mbd2:brass_mechanical_drill')
+	event.add('forge:stripped_logs', 'gtceu:stripped_rubber_log')
+
 })
