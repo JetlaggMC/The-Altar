@@ -1201,6 +1201,17 @@ event.shaped('1x create:brass_funnel', [
 
 }
 ).damageIngredient('#forge:tools/hammers').damageIngredient('#forge:tools/screwdrivers')
+	
+event.shaped('1x create:brass_tunnel', [
+  'A'
+], {
+  A: 'create:brass_funnel'
+})
+event.shaped('1x create:brass_funnel', [
+  'A'
+], {
+  A: 'create:brass_tunnel'
+})
 	event.shaped('1x create:brass_hand', [
     'FAE', 
     'BAB',
