@@ -24,18 +24,28 @@
 				"7E13B0A94C01328E"
 			]
 			id: "198D06EA799DC550"
-			rewards: [{
-				id: "58621C4F39C989B7"
-				type: "xp_levels"
-				xp_levels: 1
-			}]
+			rewards: [
+				{
+					id: "58621C4F39C989B7"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					exclude_from_claim_all: true
+					id: "00D97C776B0E974D"
+					table_id: 2959813204796712055L
+					type: "loot"
+				}
+			]
 			shape: "diamond"
 			size: 2.0d
 			tasks: [{
+				count: 8L
 				id: "05A1FF025F7700D9"
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
+			title: "Andesite Alloy"
 			x: 5.0d
 			y: -0.5d
 		}
@@ -57,11 +67,19 @@
 				}
 			}
 			id: "275B875F1165AD08"
-			rewards: [{
-				id: "311E101300EC1FE6"
-				type: "xp_levels"
-				xp_levels: 1
-			}]
+			rewards: [
+				{
+					id: "311E101300EC1FE6"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					exclude_from_claim_all: true
+					id: "62A30E088B907332"
+					table_id: 2959813204796712055L
+					type: "loot"
+				}
+			]
 			shape: "diamond"
 			tasks: [
 				{
@@ -206,11 +224,19 @@
 				}
 			}
 			id: "1D4D4FFD665C42C2"
-			rewards: [{
-				id: "582D44A8F31A6BD8"
-				type: "xp_levels"
-				xp_levels: 1
-			}]
+			rewards: [
+				{
+					id: "582D44A8F31A6BD8"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4B769C0E965B4271"
+					table_id: 2959813204796712055L
+					type: "loot"
+				}
+			]
 			shape: "diamond"
 			tasks: [
 				{
@@ -299,11 +325,19 @@
 			]
 			icon: "gtceu:coke_oven"
 			id: "5FD6BEFC70CC297A"
-			rewards: [{
-				id: "5281EDC5B17FE385"
-				type: "xp_levels"
-				xp_levels: 1
-			}]
+			rewards: [
+				{
+					id: "5281EDC5B17FE385"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6E40B50A0FE5F7FC"
+					table_id: 2959813204796712055L
+					type: "loot"
+				}
+			]
 			shape: "diamond"
 			tasks: [
 				{
@@ -324,11 +358,19 @@
 		{
 			dependencies: ["5FD6BEFC70CC297A"]
 			id: "4CF57BD5C7E17D6D"
-			rewards: [{
-				id: "271BA0F3C7464E54"
-				type: "xp_levels"
-				xp_levels: 1
-			}]
+			rewards: [
+				{
+					id: "271BA0F3C7464E54"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2C933503FA467A3A"
+					table_id: 2959813204796712055L
+					type: "loot"
+				}
+			]
 			shape: "diamond"
 			tasks: [{
 				id: "733829B2565699B0"
@@ -341,13 +383,22 @@
 		{
 			dependencies: ["4CF57BD5C7E17D6D"]
 			id: "3AD198CE2A2785B9"
-			rewards: [{
-				id: "3886BC5750C65BD3"
-				type: "xp_levels"
-				xp_levels: 1
-			}]
+			rewards: [
+				{
+					id: "3886BC5750C65BD3"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6E2CA3D2DEEFE0DC"
+					table_id: 2959813204796712055L
+					type: "loot"
+				}
+			]
 			shape: "diamond"
 			tasks: [{
+				count: 16L
 				id: "1636582BE3AA3FA9"
 				item: "gtceu:treated_wood_planks"
 				type: "item"
@@ -373,9 +424,21 @@
 					type: "xp_levels"
 					xp_levels: 1
 				}
+				{
+					exclude_from_claim_all: true
+					id: "62391A4517893F3B"
+					table_id: 2959813204796712055L
+					type: "loot"
+				}
+				{
+					id: "7FF651A292994E82"
+					item: "create:goggles"
+					type: "item"
+				}
 			]
 			shape: "diamond"
 			tasks: [{
+				count: 4L
 				id: "2F985DC574688FA8"
 				item: "create:andesite_casing"
 				type: "item"
@@ -541,7 +604,7 @@
 				{
 					count: 8L
 					id: "0FD484BF981F8F78"
-					item: { Count: 8, id: "gtceu:cupronickel_coil_block" }
+					item: "kubejs:glowing_coil_block"
 					type: "item"
 				}
 				{
@@ -710,11 +773,19 @@
 			dependencies: ["7468FC23297E765B"]
 			description: ["Time for some new create machines!"]
 			id: "04C58079B7470336"
-			rewards: [{
-				id: "415D77B6F6F249D3"
-				type: "xp_levels"
-				xp_levels: 1
-			}]
+			rewards: [
+				{
+					id: "415D77B6F6F249D3"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6012D192139293D5"
+					table_id: 7199143656173709457L
+					type: "loot"
+				}
+			]
 			shape: "diamond"
 			subtitle: "Finally!"
 			tasks: [{
@@ -805,11 +876,19 @@
 		{
 			dependencies: ["04C58079B7470336"]
 			id: "41FAFDEC686F1D80"
-			rewards: [{
-				id: "1538A7AF8F610DBE"
-				type: "xp_levels"
-				xp_levels: 1
-			}]
+			rewards: [
+				{
+					id: "1538A7AF8F610DBE"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					exclude_from_claim_all: true
+					id: "231BE1AA764207AC"
+					table_id: 7199143656173709457L
+					type: "loot"
+				}
+			]
 			shape: "diamond"
 			tasks: [{
 				id: "01F225936587E889"
@@ -900,19 +979,28 @@
 		{
 			dependencies: ["5FD6BEFC70CC297A"]
 			id: "36E36A264439EE73"
-			rewards: [{
-				id: "7B1721F6A6EFF480"
-				type: "xp_levels"
-				xp_levels: 1
-			}]
+			rewards: [
+				{
+					id: "7B1721F6A6EFF480"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					exclude_from_claim_all: true
+					id: "58DDFB0A2BCFDB3D"
+					table_id: 2959813204796712055L
+					type: "loot"
+				}
+			]
 			shape: "diamond"
 			tasks: [{
+				count: 8L
 				id: "2C37D0A270967488"
 				item: "gtceu:coke_gem"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -3.0d
+			x: 5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["0BC2D4ACF6D90A46"]

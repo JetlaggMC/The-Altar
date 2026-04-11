@@ -17,7 +17,7 @@
 				item: "gtceu:rtm_alloy_coil_block"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -28,7 +28,7 @@
 				item: "gtceu:hssg_coil_block"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -39,7 +39,7 @@
 				item: "gtceu:trinium_coil_block"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 5.0d
 			y: 0.0d
 		}
 		{
@@ -50,7 +50,7 @@
 				item: "gtceu:naquadah_coil_block"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.0d
 			y: 0.0d
 		}
 		{
@@ -61,7 +61,7 @@
 				item: "gtceu:tritanium_coil_block"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -97,8 +97,8 @@
 				item: "gtceu:hv_circuit_assembler"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.0d
+			x: 1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["1E31B754A456B4C1"]
@@ -193,7 +193,7 @@
 				item: "gtceu:micro_processor_mainframe"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 1.0d
 			y: 7.0d
 		}
 		{
@@ -204,7 +204,7 @@
 				item: "gtceu:nano_processor"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.0d
 			y: 5.0d
 		}
 		{
@@ -215,7 +215,7 @@
 				item: "gtceu:nano_processor_assembly"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.0d
 			y: 6.0d
 		}
 		{
@@ -226,7 +226,7 @@
 				item: "gtceu:nano_processor_computer"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.0d
 			y: 7.0d
 		}
 		{
@@ -237,7 +237,7 @@
 				item: "gtceu:nano_processor_mainframe"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.0d
 			y: 8.0d
 		}
 		{
@@ -248,7 +248,7 @@
 				item: "gtceu:crystal_processor"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.0d
 			y: 7.0d
 		}
 		{
@@ -259,7 +259,7 @@
 				item: "gtceu:quantum_processor"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 3.0d
 			y: 6.0d
 		}
 		{
@@ -270,7 +270,7 @@
 				item: "gtceu:quantum_processor_assembly"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 3.0d
 			y: 7.0d
 		}
 		{
@@ -281,7 +281,7 @@
 				item: "gtceu:quantum_processor_computer"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 3.0d
 			y: 8.0d
 		}
 		{
@@ -292,7 +292,7 @@
 				item: "gtceu:quantum_processor_mainframe"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 3.0d
 			y: 9.0d
 		}
 		{
@@ -303,7 +303,7 @@
 				item: "gtceu:crystal_processor_assembly"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.0d
 			y: 8.0d
 		}
 		{
@@ -314,7 +314,7 @@
 				item: "gtceu:crystal_processor_computer"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.0d
 			y: 9.0d
 		}
 		{
@@ -325,7 +325,7 @@
 				item: "gtceu:crystal_processor_mainframe"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.0d
 			y: 10.0d
 		}
 		{
@@ -336,7 +336,7 @@
 				item: "gtceu:ev_circuit_assembler"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.0d
 			y: 2.0d
 		}
 		{
@@ -347,7 +347,7 @@
 				item: "gtceu:iv_circuit_assembler"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 3.0d
 			y: 2.0d
 		}
 		{
@@ -358,7 +358,7 @@
 				item: "gtceu:luv_circuit_assembler"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.0d
 			y: 2.0d
 		}
 		{
@@ -369,7 +369,7 @@
 				item: "gtceu:wetware_processor"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 5.0d
 			y: 8.0d
 		}
 		{
@@ -380,7 +380,7 @@
 				item: "gtceu:zpm_circuit_assembler"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 5.0d
 			y: 2.0d
 		}
 		{
@@ -391,7 +391,7 @@
 				item: "gtceu:wetware_processor_assembly"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 5.0d
 			y: 9.0d
 		}
 		{
@@ -402,7 +402,7 @@
 				item: "gtceu:wetware_processor_computer"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 5.0d
 			y: 10.0d
 		}
 		{
@@ -413,7 +413,7 @@
 				item: "gtceu:wetware_processor_mainframe"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 5.0d
 			y: 11.0d
 		}
 		{
@@ -424,7 +424,7 @@
 				item: "gtceu:uv_circuit_assembler"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 6.0d
 			y: 2.0d
 		}
 		{
@@ -435,7 +435,7 @@
 				item: "kubejs:glowing_coil_block"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.0d
 			y: 0.0d
 		}
 		{
@@ -446,7 +446,7 @@
 				item: "kubejs:elementium_coil_block"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.0d
 			y: 0.0d
 		}
 		{
@@ -457,7 +457,7 @@
 				item: "kubejs:synthetic_neuron_coil_block"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 1.0d
 			y: 0.0d
 		}
 		{
