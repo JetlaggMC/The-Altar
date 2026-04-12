@@ -417,9 +417,16 @@ event.recipes.create.pressing('gtceu:copper_plate', '#forge:ingots/copper')
     event.recipes.create.crushing('2x kubejs:dragonsteel_dust', 'botania:dragonsteel_ingot')
 	event.recipes.create.crushing('1x gtceu:blazing_dust', 'gtceu:blazing_ingot')
 	event.recipes.create.crushing('3x veggiesdelight:garlic_clove', 'veggiesdelight:garlic')
+  event.recipes.create.cutting('2x gtceu:gold_rod', 'minecraft:gold_ingot')
+  event.recipes.create.cutting('2x gtceu:iron_rod', 'minecraft:iron_ingot')
 
   event.recipes.create.cutting('2x gtceu:andesite_alloy_rod', 'create:andesite_alloy')
   event.recipes.create.cutting('2x gtceu:andesite_alloy_bolt', 'gtceu:andesite_alloy_rod')
+  event.recipes.create.cutting('2x gtceu:iron_bolt', 'gtceu:iron_rod')
+  event.recipes.create.cutting('2x gtceu:iron_screw', 'gtceu:iron_bolt')
+  event.recipes.create.cutting('2x gtceu:gold_bolt', 'gtceu:gold_rod')
+  event.recipes.create.cutting('2x gtceu:gold_screw', 'gtceu:gold_screw')
+
   event.recipes.create.cutting('gtceu:andesite_alloy_screw', 'gtceu:andesite_alloy_bolt')
   event.recipes.create.deploying('gtceu:long_andesite_alloy_rod', ['gtceu:andesite_alloy_rod','gtceu:andesite_alloy_rod'])
 
