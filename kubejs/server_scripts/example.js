@@ -350,6 +350,8 @@ event.shapeless('1x minecraft:flint_and_steel', [ // arg 1: output
 	event.recipes.create.pressing('gtceu:andesite_alloy_plate', 'create:andesite_alloy')
 	event.recipes.create.pressing('gtceu:andesite_alloy_ring', 'gtceu:andesite_alloy_bolt')
 	event.recipes.create.pressing('gtceu:iron_ring', 'gtceu:iron_bolt')
+	event.recipes.create.pressing('gtceu:gold_ring', 'gtceu:gold_bolt')
+
 	event.recipes.create.pressing('gtceu:cupronickel_plate', 'gtceu:cupronickel_ingot')
 	event.recipes.create.pressing('gtceu:cupronickel_foil', 'gtceu:cupronickel_plate')
 event.recipes.create.pressing('gtceu:glowing_plate', 'gtceu:glowing_ingot')
