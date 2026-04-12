@@ -57,6 +57,8 @@ event.remove({ output: 'create:encased_fan'})
 event.remove({ output: 'create:andesite_casing' })
 event.remove({ output: 'gtceu:wood_drum' })
 event.remove({ output: 'create:andesite_alloy', type: 'create:mixing' })
+event.remove({ input: 'minecraft:iron_ingot', type: 'minecraft:stonecutting' })
+
 event.remove({ output: 'gtceu:coke_oven' })
 event.remove({ output: 'create:mechanical_press' })
 event.remove({ output: 'create:mechanical_mixer' })
