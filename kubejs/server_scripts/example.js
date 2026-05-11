@@ -328,6 +328,9 @@ event.shapeless('1x minecraft:flint_and_steel', [ // arg 1: output
   'minecraft:iron_ingot',
   'minecraft:flint'
 ])
+	
+event.smelting('1x minecraft:nether_brick', 'minecraft:netherrack')
+
     event.recipes.create.item_application('kubejs:primitive_star_block', ['kubejs:key_block', 'kubejs:primitive_star'])
     event.recipes.create.item_application('kubejs:creative_star_block', ['kubejs:key_block', 'kubejs:creative_star'])
     event.recipes.create.item_application('kubejs:natural_star_block', ['kubejs:key_block', 'kubejs:natural_star'])
