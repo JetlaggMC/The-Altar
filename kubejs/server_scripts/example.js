@@ -499,9 +499,8 @@ event.recipes.create.filling('veggiesdelight:fermented_garlic_honey', [Fluid.of(
 	 event.recipes.create.mixing(Fluid.of('kubejs:melon_juice', 1000),['8x minecraft:melon_slice', '1x minecraft:sweet_berries', '1x minecraft:sugar',Fluid.of('minecraft:water',144)])
 	event.recipes.create.mixing('1x gtceu:vacuum_tube',	['1x gtceu:glass_tube', '2x gtceu:natures_alloy_bolt', '3x gtceu:glowing_single_wire'])
 
- 	event.recipes.create.mixing('4x kubejs:primitive_research',['1x gtceu:andesite_dust', '1x gtceu:crushed_iron_ore', Fluid.of('kubejs:molten_amethyst',144),Fluid.of('kubejs:carrot_juice',144)])
  	event.recipes.create.mixing('2x minecraft:amethyst_shard',[Fluid.of('kubejs:molten_amethyst',144),Fluid.of('kubejs:glass_residue',18)])
-  event.recipes.create.mixing('1x kubejs:andesite_research',	['1x gtceu:andesite_alloy_rod', '1x create:cogwheel','1x gtceu:coke_gem','1x #forge:nuggets/zinc',Fluid.of('gtceu:creosote',144)])
+  event.recipes.create.mixing('1x kubejs:andesite_research',	['1x gtceu:andesite_alloy_rod', '1x create:cogwheel','1x gtceu:coke_gem','1x #forge:nuggets/zinc',Fluid.of('gtceu:creosote',100)])
 
     event.recipes.create.sequenced_assembly('gtceu:resin_circuit_board','gtceu:treated_wood_planks', [
 		event.recipes.createDeploying('gtceu:treated_wood_planks',['gtceu:treated_wood_planks', 'create:wheat_flour']),
