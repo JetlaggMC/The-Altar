@@ -13,7 +13,12 @@ ServerEvents.recipes(event => {
 		.blastFurnaceTemp(900)
 		.duration(300)
 		.EUt(120)	
-	
+	event.recipes.gtceu.electric_blast_furnace('glowing')
+		.itemInputs(Item.of('1x gtceu:glowing_dust'))
+		.itemOutputs(Item.of('1x gtceu:glowing_ingot'))
+		.blastFurnaceTemp(900)
+		.duration(300)
+		.EUt(60)	
 	event.recipes.gtceu.electric_blast_furnace('purified_iron_ore')
 		.itemInputs(Item.of('1x gtceu:crushed_iron_ore'))
 		.inputFluids(Fluid.of('kubejs:milky_iron_slurry',144))
