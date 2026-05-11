@@ -1,80 +1,19 @@
-The Altar 0.8 EXPERIMENTAL Update
+The Altar 0.8.4
 
-	this update mostly consists of polish updates to the first 3 chapters and expansion of some systems. updating from 0.7 will likely include game breaking changes so BACKUP your world if you have one to be safe.
-	will update and polish for a full release based on player feedback and bugs.
-	the changelog is mostly,,, acurate... maybe i forgot some things...
+	Mod Changes:
+		Added some various performance mods in hopes of increasing... performance
+		
+	Changes:
 
-MOD CHANGES:
-	Added Fast Leaf Decay
-	Added Terramity
+		Added Glowing I Research, [requires Iron 1]
+		Buffed the Andesite Mechanical Drill pretty heavily, all recipes now only require 1mb fluid per craft, and runs at 1s/craft below 128rpm and 0.5s/craft at and above 128
 
-QOL CHANGES:
-	[Large Steel Boiler] -> [Large Nature's Alloy Boiler]
-	Added Mechanical Press recipe for Blazing Plate
-	Replaced Rubber plate for Crude insulator plate in lv conveyor recipe
-	[Cleanroom] -> [Fleshroom] | recipes changed to match
-	Create Fluid Tank Craft Buff [2 -> 4]
-	updated create fluid tank texture to match cupronickel material
-	changed base kinetic foundry melting recipes [nether essence -> lava] [10mb -> 1mb]
-	fixed mv dna fabricator recipe
-	nerfed rubber mixer recipe 
-	added crude insulator and rubber bulk recipes to large mechanical mixer
-	buffed blazing alloy mixer recipe
-	replaced shaped recipes for [vacuum tube, resistor, basic electronic circuit, resin printed circuit board, lv machine hull] with create machine versions to better integrate with progression
-	Buffed Cupronickel Hatches [1B -> 16B]
-	Added New Processing Lines and Tech For Iron, Copper, Zinc, Andesite Alloy, Amethyst
-	Removed Black Dye Recipe Outputs From Coal (ink sacs and wither roses are the only options now)
-	Balanced Cooking Recipes
-	New Recipes for compressed blocks 1x and 2x (only those used in prog right now)
-	Filled in a bunch of recipes that should have existed for machines and fixed recipes for some machines:
-		Bender:
-			-andesite alloy plate
-			-nature's alloy plate
-		Assembler:
-			-blazing wire coating
-			-lv motor
-			-lv piston
-			-fixed lv machine hull
-			-fixed mv machine hull
-
-NEW TECHNOLOGIES:
-
-	Fauna 1 [old fauna 1 is now Magical Botany 1]
-	Logistics 3
-	Ore Processing 2
-	Iron 2
-	Copper 2
-	Nature's Alloy 2
-	Medium Voltage Machinery
-	Steam Power 2
-	Farming Machines
-	Advanced Electronics 1-3
-	Awakened Echo 1
-	Advanced Smelting 3
-	Steam Generation 2
-	Farm Animals 2
-	Aquatic Animals 2
-	Overworld Hostility 1
-	Nether Hostility 1
-	Ender Hostility 1
-	Cooking 2-3
-	Sterilization
-	Primitive Research 3
-	Andesite Research 3
-	Natural Research 2
-	Sterile Research 1
-	Sterile Bio Alloy 1
-	Amethyst 3
-	Andesite Alloy 3
-	Zinc 2
-	Reproduction
-	Biology 2
-
-Added:
-	Artisan Ink
-	Mega MV Machine Casing
-	Laboratory
-	LAB Fluid
-	Zinc Chloride
-	Milky Andesite Alloy Slurry
-	Milky Iron Slurry
+		Recipes:
+			Added Glow Ink [Large Mechanical Mixer]
+			Added Glowing Dust [Large Mechachical Mixer]
+			Added Glowing Ingot from Glowing dust [Blast Furnace]
+			Creative Star Shard Alpha [Andesite 2x -> Andesite 1x]
+			Added Depot [Large Mechanical Press]
+			Added Mixer [Large Mechanical Press]
+			Added Basin [Large Mechanical Press]
+			Added Nether Brick [Smelting]
