@@ -490,7 +490,6 @@ event.recipes.create.filling('veggiesdelight:fermented_garlic_honey', [Fluid.of(
  	event.recipes.create.mixing(Fluid.of('kubejs:crude_insulator', 288),[Fluid.of('create:honey',144),Fluid.of('gtceu:rubber',144), '1x gtceu:sulfur_dust'])
 	event.recipes.create.mixing('2x gtceu:fireclay_dust',	['1x gtceu:clay_dust', '1x gtceu:brick_dust']).heated()
 	event.recipes.create.mixing('1x kubejs:blank_shard',	['1x create:andesite_alloy', '1x #forge:glass']).heated()
- 	event.recipes.create.mixing(Fluid.of('gtceu:glowing', 2304),[Fluid.of('gtceu:iron',1000), '1x minecraft:glow_ink_sac']).heated()
  	event.recipes.create.mixing(Fluid.of('gtceu:red_alloy', 288),[Fluid.of('gtceu:iron',144), '1x minecraft:redstone']).heated()
  	event.recipes.create.mixing(Fluid.of('gtceu:blazing', 1296),['4x minecraft:blaze_powder', '1x kubejs:nether_dust', '1x gtceu:iron_dust']).superheated()
    event.recipes.create.mixing('1x gtceu:glass_dust',	['1x gtceu:quartz_sand_dust', '1x gtceu:tiny_flint_dust'])
