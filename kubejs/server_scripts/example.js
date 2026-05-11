@@ -576,12 +576,12 @@ event.recipes.create.filling('veggiesdelight:fermented_garlic_honey', [Fluid.of(
 		event.recipes.createDeploying('gtceu:resin_printed_circuit_board', ['gtceu:resin_printed_circuit_board', 'gtceu:natures_alloy_plate'])
 	]).transitionalItem('gtceu:resin_printed_circuit_board').loops(2)
 						
-   event.recipes.create.sequenced_assembly('kubejs:creative_star_shard_alpha','allthecompressed:andesite_2x', [
-		event.recipes.createDeploying('allthecompressed:andesite_2x', ['allthecompressed:andesite_2x', 'create:mechanical_press']),
-		event.recipes.createDeploying('allthecompressed:andesite_2x', ['allthecompressed:andesite_2x', 'kubejs:crude_insulator_sheet']),
-		event.recipes.createDeploying('allthecompressed:andesite_2x', ['allthecompressed:andesite_2x', 'kubejs:andesite_research']),
-		event.recipes.createDeploying('allthecompressed:andesite_2x', ['allthecompressed:andesite_2x', 'create:crushing_wheel']),
-		event.recipes.createDeploying('allthecompressed:andesite_2x', ['allthecompressed:andesite_2x', 'kubejs:mega_andesite_casing'])
+   event.recipes.create.sequenced_assembly('kubejs:creative_star_shard_alpha','allthecompressed:andesite_1x', [
+		event.recipes.createDeploying('allthecompressed:andesite_1x', ['allthecompressed:andesite_1x', 'create:mechanical_press']),
+		event.recipes.createDeploying('allthecompressed:andesite_1x', ['allthecompressed:andesite_1x', 'kubejs:crude_insulator_sheet']),
+		event.recipes.createDeploying('allthecompressed:andesite_1x', ['allthecompressed:andesite_1x', 'kubejs:andesite_research']),
+		event.recipes.createDeploying('allthecompressed:andesite_1x', ['allthecompressed:andesite_1x', 'create:crushing_wheel']),
+		event.recipes.createDeploying('allthecompressed:andesite_1x', ['allthecompressed:andesite_1x', 'kubejs:mega_andesite_casing'])
 
 	]).transitionalItem('allthecompressed:andesite_2x').loops(4)
 		
