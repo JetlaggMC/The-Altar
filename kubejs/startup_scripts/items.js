@@ -421,6 +421,10 @@ StartupEvents.registry("fluid", (event) => {
     .thinTexture(0xFAFFFE)
     .bucketColor(0xFAFFFE)
     .displayName('Life Activated Bioplastic Fluid (LAB fluid)')
+   event.create('glow_ink')
+    .thinTexture(0x39D7E6)
+    .bucketColor(0x39D7E6)
+    .displayName('Glow Ink')
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
