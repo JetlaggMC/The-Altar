@@ -397,6 +397,7 @@ event.recipes.create.pressing('gtceu:copper_plate', '#forge:ingots/copper')
 	event.recipes.create.milling('1x gtceu:flint_dust', 'minecraft:flint')
 	event.recipes.create.milling('1x gtceu:quartz_sand_dust', '#forge:sand')
 	event.recipes.create.milling('2x veggiesdelight:garlic_clove', 'veggiesdelight:garlic')
+	event.recipes.create.milling('1x gtceu:netherrack_dust', 'minecraft:netherrack')
 
 	event.recipes.create.crushing('2x create:crushed_raw_zinc', 'create:raw_zinc')
 
